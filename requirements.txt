@@ -1,0 +1,14 @@
+# Python 3.11; remote OpenAI-compatible LLM and embedding baseline.
+# Existing compatible installations (including torch) are reused by pip.
+numpy>=1.26,<3
+pandas>=2.0,<3
+PyYAML>=6,<7
+openai>=1.0,<3
+pydantic>=2,<3
+networkx>=3,<4
+torch>=2,<3
+matplotlib>=3.7,<4
+tqdm>=4.65,<5
+tiktoken>=0.7,<1
+# Optional only when using locally loaded Hugging Face embedding models:
+# sentence-transformers

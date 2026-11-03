@@ -1,0 +1,12 @@
+{
+  "case_id": "change_01",
+  "status": "error",
+  "question": "Where do I live now?",
+  "started_utc": "2026-11-01T06:02:36.621376+00:00",
+  "config": "experiments\\evidence_memory_pilot\\baseline_qwen.yaml",
+  "gold_loaded": false,
+  "dataset": "synthetic_controlled",
+  "error_type": "ImportError",
+  "error": "Using SOCKS proxy, but the 'socksio' package is not installed. Make sure to install httpx using `pip install httpx[socks]`.",
+  "elapsed_seconds": 0.59
+}

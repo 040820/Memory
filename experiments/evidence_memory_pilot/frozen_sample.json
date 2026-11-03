@@ -1,0 +1,45 @@
+{
+  "purpose": "development-only feasibility pilot; not held-out benchmark",
+  "seed": 20261101,
+  "algorithm": "Python random.Random, sorted IDs, order: locomo, long types as listed, memconflict",
+  "sources": {
+    "locomo": {
+      "path": "dataset\\data\\locomo10.json",
+      "sha256": "79fa87e90f04081343b8c8debecb80a9a6842b76a7aa537dc9fdf651ea698ff4"
+    },
+    "longmemeval": {
+      "path": "dataset\\data\\longmemeval_s_cleaned.json",
+      "sha256": "d6f21ea9d60a0d56f34a05b609c79c88a451d2ae03597821ea3d5a9678c3a442"
+    },
+    "memconflict": {
+      "path": "dataset\\data\\MemConflict\\Step4_4.jsonl",
+      "sha256": "8ef9ec8589eccb86f63ab3a819a9180217405351a8d5846866721ea74babe092"
+    }
+  },
+  "selection": {
+    "locomo_conversation_ids": [
+      "conv-30",
+      "conv-50"
+    ],
+    "longmemeval_question_ids_by_type": {
+      "knowledge-update": [
+        "a2f3aa27",
+        "0ddfec37"
+      ],
+      "temporal-reasoning": [
+        "gpt4_7ca326fa",
+        "2a1811e2"
+      ],
+      "multi-session": [
+        "0ea62687",
+        "c4a1ceb8"
+      ]
+    },
+    "memconflict_person_ids": [
+      "575f4af8-5ca4-716c-dfed-0f495c945e0b",
+      "5a40c38b-61aa-afc0-1837-4367df2efbc1"
+    ]
+  },
+  "model_config": "unresolved",
+  "status": "frozen_inputs_only_no_model_run"
+}
