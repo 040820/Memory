@@ -31,6 +31,8 @@ class GraphConfig:
     similarity_max: float = 1.0
     enable_multi_relationships: bool = True
     enable_incremental_update: bool = True
+    # V2: retain source-linked facts separately from the legacy entity graph.
+    enable_evidence_memory: bool = False
     entity_merge_threshold: float = 0.85
     relationship_merge_threshold: float = 0.9
 

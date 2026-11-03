@@ -57,6 +57,23 @@ class QueryProcessor:
         self.time_manager = QueryTimeStatistic()
         self.cost_manager = QueryCostManager(max_budget=llm_manager.cost_manager.max_budget)
 
+    def _evidence_fact_candidates(self, entities):
+        if not getattr(self.config.graph, 'enable_evidence_memory', False):
+            return []
+        store = getattr(self.dynamic_memory, 'evidence_memory', None)
+        if store is None:
+            return []
+        names = [item.get('name', '') if isinstance(item, dict) else str(item) for item in entities]
+        return store.find_by_entities(names)
+
+    def _evidence_candidate_traces(self, entities):
+        """V2 diagnostic chains; not used as verified answer evidence."""
+        candidates = self._evidence_fact_candidates(entities)
+        if not candidates:
+            return []
+        store = self.dynamic_memory.evidence_memory
+        return [store.evidence_bundle(fact['id']) for fact in candidates if store.trace(fact['id'])]
+
     async def initialize_summary_data(self) -> bool:
         if not self.summary_retriever:
             logger.warning("Summary retriever not available")
@@ -179,6 +196,9 @@ class QueryProcessor:
             'question': question,
             'entities': entities,
             'relevant_entities': relevant_entities,
+            # V2 candidates are diagnostics, not verified claims or automatic updates.
+            'evidence_fact_candidates': self._evidence_fact_candidates(relevant_entities),
+            'evidence_candidate_traces': self._evidence_candidate_traces(relevant_entities),
             'triples': top_triples,
             'chunks': relevant_chunks,
             'summaries': relevant_summaries,

@@ -9,6 +9,7 @@ from base.llm import LLMManager
 from base.embeddings import EmbeddingManager
 from chunking.chunk_processor import ChunkProcessor
 from .dynamic_memory import DynamicMemory
+from .evidence_memory import namespace_chunks  # V2 evidence IDs
 
 class GraphRAGCore:
     """Core GraphRAG implementation."""
@@ -95,6 +96,8 @@ class GraphRAGCore:
                 summaries = []
             
             chunks = self.chunk_processor.process_corpus(corpus)
+            if getattr(self.config.graph, 'enable_evidence_memory', False):
+                chunks = namespace_chunks(chunks)
             logger.info(f"Processed {len(chunks)} chunks from {len(corpus)} documents")
 
             await self.graph.build_graph(chunks)

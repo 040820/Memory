@@ -8,6 +8,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from init.logger import logger
 from init.config import Config
 from .graph_builder import GraphBuilder
+from .evidence_memory import EvidenceMemory, namespace_chunks  # V2: independent source-linked facts
 from .entity_extractor import EntityExtractor
 from .dialogue_extractor import DialogueExtractor
 from .session_summarizer import SessionSummarizer
@@ -29,6 +30,7 @@ class DynamicMemory:
         self.time_manager = GraphBuildingTimeStatistic()
         self.cost_manager = None
         self.chunk_storage = {}                
+        self.evidence_memory = EvidenceMemory()
         self.entity_name_to_index = {}
 
         logger.info("Dynamic Memory initialized")
@@ -187,6 +189,8 @@ class DynamicMemory:
         logger.info("Clearing existing graph and chunk storage...")
         self.graph_builder.graph = nx.DiGraph()
         self.chunk_storage.clear()
+        self.evidence_memory = EvidenceMemory()  # V2: a rebuild starts a new evidence store
+        self.evidence_memory.complete = bool(getattr(self.config.graph, 'enable_evidence_memory', False))
         logger.info("✅ Cleared existing graph and chunk storage")
 
         logger.info("Storing original chunk data...")
@@ -237,6 +241,9 @@ class DynamicMemory:
             entities, entity_mapping = self.dialogue_extractor.deduplicate_entities(
                 entities, self.config.graph.entity_merge_threshold
             )
+            # V2: capture each source occurrence before relationship deduplication.
+            if getattr(self.config.graph, 'enable_evidence_memory', False):
+                self._capture_evidence_relationships(chunks, relationships, entity_mapping)
             relationships = self.dialogue_extractor.deduplicate_relationships(
                 relationships, entity_mapping, self.config.graph.relationship_merge_threshold
             )
@@ -421,6 +428,12 @@ class DynamicMemory:
         
         # Step 2: Process documents into chunks
         chunks = self.chunk_processor.process_corpus(session_corpus)
+        if getattr(self.config.graph, 'enable_evidence_memory', False):
+            chunks = namespace_chunks(chunks)
+            for chunk in chunks:
+                prior = self.chunk_storage.get(str(chunk['chunk_id']))
+                if prior is not None and prior != chunk:
+                    raise ValueError('V2 chunk identity collision; refusing to overwrite')
         logger.info(f"Processed {len(chunks)} chunks from session {session_id}")
         
         # Step 3: Store chunks
@@ -441,6 +454,9 @@ class DynamicMemory:
             entities, entity_mapping = self.dialogue_extractor.deduplicate_entities(
                 entities, self.config.graph.entity_merge_threshold
             )
+            # V2: capture each source occurrence before relationship deduplication.
+            if getattr(self.config.graph, 'enable_evidence_memory', False):
+                self._capture_evidence_relationships(chunks, relationships, entity_mapping)
             relationships = self.dialogue_extractor.deduplicate_relationships(
                 relationships, entity_mapping, self.config.graph.relationship_merge_threshold
             )
@@ -511,6 +527,9 @@ class DynamicMemory:
             entities, entity_mapping = self.dialogue_extractor.deduplicate_entities(
                 entities, self.config.graph.entity_merge_threshold
             )
+            # V2: capture each source occurrence before relationship deduplication.
+            if getattr(self.config.graph, 'enable_evidence_memory', False):
+                self._capture_evidence_relationships(chunks, relationships, entity_mapping)
             relationships = self.dialogue_extractor.deduplicate_relationships(
                 relationships, entity_mapping, self.config.graph.relationship_merge_threshold
             )
@@ -557,6 +576,23 @@ class DynamicMemory:
         )
         self._log_dynamic_add_summary()
         logger.info("Dynamic addition completed")
+
+    def _capture_evidence_relationships(self, chunks, relationships, entity_mapping):
+        """V2: retain raw extraction candidates; no claim of evidence support."""
+        source_by_id = {}
+        for chunk in chunks:
+            raw_id = str(chunk.get('chunk_id'))
+            if raw_id in source_by_id:
+                raise ValueError('ambiguous chunk id in extraction batch')
+            source_by_id[raw_id] = self.evidence_memory.add_chunk(chunk)
+        for relationship in relationships:
+            source_id = source_by_id.get(str(relationship.get('chunk_id')))
+            if source_id is None:
+                raise ValueError('relationship has no source chunk in extraction batch')
+            raw = dict(relationship)
+            raw['canonical_src'] = entity_mapping.get(raw.get('src'), raw.get('src', ''))
+            raw['canonical_tgt'] = entity_mapping.get(raw.get('tgt'), raw.get('tgt', ''))
+            self.evidence_memory.add_fact(raw, source_id)
 
     def _create_triples(self, entities: List[Dict[str, Any]],
                        relationships: List[Dict[str, Any]],
@@ -738,6 +774,7 @@ class DynamicMemory:
             'graph': self.graph_builder.graph,
             'chunk_storage': self.chunk_storage,
             'entity_name_to_index': self.entity_name_to_index,
+            'evidence_memory_v2': self.evidence_memory.to_dict(),
         }
         with open(path, 'wb') as f:
             pickle.dump(graph_data, f)
@@ -752,11 +789,18 @@ class DynamicMemory:
                 self.graph_builder.graph = data.get('graph')
                 self.chunk_storage = data.get('chunk_storage', {})
                 self.entity_name_to_index = data.get('entity_name_to_index', {})
+                if 'evidence_memory_v2' in data:
+                    self.evidence_memory = EvidenceMemory.from_dict(data['evidence_memory_v2'])
+                else:
+                    self.evidence_memory = EvidenceMemory()
+                    self.evidence_memory.complete = False  # Legacy merged facts cannot be restored.
                 logger.info(f"Graph loaded from {path} with {len(self.chunk_storage)} chunks and {len(self.entity_name_to_index)} entities")
             else:
                 self.graph_builder.graph = data
                 self.chunk_storage = {}
                 self.entity_name_to_index = {}
+                self.evidence_memory = EvidenceMemory()
+                self.evidence_memory.complete = False
                 logger.info(f"Graph loaded from {path} (old format, no chunk storage or entity index)")
         logger.info(f"Graph loaded from {path}")
 
