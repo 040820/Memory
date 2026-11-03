@@ -93,19 +93,53 @@ class EvidenceMemoryTests(unittest.TestCase):
         t2=m.EvidenceMemory.from_dict(t.to_dict())
         self.assertEqual(t.changes,t2.changes)
 
-    def test_distinct_decisions_are_append_only(self):
+    def test_decision_revert_kept_and_review_retry_idempotent(self):
         s=m.EvidenceMemory(); a=s.add_chunk({'session_id':'a','chunk_id':0,'text':'old'})
         b=s.add_chunk({'session_id':'b','chunk_id':0,'text':'new'})
         x=s.add_fact({'src':'I','relation':'live in','tgt':'Shanghai'},a)
         y=s.add_fact({'src':'I','relation':'live in','tgt':'Beijing'},b)
+        # keep -> replace -> keep: all three events survive, ordered, final = keep
         k1=s.add_change(x,y,'change',b,'moved',decision='keep')
         k2=s.add_change(x,y,'change',b,'moved',decision='replace')
-        self.assertNotEqual(k1,k2)                       # revised decision = new record
-        k3=s.add_change(x,y,'change',b,'moved',decision='keep')
-        self.assertEqual(k1,k3)                          # identical retry stays idempotent
-        self.assertEqual(2,len(s.trace(x)))              # history preserved
+        k3=s.add_change(x,y,'change',b,'moved',decision='keep')   # revert
+        self.assertEqual(3,len({k1,k2,k3}))
+        events=s.trace(x)
+        self.assertEqual([0,1,2],[e['revision'] for e in events])
+        self.assertEqual([0,1,2],[e['seq'] for e in events])
+        self.assertEqual('keep',events[-1]['decision'])           # latest identified
+        # review_id is the retry idempotency key
+        r1=s.add_change(x,y,'change',b,'moved',decision='replace',review_id='rev-1')
+        r2=s.add_change(x,y,'change',b,'moved',decision='replace',review_id='rev-1')  # retry
+        self.assertEqual(r1,r2)
+        self.assertEqual(4,len(s.trace(x)))                      # retry adds nothing
+        with self.assertRaises(ValueError):                      # contradictory retry
+            s.add_change(x,y,'change',b,'moved',decision='keep',review_id='rev-1')
+        r3=s.add_change(x,y,'change',b,'moved',decision='keep',review_id='rev-2')     # new review
+        self.assertNotEqual(r1,r3)
+        self.assertEqual(5,len(s.trace(x)))
+        # history survives serialization
         t=m.EvidenceMemory.from_dict(s.to_dict())
-        self.assertEqual({'keep','replace'},{c['decision'] for c in t.trace(x)})
+        self.assertEqual([e['seq'] for e in t.trace(x)],[e['seq'] for e in s.trace(x)])
+        self.assertEqual('keep',t.trace(x)[-1]['decision'])
+
+    def test_v2_change_record_loads_and_rekeys(self):
+        # a genuine version-2 payload: id = hash(core + decision), no order metadata
+        s=m.EvidenceMemory(); a=s.add_chunk({'session_id':'a','chunk_id':0,'text':'old'})
+        b=s.add_chunk({'session_id':'b','chunk_id':0,'text':'new'})
+        x=s.add_fact({'src':'I','relation':'live in','tgt':'Shanghai'},a)
+        y=s.add_fact({'src':'I','relation':'live in','tgt':'Beijing'},b)
+        legacy_cid=m._id('change_',[x,y,'change',b,'moved','keep'])
+        payload={'version':2,'chunks':s.chunks,'facts':s.facts,'complete':True,
+                 'changes':{legacy_cid:{'id':legacy_cid,'old_fact_id':x,'new_fact_id':y,
+                                        'relation':'change','evidence_id':b,'reason':'moved',
+                                        'status':'candidate','decision':'keep'}}}
+        t=m.EvidenceMemory.from_dict(payload)
+        new_cid=list(t.changes)[0]
+        self.assertNotEqual(legacy_cid,new_cid)
+        record=t.changes[new_cid]
+        self.assertEqual('keep',record['decision'])
+        self.assertEqual(0,record['revision']); self.assertEqual(0,record['seq'])
+        self.assertEqual(t.trace(x),t.trace(y))
 
     def test_full_batch_then_session_replay_no_collision(self):
         # full-batch numbering vs per-session numbering: only source_chunk_id differs

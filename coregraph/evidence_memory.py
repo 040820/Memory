@@ -56,6 +56,8 @@ class EvidenceMemory:
         self.complete = True
         self._entities = {}
         self._links = {}
+        self._change_keys = {}   # change_key -> [change_id, ...] in event order
+        self._reviews = {}       # hash(change_key, review_id) -> change_id (retry dedup)
 
     def add_chunk(self, chunk):
         sid = str(chunk.get('session_id', '')).strip()
@@ -89,28 +91,51 @@ class EvidenceMemory:
         for entity in entities: ids.update(self._entities.get(str(entity).casefold(), ()))
         return [copy.deepcopy(self.facts[x]) for x in sorted(ids)]
 
-    def add_change(self, old_id, new_id, relation, evidence_id, reason, status='candidate', decision='pending'):
-        """Record a sourced candidate decision between two facts.
+    def add_change(self, old_id, new_id, relation, evidence_id, reason,
+                   status='candidate', decision='pending', review_id=None):
+        """Record one review event between two facts.
 
-        ``decision`` is the proposed handling action (default 'pending') and is
-        part of the record id: an idempotent retry of the same decision maps to
-        the same record, while a revised decision becomes an append-only new
-        record, preserving review history. Only status='candidate' is allowed:
-        unreviewed links never mutate fact state.
+        Each call appends an event: ``revision`` increases per change link (so
+        a reverted decision like keep -> replace -> keep keeps all three) and
+        ``seq`` orders events globally (so the latest decision is identifiable).
+        ``review_id`` is the retry idempotency key: repeating the same
+        review_id returns the existing record, while reusing a review_id with a
+        different decision is rejected. Without review_id every call is a new
+        event (history-first; review pipelines should pass review_id to stay
+        replay-safe). Only status='candidate' is allowed: unreviewed links
+        never mutate fact state.
         """
         if old_id not in self.facts or new_id not in self.facts or old_id == new_id:
             raise ValueError('two distinct facts required')
         if evidence_id not in self.chunks or not relation or not reason or status != 'candidate':
             raise ValueError('only sourced candidate decisions are supported')
         decision = str(decision or '').strip() or 'pending'
-        cid = _id('change_', [old_id,new_id,relation,evidence_id,reason,decision])
+        core = [old_id, new_id, relation, evidence_id, reason]
+        change_key = _id('change_key_', core)
+        if review_id is not None:
+            review_id = str(review_id)
+            review_key = _id('review_', core + [review_id])
+            prior = self._reviews.get(review_key)
+            if prior is not None:
+                if self.changes[prior]['decision'] != decision:
+                    raise ValueError('review_id reused with a different decision')
+                return prior
+        revision = len(self._change_keys.get(change_key, ()))
+        cid = _id('change_', core + [revision])
         self.changes[cid] = {'id':cid,'old_fact_id':old_id,'new_fact_id':new_id,'relation':relation,
-                             'evidence_id':evidence_id,'reason':reason,'status':status,'decision':decision}
+                             'evidence_id':evidence_id,'reason':reason,'status':status,
+                             'decision':decision,'change_key':change_key,'revision':revision,
+                             'seq':len(self.changes),'review_id':review_id}
+        self._change_keys.setdefault(change_key, []).append(cid)
+        if review_id is not None:
+            self._reviews[review_key] = cid
         for fid in (old_id,new_id): self._links.setdefault(fid,set()).add(cid)
         return cid
 
     def trace(self, fact_id):
-        return [copy.deepcopy(self.changes[x]) for x in sorted(self._links.get(fact_id, ()))]
+        """Linked change events in review order (global seq)."""
+        return [copy.deepcopy(self.changes[x]) for x in
+                sorted(self._links.get(fact_id, ()), key=lambda x: self.changes[x]['seq'])]
 
     def evidence_bundle(self, fact_id):
         """Trace both endpoints and source chunks; links remain unverified candidates."""
@@ -128,15 +153,16 @@ class EvidenceMemory:
                 'chunks': {cid: copy.deepcopy(self.chunks[cid]) for cid in sorted(source_ids)}}
 
     def to_dict(self):
-        # version 2: change ids include the decision (append-only review history);
-        # version 1 change ids excluded it and are re-keyed on load.
-        return copy.deepcopy({'version':2,'chunks':self.chunks,'facts':self.facts,
+        # version 3: change records are review events (change_key/revision/seq/review_id);
+        # version 2 ids included the decision, version 1 excluded it. Older versions
+        # are validated with their original formula and re-keyed as events on load.
+        return copy.deepcopy({'version':3,'chunks':self.chunks,'facts':self.facts,
                               'changes':self.changes,'complete':self.complete})
 
     @classmethod
     def from_dict(cls, data):
         version = data.get('version')
-        if version not in (1, 2): raise ValueError('unsupported evidence memory version')
+        if version not in (1, 2, 3): raise ValueError('unsupported evidence memory version')
         s=cls(); s.complete = data.get('complete',False)
         for cid, chunk in data['chunks'].items():
             if s.add_chunk(chunk) != cid: raise ValueError('invalid chunk identity')
@@ -144,12 +170,21 @@ class EvidenceMemory:
             if s.add_fact(fact['raw'],fact['evidence_id']) != fid: raise ValueError('invalid fact identity')
         for cid, change in data['changes'].items():
             decision = str(change.get('decision') or '').strip() or 'pending'
-            args = (change['old_fact_id'],change['new_fact_id'],change['relation'],
-                    change['evidence_id'],change['reason'],change['status'],decision)
+            core = [change['old_fact_id'],change['new_fact_id'],change['relation'],
+                    change['evidence_id'],change['reason']]
+            args = (*core, change['status'], decision)
             if version == 1:
-                legacy = _id('change_', [change['old_fact_id'],change['new_fact_id'],
-                                         change['relation'],change['evidence_id'],change['reason']])
-                if legacy != cid: raise ValueError('invalid legacy change identity')
-                s.add_change(*args)  # re-key to the version-2 id
-            elif s.add_change(*args) != cid: raise ValueError('invalid change identity')
+                if _id('change_', core) != cid: raise ValueError('invalid legacy change identity')
+                s.add_change(*args)  # re-key as a review event
+            elif version == 2:
+                if _id('change_', core + [decision]) != cid: raise ValueError('invalid legacy change identity')
+                s.add_change(*args)  # re-key as a review event
+            else:
+                new_id = s.add_change(*args, review_id=change.get('review_id'))
+                if new_id != cid: raise ValueError('invalid change identity')
+                record = s.changes[new_id]
+                if (record['revision'] != change.get('revision') or
+                        record['seq'] != change.get('seq') or
+                        record['change_key'] != change.get('change_key')):
+                    raise ValueError('invalid change order metadata')
         return s

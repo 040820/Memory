@@ -86,4 +86,26 @@ class IntegrationTests(unittest.TestCase):
         mem_on=DynamicMemory(cfg_on)
         self.assertTrue(mem_on.evidence_memory.complete)
 
+    def test_change_history_survives_pickle(self):
+        mem=self.make_memory()
+        chunks=[{'session_id':'s1','chunk_id':'c1','text':'I live in Shanghai'},
+                {'session_id':'s2','chunk_id':'c2','text':'I moved to Beijing'}]
+        rels=[{'src':'I','relation':'live in','tgt':'Shanghai','chunk_id':'c1'},
+              {'src':'I','relation':'live in','tgt':'Beijing','chunk_id':'c2'}]
+        mem._capture_evidence_relationships(chunks,rels,{})
+        ev=mem.evidence_memory
+        by_tgt={f['tgt']:f for f in ev.find_by_entities(['Shanghai','Beijing'])}
+        x,y=by_tgt['Shanghai']['id'],by_tgt['Beijing']['id']
+        ev.add_change(x,y,'change',by_tgt['Beijing']['evidence_id'],'moved',decision='keep')
+        ev.add_change(x,y,'change',by_tgt['Beijing']['evidence_id'],'moved',decision='replace')
+        ev.add_change(x,y,'change',by_tgt['Beijing']['evidence_id'],'moved',decision='keep')
+        with tempfile.TemporaryDirectory() as tmp:
+            path=str(Path(tmp)/'graph.pkl'); mem.save_graph(path)
+            new=self.make_memory(); new.load_graph(path)
+            events=new.evidence_memory.trace(x)
+            self.assertEqual(3,len(events))
+            self.assertEqual([0,1,2],[e['seq'] for e in events])
+            self.assertEqual('keep',events[-1]['decision'])
+            self.assertEqual(events,new.evidence_memory.trace(y))
+
 if __name__=='__main__': unittest.main()
