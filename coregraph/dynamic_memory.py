@@ -29,8 +29,10 @@ class DynamicMemory:
         self.chunk_processor = None
         self.time_manager = GraphBuildingTimeStatistic()
         self.cost_manager = None
-        self.chunk_storage = {}                
+        self.chunk_storage = {}
         self.evidence_memory = EvidenceMemory()
+        # V2: the offline store only claims completeness when capture was enabled for this build.
+        self.evidence_memory.complete = bool(getattr(config.graph, 'enable_evidence_memory', False))
         self.entity_name_to_index = {}
 
         logger.info("Dynamic Memory initialized")
@@ -506,7 +508,15 @@ class DynamicMemory:
         New code should use add_single_session() for session-by-session processing.
         """
         logger.info(f"Dynamically adding {len(chunks)} new chunks to existing graph")
-        
+
+        # V2: namespace chunk ids per session so cross-session ids cannot overwrite each other.
+        if getattr(self.config.graph, 'enable_evidence_memory', False):
+            chunks = namespace_chunks(chunks)
+            for chunk in chunks:
+                prior = self.chunk_storage.get(str(chunk['chunk_id']))
+                if prior is not None and prior != chunk:
+                    raise ValueError('V2 chunk identity collision; refusing to overwrite')
+
         logger.info("Storing new chunk data to chunk_storage...")
         for chunk in chunks:
             # Use unique chunk_id only

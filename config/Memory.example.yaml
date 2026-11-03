@@ -50,6 +50,8 @@ graph:
   graph_type: dynamic_memory
   force: True              
   add: False   
+  # V2: independent source-linked fact store (optional; default keeps original behavior)
+  enable_evidence_memory: false
   entity_merge_threshold: 0.85
   relationship_merge_threshold: 1
 ################################# Retriever #################################
