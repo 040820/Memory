@@ -8,7 +8,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from init.logger import logger
 from init.config import Config
 from .graph_builder import GraphBuilder
-from .evidence_memory import EvidenceMemory, namespace_chunks  # V2: independent source-linked facts
+from .evidence_memory import EvidenceMemory, namespace_chunks, chunk_conflicts  # V2: independent source-linked facts
 from .entity_extractor import EntityExtractor
 from .dialogue_extractor import DialogueExtractor
 from .session_summarizer import SessionSummarizer
@@ -432,10 +432,7 @@ class DynamicMemory:
         chunks = self.chunk_processor.process_corpus(session_corpus)
         if getattr(self.config.graph, 'enable_evidence_memory', False):
             chunks = namespace_chunks(chunks)
-            for chunk in chunks:
-                prior = self.chunk_storage.get(str(chunk['chunk_id']))
-                if prior is not None and prior != chunk:
-                    raise ValueError('V2 chunk identity collision; refusing to overwrite')
+            self._check_chunk_collisions(chunks)
         logger.info(f"Processed {len(chunks)} chunks from session {session_id}")
         
         # Step 3: Store chunks
@@ -512,10 +509,7 @@ class DynamicMemory:
         # V2: namespace chunk ids per session so cross-session ids cannot overwrite each other.
         if getattr(self.config.graph, 'enable_evidence_memory', False):
             chunks = namespace_chunks(chunks)
-            for chunk in chunks:
-                prior = self.chunk_storage.get(str(chunk['chunk_id']))
-                if prior is not None and prior != chunk:
-                    raise ValueError('V2 chunk identity collision; refusing to overwrite')
+            self._check_chunk_collisions(chunks)
 
         logger.info("Storing new chunk data to chunk_storage...")
         for chunk in chunks:
@@ -586,6 +580,17 @@ class DynamicMemory:
         )
         self._log_dynamic_add_summary()
         logger.info("Dynamic addition completed")
+
+    def _check_chunk_collisions(self, chunks):
+        """V2: reject only genuine payload conflicts.
+
+        source_chunk_id is run-scoped (full-batch vs per-session numbering), so
+        replaying a session under a different processing mode stays idempotent.
+        """
+        for chunk in chunks:
+            prior = self.chunk_storage.get(str(chunk['chunk_id']))
+            if prior is not None and chunk_conflicts(prior, chunk):
+                raise ValueError('V2 chunk identity collision; refusing to overwrite')
 
     def _capture_evidence_relationships(self, chunks, relationships, entity_mapping):
         """V2: retain raw extraction candidates; no claim of evidence support."""

@@ -35,6 +35,19 @@ def namespace_chunks(chunks):
     return result
 
 
+def chunk_conflicts(a, b):
+    """True only when chunk payloads genuinely differ.
+
+    ``source_chunk_id`` is run-scoped provenance (full-batch processing numbers
+    across the corpus, per-session processing restarts at 0), so it is excluded
+    from identity comparison: the same session replayed under a different
+    processing mode must not be rejected as a collision.
+    """
+    keys = set(a) | set(b)
+    keys.discard('source_chunk_id')
+    return any(a.get(k) != b.get(k) for k in keys)
+
+
 class EvidenceMemory:
     def __init__(self):
         self.chunks = {}
@@ -52,9 +65,9 @@ class EvidenceMemory:
             raise ValueError('chunk_id and text are required')
         cid = _id('chunk_', [sid, str(chunk['chunk_id'])])
         data = copy.deepcopy(chunk)
-        if cid in self.chunks and self.chunks[cid] != data:
+        if cid in self.chunks and chunk_conflicts(self.chunks[cid], data):
             raise ValueError('chunk identity collision; source preserved')
-        self.chunks[cid] = data
+        self.chunks[cid] = data  # equal payload: refresh run-scoped provenance
         return cid
 
     def add_fact(self, raw, evidence_id):
@@ -79,9 +92,10 @@ class EvidenceMemory:
     def add_change(self, old_id, new_id, relation, evidence_id, reason, status='candidate', decision='pending'):
         """Record a sourced candidate decision between two facts.
 
-        ``decision`` is the proposed handling action (default 'pending'); it is
-        an attribute only and is not part of the record id, so records written
-        before this field existed still load. Only status='candidate' is allowed:
+        ``decision`` is the proposed handling action (default 'pending') and is
+        part of the record id: an idempotent retry of the same decision maps to
+        the same record, while a revised decision becomes an append-only new
+        record, preserving review history. Only status='candidate' is allowed:
         unreviewed links never mutate fact state.
         """
         if old_id not in self.facts or new_id not in self.facts or old_id == new_id:
@@ -89,7 +103,7 @@ class EvidenceMemory:
         if evidence_id not in self.chunks or not relation or not reason or status != 'candidate':
             raise ValueError('only sourced candidate decisions are supported')
         decision = str(decision or '').strip() or 'pending'
-        cid = _id('change_', [old_id,new_id,relation,evidence_id,reason])
+        cid = _id('change_', [old_id,new_id,relation,evidence_id,reason,decision])
         self.changes[cid] = {'id':cid,'old_fact_id':old_id,'new_fact_id':new_id,'relation':relation,
                              'evidence_id':evidence_id,'reason':reason,'status':status,'decision':decision}
         for fid in (old_id,new_id): self._links.setdefault(fid,set()).add(cid)
@@ -114,17 +128,28 @@ class EvidenceMemory:
                 'chunks': {cid: copy.deepcopy(self.chunks[cid]) for cid in sorted(source_ids)}}
 
     def to_dict(self):
-        return copy.deepcopy({'version':1,'chunks':self.chunks,'facts':self.facts,
+        # version 2: change ids include the decision (append-only review history);
+        # version 1 change ids excluded it and are re-keyed on load.
+        return copy.deepcopy({'version':2,'chunks':self.chunks,'facts':self.facts,
                               'changes':self.changes,'complete':self.complete})
 
     @classmethod
     def from_dict(cls, data):
-        if data.get('version') != 1: raise ValueError('unsupported evidence memory version')
+        version = data.get('version')
+        if version not in (1, 2): raise ValueError('unsupported evidence memory version')
         s=cls(); s.complete = data.get('complete',False)
         for cid, chunk in data['chunks'].items():
             if s.add_chunk(chunk) != cid: raise ValueError('invalid chunk identity')
         for fid, fact in data['facts'].items():
             if s.add_fact(fact['raw'],fact['evidence_id']) != fid: raise ValueError('invalid fact identity')
         for cid, change in data['changes'].items():
-            if s.add_change(change['old_fact_id'],change['new_fact_id'],change['relation'],change['evidence_id'],change['reason'],change['status'],change.get('decision','pending')) != cid: raise ValueError('invalid change identity')
+            decision = str(change.get('decision') or '').strip() or 'pending'
+            args = (change['old_fact_id'],change['new_fact_id'],change['relation'],
+                    change['evidence_id'],change['reason'],change['status'],decision)
+            if version == 1:
+                legacy = _id('change_', [change['old_fact_id'],change['new_fact_id'],
+                                         change['relation'],change['evidence_id'],change['reason']])
+                if legacy != cid: raise ValueError('invalid legacy change identity')
+                s.add_change(*args)  # re-key to the version-2 id
+            elif s.add_change(*args) != cid: raise ValueError('invalid change identity')
         return s

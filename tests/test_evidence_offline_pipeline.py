@@ -35,11 +35,12 @@ RESP_S2 = (
 class FakeLLM:
     """Canned stand-in for LLMManager; deterministic and offline."""
 
-    def __init__(self):
+    def __init__(self, query_entities=None):
         self.model = 'fake-offline'
         self.enable_concurrent = True
         self.max_concurrent = 4
         self.cost_manager = TokenCostManager(max_budget=100.0)
+        self.query_entities = list(query_entities) if query_entities else ['Beijing']
 
     async def batch_generate(self, prompts, progress_bar=None, **kwargs):
         responses = []
@@ -53,7 +54,7 @@ class FakeLLM:
         return 'OFFLINE-ANSWER'
 
     async def extract_entities(self, text, session_time=''):
-        return [{'entity': 'Beijing', 'type': 'location'}]
+        return [{'entity': name, 'type': 'unknown'} for name in self.query_entities]
 
 
 def make_config(enable_evidence):
@@ -175,6 +176,47 @@ class OfflinePipelineTests(unittest.TestCase):
             # chunk ids stay original (global ints) when the switch is off
             for chunk in mem.chunk_storage.values():
                 self.assertNotIn('source_chunk_id', chunk)
+
+    def test_full_batch_then_single_session_replay(self):
+        # Repro for review issue: full-batch build of A+B, then replay session B
+        # alone through add_single_session. source numbering differs (1 vs 0);
+        # the replay must stay idempotent instead of raising a collision.
+        cfg = make_config(True)
+        with tempfile.TemporaryDirectory() as tmp:
+            mem, fake, _ = build_memory(cfg, tmp)
+            self.assertEqual(2, len(mem.chunk_storage))
+            self.assertEqual(1, len({c['source_chunk_id'] for c in mem.chunk_storage.values()
+                                     if c['session_id'] == 's2'}))
+
+            asyncio.run(mem.add_single_session([make_corpus()[1]]))  # must not raise
+
+            self.assertEqual(2, len(mem.chunk_storage))
+            self.assertTrue(mem.evidence_memory.complete)
+            self.assertEqual(2, len(mem.evidence_memory.find_by_entities(['Beijing'])))
+            # session s2 chunk now carries the per-session numbering of the replay run
+            b_chunks = [c for c in mem.chunk_storage.values() if c['session_id'] == 's2']
+            self.assertEqual(0, b_chunks[0]['source_chunk_id'])
+
+    def test_off_graph_fact_reachable_via_raw_query_entity(self):
+        # Repro for review issue: a fact whose entity never entered the graph must
+        # still be found when the question mentions that entity (raw query entity
+        # path), even though graph entity matching cannot surface it.
+        cfg = make_config(True)
+        with tempfile.TemporaryDirectory() as tmp:
+            mem, _, _ = build_memory(cfg, tmp)
+            ev = mem.evidence_memory
+            extra = ev.add_chunk({'session_id': 's9', 'chunk_id': 0,
+                                  'text': 'User relocated to Shanghai.'})
+            fid = ev.add_fact({'src': 'User', 'relation': 'relocated to',
+                               'tgt': 'Shanghai'}, extra)
+            self.assertNotIn('Shanghai', mem.entity_name_to_index)  # off-graph entity
+
+            fake = FakeLLM(query_entities=['Shanghai'])
+            qp = make_query_processor(cfg, fake, mem)
+            result = asyncio.run(qp.process_query('Where does the user live now?'))
+            ids = {f['id'] for f in result['evidence_fact_candidates']}
+            self.assertIn(fid, ids)
+            self.assertEqual('OFFLINE-ANSWER', result['answer'])
 
 
 if __name__ == '__main__':

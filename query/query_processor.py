@@ -197,8 +197,10 @@ class QueryProcessor:
             'entities': entities,
             'relevant_entities': relevant_entities,
             # V2 candidates are diagnostics, not verified claims or automatic updates.
-            'evidence_fact_candidates': self._evidence_fact_candidates(relevant_entities),
-            'evidence_candidate_traces': self._evidence_candidate_traces(relevant_entities),
+            # Entry points: graph-matched entities PLUS raw query entities, so facts
+            # whose entity never entered the graph (or was cleaned from it) remain reachable.
+            'evidence_fact_candidates': self._evidence_fact_candidates(list(relevant_entities) + list(entities)),
+            'evidence_candidate_traces': self._evidence_candidate_traces(list(relevant_entities) + list(entities)),
             'triples': top_triples,
             'chunks': relevant_chunks,
             'summaries': relevant_summaries,

@@ -73,17 +73,60 @@ class EvidenceMemoryTests(unittest.TestCase):
         self.assertEqual('pending',t.changes[cid]['decision'])
         with self.assertRaises(ValueError): s.add_change(x,y,'change',b,'moved',status='confirmed')
 
-    def test_legacy_change_without_decision_loads(self):
+    def test_v1_change_record_loads_and_rekeys(self):
+        # a genuine version-1 payload: change id WITHOUT decision in the hash
         s=m.EvidenceMemory(); a=s.add_chunk({'session_id':'a','chunk_id':0,'text':'old'})
         b=s.add_chunk({'session_id':'b','chunk_id':0,'text':'new'})
         x=s.add_fact({'src':'I','relation':'live in','tgt':'Shanghai'},a)
         y=s.add_fact({'src':'I','relation':'live in','tgt':'Beijing'},b)
-        cid=s.add_change(x,y,'change',b,'moved')
-        data=s.to_dict()
-        for change in data['changes'].values(): change.pop('decision',None)
-        t=m.EvidenceMemory.from_dict(data)
-        self.assertIn(cid,t.changes)
-        self.assertEqual('pending',t.changes[cid]['decision'])
+        legacy_cid=m._id('change_',[x,y,'change',b,'moved'])
+        payload={'version':1,'chunks':s.chunks,'facts':s.facts,'complete':True,
+                 'changes':{legacy_cid:{'id':legacy_cid,'old_fact_id':x,'new_fact_id':y,
+                                        'relation':'change','evidence_id':b,'reason':'moved',
+                                        'status':'candidate'}}}
+        t=m.EvidenceMemory.from_dict(payload)
+        new_cid=list(t.changes)[0]
+        self.assertNotEqual(legacy_cid,new_cid)          # re-keyed to version-2 id
+        self.assertEqual('pending',t.changes[new_cid]['decision'])
+        self.assertEqual(t.trace(x),t.trace(y))
+        # round trip as version 2 afterwards
+        t2=m.EvidenceMemory.from_dict(t.to_dict())
+        self.assertEqual(t.changes,t2.changes)
+
+    def test_distinct_decisions_are_append_only(self):
+        s=m.EvidenceMemory(); a=s.add_chunk({'session_id':'a','chunk_id':0,'text':'old'})
+        b=s.add_chunk({'session_id':'b','chunk_id':0,'text':'new'})
+        x=s.add_fact({'src':'I','relation':'live in','tgt':'Shanghai'},a)
+        y=s.add_fact({'src':'I','relation':'live in','tgt':'Beijing'},b)
+        k1=s.add_change(x,y,'change',b,'moved',decision='keep')
+        k2=s.add_change(x,y,'change',b,'moved',decision='replace')
+        self.assertNotEqual(k1,k2)                       # revised decision = new record
+        k3=s.add_change(x,y,'change',b,'moved',decision='keep')
+        self.assertEqual(k1,k3)                          # identical retry stays idempotent
+        self.assertEqual(2,len(s.trace(x)))              # history preserved
+        t=m.EvidenceMemory.from_dict(s.to_dict())
+        self.assertEqual({'keep','replace'},{c['decision'] for c in t.trace(x)})
+
+    def test_full_batch_then_session_replay_no_collision(self):
+        # full-batch numbering vs per-session numbering: only source_chunk_id differs
+        full=m.namespace_chunks([{'session_id':'A','chunk_id':0,'text':'xa'},
+                                 {'session_id':'B','chunk_id':1,'text':'xb'}])
+        self.assertEqual(1,full[1]['source_chunk_id'])   # B numbered across the corpus
+        replay=m.namespace_chunks([{'session_id':'B','chunk_id':0,'text':'xb'}])
+        self.assertEqual(0,replay[0]['source_chunk_id'])  # per-session numbering restarts
+        self.assertEqual(full[1]['chunk_id'],replay[0]['chunk_id'])  # generated id stable
+        s=m.EvidenceMemory()
+        for c in full: s.add_chunk(c)
+        for c in replay: s.add_chunk(c)                  # must not raise
+        self.assertEqual(2,len(s.chunks))
+        # genuine content change is still rejected
+        bad=m.namespace_chunks([{'session_id':'B','chunk_id':0,'text':'rewritten'}])
+        with self.assertRaises(ValueError): s.add_chunk(bad[0])
+        # chunk_conflicts ignores run-scoped provenance only
+        a={'chunk_id':'x','text':'t','source_chunk_id':0}
+        b_={'chunk_id':'x','text':'t','source_chunk_id':9}
+        c_={'chunk_id':'x','text':'other','source_chunk_id':0}
+        self.assertFalse(m.chunk_conflicts(a,b_)); self.assertTrue(m.chunk_conflicts(a,c_))
 
     def test_namespace_source_id_and_replay_idempotent(self):
         raw=[{'session_id':'s1','chunk_id':7,'text':'a'},{'session_id':'s1','chunk_id':8,'text':'b'}]
