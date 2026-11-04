@@ -62,7 +62,13 @@ class EvidenceBridge:
                 raise ValueError('stable session_id required')
             if not isinstance(item.get('text'), str) or not item['text'].strip():
                 raise ValueError('turn text required')
-            item['turn_id'] = str(item.get('turn_id', len(prepared)))
+            # 轮次 ID 必须由调用方给出（数据集的稳定 turn_id）：
+            # 回退到批次位置会导致同一会话分批输入时不同轮次拿到相同 ID
+            if item.get('turn_id') is None or str(item.get('turn_id')).strip() == '':
+                raise ValueError(
+                    'stable turn_id required (dataset turn index); '
+                    'batch position is not safe for split-session ingestion')
+            item['turn_id'] = str(item['turn_id']).strip()
             item['server_evidence_id'] = item.get('evidence_id') or server_evidence_id(item)
             prepared.append(item)
 
@@ -77,7 +83,9 @@ class EvidenceBridge:
                 for chunk, src in zip(chunks, prepared):
                     if key in src:
                         chunk[key] = src[key]
-        chunks = namespace_chunks(chunks)
+        # 用数据集的稳定 turn_id 作为会话内序号：
+        # 同一会话分多批输入时，各批 turn_id 连续不重叠，不会互相冲突
+        chunks = namespace_chunks(chunks, ordinal_key='chunk_id')
         local_ids = [self.store.add_chunk(chunk) for chunk in chunks]
         # add_chunk's store key is hash(sid, namespaced chunk_id), not the
         # payload's chunk_id field -- facts must reference the store key.
@@ -144,15 +152,25 @@ class EvidenceBridge:
         raw = await self.call(payload)
         result = semantic_review_v22.parse_and_route(raw, source, candidate)
         result['applied'] = False               # shadow: never a state change
+        # 把审查引用的原文依据一并持久化（字符区间、组件锚点、模型引文），
+        # 保证重载后能恢复"模型当时指出了原文哪一段"，而不只是结论
+        evidence = {key: result[key] for key in
+                    ('source_check', 'evidence_spans', 'component_evidence_check',
+                     'component_evidence_spans', 'model_review') if key in result}
         record = self.store.record_review(
             fact_id, result['route'], result['reasons'] or ['UNSPECIFIED_ERROR'],
-            review_id=review_id)
+            review_id=review_id, evidence=evidence or None)
         result['review_record'] = record
         return result
 
     # ------------------------------------------------------------- 桥 2b：配对 + 关系
     def pairing_views(self):
-        """从已存事实派生配对检索键（lexical_v1_dev 规范化）；未知保持 UNKNOWN，不猜。"""
+        """从已存事实派生配对检索键（lexical_v1_dev 规范化）；未知保持 UNKNOWN，不猜。
+
+        对每条已存事实生成一个"配对视图"：包含主语/属性/宾语/范围等
+        检索键（未知的字段一律填 UNKNOWN，不做任何猜测），以及取值、
+        引文、极性、情态和会话/轮次定位信息，供配对检索使用。
+        """
         views = []
         for fid, fact in self.store.facts.items():
             chunk = self.store.chunks[fact['evidence_id']]
@@ -188,6 +206,10 @@ class EvidenceBridge:
                 'text': chunk['text'], 'session_time': chunk.get('raw_session_time')}
 
     def candidate_pairs(self, *, max_candidates=3):
+        """用配对检索（pair_retrieval）从配对视图中找出候选事实对。
+
+        返回检索结果，并附上 fact_id -> 配对视图 的映射，方便调用方
+        直接取用每对的端点信息。"""
         views = self.pairing_views()
         by_id = {v['fact_id']: v for v in views}
         outcome = pair_retrieval.retrieve_pairs(views, max_candidates=max_candidates)
@@ -217,9 +239,13 @@ class EvidenceBridge:
             return outcome
         caveats = ','.join(outcome.get('caveats') or []) or 'none'
         reason = f"{outcome['model_reason']} [caveats:{caveats}]"
+        # 关系判断引用的原文引文与字符区间随事件持久化（可追溯到具体段落）
+        evidence = {'citations': outcome.get('citations') or [],
+                    'time_order': pair.get('time_order', 'ORDER_UNKNOWN')}
         change_id = self.store.add_change(
             old['fact_id'], new['fact_id'], outcome['relation'],
             new['evidence_id'], reason,
-            status='candidate', decision='pending', review_id=review_id)
+            status='candidate', decision='pending', review_id=review_id,
+            evidence=evidence)
         outcome['change_id'] = change_id
         return outcome

@@ -178,6 +178,66 @@ class EvidenceMemoryTests(unittest.TestCase):
         s=m.EvidenceMemory(); i1=s.add_chunk(n[0]); i2=s.add_chunk(n[1])
         self.assertNotEqual(i1,i2); self.assertEqual(2,len(s.chunks))
 
+    def test_readd_fact_preserves_review_history(self):
+        # 问题2回归：同一事实重复写入不得清空已有审查记录
+        s = m.EvidenceMemory(); a = s.add_chunk({'session_id':'s1','chunk_id':0,'text':'I live in Shanghai'})
+        raw = {'src':'I','relation':'live in','tgt':'Shanghai'}
+        x = s.add_fact(raw, a)
+        s.record_review(x, 'REVIEW_NEXT', ['ok'], evidence={'evidence_spans':[{'start':0,'end':5}]})
+        y = s.add_fact(dict(raw), a)          # 幂等重放
+        self.assertEqual(x, y)
+        self.assertEqual('review_next', s.facts[x]['support_status'])
+        self.assertEqual(1, len(s.facts[x]['reviews']))
+        self.assertEqual([{'start':0,'end':5}], s.facts[x]['reviews'][0]['evidence']['evidence_spans'])
+        # 序列化往返同样保留
+        t = m.EvidenceMemory.from_dict(s.to_dict())
+        self.assertEqual('review_next', t.facts[x]['support_status'])
+        self.assertEqual(1, len(t.facts[x]['reviews']))
+
+    def test_namespace_with_stable_ordinal_key(self):
+        # 问题3回归：同会话分批输入，用稳定 turn_id 做序号不冲突
+        batch1 = m.namespace_chunks(
+            [{'session_id':'s1','chunk_id':'0','text':'first'},
+             {'session_id':'s1','chunk_id':'1','text':'second'}],
+            ordinal_key='chunk_id')
+        batch2 = m.namespace_chunks(
+            [{'session_id':'s1','chunk_id':'2','text':'third'}],
+            ordinal_key='chunk_id')
+        self.assertNotEqual(batch1[0]['chunk_id'], batch2[0]['chunk_id'])
+        self.assertNotEqual(batch1[1]['chunk_id'], batch2[0]['chunk_id'])
+        s = m.EvidenceMemory()
+        for c in batch1 + batch2: s.add_chunk(c)
+        self.assertEqual(3, len(s.chunks))
+        # 重放第一批仍幂等
+        for c in m.namespace_chunks(
+                [{'session_id':'s1','chunk_id':'0','text':'first'},
+                 {'session_id':'s1','chunk_id':'1','text':'second'}],
+                ordinal_key='chunk_id'):
+            s.add_chunk(c)
+        self.assertEqual(3, len(s.chunks))
+        # 缺稳定序号直接报错，不退回批次位置
+        with self.assertRaises(ValueError):
+            m.namespace_chunks([{'session_id':'s1','text':'x'}], ordinal_key='chunk_id')
+
+    def test_record_review_and_change_persist_evidence(self):
+        # 问题4回归：审查结论与关系事件都要持久化原文依据
+        s = m.EvidenceMemory()
+        a = s.add_chunk({'session_id':'a','chunk_id':0,'text':'I live in Shanghai'})
+        b = s.add_chunk({'session_id':'b','chunk_id':0,'text':'I moved to Beijing'})
+        x = s.add_fact({'src':'I','relation':'live in','tgt':'Shanghai'}, a)
+        y = s.add_fact({'src':'I','relation':'live in','tgt':'Beijing'}, b)
+        s.record_review(x, 'DEFER', ['SCOPE_UNCLEAR'],
+                        evidence={'evidence_spans':[{'start':0,'end':17}],
+                                  'component_evidence_check':'PASS'})
+        cid = s.add_change(x, y, 'change', b, 'moved',
+                           evidence={'citations':[{'start':0,'end':10}]})
+        t = m.EvidenceMemory.from_dict(s.to_dict())
+        review = t.facts[x]['reviews'][0]
+        self.assertEqual([{'start':0,'end':17}], review['evidence']['evidence_spans'])
+        self.assertEqual('PASS', review['evidence']['component_evidence_check'])
+        change = t.changes[cid]
+        self.assertEqual([{'start':0,'end':10}], change['evidence']['citations'])
+
     def test_session_replay_append_and_content_change(self):
         s=m.EvidenceMemory()
         c0={'session_id':'s1','chunk_id':0,'text':'first'}

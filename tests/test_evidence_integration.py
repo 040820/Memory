@@ -108,4 +108,38 @@ class IntegrationTests(unittest.TestCase):
             self.assertEqual('keep',events[-1]['decision'])
             self.assertEqual(events,new.evidence_memory.trace(y))
 
+    def test_summary_not_updated_when_chunk_collision_fails(self):
+        # 问题6回归：chunk 冲突必须在校验阶段就失败，摘要等副作用不得先发生
+        import asyncio
+        from coregraph.dynamic_memory import DynamicMemory
+        from coregraph.evidence_memory import EvidenceMemory, namespace_chunks
+
+        mem = DynamicMemory.__new__(DynamicMemory)
+        mem.config = SimpleNamespace(
+            retriever=SimpleNamespace(enable_summary=True),
+            graph=SimpleNamespace(enable_evidence_memory=True,
+                                  entity_merge_threshold=0.85,
+                                  relationship_merge_threshold=1.0),
+            chunk=SimpleNamespace(dialogue_input=True))
+        # 预置冲突：同 session 同序号、不同内容
+        prior = namespace_chunks([{'session_id':'s1','chunk_id':0,'text':'old text'}])
+        mem.chunk_storage = {str(prior[0]['chunk_id']): prior[0]}
+        mem.evidence_memory = EvidenceMemory()
+        mem.chunk_processor = SimpleNamespace(
+            process_corpus=lambda corpus: [{'session_id':'s1','chunk_id':0,'text':'new text'}])
+        summary_calls = []
+        async def fake_summary(session_data):
+            summary_calls.append(session_data['session_id'])
+        mem._update_summary_for_session = fake_summary
+        mem.llm_manager = SimpleNamespace(
+            model='m',
+            cost_manager=SimpleNamespace(get_costs=lambda: SimpleNamespace(
+                total_prompt_tokens=0, total_completion_tokens=0)))
+        mem.cost_manager = SimpleNamespace(update_summary_generation_cost=lambda *a: None)
+
+        corpus = [{'session_id':'s1','session_time':'t','context':'...'}]
+        with self.assertRaises(ValueError):
+            asyncio.run(mem.add_single_session(corpus))
+        self.assertEqual([], summary_calls)   # 冲突失败时摘要未被触碰
+
 if __name__=='__main__': unittest.main()

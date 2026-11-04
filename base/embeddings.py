@@ -91,6 +91,10 @@ class EmbeddingManager:
                     model=self.model_name
                 )
                 embeddings = [data.embedding for data in response.data]
+                # 与 hf 路径一致：调用方要 Tensor 时必须返回 Tensor，
+                # 否则 cosine_similarity_tensor 会因收到 list 而报错
+                if need_tensor:
+                    return self.transfer_to_tensor(embeddings)
                 return embeddings
         except Exception as e:
             logger.error(f"Failed to get embeddings: {e}")

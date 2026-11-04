@@ -273,6 +273,60 @@ class BridgePairingTests(unittest.TestCase):
         self.assertEqual([], pairs['pairs'])
         self.assertEqual(1, len(pairs['unindexed_fact_ids']))
 
+    def test_split_session_batches_do_not_collide(self):
+        # 问题3回归：同一会话的轮次分两批进入，用数据集 turn_id 做序号不冲突
+        def turn(sid, tid, text, speaker='user'):
+            return {'dataset_id': 'd', 'conversation_id': 'c',
+                    'session_id': sid, 'turn_id': tid,
+                    'speaker': speaker, 'text': text}
+        store = EvidenceMemory()
+        bridge = EvidenceBridge(store, FakeCall())
+        batch1 = asyncio.run(bridge.ingest_sources(
+            [turn('s1', '0', 'I live in Shanghai')], model='fake-model'))
+        batch2 = asyncio.run(bridge.ingest_sources(
+            [turn('s1', '1', 'I live in Beijing now')], model='fake-model'))
+        self.assertEqual(2, len(store.chunks))
+        self.assertNotEqual(batch1['chunk_ids'][0], batch2['chunk_ids'][0])
+        # 重放第一批仍幂等
+        again = asyncio.run(bridge.ingest_sources(
+            [turn('s1', '0', 'I live in Shanghai')], model='fake-model'))
+        self.assertEqual(batch1['chunk_ids'], again['chunk_ids'])
+        self.assertEqual(2, len(store.chunks))
+        # 缺 turn_id 拒绝（不退回批次位置，避免隐性冲突）
+        with self.assertRaises(ValueError):
+            asyncio.run(bridge.ingest_sources(
+                [{'dataset_id': 'd', 'conversation_id': 'c',
+                  'session_id': 's1', 'speaker': 'user', 'text': 'x'}],
+                model='fake-model'))
+
+    def test_review_and_change_persist_source_evidence(self):
+        # 问题4回归：审查结论和关系事件都要带上原文依据并可往返
+        store = EvidenceMemory()
+        bridge, outcome = ingest(store, FakeCall())
+        fid = outcome['fact_ids'][0]
+        result = asyncio.run(bridge.review_fact(fid, model='fake-model'))
+        evidence = store.facts[fid]['reviews'][0].get('evidence')
+        self.assertIsInstance(evidence, dict)
+        self.assertTrue(evidence.get('evidence_spans'))       # 字符区间
+        self.assertEqual('PASS', evidence.get('component_evidence_check'))
+        # 关系事件同样带 citations
+        old_fid, new_fid = outcome['fact_ids']
+        pairs = bridge.candidate_pairs(max_candidates=3)
+        pair = next(p for p in pairs['pairs']
+                    if p['old_fact_id'] == old_fid and p['new_fact_id'] == new_fid)
+        asyncio.run(bridge.judge_and_record(
+            pair, views=pairs['views'], model='fake-model'))
+        change = store.trace(old_fid)[0]
+        self.assertIsInstance(change.get('evidence'), dict)
+        self.assertTrue(change['evidence']['citations'])
+        # 往返后依据仍在
+        restored = EvidenceMemory.from_dict(store.to_dict())
+        self.assertEqual(
+            store.facts[fid]['reviews'][0]['evidence'],
+            restored.facts[fid]['reviews'][0]['evidence'])
+        self.assertEqual(change['evidence'],
+                         restored.trace(old_fid)[0]['evidence'])
+
 
 class BridgeQueryDiagnosticsTests(unittest.TestCase):
     def test_query_hooks_carry_support_status_and_reviews(self):
