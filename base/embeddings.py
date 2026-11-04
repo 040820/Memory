@@ -15,6 +15,7 @@ class EmbeddingManager:
             self.api_type = config.api_type
             self.api_key = config.api_key
             self.model_name = config.model
+            self.base_url = getattr(config, "base_url", "") or ""
             self.cache_dir = config.cache_dir
             self.dimensions = config.dimensions
             self.max_token_size = config.max_token_size
@@ -25,6 +26,7 @@ class EmbeddingManager:
             self.api_type = "openai"
             self.api_key = None
             self.model_name = "text-embedding-ada-002"
+            self.base_url = ""
             self.cache_dir = None
             self.dimensions = 1536
             self.max_token_size = 8192
@@ -36,12 +38,7 @@ class EmbeddingManager:
         logger.info(f"Using device for embedding calculations: {self.device}")
 
         try:
-            if self.api_type == "openai":
-                import openai
-                if self.api_key:
-                    openai.api_key = self.api_key
-                self.client = openai
-            elif self.api_type == "hf":
+            if self.api_type == "hf":
                 # For HuggingFace models, we might need sentence-transformers
                 try:
                     from sentence_transformers import SentenceTransformer
@@ -49,12 +46,15 @@ class EmbeddingManager:
                     self.client = SentenceTransformer(self.model_name, cache_folder=self.cache_dir, device=str(self.device))
                     logger.info(f"HuggingFace model loaded on device: {self.device}")
                 except ImportError:
-                    logger.warning("sentence-transformers not installed, falling back to OpenAI")
-                    import openai
-                    self.client = openai
+                    logger.warning("sentence-transformers not installed, falling back to OpenAI-compatible API")
+                    from openai import AsyncOpenAI
+                    self.client = AsyncOpenAI(api_key=self.api_key or None,
+                                              base_url=self.base_url or None)
             else:
-                import openai
-                self.client = openai
+                # OpenAI-compatible endpoint (OpenAI, vLLM, ...): base_url supported
+                from openai import AsyncOpenAI
+                self.client = AsyncOpenAI(api_key=self.api_key or "EMPTY",
+                                          base_url=self.base_url or None)
 
             logger.info(f"Embedding Manager initialized with model: {self.model_name} (type: {self.api_type})")
         except ImportError as e:
@@ -80,7 +80,8 @@ class EmbeddingManager:
                     return embeddings
                 return embeddings.cpu().tolist() if isinstance(embeddings, torch.Tensor) else embeddings.tolist()
             else:
-                response = await self.client.Embedding.acreate(
+                # Any non-hf client is an AsyncOpenAI-compatible endpoint
+                response = await self.client.embeddings.create(
                     input=texts,
                     model=self.model_name
                 )

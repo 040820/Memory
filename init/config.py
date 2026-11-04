@@ -1,3 +1,4 @@
+import os
 import yaml
 from pathlib import Path
 from typing import Dict, Any, Optional
@@ -97,9 +98,10 @@ class EvaluationConfig:
 @dataclass
 class EmbeddingConfig:
     """Configuration for embeddings."""
-    api_type: str = "hf"  # hf, openai, ollama, etc.
+    api_type: str = "hf"  # hf or any OpenAI-compatible endpoint (openai/vLLM/...)
     api_key: str = "your_apikey"
     model: str = "BAAI/bge-m3"
+    base_url: str = ""  # OpenAI-compatible endpoint, e.g. http://host:8015/v1
     cache_dir: str = "/your/cachedirectory"
     dimensions: int = 1024  # Matches your chunking model dimension
     max_token_size: int = 8102
@@ -188,6 +190,9 @@ class Config:
                 else:
                     setattr(config, key, value)
 
+        # Project-root .env overrides endpoint/credential fields (LICO_*).
+        _apply_env_overrides(config, _load_env_file(Path(__file__).resolve().parent.parent / '.env'))
+
         # Override dataset name if provided
         if dataset_name:
             config.dataset_name = dataset_name
@@ -204,3 +209,49 @@ class Config:
             else:
                 result[key] = value
         return result
+
+
+def _load_env_file(path: Path) -> Dict[str, str]:
+    """Read KEY=VALUE lines from a .env file (no dependency on python-dotenv)."""
+    env: Dict[str, str] = {}
+    if not path.exists():
+        return env
+    for line in path.read_text(encoding='utf-8').splitlines():
+        line = line.strip()
+        if not line or line.startswith('#') or '=' not in line:
+            continue
+        key, value = line.split('=', 1)
+        env[key.strip()] = value.strip().strip('"').strip("'")
+    return env
+
+
+def _apply_env_overrides(config: 'Config', file_env: Dict[str, str]) -> None:
+    """Override endpoint/credential fields from LICO_* environment variables.
+
+    Process environment wins over the .env file; empty values are ignored so
+    fallback semantics (e.g. query_llm inheriting llm) keep working.
+    """
+    env = dict(file_env)
+    env.update({k: v for k, v in os.environ.items() if k.startswith('LICO_')})
+    mapping = {
+        'LICO_LLM_BASE_URL': ('llm', 'base_url', str),
+        'LICO_LLM_MODEL': ('llm', 'model', str),
+        'LICO_LLM_API_KEY': ('llm', 'api_key', str),
+        'LICO_QUERY_LLM_BASE_URL': ('query_llm', 'base_url', str),
+        'LICO_QUERY_LLM_MODEL': ('query_llm', 'model', str),
+        'LICO_QUERY_LLM_API_KEY': ('query_llm', 'api_key', str),
+        'LICO_EMBEDDING_BASE_URL': ('embedding', 'base_url', str),
+        'LICO_EMBEDDING_MODEL': ('embedding', 'model', str),
+        'LICO_EMBEDDING_API_KEY': ('embedding', 'api_key', str),
+        'LICO_EMBEDDING_API_TYPE': ('embedding', 'api_type', str),
+        'LICO_EMBEDDING_DIMENSIONS': ('embedding', 'dimensions', int),
+    }
+    applied = []
+    for var, (section, key, cast) in mapping.items():
+        raw = env.get(var)
+        if raw is None or raw == '':
+            continue
+        setattr(getattr(config, section), key, cast(raw))
+        applied.append(var)
+    if applied:
+        logger.info(f".env overrides applied: {', '.join(sorted(applied))}")

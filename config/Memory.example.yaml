@@ -27,13 +27,15 @@ llm:
   timeout: 600
 
 query_llm:
+  # Leave empty / 0 / -1 to inherit the main llm settings (see init/graph_rag.py).
+  # Endpoints belong in the project-root .env (LICO_QUERY_LLM_*), not here.
   api_type: "openai"
-  base_url: "your/baseurl"
-  model: 'your/model'
-  api_key: "YOUR_API_KEY"
-  max_token: 131072
-  temperature: 0.2
-  timeout: 600                  
+  base_url: ""
+  model: ""
+  api_key: ""
+  max_token: 0
+  temperature: -1.0
+  timeout: 0
 ################################### Chunk ###################################
 chunk:
   chunk_token_size: 1200
