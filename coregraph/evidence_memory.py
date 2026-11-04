@@ -138,15 +138,15 @@ class EvidenceMemory:
                 sorted(self._links.get(fact_id, ()), key=lambda x: self.changes[x]['seq'])]
 
     def record_review(self, fact_id, route, reasons, review_id=None):
-        """Attach one advisory single-fact review outcome (never a state change).
+        """给单个事实追加一条审查结论（永远不是状态变更）。
 
-        Unlike add_change there are no two endpoints: a semantic review judges
-        ONE candidate against its source. The fact identity never changes;
-        only support_status and an append-only review history are updated.
-        ``review_id`` is the retry idempotency key: repeating the same id with
-        the same outcome returns the existing record, while reusing it with a
-        different route/reasons is rejected. TECHNICAL_ERROR leaves
-        support_status untouched (a crash is not a review outcome).
+        与 add_change 的区别：审查只有一个对象（候选 vs 其原文），没有两端，
+        所以不走 change 记录，而是直接更新事实的 support_status 并追加审查历史；
+        fact 身份（id）始终不变。
+        - route 仅允许 DEFER / REVIEW_NEXT / TECHNICAL_ERROR
+        - review_id 是重试幂等键：同 ID 同结论返回原记录；同 ID 异结论报错
+        - TECHNICAL_ERROR 只记历史、不改 support_status（崩溃不算审查结论）
+        - 只追加（append-only），历史永不覆盖，随 pickle 往返保留
         """
         if fact_id not in self.facts:
             raise ValueError('unknown fact')
@@ -190,11 +190,11 @@ class EvidenceMemory:
                 'chunks': {cid: copy.deepcopy(self.chunks[cid]) for cid in sorted(source_ids)}}
 
     def to_dict(self):
-        # version 4: facts may carry advisory review history (support_status/reviews
-        # restored on load; identity unchanged). version 3: change records are review
-        # events (change_key/revision/seq/review_id); version 2 ids included the
-        # decision, version 1 excluded it. Older versions are validated with their
-        # original formula and re-keyed as events on load.
+        # 序列化版本演进：
+        #   v4 = 事实可携带审查历史（support_status/reviews，加载时恢复，身份不变）
+        #   v3 = change 记录改为审查事件（change_key/revision/seq/review_id）
+        #   v2 = change id 含 decision；v1 = 不含 decision
+        # 旧版本加载时先按当年的公式校验完整性，再重编码为当前事件模型。
         return copy.deepcopy({'version':4,'chunks':self.chunks,'facts':self.facts,
                               'changes':self.changes,'complete':self.complete})
 
@@ -207,7 +207,7 @@ class EvidenceMemory:
             if s.add_chunk(chunk) != cid: raise ValueError('invalid chunk identity')
         for fid, fact in data['facts'].items():
             if s.add_fact(fact['raw'],fact['evidence_id']) != fid: raise ValueError('invalid fact identity')
-            # advisory review metadata is not part of fact identity; restore it
+            # 审查元数据不属于事实身份，add_fact 重建时会丢，这里从负载恢复
             record=s.facts[fid]
             record['support_status']=fact.get('support_status','unverified')
             reviews=fact.get('reviews',[])

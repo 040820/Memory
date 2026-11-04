@@ -28,8 +28,8 @@ class LLMManager:
             api_key=self.api_key,
             base_url=self.base_url,
             timeout=self.timeout,
-            # trust_env=False: ignore HTTP(S)_PROXY so LAN vLLM endpoints are
-            # reached directly even when a system traffic proxy is enabled.
+            # trust_env=False：忽略系统 HTTP(S)_PROXY 代理环境变量，
+            # 即使本机开了流量代理，也会直连局域网 vLLM，不被代理拦截。
             http_client=httpx.AsyncClient(trust_env=False),
         )
         self.semaphore = asyncio.Semaphore(self.max_concurrent) if self.enable_concurrent else None

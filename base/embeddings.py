@@ -16,7 +16,7 @@ class EmbeddingManager:
             self.api_type = config.api_type
             self.api_key = config.api_key
             self.model_name = config.model
-            self.base_url = getattr(config, "base_url", "") or ""
+            self.base_url = getattr(config, "base_url", "") or ""  # OpenAI 兼容接口地址（vLLM 等），可从 .env 覆盖
             self.cache_dir = config.cache_dir
             self.dimensions = config.dimensions
             self.max_token_size = config.max_token_size
@@ -47,17 +47,18 @@ class EmbeddingManager:
                     self.client = SentenceTransformer(self.model_name, cache_folder=self.cache_dir, device=str(self.device))
                     logger.info(f"HuggingFace model loaded on device: {self.device}")
                 except ImportError:
+                    # 没装 sentence-transformers 时回退到 OpenAI 兼容接口
                     logger.warning("sentence-transformers not installed, falling back to OpenAI-compatible API")
                     from openai import AsyncOpenAI
                     self.client = AsyncOpenAI(api_key=self.api_key or None,
                                               base_url=self.base_url or None,
                                               http_client=httpx.AsyncClient(trust_env=False))
             else:
-                # OpenAI-compatible endpoint (OpenAI, vLLM, ...): base_url supported
+                # 非 hf 一律视为 OpenAI 兼容接口（OpenAI 官方 / 服务器 vLLM 等），支持 base_url 指向自部署服务
                 from openai import AsyncOpenAI
                 self.client = AsyncOpenAI(api_key=self.api_key or "EMPTY",
                                           base_url=self.base_url or None,
-                                          # trust_env=False: bypass system proxy for LAN endpoints
+                                          # trust_env=False：绕过系统流量代理，直连局域网 embedding 服务
                                           http_client=httpx.AsyncClient(trust_env=False))
 
             logger.info(f"Embedding Manager initialized with model: {self.model_name} (type: {self.api_type})")
@@ -84,7 +85,7 @@ class EmbeddingManager:
                     return embeddings
                 return embeddings.cpu().tolist() if isinstance(embeddings, torch.Tensor) else embeddings.tolist()
             else:
-                # Any non-hf client is an AsyncOpenAI-compatible endpoint
+                # 非 hf 的客户端都是 AsyncOpenAI 兼容接口，调用 /v1/embeddings
                 response = await self.client.embeddings.create(
                     input=texts,
                     model=self.model_name

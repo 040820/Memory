@@ -1,19 +1,20 @@
-"""V2 bridge: server judgment chain (experiments 01-04) -> local EvidenceMemory.
+"""V2 桥接层：把服务器判断链（实验 01–04）的输出写入本地证据记忆（05–07）。
 
-Three bridges, all shadow (never a state commit, never reads gold):
+三条桥，全部影子运行（从不提交状态、从不读取标准答案 gold）：
 
-1. ingest_sources   -- longmemeval-style turns -> namespaced chunks + extracted
-                       fact candidates (five-dimension qualifiers kept in raw).
-2. review_fact      -- semantic_review_v22 verdict -> record_review on ONE fact
-                       (support_status + append-only history; fact id unchanged).
-3. pairing/judge    -- lexical pairing over derived keys + relation_judge
-                       proposal -> add_change (candidate, decision=pending,
-                       review_id idempotent).
+1. ingest_sources   -- LongMemEval 风格的轮次 -> 命名空间 chunk + 抽取的事实候选
+                       （五维限定词 time/modality/polarity/precision/scope 保留在 raw 里）
+2. review_fact      -- semantic_review_v22 审查结论 -> record_review 写到单个事实上
+                       （support_status + 只追加的审查历史；fact 身份不变）
+3. 配对/关系判断     -- 词面归一键配对 + relation_judge 关系提议 -> add_change
+                       （candidate 状态、decision=pending、review_id 重试幂等）
 
-ID authority: local fact ids (hash of src/relation/tgt/local evidence) win;
-server evidence ids survive as chunk['server_evidence_id'] and raw['evidence_id'].
-LLM transport is injected as an async callable(payload dict) -> raw str, so the
-whole chain runs offline with canned responses in tests.
+ID 权威：本地 fact_id = hash(src, relation, tgt, 本地 evidence_id) 为准；
+服务器 evidence_id 降级保存在 chunk['server_evidence_id'] 和 raw['evidence_id'] 中，
+仅作溯源，两套 ID 并存不互相替换。
+
+LLM 传输以 async callable(payload dict) -> 原始字符串 注入：
+测试里用 Fake 响应即可全链路离线跑，真实模型（线上/服务器 vLLM）后续接入。
 """
 import hashlib
 import json
@@ -25,7 +26,11 @@ from .evidence_review import (fact_extraction_v2, longmemeval, normalization,
 
 
 def server_evidence_id(source):
-    """Same formula as experiment 01 EvidenceStore.put_source (stable_id('ev', ...))."""
+    """服务器侧证据 ID，公式与实验 01 的 EvidenceStore.put_source 完全一致（stable_id('ev', ...)）。
+
+    由 (dataset_id, conversation_id, session_id, turn_id) 哈希得到，
+    保证同一条轮次在重放时得到相同的服务器 ID。
+    """
     try:
         values = [str(source[k]) for k in
                   ('dataset_id', 'conversation_id', 'session_id', 'turn_id')]
@@ -37,13 +42,17 @@ def server_evidence_id(source):
 
 class EvidenceBridge:
     def __init__(self, store, call):
-        """store: EvidenceMemory; call: async (payload dict) -> raw model str."""
+        """store: 本地证据库 EvidenceMemory；call: 异步 LLM 传输 (payload dict) -> 模型原始响应字符串。"""
         self.store = store
         self.call = call
 
-    # ------------------------------------------------------------- bridge 1
+    # ------------------------------------------------------------- 桥 1：抽取写入
     async def ingest_sources(self, sources, *, model, max_tokens=1000):
-        """Adapted turns -> chunks + user-turn fact candidates (unverified)."""
+        """轮次来源 -> 命名空间 chunk + 用户轮次的事实候选（全部 unverified）。
+
+        流程：补全服务器 evidence_id -> 逐轮建成 chunk（命名空间防跨会话覆盖）
+              -> 仅对 user 轮次调抽取 -> 词表映射后 add_fact（重复重放幂等）。
+        """
         if not isinstance(sources, list) or not sources:
             raise ValueError('sources required')
         prepared = []
@@ -110,9 +119,9 @@ class EvidenceBridge:
         return {'chunk_ids': local_ids,
                 'fact_ids': facts, 'skipped': skipped}
 
-    # ------------------------------------------------------------- bridge 2a
+    # ------------------------------------------------------------- 桥 2a：单候选审查
     def _source_for(self, fact):
-        """Server-shaped source dict for review payloads (server evidence id)."""
+        """构造审查提示词需要的"服务器格式"来源 dict（用服务器 evidence_id，与抽取时一致）。"""
         chunk = self.store.chunks[fact['evidence_id']]
         raw = fact['raw']
         return {'evidence_id': raw.get('evidence_id') or chunk.get('server_evidence_id'),
@@ -120,7 +129,11 @@ class EvidenceBridge:
                 'text': chunk['text']}
 
     async def review_fact(self, fact_id, *, model, max_tokens=1000, review_id=None):
-        """semantic_review_v22 on one stored fact -> record_review (shadow)."""
+        """对单个已存事实跑 semantic_review_v22 -> record_review（影子，不改状态）。
+
+        路由 DEFER / REVIEW_NEXT / TECHNICAL_ERROR；applied 恒为 False。
+        review_id 为重试幂等键：同 ID 同结论返回原记录，同 ID 异结论报错。
+        """
         if fact_id not in self.store.facts:
             raise ValueError('unknown fact')
         fact = self.store.facts[fact_id]
@@ -137,9 +150,9 @@ class EvidenceBridge:
         result['review_record'] = record
         return result
 
-    # ------------------------------------------------------------- bridge 2b
+    # ------------------------------------------------------------- 桥 2b：配对 + 关系
     def pairing_views(self):
-        """Derive pairing keys from stored facts; unknowns stay unknown."""
+        """从已存事实派生配对检索键（lexical_v1_dev 规范化）；未知保持 UNKNOWN，不猜。"""
         views = []
         for fid, fact in self.store.facts.items():
             chunk = self.store.chunks[fact['evidence_id']]
@@ -183,7 +196,10 @@ class EvidenceBridge:
 
     async def judge_and_record(self, pair, *, views, model, max_tokens=1000,
                                review_id=None):
-        """Relation proposal for one candidate pair -> add_change (candidate)."""
+        """对一对候选事实做关系判断提议 -> add_change（candidate，decision=pending）。
+
+        关系模型说 UNRELATED/UNCERTAIN 等未形成 proposed 的，只记录不落 change。
+        """
         old = views.get(pair['old_fact_id'])
         new = views.get(pair['new_fact_id'])
         if old is None or new is None:

@@ -98,10 +98,10 @@ class EvaluationConfig:
 @dataclass
 class EmbeddingConfig:
     """Configuration for embeddings."""
-    api_type: str = "hf"  # hf or any OpenAI-compatible endpoint (openai/vLLM/...)
+    api_type: str = "hf"  # hf=本地模型；其余值走 OpenAI 兼容接口（openai/vLLM 等）
     api_key: str = "your_apikey"
     model: str = "BAAI/bge-m3"
-    base_url: str = ""  # OpenAI-compatible endpoint, e.g. http://host:8015/v1
+    base_url: str = ""  # OpenAI 兼容接口地址，如服务器 vLLM 的 http://host:8015/v1；留空用官方默认
     cache_dir: str = "/your/cachedirectory"
     dimensions: int = 1024  # Matches your chunking model dimension
     max_token_size: int = 8102
@@ -190,7 +190,7 @@ class Config:
                 else:
                     setattr(config, key, value)
 
-        # Project-root .env overrides endpoint/credential fields (LICO_*).
+        # 用项目根目录 .env 中的 LICO_* 变量覆盖端点/密钥类字段（详见文件末尾两个函数）
         _apply_env_overrides(config, _load_env_file(Path(__file__).resolve().parent.parent / '.env'))
 
         # Override dataset name if provided
@@ -212,7 +212,11 @@ class Config:
 
 
 def _load_env_file(path: Path) -> Dict[str, str]:
-    """Read KEY=VALUE lines from a .env file (no dependency on python-dotenv)."""
+    """读取 .env 文件中的 KEY=VALUE 行（手写解析，不依赖 python-dotenv 库）。
+
+    规则：跳过空行和 # 注释；值两端的单/双引号会被去掉。
+    文件不存在时返回空字典，不影响原有 yaml 配置。
+    """
     env: Dict[str, str] = {}
     if not path.exists():
         return env
@@ -226,13 +230,14 @@ def _load_env_file(path: Path) -> Dict[str, str]:
 
 
 def _apply_env_overrides(config: 'Config', file_env: Dict[str, str]) -> None:
-    """Override endpoint/credential fields from LICO_* environment variables.
+    """把 LICO_* 环境变量写入配置对象对应的字段（端点/密钥集中放 .env）。
 
-    Process environment wins over the .env file; empty values are ignored so
-    fallback semantics (e.g. query_llm inheriting llm) keep working.
+    优先级：进程环境变量 > .env 文件 > config/Memory.yaml。
+    值为空字符串则跳过不覆盖，保证 query_llm 留空时仍能回退到主 llm 配置。
     """
     env = dict(file_env)
     env.update({k: v for k, v in os.environ.items() if k.startswith('LICO_')})
+    # 变量名 -> (配置节, 字段名, 类型转换)
     mapping = {
         'LICO_LLM_BASE_URL': ('llm', 'base_url', str),
         'LICO_LLM_MODEL': ('llm', 'model', str),
