@@ -1,0 +1,63 @@
+# Server-only configuration; use run_local_baseline.py for remote embeddings and non-thinking mode.
+index_name: evidence_memory_baseline
+data_type: LOCOMO
+data_root: dataset/processed
+dataset_name: ''
+working_dir: .
+experiment:
+  embedding_base_url: http://127.0.0.1:8015/v1
+  embedding_model: bge-m3
+  embedding_dimensions: 1024
+  llm_base_url: http://127.0.0.1:8000/v1
+  enable_thinking: false
+embedding:
+  api_type: remote_vllm
+  model: bge-m3
+  api_key: EMPTY
+  cache_dir: ''
+  dimensions: 1024
+  max_token_size: 8192
+  embed_batch_size: 128
+  embedding_func_max_async: 10
+llm:
+  api_type: openai
+  model: qwen3-30b-a3b
+  base_url: http://127.0.0.1:8000/v1
+  api_key: EMPTY
+  max_token: 4096
+  temperature: 0.1
+  enable_concurrent: true
+  max_concurrent: 4
+  timeout: 600
+query_llm:
+  model: qwen3-30b-a3b
+  base_url: http://127.0.0.1:8000/v1
+  api_key: EMPTY
+  max_token: 4096
+  temperature: 0.1
+  timeout: 600
+chunk:
+  chunk_token_size: 1200
+  chunk_overlap_token_size: 100
+  token_model: cl100k_base
+  dialogue_input: true
+graph:
+  graph_type: dynamic_memory
+  force: true
+  add: false
+  entity_merge_threshold: 0.85
+  relationship_merge_threshold: 1
+retriever:
+  top_k: 5
+  top_k_triples: 20
+  top_chunks: 15
+  enable_summary: true
+  top_summary: 1
+  enable_visual: false
+  enable_full: true
+  enable_sessiontime: true
+  enable_CogniRank: false
+  summary_weight: 0.2
+  rerank_k: 0.1
+evaluation:
+  enable_llm_eval: false
