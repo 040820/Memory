@@ -1,5 +1,6 @@
 from typing import Dict, Any, List, Optional
 import openai
+import httpx
 import asyncio
 import sys
 import os
@@ -26,7 +27,10 @@ class LLMManager:
         self.client = AsyncOpenAI(
             api_key=self.api_key,
             base_url=self.base_url,
-            timeout=self.timeout
+            timeout=self.timeout,
+            # trust_env=False: ignore HTTP(S)_PROXY so LAN vLLM endpoints are
+            # reached directly even when a system traffic proxy is enabled.
+            http_client=httpx.AsyncClient(trust_env=False),
         )
         self.semaphore = asyncio.Semaphore(self.max_concurrent) if self.enable_concurrent else None
 

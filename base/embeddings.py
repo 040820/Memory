@@ -1,6 +1,7 @@
 from typing import List, Dict, Any
 import numpy as np
 import torch
+import httpx
 import sys
 import os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -49,12 +50,15 @@ class EmbeddingManager:
                     logger.warning("sentence-transformers not installed, falling back to OpenAI-compatible API")
                     from openai import AsyncOpenAI
                     self.client = AsyncOpenAI(api_key=self.api_key or None,
-                                              base_url=self.base_url or None)
+                                              base_url=self.base_url or None,
+                                              http_client=httpx.AsyncClient(trust_env=False))
             else:
                 # OpenAI-compatible endpoint (OpenAI, vLLM, ...): base_url supported
                 from openai import AsyncOpenAI
                 self.client = AsyncOpenAI(api_key=self.api_key or "EMPTY",
-                                          base_url=self.base_url or None)
+                                          base_url=self.base_url or None,
+                                          # trust_env=False: bypass system proxy for LAN endpoints
+                                          http_client=httpx.AsyncClient(trust_env=False))
 
             logger.info(f"Embedding Manager initialized with model: {self.model_name} (type: {self.api_type})")
         except ImportError as e:
