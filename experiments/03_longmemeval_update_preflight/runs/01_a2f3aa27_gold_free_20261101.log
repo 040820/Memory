@@ -1,0 +1,27 @@
+SOURCE_PREPARED 221 STATS {'included': 221}
+EMBEDDINGS 16/221
+EMBEDDINGS 32/221
+EMBEDDINGS 48/221
+EMBEDDINGS 64/221
+EMBEDDINGS 80/221
+EMBEDDINGS 96/221
+EMBEDDINGS 112/221
+EMBEDDINGS 128/221
+EMBEDDINGS 144/221
+EMBEDDINGS 160/221
+EMBEDDINGS 176/221
+EMBEDDINGS 192/221
+EMBEDDINGS 208/221
+EMBEDDINGS 221/221
+RETRIEVAL seeds 8 global_pairs 216 selected_pairs 8 shown_sources 12
+RELATION 1/8 status=proposed relation=COMPLEMENT action=RETAIN_BOTH_PROPOSED
+RELATION 2/8 status=proposed relation=COMPLEMENT action=RETAIN_BOTH_PROPOSED
+RELATION 3/8 status=proposed relation=COMPLEMENT action=DEFER
+RELATION 4/8 status=proposed relation=COMPLEMENT action=RETAIN_BOTH_PROPOSED
+RELATION 5/8 status=proposed relation=COMPLEMENT action=RETAIN_BOTH_PROPOSED
+RELATION 6/8 status=proposed relation=COEXIST action=RETAIN_BOTH_PROPOSED
+RELATION 7/8 status=proposed relation=COMPLEMENT action=RETAIN_BOTH_PROPOSED
+RELATION 8/8 status=proposed relation=COMPLEMENT action=RETAIN_BOTH_PROPOSED
+ANSWER baseline status parsed citations_exist True
+ANSWER relation status parsed citations_exist True
+COMPLETED gold-free development run; no memory updated

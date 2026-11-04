@@ -1,0 +1,60 @@
+{
+  "question_id": "later_now",
+  "mode": "baseline",
+  "applied": false,
+  "request": {
+    "model": "qwen3.8-flash",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the two supplied user statements. Be careful about time, plans, corrections, contradictions and uncertainty. Later mention alone is not proof of correction or replacement. If evidence does not establish an answer, say so; do not invent the user's current state. If a relation proposal is present, treat it as a possibly incorrect suggestion, and check it against both original statements. Return JSON {\"answer\":\"concise answer\",\"citations\":[\"source id\", ...]}."
+      },
+      {
+        "role": "user",
+        "content": "{\"question\": \"Where does the user live now?\", \"old\": {\"evidence_id\": \"later_not_proof_old\", \"speaker\": \"user\", \"text\": \"I live in Beijing.\"}, \"new\": {\"evidence_id\": \"later_not_proof_new\", \"speaker\": \"user\", \"text\": \"I live in Shanghai.\"}}"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 4096,
+    "enable_thinking": false
+  },
+  "http_status": 200,
+  "raw_http_body": "{\"id\":\"chatcmpl-78a8c1c8-a29a-933f-882d-5042f4974bc6\",\"object\":\"chat.completion\",\"created\":1793528583,\"model\":\"qwen3.8-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\n  \\\"answer\\\": \\\"The evidence does not establish the user's current location.\\\",\\n  \\\"citations\\\": [\\n    \\\"later_not_proof_old\\\",\\n    \\\"later_not_proof_new\\\"\\n  ]\\n}\"},\"finish_reason\":\"stop\",\"logprobs\":null}],\"usage\":{\"prompt_tokens\":184,\"total_tokens\":230,\"completion_tokens\":46,\"prompt_tokens_details\":{\"cached_tokens\":0,\"text_tokens\":184}}}",
+  "response": {
+    "id": "chatcmpl-78a8c1c8-a29a-933f-882d-5042f4974bc6",
+    "object": "chat.completion",
+    "created": 1793528583,
+    "model": "qwen3.8-flash",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"answer\": \"The evidence does not establish the user's current location.\",\n  \"citations\": [\n    \"later_not_proof_old\",\n    \"later_not_proof_new\"\n  ]\n}"
+        },
+        "finish_reason": "stop",
+        "logprobs": null
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 184,
+      "total_tokens": 230,
+      "completion_tokens": 46,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "text_tokens": 184
+      }
+    }
+  },
+  "result": {
+    "status": "parsed",
+    "citation_ids_exist": true,
+    "semantic_support_verified": false,
+    "answer": "The evidence does not establish the user's current location.",
+    "citations": [
+      "later_not_proof_old",
+      "later_not_proof_new"
+    ]
+  },
+  "elapsed_seconds": 1.08
+}

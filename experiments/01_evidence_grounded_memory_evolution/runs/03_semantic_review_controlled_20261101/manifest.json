@@ -1,0 +1,21 @@
+{
+  "input_sha256": "ae83c2290466bd94a030b0df40c0f793146ac48bf46928dbc04242fa8a7ce7eb",
+  "config_sha256": "e69cf641cf43fd0800b205e560c018ee6354bdf214d0fe4ef56cc47457f90924",
+  "reviewer_sha256": "a25d65e70ebaee2602e79503fb34d7ec5b5ee7b0f4031a648e12efe74b922698",
+  "runner_sha256": "171a15483099e3749580c8fab0d762d9db663a90829d162d1d8eb528aaca9c20",
+  "case_count": 7,
+  "config": {
+    "model": "qwen3-8b",
+    "base_url": "http://127.0.0.1:8011/v1",
+    "temperature": 0,
+    "max_tokens": 4096,
+    "enable_thinking": false,
+    "input_roles": [
+      "user"
+    ],
+    "scope": "single_user_turn"
+  },
+  "review_is_advisory": true,
+  "extractor_and_reviewer_same_model": true,
+  "applied": false
+}

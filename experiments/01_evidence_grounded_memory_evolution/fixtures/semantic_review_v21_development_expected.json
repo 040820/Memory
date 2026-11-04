@@ -1,0 +1,42 @@
+{
+  "hard": {
+    "semantic_support": "INSUFFICIENT",
+    "route": "DEFER"
+  },
+  "at_most": {
+    "semantic_support": "CONTRADICTED",
+    "route": "DEFER"
+  },
+  "plan": {
+    "semantic_support": "INSUFFICIENT",
+    "route": "DEFER"
+  },
+  "not_moved": {
+    "semantic_support": "CONTRADICTED",
+    "route": "DEFER"
+  },
+  "other": {
+    "semantic_support": "INSUFFICIENT",
+    "route": "DEFER"
+  },
+  "current": {
+    "semantic_support": "SUPPORTED",
+    "route": "REVIEW_NEXT"
+  },
+  "past": {
+    "semantic_support": "SUPPORTED",
+    "route": "REVIEW_NEXT"
+  },
+  "approx": {
+    "semantic_support": "INSUFFICIENT",
+    "route": "DEFER"
+  },
+  "negation": {
+    "semantic_support": "CONTRADICTED",
+    "route": "DEFER"
+  },
+  "possibility": {
+    "semantic_support": "INSUFFICIENT",
+    "route": "DEFER"
+  }
+}

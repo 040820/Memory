@@ -1,0 +1,93 @@
+{
+  "scope": "development cases, expectations not independently validated",
+  "total_cases": 10,
+  "routes": {
+    "DEFER": 8,
+    "REVIEW_NEXT": 2
+  },
+  "semantic_agreement": 9,
+  "route_agreement": 10,
+  "total_tokens": 11710,
+  "details": [
+    {
+      "id": "approx",
+      "predicted_semantic": "CONTRADICTED",
+      "expected_semantic": "INSUFFICIENT",
+      "route": "DEFER",
+      "expected_route": "DEFER",
+      "source_check": "PASS"
+    },
+    {
+      "id": "at_most",
+      "predicted_semantic": "CONTRADICTED",
+      "expected_semantic": "CONTRADICTED",
+      "route": "DEFER",
+      "expected_route": "DEFER",
+      "source_check": "PASS"
+    },
+    {
+      "id": "plan",
+      "predicted_semantic": "INSUFFICIENT",
+      "expected_semantic": "INSUFFICIENT",
+      "route": "DEFER",
+      "expected_route": "DEFER",
+      "source_check": "PASS"
+    },
+    {
+      "id": "past",
+      "predicted_semantic": "SUPPORTED",
+      "expected_semantic": "SUPPORTED",
+      "route": "REVIEW_NEXT",
+      "expected_route": "REVIEW_NEXT",
+      "source_check": "PASS"
+    },
+    {
+      "id": "not_moved",
+      "predicted_semantic": "CONTRADICTED",
+      "expected_semantic": "CONTRADICTED",
+      "route": "DEFER",
+      "expected_route": "DEFER",
+      "source_check": "PASS"
+    },
+    {
+      "id": "current",
+      "predicted_semantic": "SUPPORTED",
+      "expected_semantic": "SUPPORTED",
+      "route": "REVIEW_NEXT",
+      "expected_route": "REVIEW_NEXT",
+      "source_check": "PASS"
+    },
+    {
+      "id": "possibility",
+      "predicted_semantic": "INSUFFICIENT",
+      "expected_semantic": "INSUFFICIENT",
+      "route": "DEFER",
+      "expected_route": "DEFER",
+      "source_check": "PASS"
+    },
+    {
+      "id": "other",
+      "predicted_semantic": "INSUFFICIENT",
+      "expected_semantic": "INSUFFICIENT",
+      "route": "DEFER",
+      "expected_route": "DEFER",
+      "source_check": "PASS"
+    },
+    {
+      "id": "hard",
+      "predicted_semantic": "INSUFFICIENT",
+      "expected_semantic": "INSUFFICIENT",
+      "route": "DEFER",
+      "expected_route": "DEFER",
+      "source_check": "PASS"
+    },
+    {
+      "id": "negation",
+      "predicted_semantic": "CONTRADICTED",
+      "expected_semantic": "CONTRADICTED",
+      "route": "DEFER",
+      "expected_route": "DEFER",
+      "source_check": "PASS"
+    }
+  ]
+}

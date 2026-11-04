@@ -1,0 +1,47 @@
+{
+  "purpose": "offline post-run diagnostic; gold never used for building, retrieval, relation or reader",
+  "question_id": "a2f3aa27",
+  "dataset_sha256": "d6f21ea9d60a0d56f34a05b609c79c88a451d2ae03597821ea3d5a9678c3a442",
+  "benchmark_answer": 1300,
+  "answer_session_ids": [
+    "answer_5126c02d_1",
+    "answer_5126c02d_2"
+  ],
+  "answer_sessions_shown_count": 2,
+  "answer_sessions_total": 2,
+  "shown_source_count": 12,
+  "selected_relation_pairs": 8,
+  "target_1250_to_1300_pair_selected": false,
+  "answers": {
+    "baseline": {
+      "answer": "The most recent explicit count provided was 1250 followers on May 25, 2023. On the same day later in the session, the user estimated they were 'close to 1300'. No exact current number is available for June 15, 2023.",
+      "citations_exist": true,
+      "semantic_support_verified": false,
+      "usage": {
+        "prompt_tokens": 1784,
+        "total_tokens": 1993,
+        "completion_tokens": 209,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "text_tokens": 1784
+        }
+      }
+    },
+    "relation": {
+      "answer": "The most recent specific follower count mentioned was 1250 on May 25, 2023. Later that same day, the user estimated they were close to 1300. There is no data provided for June 15, 2023.",
+      "citations_exist": true,
+      "semantic_support_verified": false,
+      "usage": {
+        "prompt_tokens": 5280,
+        "total_tokens": 5483,
+        "completion_tokens": 203,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024,
+          "text_tokens": 5280
+        }
+      }
+    }
+  },
+  "grading": "not formally scored; benchmark answer 1300 versus source says close to 1300; exactness requires careful evaluation",
+  "note": "Session ids are used opaquely for identity and grouping only; original answer-prefixed IDs are not included in requests to relation or reader models."
+}

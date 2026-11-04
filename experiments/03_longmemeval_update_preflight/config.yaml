@@ -1,0 +1,13 @@
+question_id: a2f3aa27
+embedding_url: http://127.0.0.1:8015/v1
+embedding_model: bge-m3
+embedding_dimensions: 1024
+embedding_batch_size: 16
+candidate_min_similarity: 0.35
+query_top_k: 8
+relation_max_pairs: 8
+llm_base_url: https://maas.qianwenaiapi.com/compatible-mode/v1
+llm_model: qwen3.8-flash
+api_key_file: /home/cwf/.config/licomemory/qianwen_online.key
+max_tokens: 4096
+enable_thinking: false

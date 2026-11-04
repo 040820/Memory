@@ -1,0 +1,318 @@
+{
+  "type": "posthoc_reparse_of_frozen_responses_no_new_model_calls",
+  "parser_sha256": "0321d139de831b52383c8c7747b4d8905ab6a4dbeb51fa0b8d2ed072bca6d24e",
+  "routes": {
+    "DEFER": 5,
+    "REVIEW_NEXT": 2
+  },
+  "results": [
+    {
+      "case_id": "control_other",
+      "original_route": "DEFER",
+      "posthoc": {
+        "schema_version": "semantic_review_v2",
+        "route": "DEFER",
+        "applied": false,
+        "source_check": "PASS",
+        "reasons": [
+          "SUBJECT_NOT_CONFIRMED",
+          "SEMANTIC_NOT_SUPPORTED",
+          "SCOPE_UNCLEAR"
+        ],
+        "evidence_spans": [
+          {
+            "evidence_id": "control_other",
+            "start": 0,
+            "end": 29,
+            "quote": "My sister works as a teacher."
+          }
+        ],
+        "model_review": {
+          "source_subject": "OTHER",
+          "candidate_subject_match": "MISMATCH",
+          "time_reference": "PRESENT",
+          "modality": "ASSERTED",
+          "polarity": "POSITIVE",
+          "precision": "NOT_APPLICABLE",
+          "scope_match": "MISMATCH",
+          "semantic_support": "INSUFFICIENT",
+          "subject_reference": "My sister",
+          "reason_codes": [
+            "SUBJECT_MISMATCH",
+            "SCOPE_MISMATCH"
+          ],
+          "reason": "The source attributes the occupation of 'teacher' to the user's sister, not the user. Therefore, the candidate subject (user) does not match the source subject (sister), and the property is not supported for the user.",
+          "evidence_quotes": [
+            {
+              "evidence_id": "control_other",
+              "quote": "My sister works as a teacher."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "control_quantity",
+      "original_route": "DEFER",
+      "posthoc": {
+        "schema_version": "semantic_review_v2",
+        "route": "DEFER",
+        "applied": false,
+        "source_check": "PASS",
+        "reasons": [
+          "SEMANTIC_NOT_SUPPORTED",
+          "SCOPE_UNCLEAR"
+        ],
+        "evidence_spans": [
+          {
+            "evidence_id": "control_quantity",
+            "start": 0,
+            "end": 52,
+            "quote": "It is hard to fit more than four people at my table."
+          }
+        ],
+        "model_review": {
+          "source_subject": "USER",
+          "candidate_subject_match": "MATCH",
+          "time_reference": "PRESENT",
+          "modality": "ASSERTED",
+          "polarity": "POSITIVE",
+          "precision": "EXACT",
+          "scope_match": "MISMATCH",
+          "semantic_support": "CONTRADICTED",
+          "subject_reference": "my table",
+          "reason_codes": [
+            "value_negation_mismatch",
+            "scope_definition_conflict"
+          ],
+          "reason": "The source states it is 'hard' (difficult/unlikely) to fit *more than* four people, implying the capacity is approximately four or less. The candidate claims the value of 'table capacity' is 'more than four people'. This contradicts the source's implication that fitting >4 is difficult. Additionally, 'hard to fit' describes a difficulty threshold, not necessarily the absolute maximum capacity, but the candidate asserts the capacity *is* >4, which conflicts with the negative constraint implied by 'hard to fit more than four'.",
+          "evidence_quotes": [
+            {
+              "evidence_id": "control_quantity",
+              "quote": "It is hard to fit more than four people at my table."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "control_uncertain",
+      "original_route": "DEFER",
+      "posthoc": {
+        "schema_version": "semantic_review_v2",
+        "route": "DEFER",
+        "applied": false,
+        "source_check": "PASS",
+        "reasons": [
+          "SEMANTIC_NOT_SUPPORTED",
+          "SCOPE_UNCLEAR",
+          "TIME_REFERENCE_UNALIGNED",
+          "MODALITY_UNALIGNED",
+          "POLARITY_UNALIGNED"
+        ],
+        "evidence_spans": [
+          {
+            "evidence_id": "control_uncertain",
+            "start": 0,
+            "end": 33,
+            "quote": "I might move to Shanghai someday."
+          }
+        ],
+        "model_review": {
+          "source_subject": "USER",
+          "candidate_subject_match": "MATCH",
+          "time_reference": "FUTURE",
+          "modality": "POSSIBLE",
+          "polarity": "UNKNOWN",
+          "precision": "NOT_APPLICABLE",
+          "scope_match": "MISMATCH",
+          "semantic_support": "INSUFFICIENT",
+          "subject_reference": "I",
+          "reason_codes": [
+            "future_plan_not_current_residence",
+            "modality_mismatch_possible_vs_asserted",
+            "time_mismatch_future_vs_present"
+          ],
+          "reason": "The source indicates a future possibility ('might move... someday'), which does not establish current residence. The candidate asserts present residence, creating a mismatch in time and modality.",
+          "evidence_quotes": [
+            {
+              "evidence_id": "control_uncertain",
+              "quote": "I might move to Shanghai someday."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "control_negation",
+      "original_route": "DEFER",
+      "posthoc": {
+        "schema_version": "semantic_review_v2",
+        "route": "DEFER",
+        "applied": false,
+        "source_check": "PASS",
+        "reasons": [
+          "SEMANTIC_NOT_SUPPORTED",
+          "POLARITY_UNALIGNED"
+        ],
+        "evidence_spans": [
+          {
+            "evidence_id": "control_negation",
+            "start": 0,
+            "end": 33,
+            "quote": "I do not live in Beijing anymore."
+          }
+        ],
+        "model_review": {
+          "source_subject": "USER",
+          "candidate_subject_match": "MATCH",
+          "time_reference": "PRESENT",
+          "modality": "ASSERTED",
+          "polarity": "NEGATIVE",
+          "precision": "NOT_APPLICABLE",
+          "scope_match": "MATCH",
+          "semantic_support": "CONTRADICTED",
+          "subject_reference": "I",
+          "reason_codes": [
+            "POLARITY_MISMATCH",
+            "SEMANTIC_CONTRADICTION"
+          ],
+          "reason": "The source explicitly states that the user does NOT live in Beijing anymore, which contradicts the candidate claim asserting a positive current residence in Beijing.",
+          "evidence_quotes": [
+            {
+              "evidence_id": "control_negation",
+              "quote": "I do not live in Beijing anymore."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "control_past",
+      "original_route": "REVIEW_NEXT",
+      "posthoc": {
+        "schema_version": "semantic_review_v2",
+        "route": "REVIEW_NEXT",
+        "applied": false,
+        "source_check": "PASS",
+        "reasons": [],
+        "evidence_spans": [
+          {
+            "evidence_id": "control_past",
+            "start": 0,
+            "end": 27,
+            "quote": "I lived in Beijing in 2020."
+          }
+        ],
+        "model_review": {
+          "source_subject": "USER",
+          "candidate_subject_match": "MATCH",
+          "time_reference": "PAST",
+          "modality": "ASSERTED",
+          "polarity": "POSITIVE",
+          "precision": "NOT_APPLICABLE",
+          "scope_match": "MATCH",
+          "semantic_support": "SUPPORTED",
+          "subject_reference": "I",
+          "reason_codes": [
+            "exact_text_match",
+            "subject_alignment",
+            "temporal_alignment"
+          ],
+          "reason": "The candidate claim exactly matches the source utterance regarding subject, location, time, and modality.",
+          "evidence_quotes": [
+            {
+              "evidence_id": "control_past",
+              "quote": "I lived in Beijing in 2020."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "control_plan",
+      "original_route": "DEFER",
+      "posthoc": {
+        "schema_version": "semantic_review_v2",
+        "route": "DEFER",
+        "applied": false,
+        "source_check": "PASS",
+        "reasons": [
+          "SEMANTIC_NOT_SUPPORTED",
+          "SCOPE_UNCLEAR",
+          "TIME_REFERENCE_UNALIGNED",
+          "MODALITY_UNALIGNED"
+        ],
+        "evidence_spans": [
+          {
+            "evidence_id": "control_plan",
+            "start": 0,
+            "end": 37,
+            "quote": "I plan to move to Shanghai next year."
+          }
+        ],
+        "model_review": {
+          "source_subject": "USER",
+          "candidate_subject_match": "MATCH",
+          "time_reference": "FUTURE",
+          "modality": "PLAN",
+          "polarity": "POSITIVE",
+          "precision": "NOT_APPLICABLE",
+          "scope_match": "MISMATCH",
+          "semantic_support": "INSUFFICIENT",
+          "subject_reference": "I",
+          "reason_codes": [
+            "TIME_MISMATCH",
+            "MODALITY_MISMATCH",
+            "SCOPE_MISMATCH"
+          ],
+          "reason": "The source indicates a future plan ('next year') with 'plan' modality, whereas the candidate asserts current residence in the present tense. A future plan does not establish current status.",
+          "evidence_quotes": [
+            {
+              "evidence_id": "control_plan",
+              "quote": "I plan to move to Shanghai next year."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "control_current",
+      "original_route": "TECHNICAL_ERROR",
+      "posthoc": {
+        "schema_version": "semantic_review_v2",
+        "route": "REVIEW_NEXT",
+        "applied": false,
+        "source_check": "PASS",
+        "reasons": [],
+        "evidence_spans": [
+          {
+            "evidence_id": "control_current",
+            "start": 0,
+            "end": 18,
+            "quote": "I live in Beijing."
+          }
+        ],
+        "model_review": {
+          "source_subject": "USER",
+          "candidate_subject_match": "MATCH",
+          "time_reference": "PRESENT",
+          "modality": "ASSERTED",
+          "polarity": "POSITIVE",
+          "precision": "NOT_APPLICABLE",
+          "scope_match": "MATCH",
+          "semantic_support": "SUPPORTED",
+          "subject_reference": "I",
+          "reason_codes": [],
+          "reason": "The user explicitly states their current residence is Beijing, which matches the candidate claim in subject, predicate, value, time, and modality.",
+          "evidence_quotes": [
+            {
+              "evidence_id": "control_current",
+              "quote": "I live in Beijing."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

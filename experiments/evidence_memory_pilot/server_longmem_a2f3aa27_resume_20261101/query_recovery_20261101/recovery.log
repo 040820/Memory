@@ -1,0 +1,72 @@
+2026-11-01 07:59:52 - DynamicMemory - INFO - Configuration loaded from /home/cwf/Code/LiCoMemory-main/experiments/evidence_memory_pilot/baseline_qwen.yaml
+2026-11-01 07:59:52 - DynamicMemory - INFO - LLM Manager initialized with model: qwen3-8b, concurrent: True, max_concurrent: 4
+2026-11-01 07:59:52 - DynamicMemory - INFO - Dialog Chunk Processor initialized for LongmemEval dataset
+2026-11-01 07:59:52 - DynamicMemory - INFO - Chunk Processor initialized for LongmemEval dataset
+2026-11-01 07:59:52 - DynamicMemory - INFO - Graph Builder initialized
+2026-11-01 07:59:52 - DynamicMemory - INFO - Dynamic Memory initialized
+2026-11-01 07:59:52 - DynamicMemory - INFO - Entity Extractor initialized
+2026-11-01 07:59:52 - DynamicMemory - INFO - Dialogue Extractor initialized with LongmemEval prompt
+2026-11-01 07:59:52 - DynamicMemory - INFO - Session Summarizer initialized
+2026-11-01 07:59:52 - DynamicMemory - INFO - Extractors initialized with LLM manager and cost tracking
+2026-11-01 07:59:52 - DynamicMemory - INFO - GraphRAG Core initialized
+2026-11-01 07:59:52 - DynamicMemory - INFO - GraphRAG initialized successfully
+2026-11-01 07:59:52 - DynamicMemory - INFO - Graph loaded from /home/cwf/Code/LiCoMemory-main/experiments/evidence_memory_pilot/server_longmem_a2f3aa27_resume_20261101/longmem_graph.pkl with 227 chunks and 3489 entities
+2026-11-01 07:59:52 - DynamicMemory - INFO - Graph loaded from /home/cwf/Code/LiCoMemory-main/experiments/evidence_memory_pilot/server_longmem_a2f3aa27_resume_20261101/longmem_graph.pkl
+2026-11-01 07:59:52 - DynamicMemory - INFO - Processing query: How many followers do I have on Instagram now?
+2026-11-01 07:59:53 - DynamicMemory - INFO - LLM Manager initialized with model: qwen3-8b, concurrent: False, max_concurrent: 1
+2026-11-01 07:59:53 - DynamicMemory - INFO - Summary Retriever initialized
+2026-11-01 07:59:53 - DynamicMemory - INFO - Summary reranking enabled with weights: similarity=0.80, summary=0.20
+2026-11-01 07:59:53 - DynamicMemory - INFO - Triple Reranker initialized with strategy: SimpleRank (weighted)
+2026-11-01 07:59:53 - DynamicMemory - INFO -   SimpleRank weights: {'similarity': 0.8, 'summary': 0.2}
+2026-11-01 07:59:53 - DynamicMemory - INFO - 🔍 Processing query: How many followers do I have on Instagram now?
+2026-11-01 07:59:53 - DynamicMemory - INFO - Sending professional entity extraction prompt to LLM (model: qwen3-8b, session_time: 2023/06/15 (Thu) 23:26)
+2026-11-01 07:59:55 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+2026-11-01 07:59:55 - DynamicMemory - INFO - Successfully extracted 3 entities using professional prompt
+2026-11-01 07:59:55 - DynamicMemory - INFO - Entity extraction completed in 1.97s
+2026-11-01 07:59:56 - DynamicMemory - INFO - similarity shape: torch.Size([4, 2482])
+2026-11-01 07:59:56 - DynamicMemory - INFO - Similar entity search completed in 0.77s
+2026-11-01 07:59:56 - DynamicMemory - INFO - Found 2019 candidate triples
+2026-11-01 07:59:56 - DynamicMemory - INFO - Time taken to get question embedding: 0.03467106819152832s
+2026-11-01 07:59:56 - DynamicMemory - INFO - similarity shape: torch.Size([1, 2019])
+2026-11-01 07:59:56 - DynamicMemory - INFO - Selected top 40 triples for reranking (target: 20 final triples):
+2026-11-01 07:59:56 - DynamicMemory - INFO -   1. User has 1250 followers (score: 0.846)
+2026-11-01 07:59:56 - DynamicMemory - INFO -   2. User checked Follower Count (score: 0.829)
+2026-11-01 07:59:56 - DynamicMemory - INFO -   3. User needs help changing username on Instagram (score: 0.803)
+2026-11-01 07:59:56 - DynamicMemory - INFO -   4. User using Instagram Insights (score: 0.798)
+2026-11-01 07:59:56 - DynamicMemory - INFO -   5. User interested in Instagram Live (score: 0.795)
+2026-11-01 07:59:56 - DynamicMemory - INFO - Triple retrieval completed in 0.37s
+2026-11-01 07:59:56 - DynamicMemory - INFO - Loaded 44 session summaries
+2026-11-01 07:59:56 - DynamicMemory - INFO - Building embeddings for 44 session summaries
+2026-11-01 07:59:56 - DynamicMemory - INFO - ✅ Using precomputed embeddings for all 44 summaries
+2026-11-01 07:59:56 - DynamicMemory - INFO - Built embeddings for 44 summaries
+2026-11-01 07:59:56 - DynamicMemory - INFO - Successfully initialized summary data: 44 summaries
+2026-11-01 07:59:56 - DynamicMemory - INFO - 🚀 Batch calculating embeddings for 187 unique texts
+2026-11-01 07:59:57 - DynamicMemory - INFO - ✅ Selected top 1 summaries from 44 total
+2026-11-01 07:59:57 - DynamicMemory - INFO - 📊 All summary rankings: {'answer_5126c02d_1': 0.8104676405588785, 'answer_5126c02d_2': 0.8062912821769714, 'sharegpt_oTNStu2_43': 0.7196447849273682, 'ultrachat_475462': 0.7160281936327616, '57bf4122_1': 0.6769548058509827}
+2026-11-01 07:59:57 - DynamicMemory - INFO - Summary retrieval completed in 0.62s
+2026-11-01 07:59:57 - DynamicMemory - INFO - Reranking 40 triples using SimpleRank
+2026-11-01 07:59:57 - DynamicMemory - INFO - 📊 Available summary rankings for 44 sessions:
+2026-11-01 07:59:57 - DynamicMemory - INFO -    Session answer_5126c02d_1: 0.810
+2026-11-01 07:59:57 - DynamicMemory - INFO -    Session answer_5126c02d_2: 0.806
+2026-11-01 07:59:57 - DynamicMemory - INFO -    Session sharegpt_oTNStu2_43: 0.720
+2026-11-01 07:59:57 - DynamicMemory - INFO -    Session ultrachat_475462: 0.716
+2026-11-01 07:59:57 - DynamicMemory - INFO -    Session 57bf4122_1: 0.677
+2026-11-01 07:59:57 - DynamicMemory - INFO - 🔍 Found 3 unique session_ids in triples: ['answer_5126c02d_1', 'b65f51fb_5', 'answer_5126c02d_2']
+2026-11-01 07:59:57 - DynamicMemory - INFO - Top reranked triples (SimpleRank):
+2026-11-01 07:59:57 - DynamicMemory - INFO -   1. User has 1250 followers (similarity: 0.646, summary: 0.810, reranked: 0.679)
+2026-11-01 07:59:57 - DynamicMemory - INFO -   2. User checked Follower Count (similarity: 0.629, summary: 0.806, reranked: 0.664)
+2026-11-01 07:59:57 - DynamicMemory - INFO -   3. User using Instagram Insights (similarity: 0.598, summary: 0.810, reranked: 0.640)
+2026-11-01 07:59:57 - DynamicMemory - INFO -   4. User interested in Instagram Live (similarity: 0.595, summary: 0.810, reranked: 0.638)
+2026-11-01 07:59:57 - DynamicMemory - INFO -   5. User using Instagram feed (similarity: 0.593, summary: 0.810, reranked: 0.636)
+2026-11-01 07:59:57 - DynamicMemory - INFO - Triple reranking completed in 0.00s
+2026-11-01 07:59:57 - DynamicMemory - INFO - Chunk retrieval completed in 0.00s
+2026-11-01 07:59:57 - DynamicMemory - INFO - 🔍 Retrieval Cost - Prompt: 0, Completion: 0
+2026-11-01 07:59:57 - DynamicMemory - INFO - 🔍 Retrieval completed in 3.74s
+2026-11-01 07:59:57 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+2026-11-01 07:59:57 - DynamicMemory - INFO - 🤖 LLM Answer generated
+2026-11-01 07:59:57 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+2026-11-01 07:59:57 - DynamicMemory - INFO - 💬 Answer Generation Cost - Prompt: 7766, Completion: 5
+2026-11-01 07:59:57 - DynamicMemory - INFO - 💬 Answer generation completed in 0.28s
+2026-11-01 07:59:57 - DynamicMemory - INFO - ✅ Unified query processing completed for: How many followers do I have on Instagram now?...
+2026-11-01 07:59:57 - DynamicMemory - INFO - Query processed successfully
+RECOVERY_STATUS completed_unscored ELAPSED 5.85

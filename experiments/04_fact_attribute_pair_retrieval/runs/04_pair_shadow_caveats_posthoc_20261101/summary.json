@@ -1,0 +1,22 @@
+{
+  "purpose": "posthoc application of added caveats; no new model call",
+  "module_sha256": "01ba747b3df892c2c53137b66fe0587652e45cff9142a7f9c443f6a5626abeb0",
+  "pairs": 17,
+  "statuses": {
+    "proposed": 17
+  },
+  "relations": {
+    "DUPLICATE": 11,
+    "UNRELATED": 1,
+    "COMPLEMENT": 3,
+    "COEXIST": 1,
+    "CHANGE": 1
+  },
+  "caveats": {
+    "MODEL_RELATION_UNVERIFIED": 17,
+    "OLD_STATEMENT_UNCERTAIN": 6,
+    "NEW_STATEMENT_UNCERTAIN": 7
+  },
+  "eligible_for_state_update": 0,
+  "applied_updates": 0
+}

@@ -1,0 +1,8 @@
+[1/7] control_current route=REVIEW_NEXT reasons=[] tokens=681 elapsed=3.24s
+[2/7] control_plan route=DEFER reasons=['SEMANTIC_NOT_SUPPORTED', 'SCOPE_UNCLEAR', 'TIME_REFERENCE_UNALIGNED', 'MODALITY_UNALIGNED'] tokens=720 elapsed=2.84s
+[3/7] control_other route=DEFER reasons=['SUBJECT_NOT_CONFIRMED', 'SEMANTIC_NOT_SUPPORTED'] tokens=705 elapsed=3.13s
+[4/7] control_negation route=DEFER reasons=['SEMANTIC_NOT_SUPPORTED', 'POLARITY_UNALIGNED'] tokens=726 elapsed=2.78s
+[5/7] control_past route=REVIEW_NEXT reasons=[] tokens=723 elapsed=2.77s
+[6/7] control_quantity route=DEFER reasons=['SEMANTIC_NOT_SUPPORTED', 'SCOPE_UNCLEAR'] tokens=769 elapsed=2.63s
+[7/7] control_uncertain route=DEFER reasons=['SEMANTIC_NOT_SUPPORTED', 'SCOPE_UNCLEAR', 'TIME_REFERENCE_UNALIGNED', 'MODALITY_UNALIGNED', 'POLARITY_UNALIGNED'] tokens=727 elapsed=3.34s
+COMPLETED: advisory review saved; no memory updates applied

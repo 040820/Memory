@@ -1,0 +1,126 @@
+{
+  "label": "posthoc reinterpretation using new parser; development cases, no new model call",
+  "parser_sha256": "7bc673fce7ceea7e4543440844fd88a4d669d8934377c5d03f08d5d1a41e4503",
+  "cases": 10,
+  "route_counts": {
+    "DEFER": 8,
+    "REVIEW_NEXT": 2
+  },
+  "semantic_matches": 9,
+  "semantic_total": 10,
+  "route_matches": 10,
+  "route_total": 10,
+  "cases_detail": [
+    {
+      "id": "approx",
+      "expected_semantic": "INSUFFICIENT",
+      "predicted_semantic": "CONTRADICTED",
+      "expected_route": "DEFER",
+      "route": "DEFER",
+      "reasons": [
+        "SEMANTIC_NOT_SUPPORTED",
+        "SCOPE_UNCLEAR",
+        "PRECISION_UNALIGNED"
+      ]
+    },
+    {
+      "id": "at_most",
+      "expected_semantic": "CONTRADICTED",
+      "predicted_semantic": "CONTRADICTED",
+      "expected_route": "DEFER",
+      "route": "DEFER",
+      "reasons": [
+        "SEMANTIC_NOT_SUPPORTED",
+        "SCOPE_UNCLEAR",
+        "POLARITY_UNALIGNED"
+      ]
+    },
+    {
+      "id": "plan",
+      "expected_semantic": "INSUFFICIENT",
+      "predicted_semantic": "INSUFFICIENT",
+      "expected_route": "DEFER",
+      "route": "DEFER",
+      "reasons": [
+        "SEMANTIC_NOT_SUPPORTED",
+        "SCOPE_UNCLEAR",
+        "TIME_REFERENCE_UNALIGNED",
+        "MODALITY_UNALIGNED"
+      ]
+    },
+    {
+      "id": "past",
+      "expected_semantic": "SUPPORTED",
+      "predicted_semantic": "SUPPORTED",
+      "expected_route": "REVIEW_NEXT",
+      "route": "REVIEW_NEXT",
+      "reasons": []
+    },
+    {
+      "id": "not_moved",
+      "expected_semantic": "CONTRADICTED",
+      "predicted_semantic": "CONTRADICTED",
+      "expected_route": "DEFER",
+      "route": "DEFER",
+      "reasons": [
+        "SEMANTIC_NOT_SUPPORTED",
+        "POLARITY_UNALIGNED"
+      ]
+    },
+    {
+      "id": "current",
+      "expected_semantic": "SUPPORTED",
+      "predicted_semantic": "SUPPORTED",
+      "expected_route": "REVIEW_NEXT",
+      "route": "REVIEW_NEXT",
+      "reasons": []
+    },
+    {
+      "id": "possibility",
+      "expected_semantic": "INSUFFICIENT",
+      "predicted_semantic": "INSUFFICIENT",
+      "expected_route": "DEFER",
+      "route": "DEFER",
+      "reasons": [
+        "SEMANTIC_NOT_SUPPORTED",
+        "SCOPE_UNCLEAR",
+        "TIME_REFERENCE_UNALIGNED",
+        "MODALITY_UNALIGNED"
+      ]
+    },
+    {
+      "id": "other",
+      "expected_semantic": "INSUFFICIENT",
+      "predicted_semantic": "INSUFFICIENT",
+      "expected_route": "DEFER",
+      "route": "DEFER",
+      "reasons": [
+        "SUBJECT_NOT_CONFIRMED",
+        "SEMANTIC_NOT_SUPPORTED",
+        "SCOPE_UNCLEAR"
+      ]
+    },
+    {
+      "id": "hard",
+      "expected_semantic": "INSUFFICIENT",
+      "predicted_semantic": "INSUFFICIENT",
+      "expected_route": "DEFER",
+      "route": "DEFER",
+      "reasons": [
+        "SEMANTIC_NOT_SUPPORTED",
+        "SCOPE_UNCLEAR"
+      ]
+    },
+    {
+      "id": "negation",
+      "expected_semantic": "CONTRADICTED",
+      "predicted_semantic": "CONTRADICTED",
+      "expected_route": "DEFER",
+      "route": "DEFER",
+      "reasons": [
+        "SEMANTIC_NOT_SUPPORTED",
+        "POLARITY_UNALIGNED"
+      ]
+    }
+  ]
+}

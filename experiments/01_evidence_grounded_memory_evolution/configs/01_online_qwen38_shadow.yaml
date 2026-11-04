@@ -1,0 +1,11 @@
+model: qwen3.8-flash
+base_url: https://maas.qianwenaiapi.com/compatible-mode/v1
+api_key_file: /home/cwf/.config/licomemory/qianwen_online.key
+thinking_parameter: top_level
+temperature: 0
+max_tokens: 4096
+enable_thinking: false
+input_roles:
+  - user
+scope: single_user_turn
+extractor_model: qwen3.8-flash

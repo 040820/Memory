@@ -1,0 +1,139 @@
+{
+  "purpose": "development diagnostic; provisional expectations, not independent benchmark",
+  "n": 10,
+  "status": {
+    "proposed": 10
+  },
+  "relation_matches": 9,
+  "action_matches": 10,
+  "applied_updates": 0,
+  "details": [
+    {
+      "id": "move",
+      "relation": "CHANGE",
+      "expected_relations": [
+        "CHANGE"
+      ],
+      "relation_match": true,
+      "action": "REPLACE_PROPOSED",
+      "expected_action": "REPLACE_PROPOSED",
+      "action_match": true,
+      "status": "proposed"
+    },
+    {
+      "id": "negation",
+      "relation": "CHANGE",
+      "expected_relations": [
+        "CHANGE"
+      ],
+      "relation_match": true,
+      "action": "RETIRE_OLD_PROPOSED",
+      "expected_action": "RETIRE_OR_DEFER",
+      "action_match": true,
+      "status": "proposed"
+    },
+    {
+      "id": "repeat",
+      "relation": "DUPLICATE",
+      "expected_relations": [
+        "DUPLICATE"
+      ],
+      "relation_match": true,
+      "action": "MERGE_PROPOSED",
+      "expected_action": "MERGE_PROPOSED",
+      "action_match": true,
+      "status": "proposed"
+    },
+    {
+      "id": "plan",
+      "relation": "UNCERTAIN",
+      "expected_relations": [
+        "COEXIST",
+        "COMPLEMENT",
+        "UNCERTAIN"
+      ],
+      "relation_match": true,
+      "action": "DEFER",
+      "expected_action": "RETAIN_OR_DEFER",
+      "action_match": true,
+      "status": "proposed"
+    },
+    {
+      "id": "relative",
+      "relation": "COMPLEMENT",
+      "expected_relations": [
+        "COEXIST",
+        "UNCERTAIN"
+      ],
+      "relation_match": false,
+      "action": "DEFER",
+      "expected_action": "RETAIN_OR_DEFER",
+      "action_match": true,
+      "status": "proposed"
+    },
+    {
+      "id": "later_not_proof",
+      "relation": "UNCERTAIN",
+      "expected_relations": [
+        "CONFLICT",
+        "UNCERTAIN"
+      ],
+      "relation_match": true,
+      "action": "DEFER",
+      "expected_action": "DEFER",
+      "action_match": true,
+      "status": "proposed"
+    },
+    {
+      "id": "complement",
+      "relation": "COMPLEMENT",
+      "expected_relations": [
+        "COMPLEMENT"
+      ],
+      "relation_match": true,
+      "action": "RETAIN_BOTH_PROPOSED",
+      "expected_action": "RETAIN_BOTH_PROPOSED",
+      "action_match": true,
+      "status": "proposed"
+    },
+    {
+      "id": "hobby",
+      "relation": "COEXIST",
+      "expected_relations": [
+        "COEXIST",
+        "COMPLEMENT"
+      ],
+      "relation_match": true,
+      "action": "RETAIN_BOTH_PROPOSED",
+      "expected_action": "RETAIN_BOTH_PROPOSED",
+      "action_match": true,
+      "status": "proposed"
+    },
+    {
+      "id": "uncertain_number",
+      "relation": "UNCERTAIN",
+      "expected_relations": [
+        "CONFLICT",
+        "UNCERTAIN",
+        "COEXIST"
+      ],
+      "relation_match": true,
+      "action": "DEFER",
+      "expected_action": "DEFER_OR_RETAIN",
+      "action_match": true,
+      "status": "proposed"
+    },
+    {
+      "id": "correct",
+      "relation": "CORRECTION",
+      "expected_relations": [
+        "CORRECTION"
+      ],
+      "relation_match": true,
+      "action": "CORRECT_PROPOSED",
+      "expected_action": "CORRECT_PROPOSED",
+      "action_match": true,
+      "status": "proposed"
+    }
+  ]
+}

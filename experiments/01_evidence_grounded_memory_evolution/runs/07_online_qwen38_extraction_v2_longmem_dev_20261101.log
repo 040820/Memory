@@ -1,0 +1,16 @@
+[1/15] ev_08787af9e51360690c7954d0d7b92f7c5c5ab76efec4c7a3df4be02564bc6aaa status=parsed candidates=0 skipped=0 tokens=357 elapsed=0.47s
+[2/15] ev_0e8409d2cf3b39eb18dc01f556e89340188af4ac0ee738a3eb7b1778af71740e status=parsed candidates=2 skipped=0 tokens=576 elapsed=2.53s
+[3/15] ev_166425e273dc8bc6a635fd433e5f5cc2d35ec9594d1d453c899a78c0e65807eb status=parsed candidates=0 skipped=0 tokens=372 elapsed=0.59s
+[4/15] ev_22e85284136da944fd8e4d2326b2e7710f83a7244fa37944e578553bea19fe27 status=parsed candidates=2 skipped=0 tokens=620 elapsed=2.73s
+[5/15] ev_3220e4b364bf6b25033908e8ddd724f6773210525e92d753991640ce0a881c19 status=parsed candidates=0 skipped=0 tokens=355 elapsed=0.43s
+[6/15] ev_4b75acb4d945982321d2f9319f9ae5e4a5b519279462d1976045a3b7875a9e75 status=parsed candidates=0 skipped=0 tokens=360 elapsed=0.54s
+[7/15] ev_58504e88056151af8dd91fcd2ab890bd9565c1d297eb2b3393a3f2cae1e06d30 status=parsed candidates=0 skipped=0 tokens=353 elapsed=0.55s
+[8/15] ev_6c76111b6f02901a34800fa353288646437508255a0cad9eb59661f5f7d16de0 status=parsed candidates=2 skipped=0 tokens=598 elapsed=2.52s
+[9/15] ev_846b269f5d1db15e7a3649a603de492ef75c2a96e0e810427863ef0f2cbe9e9a status=parsed candidates=2 skipped=0 tokens=563 elapsed=2.43s
+[10/15] ev_8578e2c2faccf950f1acccdcaecf13e97d9c16327d43f7a342b51a99c700aa4a status=parsed candidates=3 skipped=0 tokens=693 elapsed=3.67s
+[11/15] ev_aa075f591a451286c24aed83ff75ab7bd36e171f776e1b10a72502fd455aecd7 status=parsed candidates=1 skipped=0 tokens=477 elapsed=1.77s
+[12/15] ev_ae2c67ecd917ebc05a85a3c8e9d0d6221d5548b0fbe992967b4373e2c4bbefc6 status=parsed candidates=0 skipped=0 tokens=376 elapsed=0.81s
+[13/15] ev_d229accd158668600b4579ae100bb35fb3a73515f35e757cb4a2b7baa285c179 status=parsed candidates=1 skipped=0 tokens=477 elapsed=1.78s
+[14/15] ev_de837cf1a067afefe285d1a47ce20432f8b590c272570b4e44a5f2c106cc5e69 status=parsed candidates=2 skipped=1 tokens=678 elapsed=4.97s
+[15/15] ev_f1325003211a3a316269a6fc0257a2b0371852e91e9e4f6e2a605450d8d9f614 status=parsed candidates=2 skipped=0 tokens=597 elapsed=2.93s
+COMPLETED: per-turn records saved; no memory updates applied

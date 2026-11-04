@@ -1,0 +1,12 @@
+{
+  "case_count": 7,
+  "statuses": {
+    "reviewed": 7
+  },
+  "recommendations": {
+    "DEFER": 6,
+    "eligible_for_further_review": 1
+  },
+  "applied_updates": 0,
+  "limitation": "model reviews are advisory and are not independent ground truth"
+}

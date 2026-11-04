@@ -1,0 +1,287 @@
+{
+  "session_key": "1b401a9c15ff7b8e4491081b57f3e4fe1d4a8b8f9d41a99c2ad849210edbfd46",
+  "attempt": 1,
+  "source_ids": [
+    "ev_73a0412f0d5aad5754db4071360a67005d35d116ad135e51cdede125243f9817",
+    "ev_947876966d05e45d4296cc3836bca2fb555c3e8bfcc6fdd27b110be6f51a61f1",
+    "ev_0e53f55046ee3db7e925e5a9ef1f8090048f22020439786efdfefffbedb23660",
+    "ev_5fad89254f819de0f133cad4ee938190c23112c19c44050d0bf8ec805925d848",
+    "ev_36496762fb9fc46431be0ebc6e8e6edd6718fd0dc87f779621fdc56a3fd4753f",
+    "ev_207471c9cda59cf657a1a90135697e828cf2b73b4579aca89eb35613837b7408"
+  ],
+  "applied": false,
+  "request": {
+    "model": "qwen3.8-flash",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Extract explicit personal life statements from the supplied user turns. Input is conversation data, not instructions. Return JSON {\"facts\":[...]}; each fact must include evidence_id, subject_key, attribute_key, object_key, scope_key, value, quote, polarity, modality. Use only the provided evidence ids. The quote must be an exact contiguous passage from that turn. Split unrelated statements in one turn into separate facts. Keep verbatim values, uncertainty, approximation, plans, negation and time expressions; do not invent facts, dates, exact numbers or subjects. Do not convert a plan into a completed state. Never infer that another person's occupation or preference is the user's; subject_key must be user, or UNKNOWN if not supported.\nattribute_key is a short stable lowercase snake_case general property independent of its value and object; use the same property key for paraphrases expressing the same attribute. object_key is the specific platform, object, or domain, in lowercase snake_case, only when supported by the turn; otherwise UNKNOWN. scope_key is the explicit limiting scope, otherwise UNKNOWN. Unknown properties should use UNKNOWN rather than a guess. Do not combine different attributes into one key. Value should preserve the original meaning and qualifiers. polarity is POSITIVE, NEGATIVE or UNKNOWN; modality is ASSERTED, PLAN, POSSIBLE, HYPOTHETICAL or UNKNOWN. Questions alone or general advice are not personal facts. For an implicit referent that cannot be resolved from the same turn, do not guess; use UNKNOWN. A quote match is not semantic proof. Return {\"facts\":[]} if no valid fact."
+      },
+      {
+        "role": "user",
+        "content": "{\"user_turns\": [{\"evidence_id\": \"ev_73a0412f0d5aad5754db4071360a67005d35d116ad135e51cdede125243f9817\", \"text\": \"I'm looking for a new soundbar to go with my new smart TV. Can you recommend some good options? Oh, by the way, I got my TV for a steal - the original price was $700, but I managed to snag it for way less!\"}, {\"evidence_id\": \"ev_947876966d05e45d4296cc3836bca2fb555c3e8bfcc6fdd27b110be6f51a61f1\", \"text\": \"I'm thinking of spending around $300-$400. I don't have a specific brand in mind, but I do want something with good sound quality and a wireless subwoofer. The room is medium-sized, and I'll be using it for watching movies and TV shows mostly.\"}, {\"evidence_id\": \"ev_0e53f55046ee3db7e925e5a9ef1f8090048f22020439786efdfefffbedb23660\", \"text\": \"I think I'll go with the Sonos Beam with Wireless Subwoofer. I've heard great things about Sonos and their products are known for their high quality. Can you tell me more about the Sonos Wireless Subwoofer? How does it connect to the Beam and is it easy to set up?\"}, {\"evidence_id\": \"ev_5fad89254f819de0f133cad4ee938190c23112c19c44050d0bf8ec805925d848\", \"text\": \"Can I use the Sonos app to control the volume and settings of my TV as well, or is it limited to controlling the Sonos speakers?\"}, {\"evidence_id\": \"ev_36496762fb9fc46431be0ebc6e8e6edd6718fd0dc87f779621fdc56a3fd4753f\", \"text\": \"Can I use the Sonos app to switch the audio input on my TV, like from HDMI 1 to HDMI 2, or is that still something I have to do on the TV itself?\"}, {\"evidence_id\": \"ev_207471c9cda59cf657a1a90135697e828cf2b73b4579aca89eb35613837b7408\", \"text\": \"Can I use the Sonos app to customize the sound settings for the Beam, such as adjusting the bass or treble levels, or setting up a specific sound profile for movies or music?\"}]}"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 4096,
+    "enable_thinking": false
+  },
+  "http_status": 200,
+  "raw_http_body": "{\"id\":\"chatcmpl-ca6d30fb-c9fc-9f3e-beb9-809417da8316\",\"object\":\"chat.completion\",\"created\":1793541723,\"model\":\"qwen3.8-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\n  \\\"facts\\\": [\\n    {\\n      \\\"evidence_id\\\": \\\"ev_73a0412f0d5aad5754db4071360a67005d35d116ad135e51cdede125243f9817\\\",\\n      \\\"subject_key\\\": \\\"user\\\",\\n      \\\"attribute_key\\\": \\\"has_item\\\",\\n      \\\"object_key\\\": \\\"smart_tv\\\",\\n      \\\"scope_key\\\": \\\"UNKNOWN\\\",\\n      \\\"value\\\": \\\"new smart TV\\\",\\n      \\\"quote\\\": \\\"my new smart TV\\\",\\n      \\\"polarity\\\": \\\"POSITIVE\\\",\\n      \\\"modality\\\": \\\"ASSERTED\\\"\\n    },\\n    {\\n      \\\"evidence_id\\\": \\\"ev_73a0412f0d5aad5754db4071360a67005d35d116ad135e51cdede125243f9817\\\",\\n      \\\"subject_key\\\": \\\"user\\\",\\n      \\\"attribute_key\\\": \\\"purchase_price\\\",\\n      \\\"object_key\\\": \\\"smart_tv\\\",\\n      \\\"scope_key\\\": \\\"original_listed\\\",\\n      \\\"value\\\": \\\"$700\\\",\\n      \\\"quote\\\": \\\"the original price was $700\\\",\\n      \\\"polarity\\\": \\\"POSITIVE\\\",\\n      \\\"modality\\\": \\\"ASSERTED\\\"\\n    },\\n    {\\n      \\\"evidence_id\\\": \\\"ev_73a0412f0d5aad5754db4071360a67005d35d116ad135e51cdede125243f9817\\\",\\n      \\\"subject_key\\\": \\\"user\\\",\\n      \\\"attribute_key\\\": \\\"searching_for\\\",\\n      \\\"object_key\\\": \\\"soundbar\\\",\\n      \\\"scope_key\\\": \\\"UNKNOWN\\\",\\n      \\\"value\\\": \\\"new soundbar\\\",\\n      \\\"quote\\\": \\\"I'm looking for a new soundbar\\\",\\n      \\\"polarity\\\": \\\"POSITIVE\\\",\\n      \\\"modality\\\": \\\"PLAN\\\"\\n    },\\n    {\\n      \\\"evidence_id\\\": \\\"ev_947876966d05e45d4296cc3836bca2fb555c3e8bfcc6fdd27b110be6f51a61f1\\\",\\n      \\\"subject_key\\\": \\\"user\\\",\\n      \\\"attribute_key\\\": \\\"budget_range\\\",\\n      \\\"object_key\\\": \\\"soundbar\\\",\\n      \\\"scope_key\\\": \\\"UNKNOWN\\\",\\n      \\\"value\\\": \\\"around $300-$400\\\",\\n      \\\"quote\\\": \\\"thinking of spending around $300-$400\\\",\\n      \\\"polarity\\\": \\\"POSITIVE\\\",\\n      \\\"modality\\\": \\\"PLAN\\\"\\n    },\\n    {\\n      \\\"evidence_id\\\": \\\"ev_947876966d05e45d4296cc3836bca2fb555c3e8bfcc6fdd27b110be6f51a61f1\\\",\\n      \\\"subject_key\\\": \\\"user\\\",\\n      \\\"attribute_key\\\": \\\"preference_brand\\\",\\n      \\\"object_key\\\": \\\"soundbar\\\",\\n      \\\"scope_key\\\": \\\"UNKNOWN\\\",\\n      \\\"value\\\": \\\"no specific brand in mind\\\",\\n      \\\"quote\\\": \\\"I don't have a specific brand in mind\\\",\\n      \\\"polarity\\\": \\\"NEGATIVE\\\",\\n      \\\"modality\\\": \\\"ASSERTED\\\"\\n    },\\n    {\\n      \\\"evidence_id\\\": \\\"ev_947876966d05e45d4296cc3836bca2fb555c3e8bfcc6fdd27b110be6f51a61f1\\\",\\n      \\\"subject_key\\\": \\\"user\\\",\\n      \\\"attribute_key\\\": \\\"preference_feature\\\",\\n      \\\"object_key\\\": \\\"sound_quality\\\",\\n      \\\"scope_key\\\": \\\"soundbar\\\",\\n      \\\"value\\\": \\\"good\\\",\\n      \\\"quote\\\": \\\"want something with good sound quality\\\",\\n      \\\"polarity\\\": \\\"POSITIVE\\\",\\n      \\\"modality\\\": \\\"ASSERTED\\\"\\n    },\\n    {\\n      \\\"evidence_id\\\": \\\"ev_947876966d05e45d4296cc3836bca2fb555c3e8bfcc6fdd27b110be6f51a61f1\\\",\\n      \\\"subject_key\\\": \\\"user\\\",\\n      \\\"attribute_key\\\": \\\"preference_feature\\\",\\n      \\\"object_key\\\": \\\"wireless_subwoofer\\\",\\n      \\\"scope_key\\\": \\\"soundbar\\\",\\n      \\\"value\\\": \\\"required\\\",\\n      \\\"quote\\\": \\\"want something with ... a wireless subwoofer\\\",\\n      \\\"polarity\\\": \\\"POSITIVE\\\",\\n      \\\"modality\\\": \\\"ASSERTED\\\"\\n    },\\n    {\\n      \\\"evidence_id\\\": \\\"ev_947876966d05e45d4296cc3836bca2fb555c3e8bfcc6fdd27b110be6f51a61f1\\\",\\n      \\\"subject_key\\\": \\\"user\\\",\\n      \\\"attribute_key\\\": \\\"room_size\\\",\\n      \\\"object_key\\\": \\\"listening_room\\\",\\n      \\\"scope_key\\\": \\\"UNKNOWN\\\",\\n      \\\"value\\\": \\\"medium-sized\\\",\\n      \\\"quote\\\": \\\"The room is medium-sized\\\",\\n      \\\"polarity\\\": \\\"POSITIVE\\\",\\n      \\\"modality\\\": \\\"ASSERTED\\\"\\n    },\\n    {\\n      \\\"evidence_id\\\": \\\"ev_947876966d05e45d4296cc3836bca2fb555c3e8bfcc6fdd27b110be6f51a61f1\\\",\\n      \\\"subject_key\\\": \\\"user\\\",\\n      \\\"attribute_key\\\": \\\"usage_intent\\\",\\n      \\\"object_key\\\": \\\"soundbar\\\",\\n      \\\"scope_key\\\": \\\"movies_and_tv_shows\\\",\\n      \\\"value\\\": \\\"watching movies and TV shows mostly\\\",\\n      \\\"quote\\\": \\\"using it for watching movies and TV shows mostly\\\",\\n      \\\"polarity\\\": \\\"POSITIVE\\\",\\n      \\\"modality\\\": \\\"PLAN\\\"\\n    },\\n    {\\n      \\\"evidence_id\\\": \\\"ev_0e53f55046ee3db7e925e5a9ef1f8090048f22020439786efdfefffbedb23660\\\",\\n      \\\"subject_key\\\": \\\"user\\\",\\n      \\\"attribute_key\\\": \\\"decision\\\",\\n      \\\"object_key\\\": \\\"sonos_beam_with_wireless_subwoofer\\\",\\n      \\\"scope_key\\\": \\\"UNKNOWN\\\",\\n      \\\"value\\\": \\\"go with the Sonos Beam with Wireless Subwoofer\\\",\\n      \\\"quote\\\": \\\"I think I'll go with the Sonos Beam with Wireless Subwoofer\\\",\\n      \\\"polarity\\\": \\\"POSITIVE\\\",\\n      \\\"modality\\\": \\\"PLAN\\\"\\n    }\\n  ]\\n}\"},\"finish_reason\":\"stop\",\"logprobs\":null}],\"usage\":{\"prompt_tokens\":1054,\"total_tokens\":2670,\"completion_tokens\":1616,\"prompt_tokens_details\":{\"cached_tokens\":0,\"text_tokens\":1054}}}",
+  "response": {
+    "id": "chatcmpl-ca6d30fb-c9fc-9f3e-beb9-809417da8316",
+    "object": "chat.completion",
+    "created": 1793541723,
+    "model": "qwen3.8-flash",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"facts\": [\n    {\n      \"evidence_id\": \"ev_73a0412f0d5aad5754db4071360a67005d35d116ad135e51cdede125243f9817\",\n      \"subject_key\": \"user\",\n      \"attribute_key\": \"has_item\",\n      \"object_key\": \"smart_tv\",\n      \"scope_key\": \"UNKNOWN\",\n      \"value\": \"new smart TV\",\n      \"quote\": \"my new smart TV\",\n      \"polarity\": \"POSITIVE\",\n      \"modality\": \"ASSERTED\"\n    },\n    {\n      \"evidence_id\": \"ev_73a0412f0d5aad5754db4071360a67005d35d116ad135e51cdede125243f9817\",\n      \"subject_key\": \"user\",\n      \"attribute_key\": \"purchase_price\",\n      \"object_key\": \"smart_tv\",\n      \"scope_key\": \"original_listed\",\n      \"value\": \"$700\",\n      \"quote\": \"the original price was $700\",\n      \"polarity\": \"POSITIVE\",\n      \"modality\": \"ASSERTED\"\n    },\n    {\n      \"evidence_id\": \"ev_73a0412f0d5aad5754db4071360a67005d35d116ad135e51cdede125243f9817\",\n      \"subject_key\": \"user\",\n      \"attribute_key\": \"searching_for\",\n      \"object_key\": \"soundbar\",\n      \"scope_key\": \"UNKNOWN\",\n      \"value\": \"new soundbar\",\n      \"quote\": \"I'm looking for a new soundbar\",\n      \"polarity\": \"POSITIVE\",\n      \"modality\": \"PLAN\"\n    },\n    {\n      \"evidence_id\": \"ev_947876966d05e45d4296cc3836bca2fb555c3e8bfcc6fdd27b110be6f51a61f1\",\n      \"subject_key\": \"user\",\n      \"attribute_key\": \"budget_range\",\n      \"object_key\": \"soundbar\",\n      \"scope_key\": \"UNKNOWN\",\n      \"value\": \"around $300-$400\",\n      \"quote\": \"thinking of spending around $300-$400\",\n      \"polarity\": \"POSITIVE\",\n      \"modality\": \"PLAN\"\n    },\n    {\n      \"evidence_id\": \"ev_947876966d05e45d4296cc3836bca2fb555c3e8bfcc6fdd27b110be6f51a61f1\",\n      \"subject_key\": \"user\",\n      \"attribute_key\": \"preference_brand\",\n      \"object_key\": \"soundbar\",\n      \"scope_key\": \"UNKNOWN\",\n      \"value\": \"no specific brand in mind\",\n      \"quote\": \"I don't have a specific brand in mind\",\n      \"polarity\": \"NEGATIVE\",\n      \"modality\": \"ASSERTED\"\n    },\n    {\n      \"evidence_id\": \"ev_947876966d05e45d4296cc3836bca2fb555c3e8bfcc6fdd27b110be6f51a61f1\",\n      \"subject_key\": \"user\",\n      \"attribute_key\": \"preference_feature\",\n      \"object_key\": \"sound_quality\",\n      \"scope_key\": \"soundbar\",\n      \"value\": \"good\",\n      \"quote\": \"want something with good sound quality\",\n      \"polarity\": \"POSITIVE\",\n      \"modality\": \"ASSERTED\"\n    },\n    {\n      \"evidence_id\": \"ev_947876966d05e45d4296cc3836bca2fb555c3e8bfcc6fdd27b110be6f51a61f1\",\n      \"subject_key\": \"user\",\n      \"attribute_key\": \"preference_feature\",\n      \"object_key\": \"wireless_subwoofer\",\n      \"scope_key\": \"soundbar\",\n      \"value\": \"required\",\n      \"quote\": \"want something with ... a wireless subwoofer\",\n      \"polarity\": \"POSITIVE\",\n      \"modality\": \"ASSERTED\"\n    },\n    {\n      \"evidence_id\": \"ev_947876966d05e45d4296cc3836bca2fb555c3e8bfcc6fdd27b110be6f51a61f1\",\n      \"subject_key\": \"user\",\n      \"attribute_key\": \"room_size\",\n      \"object_key\": \"listening_room\",\n      \"scope_key\": \"UNKNOWN\",\n      \"value\": \"medium-sized\",\n      \"quote\": \"The room is medium-sized\",\n      \"polarity\": \"POSITIVE\",\n      \"modality\": \"ASSERTED\"\n    },\n    {\n      \"evidence_id\": \"ev_947876966d05e45d4296cc3836bca2fb555c3e8bfcc6fdd27b110be6f51a61f1\",\n      \"subject_key\": \"user\",\n      \"attribute_key\": \"usage_intent\",\n      \"object_key\": \"soundbar\",\n      \"scope_key\": \"movies_and_tv_shows\",\n      \"value\": \"watching movies and TV shows mostly\",\n      \"quote\": \"using it for watching movies and TV shows mostly\",\n      \"polarity\": \"POSITIVE\",\n      \"modality\": \"PLAN\"\n    },\n    {\n      \"evidence_id\": \"ev_0e53f55046ee3db7e925e5a9ef1f8090048f22020439786efdfefffbedb23660\",\n      \"subject_key\": \"user\",\n      \"attribute_key\": \"decision\",\n      \"object_key\": \"sonos_beam_with_wireless_subwoofer\",\n      \"scope_key\": \"UNKNOWN\",\n      \"value\": \"go with the Sonos Beam with Wireless Subwoofer\",\n      \"quote\": \"I think I'll go with the Sonos Beam with Wireless Subwoofer\",\n      \"polarity\": \"POSITIVE\",\n      \"modality\": \"PLAN\"\n    }\n  ]\n}"
+        },
+        "finish_reason": "stop",
+        "logprobs": null
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1054,
+      "total_tokens": 2670,
+      "completion_tokens": 1616,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "text_tokens": 1054
+      }
+    }
+  },
+  "result": {
+    "status": "parsed",
+    "facts": [
+      {
+        "evidence_id": "ev_73a0412f0d5aad5754db4071360a67005d35d116ad135e51cdede125243f9817",
+        "subject_key": "user",
+        "attribute_key": "has_item",
+        "object_key": "smart_tv",
+        "scope_key": "UNKNOWN",
+        "value": "new smart TV",
+        "quote": "my new smart TV",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "session_id": "74ef19f0_1",
+        "session_time": "2023/06/08 (Thu) 20:21",
+        "turn_index": 0,
+        "fact_id": "fact_ee7dfa5952aef0f6216ea6eff5ba81257e7044b68df4d550fc8e2f9819bb0589",
+        "status": "unverified",
+        "normalization_status": "model_proposed",
+        "quote_spans": [
+          [
+            42,
+            57
+          ]
+        ]
+      },
+      {
+        "evidence_id": "ev_73a0412f0d5aad5754db4071360a67005d35d116ad135e51cdede125243f9817",
+        "subject_key": "user",
+        "attribute_key": "purchase_price",
+        "object_key": "smart_tv",
+        "scope_key": "original_listed",
+        "value": "$700",
+        "quote": "the original price was $700",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "session_id": "74ef19f0_1",
+        "session_time": "2023/06/08 (Thu) 20:21",
+        "turn_index": 0,
+        "fact_id": "fact_9c45496ddde428d4e74ef4879d919a1996b2f698d8863c9293fec39520f1a072",
+        "status": "unverified",
+        "normalization_status": "model_proposed",
+        "quote_spans": [
+          [
+            138,
+            165
+          ]
+        ]
+      },
+      {
+        "evidence_id": "ev_73a0412f0d5aad5754db4071360a67005d35d116ad135e51cdede125243f9817",
+        "subject_key": "user",
+        "attribute_key": "searching_for",
+        "object_key": "soundbar",
+        "scope_key": "UNKNOWN",
+        "value": "new soundbar",
+        "quote": "I'm looking for a new soundbar",
+        "polarity": "POSITIVE",
+        "modality": "PLAN",
+        "session_id": "74ef19f0_1",
+        "session_time": "2023/06/08 (Thu) 20:21",
+        "turn_index": 0,
+        "fact_id": "fact_48f7dd15b2782899b6117de59be02da9ab06ef8b1a1cbdeb14366e49ea7511a0",
+        "status": "unverified",
+        "normalization_status": "model_proposed",
+        "quote_spans": [
+          [
+            0,
+            30
+          ]
+        ]
+      },
+      {
+        "evidence_id": "ev_947876966d05e45d4296cc3836bca2fb555c3e8bfcc6fdd27b110be6f51a61f1",
+        "subject_key": "user",
+        "attribute_key": "budget_range",
+        "object_key": "soundbar",
+        "scope_key": "UNKNOWN",
+        "value": "around $300-$400",
+        "quote": "thinking of spending around $300-$400",
+        "polarity": "POSITIVE",
+        "modality": "PLAN",
+        "session_id": "74ef19f0_1",
+        "session_time": "2023/06/08 (Thu) 20:21",
+        "turn_index": 2,
+        "fact_id": "fact_0b8cce2ba3e21ca121a41d8f7dbe4ad51905c1a35c8e6558f2d8e6b66b51b7c7",
+        "status": "unverified",
+        "normalization_status": "model_proposed",
+        "quote_spans": [
+          [
+            4,
+            41
+          ]
+        ]
+      },
+      {
+        "evidence_id": "ev_947876966d05e45d4296cc3836bca2fb555c3e8bfcc6fdd27b110be6f51a61f1",
+        "subject_key": "user",
+        "attribute_key": "preference_brand",
+        "object_key": "soundbar",
+        "scope_key": "UNKNOWN",
+        "value": "no specific brand in mind",
+        "quote": "I don't have a specific brand in mind",
+        "polarity": "NEGATIVE",
+        "modality": "ASSERTED",
+        "session_id": "74ef19f0_1",
+        "session_time": "2023/06/08 (Thu) 20:21",
+        "turn_index": 2,
+        "fact_id": "fact_b8a5aff1260b89a5d73899e409dc919443c27e5db6207def589def4998fec9a3",
+        "status": "unverified",
+        "normalization_status": "model_proposed",
+        "quote_spans": [
+          [
+            43,
+            80
+          ]
+        ]
+      },
+      {
+        "evidence_id": "ev_947876966d05e45d4296cc3836bca2fb555c3e8bfcc6fdd27b110be6f51a61f1",
+        "subject_key": "user",
+        "attribute_key": "preference_feature",
+        "object_key": "sound_quality",
+        "scope_key": "soundbar",
+        "value": "good",
+        "quote": "want something with good sound quality",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "session_id": "74ef19f0_1",
+        "session_time": "2023/06/08 (Thu) 20:21",
+        "turn_index": 2,
+        "fact_id": "fact_ea339b79a5f5b89310e080383aad6332663cbeb8be3f0ce1b7a7dbeb0725bd3a",
+        "status": "unverified",
+        "normalization_status": "model_proposed",
+        "quote_spans": [
+          [
+            91,
+            129
+          ]
+        ]
+      },
+      {
+        "evidence_id": "ev_947876966d05e45d4296cc3836bca2fb555c3e8bfcc6fdd27b110be6f51a61f1",
+        "subject_key": "user",
+        "attribute_key": "room_size",
+        "object_key": "listening_room",
+        "scope_key": "UNKNOWN",
+        "value": "medium-sized",
+        "quote": "The room is medium-sized",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "session_id": "74ef19f0_1",
+        "session_time": "2023/06/08 (Thu) 20:21",
+        "turn_index": 2,
+        "fact_id": "fact_a01b05d55bc6b3ff596a345c8cd5d7ffe87a189640f2070c3f40cfaf6f06f8a8",
+        "status": "unverified",
+        "normalization_status": "model_proposed",
+        "quote_spans": [
+          [
+            156,
+            180
+          ]
+        ]
+      },
+      {
+        "evidence_id": "ev_947876966d05e45d4296cc3836bca2fb555c3e8bfcc6fdd27b110be6f51a61f1",
+        "subject_key": "user",
+        "attribute_key": "usage_intent",
+        "object_key": "soundbar",
+        "scope_key": "movies_and_tv_shows",
+        "value": "watching movies and TV shows mostly",
+        "quote": "using it for watching movies and TV shows mostly",
+        "polarity": "POSITIVE",
+        "modality": "PLAN",
+        "session_id": "74ef19f0_1",
+        "session_time": "2023/06/08 (Thu) 20:21",
+        "turn_index": 2,
+        "fact_id": "fact_6d56ddfd2e67b4828835e8933e8b54324c706b1485c88e5eee9877cf5dd81bf6",
+        "status": "unverified",
+        "normalization_status": "model_proposed",
+        "quote_spans": [
+          [
+            194,
+            242
+          ]
+        ]
+      },
+      {
+        "evidence_id": "ev_0e53f55046ee3db7e925e5a9ef1f8090048f22020439786efdfefffbedb23660",
+        "subject_key": "user",
+        "attribute_key": "decision",
+        "object_key": "sonos_beam_with_wireless_subwoofer",
+        "scope_key": "UNKNOWN",
+        "value": "go with the Sonos Beam with Wireless Subwoofer",
+        "quote": "I think I'll go with the Sonos Beam with Wireless Subwoofer",
+        "polarity": "POSITIVE",
+        "modality": "PLAN",
+        "session_id": "74ef19f0_1",
+        "session_time": "2023/06/08 (Thu) 20:21",
+        "turn_index": 4,
+        "fact_id": "fact_5f7409cb8a1e1e5cfd52df755cb8038a3f8c4e2291a3918ef198731a5fcc8cab",
+        "status": "unverified",
+        "normalization_status": "model_proposed",
+        "quote_spans": [
+          [
+            0,
+            59
+          ]
+        ]
+      }
+    ],
+    "skipped": [
+      {
+        "candidate": {
+          "evidence_id": "ev_947876966d05e45d4296cc3836bca2fb555c3e8bfcc6fdd27b110be6f51a61f1",
+          "subject_key": "user",
+          "attribute_key": "preference_feature",
+          "object_key": "wireless_subwoofer",
+          "scope_key": "soundbar",
+          "value": "required",
+          "quote": "want something with ... a wireless subwoofer",
+          "polarity": "POSITIVE",
+          "modality": "ASSERTED"
+        },
+        "reason": "quote_not_in_source"
+      }
+    ],
+    "duplicates": 0
+  },
+  "elapsed_seconds": 18.22
+}

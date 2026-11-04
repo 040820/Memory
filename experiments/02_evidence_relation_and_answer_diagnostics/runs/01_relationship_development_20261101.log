@@ -1,0 +1,11 @@
+[1/10] move status=proposed relation=CHANGE action=DEFER tokens=486 elapsed=2.41s
+[2/10] correct status=proposed relation=CORRECTION action=DEFER tokens=512 elapsed=2.45s
+[3/10] later_not_proof status=proposed relation=UNCERTAIN action=DEFER tokens=500 elapsed=2.48s
+[4/10] plan status=proposed relation=COEXIST action=RETAIN_BOTH_PROPOSED tokens=504 elapsed=2.88s
+[5/10] hobby status=proposed relation=COEXIST action=RETAIN_BOTH_PROPOSED tokens=476 elapsed=1.78s
+[6/10] repeat status=proposed relation=DUPLICATE action=MERGE_PROPOSED tokens=475 elapsed=1.82s
+[7/10] complement status=proposed relation=COMPLEMENT action=RETAIN_BOTH_PROPOSED tokens=480 elapsed=1.9s
+[8/10] uncertain_number status=proposed relation=UNCERTAIN action=DEFER tokens=537 elapsed=2.76s
+[9/10] relative status=proposed relation=COMPLEMENT action=DEFER tokens=480 elapsed=2.33s
+[10/10] negation status=proposed relation=CHANGE action=REPLACE_PROPOSED tokens=474 elapsed=1.93s
+COMPLETED: proposals only; no memory updates

@@ -1,0 +1,9 @@
+{
+  "input_sha256": "d6d774eebf79bd8b0646b831c2268b89f9b0d1edf8fe1a587c51e1d358a2bbb7",
+  "config_sha256": "da163b404ea3c0c1d38e6fa32087a81e629b09b8106632bb7b6f0de5e1c64ebf",
+  "relation_sha256": "bfe7871f4d17572253ddecd376de3a960dd27fd6677a7266ff6393cca48b1ac9",
+  "runner_sha256": "7cbacaf545e72dc4fc9047f84d51aaabde74aafe4368150aaaec26bb41e251c6",
+  "cases": 10,
+  "model": "qwen3.8-flash",
+  "applied": false
+}

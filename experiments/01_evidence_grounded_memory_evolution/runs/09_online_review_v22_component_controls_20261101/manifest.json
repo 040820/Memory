@@ -1,0 +1,28 @@
+{
+  "input_sha256": "1cfbc5bb4199fc39a61e998b0563039f1aca090257e5049ca6c438b68794c497",
+  "config_sha256": "0077b26891965ec4f9f174fbf2295406d95ef66a9a69e69442330df4066373ed",
+  "reviewer_sha256": "54e4f562c3582ba8d1ab1a340ad2d751b5aaf8f0f5d80a44ae6d104f240fa197",
+  "base_v2_sha256": "8474e56cc4bda0970bc7976e175b957aa3bdd42fb745f04840f90c0f9e8a0f14",
+  "base_v21_sha256": "0a43b1f1170e4849bd099d30fddf027c6668b4c61f25ea39d943305db7a00310",
+  "runner_sha256": "4bf36ba9fdf9e7ddb087ff34bf033016046ba48b3c83d3271d591944f96ffc63",
+  "api_config_sha256": "44268134bd083bea925a96eeef15e68e0e2f10574d4441f36f9f33472e8922a2",
+  "case_count": 5,
+  "config": {
+    "model": "qwen3.8-flash",
+    "base_url": "https://maas.qianwenaiapi.com/compatible-mode/v1",
+    "api_key_file": "/home/cwf/.config/licomemory/qianwen_online.key",
+    "thinking_parameter": "top_level",
+    "temperature": 0,
+    "max_tokens": 4096,
+    "enable_thinking": false,
+    "input_roles": [
+      "user"
+    ],
+    "scope": "single_user_turn",
+    "extractor_model": "qwen3.8-flash"
+  },
+  "review_is_advisory": true,
+  "extractor_model": "qwen3.8-flash",
+  "reviewer_model": "qwen3.8-flash",
+  "applied": false
+}

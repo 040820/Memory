@@ -1,0 +1,59 @@
+{
+  "question_id": "move_now",
+  "mode": "relation",
+  "applied": false,
+  "request": {
+    "model": "qwen3.8-flash",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the two supplied user statements. Be careful about time, plans, corrections, contradictions and uncertainty. Later mention alone is not proof of correction or replacement. If evidence does not establish an answer, say so; do not invent the user's current state. If a relation proposal is present, treat it as a possibly incorrect suggestion, and check it against both original statements. Return JSON {\"answer\":\"concise answer\",\"citations\":[\"source id\", ...]}."
+      },
+      {
+        "role": "user",
+        "content": "{\"question\": \"Where does the user live now?\", \"old\": {\"evidence_id\": \"move_old\", \"speaker\": \"user\", \"text\": \"I live in Beijing.\"}, \"new\": {\"evidence_id\": \"move_new\", \"speaker\": \"user\", \"text\": \"I moved from Beijing to Shanghai.\"}, \"relation_proposal\": {\"relation\": \"CHANGE\", \"action\": \"REPLACE_PROPOSED\", \"reason\": \"The new statement explicitly describes a transition ('moved') from the location stated in the old text (Beijing) to a new location (Shanghai), indicating a change in residence.\"}}"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 4096,
+    "enable_thinking": false
+  },
+  "http_status": 200,
+  "raw_http_body": "{\"id\":\"chatcmpl-0c178a6a-9f74-9101-b513-35aa6bd569e0\",\"object\":\"chat.completion\",\"created\":1793528579,\"model\":\"qwen3.8-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\n  \\\"answer\\\": \\\"Shanghai\\\",\\n  \\\"citations\\\": [\\n    \\\"move_new\\\"\\n  ]\\n}\"},\"finish_reason\":\"stop\",\"logprobs\":null}],\"usage\":{\"prompt_tokens\":244,\"total_tokens\":272,\"completion_tokens\":28,\"prompt_tokens_details\":{\"cached_tokens\":0,\"text_tokens\":244}}}",
+  "response": {
+    "id": "chatcmpl-0c178a6a-9f74-9101-b513-35aa6bd569e0",
+    "object": "chat.completion",
+    "created": 1793528579,
+    "model": "qwen3.8-flash",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"answer\": \"Shanghai\",\n  \"citations\": [\n    \"move_new\"\n  ]\n}"
+        },
+        "finish_reason": "stop",
+        "logprobs": null
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 244,
+      "total_tokens": 272,
+      "completion_tokens": 28,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "text_tokens": 244
+      }
+    }
+  },
+  "result": {
+    "status": "parsed",
+    "citation_ids_exist": true,
+    "semantic_support_verified": false,
+    "answer": "Shanghai",
+    "citations": [
+      "move_new"
+    ]
+  },
+  "elapsed_seconds": 0.72
+}

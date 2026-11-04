@@ -1,0 +1,92 @@
+[
+  {
+    "id": "plan",
+    "source": {
+      "speaker": "user",
+      "text": "I plan to move to Shanghai next year."
+    },
+    "candidate": {
+      "subject": "user",
+      "predicate": "current residence",
+      "value": "Shanghai",
+      "quote": "plan to move to Shanghai next year",
+      "time_reference": "PRESENT",
+      "modality": "ASSERTED",
+      "polarity": "POSITIVE",
+      "precision": "NOT_APPLICABLE",
+      "scope": "current residence"
+    }
+  },
+  {
+    "id": "other",
+    "source": {
+      "speaker": "user",
+      "text": "My sister works as a teacher."
+    },
+    "candidate": {
+      "subject": "user",
+      "predicate": "occupation",
+      "value": "teacher",
+      "quote": "My sister works as a teacher",
+      "time_reference": "PRESENT",
+      "modality": "ASSERTED",
+      "polarity": "POSITIVE",
+      "precision": "NOT_APPLICABLE",
+      "scope": "occupation"
+    }
+  },
+  {
+    "id": "current",
+    "source": {
+      "speaker": "user",
+      "text": "I live in Beijing."
+    },
+    "candidate": {
+      "subject": "user",
+      "predicate": "residence",
+      "value": "Beijing",
+      "quote": "I live in Beijing.",
+      "time_reference": "PRESENT",
+      "modality": "ASSERTED",
+      "polarity": "POSITIVE",
+      "precision": "NOT_APPLICABLE",
+      "scope": "residence"
+    }
+  },
+  {
+    "id": "city_explicit",
+    "source": {
+      "speaker": "user",
+      "text": "I visited Toronto last summer. It was memorable."
+    },
+    "candidate": {
+      "subject": "user",
+      "predicate": "visited",
+      "value": "Toronto last summer",
+      "quote": "I visited Toronto last summer.",
+      "time_reference": "PAST",
+      "modality": "ASSERTED",
+      "polarity": "POSITIVE",
+      "precision": "NOT_APPLICABLE",
+      "scope": "past visit"
+    }
+  },
+  {
+    "id": "city_unknown",
+    "source": {
+      "speaker": "user",
+      "text": "I visited last summer. It was memorable."
+    },
+    "candidate": {
+      "subject": "user",
+      "predicate": "visited",
+      "value": "Toronto last summer",
+      "quote": "I visited last summer.",
+      "time_reference": "PAST",
+      "modality": "ASSERTED",
+      "polarity": "POSITIVE",
+      "precision": "NOT_APPLICABLE",
+      "scope": "past visit"
+    }
+  }
+]

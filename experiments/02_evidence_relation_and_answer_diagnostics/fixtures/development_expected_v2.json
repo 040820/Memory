@@ -1,0 +1,79 @@
+{
+  "move": {
+    "relations": [
+      "CHANGE"
+    ],
+    "action": "REPLACE_PROPOSED",
+    "status": "provisional_requires_independent_review"
+  },
+  "correct": {
+    "relations": [
+      "CORRECTION"
+    ],
+    "action": "CORRECT_PROPOSED",
+    "status": "provisional_requires_independent_review"
+  },
+  "later_not_proof": {
+    "relations": [
+      "CONFLICT",
+      "UNCERTAIN"
+    ],
+    "action": "DEFER",
+    "status": "provisional_requires_independent_review"
+  },
+  "plan": {
+    "relations": [
+      "COEXIST",
+      "COMPLEMENT",
+      "UNCERTAIN"
+    ],
+    "action": "RETAIN_OR_DEFER",
+    "status": "provisional_requires_independent_review"
+  },
+  "hobby": {
+    "relations": [
+      "COEXIST",
+      "COMPLEMENT"
+    ],
+    "action": "RETAIN_BOTH_PROPOSED",
+    "status": "provisional_requires_independent_review"
+  },
+  "repeat": {
+    "relations": [
+      "DUPLICATE"
+    ],
+    "action": "MERGE_PROPOSED",
+    "status": "provisional_requires_independent_review"
+  },
+  "complement": {
+    "relations": [
+      "COMPLEMENT"
+    ],
+    "action": "RETAIN_BOTH_PROPOSED",
+    "status": "provisional_requires_independent_review"
+  },
+  "uncertain_number": {
+    "relations": [
+      "CONFLICT",
+      "UNCERTAIN",
+      "COEXIST"
+    ],
+    "action": "DEFER_OR_RETAIN",
+    "status": "provisional_requires_independent_review"
+  },
+  "relative": {
+    "relations": [
+      "COEXIST",
+      "UNCERTAIN"
+    ],
+    "action": "RETAIN_OR_DEFER",
+    "status": "provisional_requires_independent_review"
+  },
+  "negation": {
+    "relations": [
+      "CHANGE"
+    ],
+    "action": "RETIRE_OR_DEFER",
+    "status": "provisional_requires_independent_review"
+  }
+}

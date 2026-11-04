@@ -1,0 +1,12 @@
+{
+  "input_sha256": "6e4a82cc2a8a9d84ee9eab71d287f12df5fb51f40304c7de8b9d2eefc0db2b7e",
+  "facts_sha256": "bff578219f6ba23f26fa86d73857af6af355f4b985643ddbfd7300185e93db94",
+  "pairs_sha256": "01a790a7bcf3231c833a446fe27ad279fd11119de37471cdce631d4065615c96",
+  "config_sha256": "a3a1c44d98ecb40679e15080399276d2646090dcb26588695892d8a9f0f1d6aa",
+  "module_sha256": "263519ed3f2bbc52edc28fb7b34e5c7dbfb3075882b245c1f3865f5bd1ff5499",
+  "runner_sha256": "849ffee55b2705629e519cc9fe5e367e3929176fabb0212974ce4de23fc195d2",
+  "pair_count": 17,
+  "model": "qwen3.8-flash",
+  "question_or_gold_used": false,
+  "applied": false
+}

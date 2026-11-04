@@ -1,0 +1,77 @@
+[
+  {
+    "id": "move_now",
+    "pair_id": "move",
+    "question": "Where does the user live now?",
+    "old": {
+      "evidence_id": "move_old",
+      "speaker": "user",
+      "text": "I live in Beijing."
+    },
+    "new": {
+      "evidence_id": "move_new",
+      "speaker": "user",
+      "text": "I moved from Beijing to Shanghai."
+    }
+  },
+  {
+    "id": "move_before",
+    "pair_id": "move",
+    "question": "Where did the user live before moving?",
+    "old": {
+      "evidence_id": "move_old",
+      "speaker": "user",
+      "text": "I live in Beijing."
+    },
+    "new": {
+      "evidence_id": "move_new",
+      "speaker": "user",
+      "text": "I moved from Beijing to Shanghai."
+    }
+  },
+  {
+    "id": "correct_count",
+    "pair_id": "correct",
+    "question": "How many cats does the user have according to their correction?",
+    "old": {
+      "evidence_id": "correct_old",
+      "speaker": "user",
+      "text": "I have two cats."
+    },
+    "new": {
+      "evidence_id": "correct_new",
+      "speaker": "user",
+      "text": "I need to correct what I said: I have three cats, not two."
+    }
+  },
+  {
+    "id": "later_now",
+    "pair_id": "later_not_proof",
+    "question": "Where does the user live now?",
+    "old": {
+      "evidence_id": "later_not_proof_old",
+      "speaker": "user",
+      "text": "I live in Beijing."
+    },
+    "new": {
+      "evidence_id": "later_not_proof_new",
+      "speaker": "user",
+      "text": "I live in Shanghai."
+    }
+  },
+  {
+    "id": "negation_now",
+    "pair_id": "negation",
+    "question": "Where does the user live now?",
+    "old": {
+      "evidence_id": "negation_old",
+      "speaker": "user",
+      "text": "I live in Beijing."
+    },
+    "new": {
+      "evidence_id": "negation_new",
+      "speaker": "user",
+      "text": "I do not live in Beijing anymore."
+    }
+  }
+]

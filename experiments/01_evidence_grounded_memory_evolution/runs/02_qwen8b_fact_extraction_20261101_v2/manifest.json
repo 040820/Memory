@@ -1,0 +1,19 @@
+{
+  "sources_sha256": "d07c95daa351598b0e8eecddcef77819e20a2625fbcfe4fa062ce19d572a1463",
+  "config_sha256": "e69cf641cf43fd0800b205e560c018ee6354bdf214d0fe4ef56cc47457f90924",
+  "extractor_sha256": "f6d914f201baaa2654cb088429da24704ecc1124840b505a0e2e26f2d36b7959",
+  "runner_sha256": "4eb650b7609be3594d98e20ef9797d98810f68183e110ba1ec1b0a2b5fb5b512",
+  "selected_turns": 15,
+  "config": {
+    "model": "qwen3-8b",
+    "base_url": "http://127.0.0.1:8011/v1",
+    "temperature": 0,
+    "max_tokens": 4096,
+    "enable_thinking": false,
+    "input_roles": [
+      "user"
+    ],
+    "scope": "single_user_turn"
+  },
+  "applied": false
+}

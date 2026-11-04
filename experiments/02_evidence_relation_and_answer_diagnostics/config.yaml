@@ -1,0 +1,6 @@
+model: qwen3.8-flash
+base_url: https://maas.qianwenaiapi.com/compatible-mode/v1
+api_key_file: /home/cwf/.config/licomemory/qianwen_online.key
+max_tokens: 4096
+temperature: 0
+enable_thinking: false

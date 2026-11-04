@@ -1,0 +1,12 @@
+{
+  "baseline_input_sha256": "b52c61c684a79d3e4f34f544ccd248cacde86f00081f1aaceedf51da311d5924",
+  "retrieval_sha256": "183bd18ed0a6f1b25c8da3baa448265676dad9f65da9248a5b15b503e95f0f22",
+  "baseline_answer_sha256": "f6ca193eadf7d4413371ffe59edb4774665475026f34ebe177dd25483a2d70a8",
+  "relation_results_sha256": "b930d95e54a68a0f71ab029d7ef1c59406d1bd6e5aa80664f949e721afeeccc7",
+  "config_sha256": "a3a1c44d98ecb40679e15080399276d2646090dcb26588695892d8a9f0f1d6aa",
+  "runner_sha256": "51258af2813f8e9077552dea6fc568f064b023e1889f9bad7aa3d7aea757e3d2",
+  "reader_sha256": "9e591fd00a8f0771a091eb58bd40431c6ed4c7699a49de27d6c66ba00cc3a774",
+  "hint_count": 1,
+  "selection": "both pair evidence IDs appear in frozen retrieved sources, with proposed relation; no gold",
+  "applied": false
+}

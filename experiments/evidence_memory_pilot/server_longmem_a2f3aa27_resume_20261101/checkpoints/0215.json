@@ -1,0 +1,1 @@
+{"chunk_hash": "d17f84c0e76553db1e209c044ea7fb968092e3ff1d74619b025a2a4524304a2f", "response": "(\"entity\"|User|person)##\n(\"entity\"|Assistant|person)##\n(\"relationship\"|2023/06/06|sharegpt_HXQNNyd_0|User|Assistant|instructed|10)##\n(\"relationship\"|2023/06/06|sharegpt_HXQNNyd_0|Assistant|User|obeyed|9)##\n\n##END##"}

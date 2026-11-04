@@ -1,0 +1,23 @@
+{
+  "sources_sha256": "36ab78ca3a799143fb00243eb9c02a22003524daf27b676a787a668eae9cbec9",
+  "config_sha256": "198a1079cd18665b6d027bc17792a5efdba46440027b031f35dcf60a18edbac5",
+  "extractor_sha256": "e40f851b776c7acedefd93b368ec61fb9af32e6eb393572f452fdbc38fbf930e",
+  "runner_sha256": "1155ca039a509ff517e1483a07629d0a563a950ead60334d389443b10a404225",
+  "api_config_sha256": "44268134bd083bea925a96eeef15e68e0e2f10574d4441f36f9f33472e8922a2",
+  "selected_turns": 9,
+  "config": {
+    "model": "qwen3.8-flash",
+    "base_url": "https://maas.qianwenaiapi.com/compatible-mode/v1",
+    "api_key_file": "/home/cwf/.config/licomemory/qianwen_online.key",
+    "thinking_parameter": "top_level",
+    "temperature": 0,
+    "max_tokens": 4096,
+    "enable_thinking": false,
+    "input_roles": [
+      "user"
+    ],
+    "scope": "single_user_turn",
+    "extractor_model": "qwen3-8b"
+  },
+  "applied": false
+}

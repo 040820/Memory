@@ -1,0 +1,23 @@
+{
+  "scope": "17 frozen candidate statements from 15 LongMemEval user turns; development diagnosis, no independent gold",
+  "cases": 17,
+  "route_counts": {
+    "DEFER": 13,
+    "REVIEW_NEXT": 4
+  },
+  "source_check_counts": {
+    "PASS": 17
+  },
+  "defer_reason_counts": {
+    "TIME_REFERENCE_UNALIGNED": 3,
+    "SUPPORTED_WITH_UNMATCHED_COMPONENT": 5,
+    "SCOPE_UNCLEAR": 9,
+    "PRECISION_UNALIGNED": 1,
+    "SUBJECT_REFERENCE_NOT_FOUND": 1
+  },
+  "note_reasons_overlap": true,
+  "same_model_extractor_and_reviewer": true,
+  "applied_updates": 0,
+  "total_tokens": 22242,
+  "limitation": "REVIEW_NEXT is not confirmed correct; exact quote matching does not ensure semantic coverage"
+}

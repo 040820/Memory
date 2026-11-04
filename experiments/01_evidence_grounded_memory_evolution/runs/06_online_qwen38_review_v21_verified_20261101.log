@@ -1,0 +1,11 @@
+[1/10] hard route=DEFER reasons=['SEMANTIC_NOT_SUPPORTED', 'SCOPE_UNCLEAR'] tokens=1514 elapsed=9.1s
+[2/10] at_most route=DEFER reasons=['SEMANTIC_NOT_SUPPORTED', 'SCOPE_UNCLEAR'] tokens=1119 elapsed=4.28s
+[3/10] plan route=DEFER reasons=['SEMANTIC_NOT_SUPPORTED', 'SCOPE_UNCLEAR', 'TIME_REFERENCE_UNALIGNED', 'MODALITY_UNALIGNED'] tokens=1162 elapsed=4.23s
+[4/10] not_moved route=DEFER reasons=['SEMANTIC_NOT_SUPPORTED', 'POLARITY_UNALIGNED'] tokens=1131 elapsed=4.27s
+[5/10] other route=DEFER reasons=['SUBJECT_NOT_CONFIRMED', 'SEMANTIC_NOT_SUPPORTED', 'SCOPE_UNCLEAR'] tokens=1121 elapsed=4.24s
+[6/10] current route=REVIEW_NEXT reasons=[] tokens=1080 elapsed=3.34s
+[7/10] past route=REVIEW_NEXT reasons=[] tokens=1132 elapsed=4.51s
+[8/10] approx route=DEFER reasons=['SEMANTIC_NOT_SUPPORTED', 'SCOPE_UNCLEAR', 'PRECISION_UNALIGNED'] tokens=1153 elapsed=3.6s
+[9/10] negation route=DEFER reasons=['SEMANTIC_NOT_SUPPORTED', 'POLARITY_UNALIGNED'] tokens=1134 elapsed=4.7s
+[10/10] possibility route=DEFER reasons=['SEMANTIC_NOT_SUPPORTED', 'SCOPE_UNCLEAR', 'TIME_REFERENCE_UNALIGNED', 'MODALITY_UNALIGNED', 'POLARITY_UNALIGNED'] tokens=1164 elapsed=4.45s
+COMPLETED: advisory review saved; no memory updates applied

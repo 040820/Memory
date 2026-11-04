@@ -1,0 +1,24 @@
+{
+  "source_turns": 221,
+  "sessions": 43,
+  "session_statuses": {
+    "parsed": 41,
+    "truncated": 1,
+    "invalid_schema": 1
+  },
+  "fact_count": 233,
+  "skipped_count": 4,
+  "skipped_reasons": {
+    "quote_not_in_source": 3,
+    "invalid_qualifier": 1
+  },
+  "unknown_attribute": 0,
+  "unknown_object": 6,
+  "unknown_scope": 88,
+  "pairs": 16,
+  "unindexed_facts": 0,
+  "truncated_candidates": 0,
+  "total_llm_tokens": 87399,
+  "candidate_only": true,
+  "applied": false
+}

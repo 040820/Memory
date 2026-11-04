@@ -1,0 +1,12 @@
+{
+  "input_sha256": "cb82e8161212999a4a4844a5d2664ca105b60c77bb40d734955c63fcd43c0ee7",
+  "config_sha256": "7a98f7794f0a2013eb8854816453563647af217728a4b4e489baba91b64372eb",
+  "runner_sha256": "90a061a5bec7c9589fdf9863fb8d7cc6745b6b14f3834260bdd1804fca3b2e24",
+  "source_sha256": {
+    "answer.py": "9e591fd00a8f0771a091eb58bd40431c6ed4c7699a49de27d6c66ba00cc3a774",
+    "preflight.py": "73fa5460b2b9dff82f1bcc20281f3a2f0bd872513e58e80a0996a59d6781be01",
+    "relation.py": "1890231b4b74cdd4ad9a180b9027efc9136c785f67299820140ad94c8c2fcf88"
+  },
+  "question_id": "a2f3aa27",
+  "applied": false
+}

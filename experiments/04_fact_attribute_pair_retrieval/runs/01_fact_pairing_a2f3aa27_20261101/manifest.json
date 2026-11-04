@@ -1,0 +1,14 @@
+{
+  "input_sha256": "6e4a82cc2a8a9d84ee9eab71d287f12df5fb51f40304c7de8b9d2eefc0db2b7e",
+  "config_sha256": "a3a1c44d98ecb40679e15080399276d2646090dcb26588695892d8a9f0f1d6aa",
+  "runner_sha256": "695963deebd4a79fe61bfd159482475d69ad7966a7f20f9ac5446856c1d28e8d",
+  "modules": {
+    "fact_extraction.py": "09339399423e005625f07a9346bceb984f659a51d979264f1ed137f2304d139a",
+    "pair_retrieval.py": "275dd8f46c889131e2a5748eb396b2fb75451e3617446362a47dc2d4569be312"
+  },
+  "source_turns": 221,
+  "sessions": 43,
+  "question_or_gold_used": false,
+  "model": "qwen3.8-flash",
+  "applied": false
+}

@@ -1,0 +1,8 @@
+[1/7] control_current route=TECHNICAL_ERROR reasons=['INVALID_SCHEMA'] tokens=664 elapsed=2.22s
+[2/7] control_plan route=DEFER reasons=['SEMANTIC_NOT_SUPPORTED', 'SCOPE_UNCLEAR', 'TIME_REFERENCE_UNALIGNED', 'MODALITY_UNALIGNED'] tokens=720 elapsed=2.69s
+[3/7] control_other route=DEFER reasons=['SUBJECT_NOT_CONFIRMED', 'SEMANTIC_NOT_SUPPORTED', 'SCOPE_UNCLEAR'] tokens=716 elapsed=2.9s
+[4/7] control_negation route=DEFER reasons=['SEMANTIC_NOT_SUPPORTED', 'POLARITY_UNALIGNED'] tokens=707 elapsed=2.51s
+[5/7] control_past route=REVIEW_NEXT reasons=[] tokens=712 elapsed=2.32s
+[6/7] control_quantity route=DEFER reasons=['SEMANTIC_NOT_SUPPORTED', 'SCOPE_UNCLEAR'] tokens=796 elapsed=3.63s
+[7/7] control_uncertain route=DEFER reasons=['SEMANTIC_NOT_SUPPORTED', 'SCOPE_UNCLEAR', 'TIME_REFERENCE_UNALIGNED', 'MODALITY_UNALIGNED', 'POLARITY_UNALIGNED'] tokens=722 elapsed=2.67s
+COMPLETED: advisory review saved; no memory updates applied

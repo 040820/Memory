@@ -1,0 +1,155 @@
+{
+  "case_count": 7,
+  "statuses": {
+    "reviewed": 7
+  },
+  "recommendations": {
+    "DEFER": 5,
+    "eligible_for_further_review": 2
+  },
+  "applied_updates": 0,
+  "limitation": "model reviews are advisory and are not independent ground truth",
+  "expected_labels": "researcher-authored synthetic controls, not human-validated benchmark",
+  "per_field_correct": {
+    "subject_support": 7,
+    "temporal_modality": 6,
+    "semantic_support": 4
+  },
+  "denominator": 7,
+  "all_three_fields_correct": 4,
+  "details": [
+    {
+      "case_id": "control_other",
+      "expected": {
+        "subject_support": "other_person",
+        "temporal_modality": "current",
+        "semantic_support": "contradicted"
+      },
+      "predicted": {
+        "subject_support": "other_person",
+        "temporal_modality": "current",
+        "semantic_support": "supported"
+      },
+      "matches": {
+        "subject_support": true,
+        "temporal_modality": true,
+        "semantic_support": false
+      },
+      "recommendation": "DEFER"
+    },
+    {
+      "case_id": "control_quantity",
+      "expected": {
+        "subject_support": "supported",
+        "temporal_modality": "current",
+        "semantic_support": "contradicted"
+      },
+      "predicted": {
+        "subject_support": "supported",
+        "temporal_modality": "current",
+        "semantic_support": "contradicted"
+      },
+      "matches": {
+        "subject_support": true,
+        "temporal_modality": true,
+        "semantic_support": true
+      },
+      "recommendation": "DEFER"
+    },
+    {
+      "case_id": "control_uncertain",
+      "expected": {
+        "subject_support": "supported",
+        "temporal_modality": "uncertain",
+        "semantic_support": "contradicted"
+      },
+      "predicted": {
+        "subject_support": "supported",
+        "temporal_modality": "plan",
+        "semantic_support": "insufficient"
+      },
+      "matches": {
+        "subject_support": true,
+        "temporal_modality": false,
+        "semantic_support": false
+      },
+      "recommendation": "DEFER"
+    },
+    {
+      "case_id": "control_negation",
+      "expected": {
+        "subject_support": "supported",
+        "temporal_modality": "current",
+        "semantic_support": "contradicted"
+      },
+      "predicted": {
+        "subject_support": "supported",
+        "temporal_modality": "current",
+        "semantic_support": "contradicted"
+      },
+      "matches": {
+        "subject_support": true,
+        "temporal_modality": true,
+        "semantic_support": true
+      },
+      "recommendation": "DEFER"
+    },
+    {
+      "case_id": "control_past",
+      "expected": {
+        "subject_support": "supported",
+        "temporal_modality": "past",
+        "semantic_support": "supported"
+      },
+      "predicted": {
+        "subject_support": "supported",
+        "temporal_modality": "past",
+        "semantic_support": "supported"
+      },
+      "matches": {
+        "subject_support": true,
+        "temporal_modality": true,
+        "semantic_support": true
+      },
+      "recommendation": "eligible_for_further_review"
+    },
+    {
+      "case_id": "control_plan",
+      "expected": {
+        "subject_support": "supported",
+        "temporal_modality": "plan",
+        "semantic_support": "contradicted"
+      },
+      "predicted": {
+        "subject_support": "supported",
+        "temporal_modality": "plan",
+        "semantic_support": "insufficient"
+      },
+      "matches": {
+        "subject_support": true,
+        "temporal_modality": true,
+        "semantic_support": false
+      },
+      "recommendation": "DEFER"
+    },
+    {
+      "case_id": "control_current",
+      "expected": {
+        "subject_support": "supported",
+        "temporal_modality": "current",
+        "semantic_support": "supported"
+      },
+      "predicted": {
+        "subject_support": "supported",
+        "temporal_modality": "current",
+        "semantic_support": "supported"
+      },
+      "matches": {
+        "subject_support": true,
+        "temporal_modality": true,
+        "semantic_support": true
+      },
+      "recommendation": "eligible_for_further_review"
+    }
+  ]
+}

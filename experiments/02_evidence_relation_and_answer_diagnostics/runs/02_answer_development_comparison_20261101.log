@@ -1,0 +1,11 @@
+[1/5] move_now baseline status=parsed citations_exist=True tokens=210
+[1/5] move_now relation status=parsed citations_exist=True tokens=272
+[2/5] move_before baseline status=parsed citations_exist=True tokens=206
+[2/5] move_before relation status=parsed citations_exist=True tokens=273
+[3/5] correct_count baseline status=parsed citations_exist=True tokens=207
+[3/5] correct_count relation status=parsed citations_exist=True tokens=275
+[4/5] later_now baseline status=parsed citations_exist=True tokens=230
+[4/5] later_now relation status=parsed citations_exist=True tokens=318
+[5/5] negation_now baseline status=parsed citations_exist=True tokens=219
+[5/5] negation_now relation status=parsed citations_exist=True tokens=317
+COMPLETED: answers are unverified; no memory updates

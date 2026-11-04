@@ -1,0 +1,8 @@
+[1/7] control_current status=reviewed recommendation=eligible_for_further_review tokens=286 elapsed=1.38s
+[2/7] control_plan status=reviewed recommendation=DEFER tokens=316 elapsed=1.66s
+[3/7] control_other status=reviewed recommendation=DEFER tokens=309 elapsed=1.6s
+[4/7] control_negation status=reviewed recommendation=DEFER tokens=306 elapsed=1.39s
+[5/7] control_past status=reviewed recommendation=eligible_for_further_review tokens=321 elapsed=1.28s
+[6/7] control_quantity status=reviewed recommendation=DEFER tokens=341 elapsed=1.96s
+[7/7] control_uncertain status=reviewed recommendation=DEFER tokens=313 elapsed=1.76s
+COMPLETED: advisory review saved; no memory updates applied

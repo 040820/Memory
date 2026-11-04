@@ -1,0 +1,8 @@
+REUSE 41 REPARSED 1 SPLIT_RETRY_TURNS 6
+RECOVERY 1/6 status=parsed facts=0
+RECOVERY 2/6 status=parsed facts=5
+RECOVERY 3/6 status=parsed facts=5
+RECOVERY 4/6 status=parsed facts=5
+RECOVERY 5/6 status=parsed facts=6
+RECOVERY 6/6 status=parsed facts=6
+COMPLETED {"source_turns": 221, "original_session_count": 43, "reused_sessions": 41, "posthoc_reparsed_sessions": 1, "split_retry_turns": 6, "statuses": {"parsed": 48}, "facts": 267, "skipped_candidates": 4, "pairs": 17, "pairs_by_path": {"exact_proposed_subject_attribute_keys": 16, "proposed_normalized_attribute_key": 1}, "unindexed_facts": 0, "truncated_candidates": 0, "normalization_version": "lexical_v1_dev", "question_or_gold_used": false, "candidate_only": true, "applied": false}

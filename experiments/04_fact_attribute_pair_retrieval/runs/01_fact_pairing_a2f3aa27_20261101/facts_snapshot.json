@@ -1,0 +1,5422 @@
+{
+  "facts": [
+    {
+      "evidence_id": "ev_dc9309bbafdcb3b72b16b1832fbce85895e723a97cfe9a9a03cced209ab07b8c",
+      "subject_key": "user",
+      "attribute_key": "has_object",
+      "object_key": "reading_nook",
+      "scope_key": "UNKNOWN",
+      "value": "my reading nook",
+      "quote": "my reading nook",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "48cb1be9",
+      "session_time": "2023/05/01 (Mon) 22:56",
+      "turn_index": 0,
+      "fact_id": "fact_04d6d71164851260398dddb8165ee1b3ce476dd985a82969080d2fa1be72e65e",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          37,
+          52
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_8b4df7c41377c98e1d57e4570b3e10f0d2419616a48f1f178d1d0e51b49f973c",
+      "subject_key": "user",
+      "attribute_key": "plan_purchase",
+      "object_key": "dining_table",
+      "scope_key": "UNKNOWN",
+      "value": "thinking of getting a new dining table",
+      "quote": "I'm thinking of getting a new dining table",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "48cb1be9",
+      "session_time": "2023/05/01 (Mon) 22:56",
+      "turn_index": 4,
+      "fact_id": "fact_03746fc136a128f1affadf555058bff0e6a831f73850dff4f1e1cd5ad63e75cc",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          42
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_8b4df7c41377c98e1d57e4570b3e10f0d2419616a48f1f178d1d0e51b49f973c",
+      "subject_key": "user",
+      "attribute_key": "current_object_capacity_issue",
+      "object_key": "dining_table",
+      "scope_key": "current",
+      "value": "hard to fit more than 4 people around it",
+      "quote": "it's hard to fit more than 4 people around it",
+      "polarity": "NEGATIVE",
+      "modality": "ASSERTED",
+      "session_id": "48cb1be9",
+      "session_time": "2023/05/01 (Mon) 22:56",
+      "turn_index": 4,
+      "fact_id": "fact_0b144639d9bc2a0b0b5a2335167de4b04c6ea733a220d0be7db088a0263dc1d1",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          84,
+          129
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_8b4df7c41377c98e1d57e4570b3e10f0d2419616a48f1f178d1d0e51b49f973c",
+      "subject_key": "user",
+      "attribute_key": "current_object_size",
+      "object_key": "dining_table",
+      "scope_key": "current",
+      "value": "really small",
+      "quote": "the one we have now is really small",
+      "polarity": "NEGATIVE",
+      "modality": "ASSERTED",
+      "session_id": "48cb1be9",
+      "session_time": "2023/05/01 (Mon) 22:56",
+      "turn_index": 4,
+      "fact_id": "fact_76e2e1641639dd4b2364d0f2116a4de965c2b387bff22c5c1c06e604b5e0d78b",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          44,
+          79
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_c4db087326196c9e5887d8b1517df8b4d53b84ff1396924c4e856d6953367f20",
+      "subject_key": "user",
+      "attribute_key": "decision_status",
+      "object_key": "table_shape",
+      "scope_key": "dining_table",
+      "value": "still deciding between a rectangular and an oval table",
+      "quote": "I'm still deciding between a rectangular and an oval table",
+      "polarity": "UNKNOWN",
+      "modality": "ASSERTED",
+      "session_id": "48cb1be9",
+      "session_time": "2023/05/01 (Mon) 22:56",
+      "turn_index": 8,
+      "fact_id": "fact_546dc009f977c05c881773915895b90725caca4e494d58d4c4f9f273618bc614",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          58
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_54a1d19cb6bb1ab8a64bbd7a3ed5112658d2c13399f302babea96aa901d47971",
+      "subject_key": "user",
+      "attribute_key": "plan_purchase",
+      "object_key": "mattress",
+      "scope_key": "UNKNOWN",
+      "value": "thinking of getting a new mattress",
+      "quote": "I'm thinking of getting a new mattress",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "48cb1be9",
+      "session_time": "2023/05/01 (Mon) 22:56",
+      "turn_index": 10,
+      "fact_id": "fact_d8e649393a73d588851e663e7339fb4c23582003eaca46d64191d8209cbb363b",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          38
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_239c24026df9d596442a6ab14493e499e6aa3af5a337429b7835fed8767f3390",
+      "subject_key": "user",
+      "attribute_key": "travel_plan",
+      "object_key": "disneyland_resort",
+      "scope_key": "UNKNOWN",
+      "value": "planning a trip soon",
+      "quote": "I'm planning a trip to Disneyland Resort soon",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "1d015773_1",
+      "session_time": "2023/05/03 (Wed) 14:25",
+      "turn_index": 0,
+      "fact_id": "fact_54455c198a3fb3620dd01ed1cba591678957da43da0e9721caf2a8e11c6c8e8b",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          45
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_239c24026df9d596442a6ab14493e499e6aa3af5a337429b7835fed8767f3390",
+      "subject_key": "user",
+      "attribute_key": "activity_participation",
+      "object_key": "disney_princess_half_marathon",
+      "scope_key": "UNKNOWN",
+      "value": "ran the Disney Princess Half Marathon there a few weeks ago",
+      "quote": "I just ran the Disney Princess Half Marathon there a few weeks ago",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "1d015773_1",
+      "session_time": "2023/05/03 (Wed) 14:25",
+      "turn_index": 0,
+      "fact_id": "fact_db665cf1febed4bba2b76044eb7333150bc3076a4c5f9e30ad967bc02ba819f9",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          258,
+          324
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_239c24026df9d596442a6ab14493e499e6aa3af5a337429b7835fed8767f3390",
+      "subject_key": "user",
+      "attribute_key": "food_preference",
+      "object_key": "fried_chicken",
+      "scope_key": "UNKNOWN",
+      "value": "particularly interested in trying",
+      "quote": "I'm particularly interested in trying some fried chicken",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "1d015773_1",
+      "session_time": "2023/05/03 (Wed) 14:25",
+      "turn_index": 0,
+      "fact_id": "fact_fb2236b95c11bd23468c28cf2c0fe7f089a2f1465c9dfd729691f42da50b6cdc",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          114,
+          170
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_414af29fd0585fcb84f5be85def423bee4c21881fef27f45625ce13afad436a5",
+      "subject_key": "user",
+      "attribute_key": "travel_plan",
+      "object_key": "star_wars_ride",
+      "scope_key": "UNKNOWN",
+      "value": "thinking of checking out the new Star Wars ride while I'm there",
+      "quote": "I'm also thinking of checking out the new Star Wars ride while I'm there",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "1d015773_1",
+      "session_time": "2023/05/03 (Wed) 14:25",
+      "turn_index": 2,
+      "fact_id": "fact_1097faa9c3c23ba52bcdc0454c840ae8fcaef36ae0890c4a850d96a776bc3179",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          72
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_414af29fd0585fcb84f5be85def423bee4c21881fef27f45625ce13afad436a5",
+      "subject_key": "user",
+      "attribute_key": "past_visit",
+      "object_key": "disneyland_resort",
+      "scope_key": "with family",
+      "value": "visited with my family a couple of weeks ago",
+      "quote": "I was surprised when I visited with my family a couple of weeks ago",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "1d015773_1",
+      "session_time": "2023/05/03 (Wed) 14:25",
+      "turn_index": 2,
+      "fact_id": "fact_33f59d606b1f07a163c875e1870e85d57de4475670a44b07b41148f0d5c901a3",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          128,
+          195
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_43380a63aedb404349e70ce6faccb4dc482717c6997029b582a14a8906e5f66b",
+      "subject_key": "user",
+      "attribute_key": "interest",
+      "object_key": "mickeys_soundsational_parade",
+      "scope_key": "UNKNOWN",
+      "value": "interested in checking out the Mickey's Soundsational Parade",
+      "quote": "I'm also interested in checking out the Mickey's Soundsational Parade",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "1d015773_1",
+      "session_time": "2023/05/03 (Wed) 14:25",
+      "turn_index": 4,
+      "fact_id": "fact_847b4686f802d210b8953cd96c35f49337a1844a302a827c99cca42ab38c7cb2",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          69
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_8c32baf074e8a3d1230b36f3b94ed525d194785e873ecb248356e8f0481ecd32",
+      "subject_key": "user",
+      "attribute_key": "past_visit",
+      "object_key": "disneyland_resort",
+      "scope_key": "last time",
+      "value": "visited last time",
+      "quote": "when we visited last time",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "1d015773_1",
+      "session_time": "2023/05/03 (Wed) 14:25",
+      "turn_index": 6,
+      "fact_id": "fact_2322c481f7b147b5908fb1a57bc8c09abdb4024202095c068d0dda295ef097c6",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          200,
+          225
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_8c32baf074e8a3d1230b36f3b94ed525d194785e873ecb248356e8f0481ecd32",
+      "subject_key": "user",
+      "attribute_key": "travel_plan",
+      "object_key": "disneyland_resort",
+      "scope_key": "again soon",
+      "value": "thinking of visiting the Disneyland Resort again soon",
+      "quote": "I'm also thinking of visiting the Disneyland Resort again soon",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "1d015773_1",
+      "session_time": "2023/05/03 (Wed) 14:25",
+      "turn_index": 6,
+      "fact_id": "fact_90a92f79b63f5e23024eddd5a01381f31a969f0ee74ff6b5495ee9520a9ee06d",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          62
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_8c32baf074e8a3d1230b36f3b94ed525d194785e873ecb248356e8f0481ecd32",
+      "subject_key": "user",
+      "attribute_key": "family_relationship",
+      "object_key": "niece",
+      "scope_key": "UNKNOWN",
+      "value": "has a niece",
+      "quote": "recommend some character meet-and-greets that my niece would enjoy",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "1d015773_1",
+      "session_time": "2023/05/03 (Wed) 14:25",
+      "turn_index": 6,
+      "fact_id": "fact_b0019b2bd01c178b13fe9b04415ef10bdeaf7c6f7ae50eb25af2ee5cca02179d",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          97,
+          163
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_041c18e080bc0bc8a38eebd1727bea6085f4c33015b82c45b861b91c1fec7152",
+      "subject_key": "user",
+      "attribute_key": "event_plan",
+      "object_key": "birthday_celebration",
+      "scope_key": "for niece at disneyland resort",
+      "value": "thinking of planning a special birthday celebration for my niece at the Disneyland Resort",
+      "quote": "I'm thinking of planning a special birthday celebration for my niece at the Disneyland Resort",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "1d015773_1",
+      "session_time": "2023/05/03 (Wed) 14:25",
+      "turn_index": 8,
+      "fact_id": "fact_837c38276881ac63b8ce1f822028621105f0035d9d6a7feeae2a2c502f7d6a1e",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          93
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_5ef4778c8c2ad692be84b75edcccf57a795dd1f59e14e4ca11fbca39d552dff7",
+      "subject_key": "user",
+      "attribute_key": "booking_plan",
+      "object_key": "character_dining_experience",
+      "scope_key": "for niece's birthday celebration",
+      "value": "thinking of booking a character dining experience for my niece's birthday celebration",
+      "quote": "I'm thinking of booking a character dining experience for my niece's birthday celebration",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "1d015773_1",
+      "session_time": "2023/05/03 (Wed) 14:25",
+      "turn_index": 10,
+      "fact_id": "fact_b749118aa892d5732f155d99eb9c242933641bcd8852467d71a70785671701d7",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          89
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_4af67426aac54e0b5739ef93c4db0c8ad76d359bc96dd76ea1089e3172e6f102",
+      "subject_key": "user",
+      "attribute_key": "opinion",
+      "object_key": "collaboration",
+      "scope_key": "reducing_plastic_waste",
+      "value": "key",
+      "quote": "I think collaboration is key to reducing plastic waste.",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "ultrachat_59277",
+      "session_time": "2023/05/04 (Thu) 10:47",
+      "turn_index": 4,
+      "fact_id": "fact_eb713c4918b2269db545cda63102849c257ebb2dbe7e3b85d3301bdd27f522ed",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          55
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_6d30df35a4efb8507776133eb95711e4c3bb94a22b4d8d1302f0108c9e0cb9db",
+      "subject_key": "user",
+      "attribute_key": "preference",
+      "object_key": "sharing_success_stories",
+      "scope_key": "inspiring_action",
+      "value": "really like the idea",
+      "quote": "I really like the idea of sharing success stories to inspire others to take action.",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "ultrachat_59277",
+      "session_time": "2023/05/04 (Thu) 10:47",
+      "turn_index": 8,
+      "fact_id": "fact_339e136a32cc2c9764d28eb672580d39cb04892e5e69a311b6cc4bba1932c540",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          83
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_a6355b92f6a7a03fe49f63382f975bceac7eb41d5c459171eb53ace8aa6fa61c",
+      "subject_key": "user",
+      "attribute_key": "reaction",
+      "object_key": "big_businesses_reducing_plastic_waste",
+      "scope_key": "UNKNOWN",
+      "value": "really encouraging",
+      "quote": "It's really encouraging to see big businesses taking steps to reduce plastic waste.",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "ultrachat_59277",
+      "session_time": "2023/05/04 (Thu) 10:47",
+      "turn_index": 10,
+      "fact_id": "fact_827be5fd3dad73e05bc8b9c46a7995ae6c949e07b2de915ca744e65f2d2c95ad",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          83
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_2cab6b3b62b18fdde4a5971e79fb3eae2cf67fb963629080126b3f0a435aa4c3",
+      "subject_key": "user",
+      "attribute_key": "preference",
+      "object_key": "small_businesses_going_paperless",
+      "scope_key": "UNKNOWN",
+      "value": "really like the idea",
+      "quote": "I really like the idea of small businesses going paperless.",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "ultrachat_59277",
+      "session_time": "2023/05/04 (Thu) 10:47",
+      "turn_index": 12,
+      "fact_id": "fact_e00af1cd4621ec649a3b2e898ff7a56083fca73a0fd3873667518b59fb51261b",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          59
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_6fbd7fe0cd967a58d160f58b048c2d59ac33874895055fe6518973c02d864b55",
+      "subject_key": "user",
+      "attribute_key": "loyalty_program_participation",
+      "object_key": "cvs",
+      "scope_key": "UNKNOWN",
+      "value": "earned a few bucks in rewards",
+      "quote": "I've earned a few bucks in rewards at CVS",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "2fa50779_2",
+      "session_time": "2023/05/04 (Thu) 20:03",
+      "turn_index": 0,
+      "fact_id": "fact_4d6db5d69ef32c295a04aa13f33a3c98761c6be37e26212590e67414909d4b17",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          141,
+          182
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_2f0ecd0e5070d9a27a90bc9dc01107dc6122435172925fe5648e690102c6c5c8",
+      "subject_key": "user",
+      "attribute_key": "reward_source",
+      "object_key": "cvs",
+      "scope_key": "UNKNOWN",
+      "value": "regular purchases",
+      "quote": "I just earn them from my regular purchases",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "2fa50779_2",
+      "session_time": "2023/05/04 (Thu) 20:03",
+      "turn_index": 2,
+      "fact_id": "fact_3d166bca0e722a1b6374af671aede103ccdcff47dcb2fbd0f758bcd3302da4c8",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          149,
+          191
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_2f0ecd0e5070d9a27a90bc9dc01107dc6122435172925fe5648e690102c6c5c8",
+      "subject_key": "user",
+      "attribute_key": "loyalty_program_name",
+      "object_key": "cvs",
+      "scope_key": "UNKNOWN",
+      "value": "ExtraCare program",
+      "quote": "My CVS rewards are from the ExtraCare program",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "2fa50779_2",
+      "session_time": "2023/05/04 (Thu) 20:03",
+      "turn_index": 2,
+      "fact_id": "fact_6862f7c86b67353c785a6fa95cc419810a7c764d1e6e76f54b0fdd854f6209be",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          45
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_2f0ecd0e5070d9a27a90bc9dc01107dc6122435172925fe5648e690102c6c5c8",
+      "subject_key": "user",
+      "attribute_key": "reward_expiration_date",
+      "object_key": "cvs",
+      "scope_key": "UNKNOWN",
+      "value": "April 15th",
+      "quote": "expire on April 15th",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "2fa50779_2",
+      "session_time": "2023/05/04 (Thu) 20:03",
+      "turn_index": 2,
+      "fact_id": "fact_c98adc3c482ac33b5a72331bf13d810b68ee64b0279903b2cc9cc6e52918e1ef",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          84,
+          104
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_2f0ecd0e5070d9a27a90bc9dc01107dc6122435172925fe5648e690102c6c5c8",
+      "subject_key": "user",
+      "attribute_key": "reward_balance",
+      "object_key": "cvs",
+      "scope_key": "UNKNOWN",
+      "value": "around $2",
+      "quote": "I have around $2 in rewards",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "2fa50779_2",
+      "session_time": "2023/05/04 (Thu) 20:03",
+      "turn_index": 2,
+      "fact_id": "fact_ea729bcd2dc05825cfdb124af28041eb02a39ab514d8c10501b78cdb565740c6",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          51,
+          78
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_9dc7ab5194cb510ab4eca52158f896d0a550a4c4523e0f31f032403ac70ee793",
+      "subject_key": "user",
+      "attribute_key": "reward_redemption_history",
+      "object_key": "walgreens",
+      "scope_key": "last week",
+      "value": "redeemed 5,000 points for a $5 reward",
+      "quote": "I just redeemed 5,000 points for a $5 reward last week",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "2fa50779_2",
+      "session_time": "2023/05/04 (Thu) 20:03",
+      "turn_index": 4,
+      "fact_id": "fact_02945ec03f91c3db110e4adb91b92c4fc8e789a402474f0f2326978fcd80889b",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          54,
+          108
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_9dc7ab5194cb510ab4eca52158f896d0a550a4c4523e0f31f032403ac70ee793",
+      "subject_key": "user",
+      "attribute_key": "loyalty_program_participation",
+      "object_key": "walgreens",
+      "scope_key": "UNKNOWN",
+      "value": "use the Walgreens Balance Rewards program",
+      "quote": "I also use the Walgreens Balance Rewards program",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "2fa50779_2",
+      "session_time": "2023/05/04 (Thu) 20:03",
+      "turn_index": 4,
+      "fact_id": "fact_d5ae60da121c5276c6fca45b93a8b9815f2c666b86bb059980aeb4855595de44",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          48
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_cb9ae24743de4733b8fec3842c70e9985ceacb24a4908edde0cc65c72725eff2",
+      "subject_key": "user",
+      "attribute_key": "loyalty_program_participation",
+      "object_key": "target",
+      "scope_key": "UNKNOWN",
+      "value": "track Target RedCard rewards",
+      "quote": "Can I also track my Target RedCard rewards",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "2fa50779_2",
+      "session_time": "2023/05/04 (Thu) 20:03",
+      "turn_index": 8,
+      "fact_id": "fact_2f5acbb1c2ddf0aba296242ffbc270eccbb46ee46b37dbd95070a1b9f245b08a",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          59,
+          101
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_cb9ae24743de4733b8fec3842c70e9985ceacb24a4908edde0cc65c72725eff2",
+      "subject_key": "user",
+      "attribute_key": "loyalty_program_participation",
+      "object_key": "fetch_rewards",
+      "scope_key": "UNKNOWN",
+      "value": "track Fetch Rewards points",
+      "quote": "and Fetch Rewards points with you?",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "2fa50779_2",
+      "session_time": "2023/05/04 (Thu) 20:03",
+      "turn_index": 8,
+      "fact_id": "fact_357f5e2292e8c575d6e88caa1919874f4d475d941435ea2220af32ce788badd0",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          102,
+          136
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_cb75fdf98eeb7e929ad8f3561510643bee3444797142cc29ff04f01181c0023d",
+      "subject_key": "user",
+      "attribute_key": "loyalty_program_participation",
+      "object_key": "shoprite",
+      "scope_key": "UNKNOWN",
+      "value": "have their Price Plus loyalty program",
+      "quote": "have their Price Plus loyalty program",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "2fa50779_2",
+      "session_time": "2023/05/04 (Thu) 20:03",
+      "turn_index": 10,
+      "fact_id": "fact_83a42a2ccadc57e909f580b40e9994da5cc628e2bebcec25e4c82e56a585ab5d",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          28,
+          65
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_cb75fdf98eeb7e929ad8f3561510643bee3444797142cc29ff04f01181c0023d",
+      "subject_key": "user",
+      "attribute_key": "shopping_habit",
+      "object_key": "shoprite",
+      "scope_key": "UNKNOWN",
+      "value": "shop at ShopRite",
+      "quote": "I also shop at ShopRite",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "2fa50779_2",
+      "session_time": "2023/05/04 (Thu) 20:03",
+      "turn_index": 10,
+      "fact_id": "fact_95fdfb2593ed306a6eeabf9532992574b5a35379fdef44c95675889272540c3c",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          23
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_fda7274093087a90c8b0f881fa93724106676cc87e38ef5493d989d6be64e525",
+      "subject_key": "user",
+      "attribute_key": "travel_plan",
+      "object_key": "UNKNOWN",
+      "scope_key": "destination_country",
+      "value": "planning a trip",
+      "quote": "I'm planning a trip",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "719a18dd_1",
+      "session_time": "2023/05/10 (Wed) 17:27",
+      "turn_index": 0,
+      "fact_id": "fact_5d4832e9ef25fcd454c205acdf6d234870ce17dba2fc3702365361d4a727b5e2",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          19
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_fda7274093087a90c8b0f881fa93724106676cc87e38ef5493d989d6be64e525",
+      "subject_key": "user",
+      "attribute_key": "routine_activity",
+      "object_key": "current_events",
+      "scope_key": "saturday_mornings",
+      "value": "usually catch up on current events on Saturday mornings after making myself a cup of coffee",
+      "quote": "I usually catch up on current events on Saturday mornings after making myself a cup of coffee.",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "719a18dd_1",
+      "session_time": "2023/05/10 (Wed) 17:27",
+      "turn_index": 0,
+      "fact_id": "fact_878444473d41d3828596d1c4d8666e4f30f0a1234cf3b8ebe9c88da4f43e38ab",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          187,
+          281
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_a674e0f4628879571848af31758d46c3495cea3f934adf9f2ba926f4cf636f96",
+      "subject_key": "user",
+      "attribute_key": "travel_destination",
+      "object_key": "japan",
+      "scope_key": "UNKNOWN",
+      "value": "planning to visit Japan",
+      "quote": "I'm planning to visit Japan.",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "719a18dd_1",
+      "session_time": "2023/05/10 (Wed) 17:27",
+      "turn_index": 2,
+      "fact_id": "fact_4ec8a1b1ba23a1cddfd64d84bc8f3af7398420f1139b059abebde2885af2de50",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          28
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_a674e0f4628879571848af31758d46c3495cea3f934adf9f2ba926f4cf636f96",
+      "subject_key": "user",
+      "attribute_key": "interest",
+      "object_key": "technology_and_culture",
+      "scope_key": "japan",
+      "value": "interested in their technology and culture for a while",
+      "quote": "I've been interested in their technology and culture for a while",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "719a18dd_1",
+      "session_time": "2023/05/10 (Wed) 17:27",
+      "turn_index": 2,
+      "fact_id": "fact_e849eabc0deae9692636b976aace5e47a62cc6b473211a611780964555109b4e",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          29,
+          93
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_812b3c2240db6924580fbfadfbb8bbf8dd1acd2a97b4c1142ab18353efcdd38e",
+      "subject_key": "user",
+      "attribute_key": "interest",
+      "object_key": "tea_blending_recipes",
+      "scope_key": "UNKNOWN",
+      "value": "curious to experiment with different flavors and see what I like",
+      "quote": "I'm curious to experiment with different flavors and see what I like.",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "ultrachat_460868",
+      "session_time": "2023/05/14 (Sun) 04:31",
+      "turn_index": 10,
+      "fact_id": "fact_3ff3d84d1956d5fc37a2b58c0b67b68ce45408d3c46e31b5b73001753d13e6cc",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          58,
+          127
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_92da081986ef9edade63bd84bec73e8dee574eab4573e244783a6a29ec52a6a8",
+      "subject_key": "user",
+      "attribute_key": "plan",
+      "object_key": "mango_tango_blend",
+      "scope_key": "UNKNOWN",
+      "value": "try making the Mango Tango Blend",
+      "quote": "I can't wait to try making the Mango Tango Blend",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "ultrachat_460868",
+      "session_time": "2023/05/14 (Sun) 04:31",
+      "turn_index": 12,
+      "fact_id": "fact_2f815a8aeaa2972054c69299565802886a825df2805f707ebf6a8e49290c5763",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          49,
+          97
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_92da081986ef9edade63bd84bec73e8dee574eab4573e244783a6a29ec52a6a8",
+      "subject_key": "user",
+      "attribute_key": "plan",
+      "object_key": "citrus_twist_blend",
+      "scope_key": "UNKNOWN",
+      "value": "try making the Citrus Twist Blend",
+      "quote": "and the Citrus Twist Blend",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "ultrachat_460868",
+      "session_time": "2023/05/14 (Sun) 04:31",
+      "turn_index": 12,
+      "fact_id": "fact_853b0c91d8c590264ca9de9a08433abdb6d442bf2548bac04868f07e2777a970",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          98,
+          124
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_3474a28a2965541c93edc3f906e9b642a60c1eb1a75802ec69e7e18215d65f66",
+      "subject_key": "user",
+      "attribute_key": "interest_in_movie_recommendations",
+      "object_key": "thought-provoking_films_or_documentaries",
+      "scope_key": "similar_to_joker_or_the_irishman",
+      "value": "looking for some movie recommendations. Can you suggest any thought-provoking films or documentaries similar to Joker or The Irishman?",
+      "quote": "I'm looking for some movie recommendations. Can you suggest any thought-provoking films or documentaries similar to Joker or The Irishman?",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "4cf2ea34",
+      "session_time": "2023/05/14 (Sun) 15:51",
+      "turn_index": 0,
+      "fact_id": "fact_4150be991d2a17e135dfc4107e8a440697641877cdacf238c17c0ede0c059111",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          138
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_071f3b2afdabaa19b0e83517ede08229ea3436268bc2a4dd75259fed50fa8bc1",
+      "subject_key": "user",
+      "attribute_key": "interest_in_documentaries",
+      "object_key": "social_or_environmental_issues",
+      "scope_key": "similar_to_the_cove",
+      "value": "interested in watching some documentaries. Can you recommend any documentaries that focus on social or environmental issues, similar to The Cove?",
+      "quote": "I'm interested in watching some documentaries. Can you recommend any documentaries that focus on social or environmental issues, similar to The Cove?",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "4cf2ea34",
+      "session_time": "2023/05/14 (Sun) 15:51",
+      "turn_index": 2,
+      "fact_id": "fact_9c0687b496019bd9b8cc0a9d0dcbabea8fbfc1a64997bfd2032a55f74614a4f4",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          149
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_1d5be69088c9f18cba213ea05054d743a309c7cfd0b32f09d5d9dbb92bf331ef",
+      "subject_key": "user",
+      "attribute_key": "interest_in_documentaries",
+      "object_key": "film_industry_or_filmmaking_process",
+      "scope_key": "more_focused_on_movies_than_the_inventor_out_for_blood_in_silicon_valley",
+      "value": "Can you recommend any documentaries that focus on the film industry or filmmaking process, similar to The Inventor: Out for Blood in Silicon Valley, but more focused on movies?",
+      "quote": "Can you recommend any documentaries that focus on the film industry or filmmaking process, similar to The Inventor: Out for Blood in Silicon Valley, but more focused on movies?",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "4cf2ea34",
+      "session_time": "2023/05/14 (Sun) 15:51",
+      "turn_index": 4,
+      "fact_id": "fact_d3d1a770736ea7256ada93867d37747eb467d329097cb7db1a41119eb665114f",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          176
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_6f0380656c1fe20b304c99637436a59f6ca773d8542857138d8396342ab9712a",
+      "subject_key": "user",
+      "attribute_key": "interest_in_documentaries",
+      "object_key": "filmmaking",
+      "scope_key": "making_of_a_specific_film_or_a_filmmaker's_career_similar_to_hearts_of_darkness",
+      "value": "particularly interested in documentaries about filmmaking. Can you recommend any documentaries that focus on the making of a specific film or a filmmaker's career, similar to Hearts of Darkness: A Filmmaker's Apocalypse?",
+      "quote": "I'm particularly interested in documentaries about filmmaking. Can you recommend any documentaries that focus on the making of a specific film or a filmmaker's career, similar to Hearts of Darkness: A Filmmaker's Apocalypse?",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "4cf2ea34",
+      "session_time": "2023/05/14 (Sun) 15:51",
+      "turn_index": 6,
+      "fact_id": "fact_41931fa214a23bc7df4617522fb57665afe5b34cef180d7b80c579856a097b09",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          224
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_9a12f1083cba27036438e122e3f528761a429f8decb859b9626e53d6fa7b0bf3",
+      "subject_key": "user",
+      "attribute_key": "interest_in_learning_about",
+      "object_key": "martin_scorsese",
+      "scope_key": "career_and_filmmaking_process",
+      "value": "interested in learning more about the career of Martin Scorsese. Can you recommend any documentaries or films about him or his filmmaking process?",
+      "quote": "I'm interested in learning more about the career of Martin Scorsese. Can you recommend any documentaries or films about him or his filmmaking process?",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "4cf2ea34",
+      "session_time": "2023/05/14 (Sun) 15:51",
+      "turn_index": 8,
+      "fact_id": "fact_a9b614199e438639f5d723dad328a7df6345cfb44c2209b5f5d6b3c193ba676c",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          150
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_a0621700a41aeefd4ef387983770128d2f0ab2bfd3afe6c2ad0f6c735b715172",
+      "subject_key": "user",
+      "attribute_key": "interest_in_learning_about",
+      "object_key": "history_of_cinema",
+      "scope_key": "UNKNOWN",
+      "value": "like to learn more about the history of cinema. Can you recommend any documentaries or films about the history of film or the evolution of cinema?",
+      "quote": "I'd like to learn more about the history of cinema. Can you recommend any documentaries or films about the history of film or the evolution of cinema?",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "4cf2ea34",
+      "session_time": "2023/05/14 (Sun) 15:51",
+      "turn_index": 10,
+      "fact_id": "fact_753b5c1ae11166745ea68d6b344b8c61e1ddba1fdb66ab6cb6825af08d28c2e8",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          150
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_46645ad83167e62b72de36e5d35a11934d12b3e8d2694dad59f1edc8760603eb",
+      "subject_key": "user",
+      "attribute_key": "experience_level",
+      "object_key": "surfing",
+      "scope_key": "past",
+      "value": "had some experience surfing before",
+      "quote": "I've had some experience surfing before",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "c11b64f3_1",
+      "session_time": "2023/05/24 (Wed) 15:18",
+      "turn_index": 0,
+      "fact_id": "fact_0362e1412c5c4c15b7f09835212d9e55e5ed428d5b3592931b87b7e0b1412bc6",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          108,
+          147
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_46645ad83167e62b72de36e5d35a11934d12b3e8d2694dad59f1edc8760603eb",
+      "subject_key": "user",
+      "attribute_key": "travel_plan",
+      "object_key": "hawaii",
+      "scope_key": "UNKNOWN",
+      "value": "planning a trip to Hawaii",
+      "quote": "I'm planning a trip to Hawaii",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "c11b64f3_1",
+      "session_time": "2023/05/24 (Wed) 15:18",
+      "turn_index": 0,
+      "fact_id": "fact_395cfbad71c492c0c0bd06502111333fa792d6c296352d2c8eceef7f3d34530f",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          29
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_46645ad83167e62b72de36e5d35a11934d12b3e8d2694dad59f1edc8760603eb",
+      "subject_key": "user",
+      "attribute_key": "activity_experience",
+      "object_key": "surfing",
+      "scope_key": "few hours",
+      "value": "got to try out surfing for a few hours",
+      "quote": "I got to try out surfing for a few hours",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "c11b64f3_1",
+      "session_time": "2023/05/24 (Wed) 15:18",
+      "turn_index": 0,
+      "fact_id": "fact_7427dfc4f8c14001296fd79f6460455319d9e9606baf6a6684f44dcdb8c210cb",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          305,
+          345
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_46645ad83167e62b72de36e5d35a11934d12b3e8d2694dad59f1edc8760603eb",
+      "subject_key": "user",
+      "attribute_key": "activity_duration",
+      "object_key": "exploring islands",
+      "scope_key": "Oahu and Maui",
+      "value": "spent 7 days exploring the islands of Oahu and Maui",
+      "quote": "we spent 7 days exploring the islands of Oahu and Maui",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "c11b64f3_1",
+      "session_time": "2023/05/24 (Wed) 15:18",
+      "turn_index": 0,
+      "fact_id": "fact_8c0057dc8db62a40f7a780ae009f83d27bd44a99c8f030e236a84fd8e860bf32",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          245,
+          299
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_46645ad83167e62b72de36e5d35a11934d12b3e8d2694dad59f1edc8760603eb",
+      "subject_key": "user",
+      "attribute_key": "travel_history",
+      "object_key": "hawaii",
+      "scope_key": "with family",
+      "value": "been to Hawaii before with my family",
+      "quote": "I've been to Hawaii before with my family",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "c11b64f3_1",
+      "session_time": "2023/05/24 (Wed) 15:18",
+      "turn_index": 0,
+      "fact_id": "fact_a7c66e8e902424865009870eebebcb20a19f9b24c9c3b5a11fee1dbdd23b1f4a",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          202,
+          243
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_8ade3f0a50b5e3aa0ac645870fd65ff2961c5199abafb7d24312cfdad67477b9",
+      "subject_key": "user",
+      "attribute_key": "interest",
+      "object_key": "local eats",
+      "scope_key": "Waikiki",
+      "value": "interested in trying out some local eats in Waikiki",
+      "quote": "I'm also interested in trying out some local eats in Waikiki",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "c11b64f3_1",
+      "session_time": "2023/05/24 (Wed) 15:18",
+      "turn_index": 2,
+      "fact_id": "fact_e8cc72cf4c2f4f04d2b6577ac0ba73f2f224ce7a99617fb8c1b9cafdc73dfecf",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          60
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_8ade3f0a50b5e3aa0ac645870fd65ff2961c5199abafb7d24312cfdad67477b9",
+      "subject_key": "user",
+      "attribute_key": "food_experience",
+      "object_key": "Hawaii",
+      "scope_key": "Maui",
+      "value": "had some amazing food in Hawaii before, especially on the island of Maui",
+      "quote": "I've had some amazing food in Hawaii before, especially on the island of Maui",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "c11b64f3_1",
+      "session_time": "2023/05/24 (Wed) 15:18",
+      "turn_index": 2,
+      "fact_id": "fact_eacdf75a1becfbd451dfdb20bdefd01930147c310ea38a9fb57eab65e23aed48",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          62,
+          139
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_4badf2fe0d57a68095b5282e01b8397eb92ae7555c9ecdc51785752f1094edea",
+      "subject_key": "user",
+      "attribute_key": "interest",
+      "object_key": "local transportation",
+      "scope_key": "Waikiki",
+      "value": "interested in trying out some local transportation options in Waikiki",
+      "quote": "I'm also interested in trying out some local transportation options in Waikiki",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "c11b64f3_1",
+      "session_time": "2023/05/24 (Wed) 15:18",
+      "turn_index": 4,
+      "fact_id": "fact_99da64202b19a1e60c3e2f2369cf8820793ddd0d239a8b15bfd1a4c32accd814",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          78
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_4badf2fe0d57a68095b5282e01b8397eb92ae7555c9ecdc51785752f1094edea",
+      "subject_key": "user",
+      "attribute_key": "transportation_history",
+      "object_key": "rental cars",
+      "scope_key": "Oahu and Maui",
+      "value": "remember using rental cars with my family when we visited Oahu and Maui",
+      "quote": "I remember using rental cars with my family when we visited Oahu and Maui",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "c11b64f3_1",
+      "session_time": "2023/05/24 (Wed) 15:18",
+      "turn_index": 4,
+      "fact_id": "fact_eba8efd2968dcc602543e23be107da2d5e6139677f7a3ad3bcf594b2632141e9",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          80,
+          153
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_e8fac68051c8e644c074729e19854868f376270c609a6ce2130d5322ebebd6c7",
+      "subject_key": "user",
+      "attribute_key": "desire",
+      "object_key": "explore North Shore",
+      "scope_key": "without worrying about transportation",
+      "value": "love to explore it without worrying about transportation",
+      "quote": "I'd love to explore it without worrying about transportation",
+      "polarity": "POSITIVE",
+      "modality": "HYPOTHETICAL",
+      "session_id": "c11b64f3_1",
+      "session_time": "2023/05/24 (Wed) 15:18",
+      "turn_index": 8,
+      "fact_id": "fact_6bd9a1d207aa020523024c01d564a99ab4a28b312c5a049595a099b57c373388",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          252,
+          312
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_e8fac68051c8e644c074729e19854868f376270c609a6ce2130d5322ebebd6c7",
+      "subject_key": "user",
+      "attribute_key": "opinion",
+      "object_key": "North Shore",
+      "scope_key": "UNKNOWN",
+      "value": "heard the North Shore is beautiful",
+      "quote": "I've heard the North Shore is beautiful",
+      "polarity": "POSITIVE",
+      "modality": "POSSIBLE",
+      "session_id": "c11b64f3_1",
+      "session_time": "2023/05/24 (Wed) 15:18",
+      "turn_index": 8,
+      "fact_id": "fact_8dc1cf2f66bf32af391d5acb634b37a2a4d5cc0092f0f46d86a8b8f56c30a6bf",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          207,
+          246
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_e8fac68051c8e644c074729e19854868f376270c609a6ce2130d5322ebebd6c7",
+      "subject_key": "user",
+      "attribute_key": "purchase_plan",
+      "object_key": "Go Oahu Card",
+      "scope_key": "3-day",
+      "value": "think I'll purchase a 3-day Go Oahu Card",
+      "quote": "I think I'll purchase a 3-day Go Oahu Card",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "c11b64f3_1",
+      "session_time": "2023/05/24 (Wed) 15:18",
+      "turn_index": 8,
+      "fact_id": "fact_a637adae3a85d4fcfae9f2c906467c00e150bedc75e1bd4a1af04a9381655f2a",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          33,
+          75
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_1e0f5ed8e6cd5b34e4a1a5f1eef87cabaea5799719140e73afbb7e205e0d4536",
+      "subject_key": "user",
+      "attribute_key": "visit_plan",
+      "object_key": "USS Arizona Memorial",
+      "scope_key": "while in Waikiki",
+      "value": "thinking of visiting the USS Arizona Memorial while I'm in Waikiki",
+      "quote": "I'm thinking of visiting the USS Arizona Memorial while I'm in Waikiki",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "c11b64f3_1",
+      "session_time": "2023/05/24 (Wed) 15:18",
+      "turn_index": 10,
+      "fact_id": "fact_a96a021e28c69cc58f4bae3cf190afc37c36404208d1205ff6f118f6fb56cdf7",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          70
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_22a2e27ff2dbd53fb44ef0e3bf8abe5dc73d4b0f7b24d4159c65d2a076d9aabd",
+      "subject_key": "user",
+      "attribute_key": "training_consistency",
+      "object_key": "running",
+      "scope_key": "8 weeks leading up to the Spring Fling Run",
+      "value": "pretty consistent with my training, logging over 100 miles of running in the 8 weeks leading up to the Spring Fling Run",
+      "quote": "I've been pretty consistent with my training, logging over 100 miles of running in the 8 weeks leading up to the Spring Fling Run",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "80a5717e_1",
+      "session_time": "2023/05/25 (Thu) 02:20",
+      "turn_index": 0,
+      "fact_id": "fact_2b142c613f47d5f459c5d22e74eaa586ad9cb1e8adf102c11da308a897f79518",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          102,
+          231
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_22a2e27ff2dbd53fb44ef0e3bf8abe5dc73d4b0f7b24d4159c65d2a076d9aabd",
+      "subject_key": "user",
+      "attribute_key": "training_status",
+      "object_key": "running",
+      "scope_key": "another run",
+      "value": "training for another run",
+      "quote": "I'm training for another run",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "80a5717e_1",
+      "session_time": "2023/05/25 (Thu) 02:20",
+      "turn_index": 0,
+      "fact_id": "fact_8fc99131783d8017ddcdd4c5383d9b03e7503cc24a002b1b317c4e1d9ce431f8",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          28
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_09007e67b020769efc178ba3db1a1ce3d2a4098117ad1728ac32170d897fa4d3",
+      "subject_key": "user",
+      "attribute_key": "training_plan",
+      "object_key": "strength_training",
+      "scope_key": "UNKNOWN",
+      "value": "thinking of incorporating strength training to improve my endurance",
+      "quote": "I was thinking of incorporating strength training to improve my endurance",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "80a5717e_1",
+      "session_time": "2023/05/25 (Thu) 02:20",
+      "turn_index": 2,
+      "fact_id": "fact_de703872709d9b9ffa2ea667c3e37cad981a3e68288901a2adb66a4536e28b1e",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          73
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_7c51cac56cea3c9b238929440b7fc1c87039a71cd7a412ad665306385cb2802b",
+      "subject_key": "user",
+      "attribute_key": "interest",
+      "object_key": "hill_repeats",
+      "scope_key": "training",
+      "value": "interested in incorporating hill repeats into my training",
+      "quote": "I'm interested in incorporating hill repeats into my training",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "80a5717e_1",
+      "session_time": "2023/05/25 (Thu) 02:20",
+      "turn_index": 4,
+      "fact_id": "fact_8bf802856d6f24989873f162fb62cff217f2740e8c574f3eabb434653347ed4e",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          61
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_689370a75992972ba266881d3fb5f9967c8738e310c7a47b960ee5afacbae999",
+      "subject_key": "user",
+      "attribute_key": "training_consistency",
+      "object_key": "running",
+      "scope_key": "8 weeks leading up to the Spring Fling Run",
+      "value": "pretty consistent with my training, logging over 100 miles of running in the 8 weeks leading up to the Spring Fling Run",
+      "quote": "I've been pretty consistent with my training, logging over 100 miles of running in the 8 weeks leading up to the Spring Fling Run",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "80a5717e_1",
+      "session_time": "2023/05/25 (Thu) 02:20",
+      "turn_index": 6,
+      "fact_id": "fact_65b34f7abcf9c018bdadfe0a49887fbfae70296a83f9ea7578bd926f275847ff",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          85,
+          214
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_689370a75992972ba266881d3fb5f9967c8738e310c7a47b960ee5afacbae999",
+      "subject_key": "user",
+      "attribute_key": "training_plan",
+      "object_key": "hill_repeats",
+      "scope_key": "improve endurance",
+      "value": "considering incorporating hill repeats into my training to improve my endurance",
+      "quote": "I'm considering incorporating hill repeats into my training to improve my endurance",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "80a5717e_1",
+      "session_time": "2023/05/25 (Thu) 02:20",
+      "turn_index": 6,
+      "fact_id": "fact_ee6b46c222f0b0fa3ab1906d5e330dc8e39dd88f6772d6c3d6501b0f58c9b288",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          83
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_db0407c57bafa2138469f9d95aa900f5f5ee4494d86d9b383a8fdcf0c92d94d9",
+      "subject_key": "user",
+      "attribute_key": "interest",
+      "object_key": "strength_training",
+      "scope_key": "routine to improve my running",
+      "value": "also interested in incorporating strength training into my routine to improve my running",
+      "quote": "I'm also interested in incorporating strength training into my routine to improve my running",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "80a5717e_1",
+      "session_time": "2023/05/25 (Thu) 02:20",
+      "turn_index": 8,
+      "fact_id": "fact_12fdf8e466aacb4975e59641b2ed2f77868de41d120f6579aa962aec3d3a28a4",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          92
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_c64a02e5ccca8a592b0f64a9e1c00d442c8e497694bf80edf352a53852da1556",
+      "subject_key": "user",
+      "attribute_key": "goal",
+      "object_key": "strength_training_integration",
+      "scope_key": "running schedule",
+      "value": "like to know more about how to incorporate strength training into my running schedule",
+      "quote": "I'd like to know more about how to incorporate strength training into my running schedule",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "80a5717e_1",
+      "session_time": "2023/05/25 (Thu) 02:20",
+      "turn_index": 10,
+      "fact_id": "fact_fcc34256c84b4ab5654e6721f2497485d8a22c829abf373f5d60ae2db769df6e",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          89
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_981957fca79274d0111af58d1a70e15c050c4a70d3e65d28d1e5e4f0fc7245f4",
+      "subject_key": "user",
+      "attribute_key": "memory_of_pre_smartphone_life",
+      "object_key": "UNKNOWN",
+      "scope_key": "UNKNOWN",
+      "value": "I don't even remember what life was like before smartphones and social media.",
+      "quote": "I don't even remember what life was like before smartphones and social media.",
+      "polarity": "NEGATIVE",
+      "modality": "ASSERTED",
+      "session_id": "ultrachat_475462",
+      "session_time": "2023/05/25 (Thu) 03:27",
+      "turn_index": 10,
+      "fact_id": "fact_6828a5a2a0d82e5ec431c9995a0e002b69bdfe7c65669a65b8e664fa97dacf1b",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          69,
+          146
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_29de2c96307160dbfb0cf1c7328e53cb42162db814e0c72df88762d0b2a7dcf9",
+      "subject_key": "user",
+      "attribute_key": "technology_usage_habit",
+      "object_key": "phone_and_social_media",
+      "scope_key": "every_once_in_a_while",
+      "value": "I try to take breaks from my phone and social media every once in a while to avoid getting too caught up in it.",
+      "quote": "I try to take breaks from my phone and social media every once in a while to avoid getting too caught up in it.",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "ultrachat_475462",
+      "session_time": "2023/05/25 (Thu) 03:27",
+      "turn_index": 12,
+      "fact_id": "fact_b00bd256583ff60d37b2a7bb694a59b189b0c90d648f05f110fa4c228ae2f1bd",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          73,
+          184
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_2ecec21f46aed20bb97783cb2426a9bd290868a7bfeb13e8c7ba833d1252acb0",
+      "subject_key": "user",
+      "attribute_key": "completed_media_consumption",
+      "object_key": "how_i_built_this_podcast",
+      "scope_key": "first_10_episodes",
+      "value": "finished listening to the first 10 episodes of How I Built This",
+      "quote": "I just finished listening to the first 10 episodes of How I Built This",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "37c0029e",
+      "session_time": "2023/05/25 (Thu) 04:46",
+      "turn_index": 0,
+      "fact_id": "fact_3801f7a403a4b9595440a549ee4226e1ffaa0d5c3088f88a8199fcc869fac284",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          50,
+          120
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_2ecec21f46aed20bb97783cb2426a9bd290868a7bfeb13e8c7ba833d1252acb0",
+      "subject_key": "user",
+      "attribute_key": "interest_area",
+      "object_key": "psychology",
+      "scope_key": "UNKNOWN",
+      "value": "interested in psychology",
+      "quote": "I'm interested in entrepreneurship and psychology",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "37c0029e",
+      "session_time": "2023/05/25 (Thu) 04:46",
+      "turn_index": 0,
+      "fact_id": "fact_7463cd8cca2d02facc5d5afbf15d0bfff6214725129cfbfaab858610a6963d05",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          125,
+          174
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_2ecec21f46aed20bb97783cb2426a9bd290868a7bfeb13e8c7ba833d1252acb0",
+      "subject_key": "user",
+      "attribute_key": "interest_area",
+      "object_key": "entrepreneurship",
+      "scope_key": "UNKNOWN",
+      "value": "interested in entrepreneurship",
+      "quote": "I'm interested in entrepreneurship and psychology",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "37c0029e",
+      "session_time": "2023/05/25 (Thu) 04:46",
+      "turn_index": 0,
+      "fact_id": "fact_bb2a58e2bdaa1006a2533b598691da998d1f6a0a72f3e61b662f46e10d080d61",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          125,
+          174
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_5c5d594cad698b585572d1d4ad9a3bb141460f6adafba622ef2525207b9e0b8a",
+      "subject_key": "user",
+      "attribute_key": "interest_area",
+      "object_key": "history",
+      "scope_key": "learning_more",
+      "value": "been interested in learning more about history",
+      "quote": "I've also been interested in learning more about history",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "37c0029e",
+      "session_time": "2023/05/25 (Thu) 04:46",
+      "turn_index": 2,
+      "fact_id": "fact_81fe3bd58d91d7aaf93522f12976951907911d4f5a05c68d6a9b380e7dcda77b",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          33,
+          89
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_5c5d594cad698b585572d1d4ad9a3bb141460f6adafba622ef2525207b9e0b8a",
+      "subject_key": "user",
+      "attribute_key": "time_spent_on_activity",
+      "object_key": "crash_course_world_history_series",
+      "scope_key": "completion",
+      "value": "about 3 weeks to complete",
+      "quote": "which took me about 3 weeks to complete",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "37c0029e",
+      "session_time": "2023/05/25 (Thu) 04:46",
+      "turn_index": 2,
+      "fact_id": "fact_f9311771d266d7b60bfb1e18988b46713f410300ee6ab83305dc909d4c79d627",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          160,
+          199
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_5c5d594cad698b585572d1d4ad9a3bb141460f6adafba622ef2525207b9e0b8a",
+      "subject_key": "user",
+      "attribute_key": "completed_media_consumption",
+      "object_key": "crash_course_world_history_series",
+      "scope_key": "entire_series",
+      "value": "finishing the Crash Course series on World History",
+      "quote": "after finishing the Crash Course series on World History",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "37c0029e",
+      "session_time": "2023/05/25 (Thu) 04:46",
+      "turn_index": 2,
+      "fact_id": "fact_fdfeefc3bff7058a9ed0d66e08bab40039bdf5056a81c71d204c3699025d6a98",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          102,
+          158
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_b78af1c25090048ef1c1d1e9032b6cd1ac921adce5b097733d61a6ea89b01a66",
+      "subject_key": "user",
+      "attribute_key": "completed_media_consumption",
+      "object_key": "sapiens_book",
+      "scope_key": "entire_book",
+      "value": "already read that one",
+      "quote": "I've already read that one!",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "37c0029e",
+      "session_time": "2023/05/25 (Thu) 04:46",
+      "turn_index": 4,
+      "fact_id": "fact_0dee43c49d53c9bf7d6427fd49501432c09bcc1369ccde69b89754a97bb14df7",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          32,
+          59
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_b78af1c25090048ef1c1d1e9032b6cd1ac921adce5b097733d61a6ea89b01a66",
+      "subject_key": "user",
+      "attribute_key": "interest_specific_topic",
+      "object_key": "cognitive_revolution",
+      "scope_key": "in_sapiens_book",
+      "value": "really interested in the part about the Cognitive Revolution and how it changed human history",
+      "quote": "I was really interested in the part about the Cognitive Revolution and how it changed human history",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "37c0029e",
+      "session_time": "2023/05/25 (Thu) 04:46",
+      "turn_index": 4,
+      "fact_id": "fact_297175bcd3591b62b3ed15a49472c58afcf978365048fd41fd919cd9a4e5550d",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          60,
+          159
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_a2ff8dc2648a3cc9b4853557cfa6815bbea9e872cb80c61180b1efcb41b4b745",
+      "subject_key": "user",
+      "attribute_key": "interest_specific_topic",
+      "object_key": "major_empires",
+      "scope_key": "rise_and_fall_impact",
+      "value": "particularly interested in their rise and fall, and how they impacted the world",
+      "quote": "I'm particularly interested in their rise and fall, and how they impacted the world",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "37c0029e",
+      "session_time": "2023/05/25 (Thu) 04:46",
+      "turn_index": 6,
+      "fact_id": "fact_59687455d1a6c729ba7a9be2e514db238d551e12a589abcd8626dcbbed014eac",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          179,
+          262
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_7243112d763292bd6cbe8d5f067de277eb47491476d3c6d6ca0f7b3647e6b7e7",
+      "subject_key": "user",
+      "attribute_key": "interest_specific_topic",
+      "object_key": "persian_empire",
+      "scope_key": "learning_more",
+      "value": "happy to learn more about the Persian Empire",
+      "quote": "I'd be happy to learn more about the Persian Empire",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "37c0029e",
+      "session_time": "2023/05/25 (Thu) 04:46",
+      "turn_index": 10,
+      "fact_id": "fact_142ea42127ffb3f7227037275ea3c520f3612a01857692cba35bbe496966fe6f",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          51
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_d8a0cb08796fe094f18b04d929b539b58c27816fdcdb26475d2ebffa993cf7bc",
+      "subject_key": "user",
+      "attribute_key": "education_program",
+      "object_key": "university_of_edinburgh",
+      "scope_key": "UNKNOWN",
+      "value": "master's program in Computer Science at the University of Edinburgh",
+      "quote": "my master's program in Computer Science at the University of Edinburgh",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "b4f28f96_1",
+      "session_time": "2023/05/25 (Thu) 04:55",
+      "turn_index": 0,
+      "fact_id": "fact_1566c41af8a2a0a072b3fe2af94d2c45e7fc0ec88d624f7e78adee40d18ca2ca",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          33,
+          103
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_d8a0cb08796fe094f18b04d929b539b58c27816fdcdb26475d2ebffa993cf7bc",
+      "subject_key": "user",
+      "attribute_key": "relocation_plan",
+      "object_key": "edinburgh",
+      "scope_key": "soon",
+      "value": "moving to Edinburgh soon",
+      "quote": "I'm moving to Edinburgh soon",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "b4f28f96_1",
+      "session_time": "2023/05/25 (Thu) 04:55",
+      "turn_index": 0,
+      "fact_id": "fact_7292d9679293cfa185423f4930441633f4ccb3e1e79127a5289255c0dfbacbc5",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          28
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_d8a0cb08796fe094f18b04d929b539b58c27816fdcdb26475d2ebffa993cf7bc",
+      "subject_key": "user",
+      "attribute_key": "accommodation_arrangement",
+      "object_key": "flat_share",
+      "scope_key": "marchmont_area",
+      "value": "found a flat share in the Marchmont area",
+      "quote": "I found a flat share in the Marchmont area",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "b4f28f96_1",
+      "session_time": "2023/05/25 (Thu) 04:55",
+      "turn_index": 0,
+      "fact_id": "fact_8bba972b562b767f27547bc9993a10af15779f37d40ceba3050298e4fce79ac9",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          179,
+          221
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_761019ea9e1bdc2ac91419ff3ff6238dc38df9121db8df80ec3c520db6757531",
+      "subject_key": "user",
+      "attribute_key": "transportation_choice",
+      "object_key": "airlink_100_bus",
+      "scope_key": "UNKNOWN",
+      "value": "go with the Airlink 100 Bus",
+      "quote": "I think I'll go with the Airlink 100 Bus",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "b4f28f96_1",
+      "session_time": "2023/05/25 (Thu) 04:55",
+      "turn_index": 2,
+      "fact_id": "fact_f70bc626f8e1aebf9ea2671f4bc0ae3497f11b450cc37eb2b258bce330405b9c",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          40
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_1e702a599654ffd81b00de5233d03d858c4c9edd83163c463a6be1d025b4f52f",
+      "subject_key": "user",
+      "attribute_key": "transportation_choice",
+      "object_key": "airlink_100_bus",
+      "scope_key": "haymarket_station",
+      "value": "take the Airlink 100 Bus all the way to Haymarket Station",
+      "quote": "I'll take the Airlink 100 Bus all the way to Haymarket Station then",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "b4f28f96_1",
+      "session_time": "2023/05/25 (Thu) 04:55",
+      "turn_index": 6,
+      "fact_id": "fact_9a058eafc8d5822c1c0e4f008329d4789d3ccded81d49e06db9cf8a1b59b509f",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          67
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_1b0295033e16c324a4a6826afc6e26a81a101f59b203130704f8f96dbef01be5",
+      "subject_key": "user",
+      "attribute_key": "service_investigation_plan",
+      "object_key": "lebara_giffgaff",
+      "scope_key": "mobile_needs",
+      "value": "look into Lebara and Giffgaff for my mobile needs",
+      "quote": "I'll look into Lebara and Giffgaff for my mobile needs",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "b4f28f96_1",
+      "session_time": "2023/05/25 (Thu) 04:55",
+      "turn_index": 10,
+      "fact_id": "fact_d150763c9eac4dd7f7de9413fc50bc06ec5fd8414dfb98785c7b0f98317f1665",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          54
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_9c2ceaa7b1138c1446fc470e648a273b253e51aa219076e45a0c221ea7c2a4c9",
+      "subject_key": "user",
+      "attribute_key": "content_strategy_activity",
+      "object_key": "instagram",
+      "scope_key": "visual_style",
+      "value": "using a consistent aesthetic",
+      "quote": "using a consistent aesthetic",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "answer_5126c02d_1",
+      "session_time": "2023/05/25 (Thu) 05:26",
+      "turn_index": 2,
+      "fact_id": "fact_031a358af764f6fab51c0b75e66849596158dd7404379f88021e9a16a4b5b447",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          66,
+          94
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_9c2ceaa7b1138c1446fc470e648a273b253e51aa219076e45a0c221ea7c2a4c9",
+      "subject_key": "user",
+      "attribute_key": "social_media_followers_count",
+      "object_key": "instagram",
+      "scope_key": "UNKNOWN",
+      "value": "1250",
+      "quote": "I've got 1250 followers on Instagram now",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "answer_5126c02d_1",
+      "session_time": "2023/05/25 (Thu) 05:26",
+      "turn_index": 2,
+      "fact_id": "fact_3465f0dd313bea80cd16ec3e93b7e697319e52f45de0e14ee8c503f18ce1e8d8",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          330,
+          370
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_9c2ceaa7b1138c1446fc470e648a273b253e51aa219076e45a0c221ea7c2a4c9",
+      "subject_key": "user",
+      "attribute_key": "content_strategy_activity",
+      "object_key": "instagram",
+      "scope_key": "posting_frequency",
+      "value": "posting regularly",
+      "quote": "like posting regularly",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "answer_5126c02d_1",
+      "session_time": "2023/05/25 (Thu) 05:26",
+      "turn_index": 2,
+      "fact_id": "fact_a6f501e6d085cd1d62ef9db6897f1a08e7839c3f0bdd39d0d8f8d6d65a81857a",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          39,
+          61
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_b3695a6ea551842c4384ba6d9f0b07eea269df613bb09752cd371e56db37cd0a",
+      "subject_key": "user",
+      "attribute_key": "feature_usage_plan",
+      "object_key": "instagram_live",
+      "scope_key": "frequency",
+      "value": "trying out more often",
+      "quote": "I'm actually thinking of trying out Instagram Live more often",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "answer_5126c02d_1",
+      "session_time": "2023/05/25 (Thu) 05:26",
+      "turn_index": 6,
+      "fact_id": "fact_d8f39397834f38772a182e1dab9e77d91c8885f85dea622b9b27a57bf6c4e8eb",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          61
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_d88d5444bebfd93fe8b581abe6c30da1464abf7a4d62845d26d6571a09083588",
+      "subject_key": "user",
+      "attribute_key": "thought",
+      "object_key": "hiking_trails",
+      "scope_key": "UNKNOWN",
+      "value": "thinking of finding some new hiking trails to explore",
+      "quote": "I was thinking of finding some new hiking trails to explore",
+      "polarity": "POSITIVE",
+      "modality": "POSSIBLE",
+      "session_id": "fc9d19f7_2",
+      "session_time": "2023/05/25 (Thu) 05:48",
+      "turn_index": 0,
+      "fact_id": "fact_49cfe5947b370964f47cbf98ee5865848b269fcf6c8da22294b8eea1bbea670d",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          43,
+          102
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_d88d5444bebfd93fe8b581abe6c30da1464abf7a4d62845d26d6571a09083588",
+      "subject_key": "user",
+      "attribute_key": "action_completed",
+      "object_key": "book_wild",
+      "scope_key": "February",
+      "value": "read \"Wild\" by Cheryl Strayed in February",
+      "quote": "reading \"Wild\" by Cheryl Strayed in February",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "fc9d19f7_2",
+      "session_time": "2023/05/25 (Thu) 05:48",
+      "turn_index": 0,
+      "fact_id": "fact_bbd24c3ca92eeb30d4724f2d241abd1c809d57a8c7ca4f04a58b8b4332d9199c",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          227,
+          271
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_d88d5444bebfd93fe8b581abe6c30da1464abf7a4d62845d26d6571a09083588",
+      "subject_key": "user",
+      "attribute_key": "plan_activity",
+      "object_key": "camping_trip",
+      "scope_key": "soon",
+      "value": "planning another camping trip soon",
+      "quote": "I'm planning another camping trip soon",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "fc9d19f7_2",
+      "session_time": "2023/05/25 (Thu) 05:48",
+      "turn_index": 0,
+      "fact_id": "fact_c1ac80c47418e18a347e21ba8df4ece69461f2f3e7ea1b51208eecccd1275660",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          38
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_d88d5444bebfd93fe8b581abe6c30da1464abf7a4d62845d26d6571a09083588",
+      "subject_key": "user",
+      "attribute_key": "opinion",
+      "object_key": "book_wild",
+      "scope_key": "UNKNOWN",
+      "value": "\"Wild\" ... was an amazing book",
+      "quote": "\"Wild\" by Cheryl Strayed in February, which was an amazing book",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "fc9d19f7_2",
+      "session_time": "2023/05/25 (Thu) 05:48",
+      "turn_index": 0,
+      "fact_id": "fact_c6ea97ef8594e789c7ecbb2e8cd30e2e0975acf804137cf0fb24cbae113c22b0",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          235,
+          298
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_0c195c57b714c05cfd6c452f11d821711aaf628746078f8320034768e85adc0f",
+      "subject_key": "user",
+      "attribute_key": "interest_level",
+      "object_key": "hiking_sierra_nevada_mountains",
+      "scope_key": "UNKNOWN",
+      "value": "really interested in hiking in the Sierra Nevada Mountains",
+      "quote": "I'm really interested in hiking in the Sierra Nevada Mountains",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "fc9d19f7_2",
+      "session_time": "2023/05/25 (Thu) 05:48",
+      "turn_index": 2,
+      "fact_id": "fact_c96f0b51ce3f992aa370c3ff9ee41ddc2956e27be289fc47c2881ab34a53aef1",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          62
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_66bbb3e50825cfa3d4564500de636050ab785b2111fdd6a4933529fb18e4508b",
+      "subject_key": "user",
+      "attribute_key": "self_assessment_readiness",
+      "object_key": "high_sierra_trail_full_distance",
+      "scope_key": "72 miles",
+      "value": "not sure if I'm ready for 72 miles",
+      "quote": "I'm not sure if I'm ready for 72 miles",
+      "polarity": "NEGATIVE",
+      "modality": "HYPOTHETICAL",
+      "session_id": "fc9d19f7_2",
+      "session_time": "2023/05/25 (Thu) 05:48",
+      "turn_index": 4,
+      "fact_id": "fact_6024facfb2cef698eca6e1163f47a1a27e704c44707e5c1b809b4fb77c0d95e6",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          50,
+          88
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_66bbb3e50825cfa3d4564500de636050ab785b2111fdd6a4933529fb18e4508b",
+      "subject_key": "user",
+      "attribute_key": "opinion",
+      "object_key": "high_sierra_trail",
+      "scope_key": "UNKNOWN",
+      "value": "the High Sierra Trail sounds amazing",
+      "quote": "I think the High Sierra Trail sounds amazing",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "fc9d19f7_2",
+      "session_time": "2023/05/25 (Thu) 05:48",
+      "turn_index": 4,
+      "fact_id": "fact_ed125ab749a0e06bd61a6d17d42b22c7b74e1a2bdf9ecb8690ea38b1f8208777",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          44
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_6d819b2f1420e5acd2facbfc4ae6a0e1805247f84641da1a164481675332c714",
+      "subject_key": "user",
+      "attribute_key": "decision",
+      "object_key": "giant_forest_to_hamilton_lakes",
+      "scope_key": "UNKNOWN",
+      "value": "go with Option 1: Giant Forest to Hamilton Lakes",
+      "quote": "I think I'll go with Option 1: Giant Forest to Hamilton Lakes",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "fc9d19f7_2",
+      "session_time": "2023/05/25 (Thu) 05:48",
+      "turn_index": 6,
+      "fact_id": "fact_3427e9d7035a62851e0a326eae760f418a78f2be635870b2fd219145b4627aad",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          61
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_1a8269b9fc02530b1e6e22458a0f742c8d35b7d008a6716f26b0ef912a77a628",
+      "subject_key": "user",
+      "attribute_key": "plan_item",
+      "object_key": "kindle",
+      "scope_key": "on the hike",
+      "value": "planning to bring my Kindle with me on the hike",
+      "quote": "I'm planning to bring my Kindle with me on the hike",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "fc9d19f7_2",
+      "session_time": "2023/05/25 (Thu) 05:48",
+      "turn_index": 8,
+      "fact_id": "fact_0b2b1395c1d021084a9e3b75319783dfd23dbe26405419e69deb98f616ea07bf",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          51
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_eda096f8d9fec2899f69328c2e22cac19681a9a23c5ce9566e1b8d8852b64676",
+      "subject_key": "user",
+      "attribute_key": "plan_item",
+      "object_key": "kindle",
+      "scope_key": "on the hike",
+      "value": "planning to bring my Kindle with me on the hike",
+      "quote": "I'm planning to bring my Kindle with me on the hike",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "fc9d19f7_2",
+      "session_time": "2023/05/25 (Thu) 05:48",
+      "turn_index": 10,
+      "fact_id": "fact_035b52008a7f02795e496bc0229af6a60d9b53b7840a306244a77299b2a51ffc",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          51
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_eda096f8d9fec2899f69328c2e22cac19681a9a23c5ce9566e1b8d8852b64676",
+      "subject_key": "user",
+      "attribute_key": "action_completed",
+      "object_key": "book_wild",
+      "scope_key": "February",
+      "value": "already read \"Wild\" by Cheryl Strayed in February",
+      "quote": "Since I already read \"Wild\" by Cheryl Strayed in February",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "fc9d19f7_2",
+      "session_time": "2023/05/25 (Thu) 05:48",
+      "turn_index": 10,
+      "fact_id": "fact_1517a494dbdf9b13564fab84e3f401aec9c1930ee20c9d9c849d5acc5383a658",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          157,
+          214
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_2b4e9c210e2fc8bbead8c5fa13215f335712758704803573a7ae0aadf69fe642",
+      "subject_key": "user",
+      "attribute_key": "perspective_on_control",
+      "object_key": "tectonic_events",
+      "scope_key": "UNKNOWN",
+      "value": "no control over them",
+      "quote": "It's crazy to think that these tectonic events are constantly happening all around us and we have no control over them.",
+      "polarity": "NEGATIVE",
+      "modality": "ASSERTED",
+      "session_id": "ultrachat_374302",
+      "session_time": "2023/05/25 (Thu) 06:22",
+      "turn_index": 4,
+      "fact_id": "fact_151e2fb39b8e45bf46a3aeee8e6f11fabf84e469e3965089fe60437c1bf72aed",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          119
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_2b4e9c210e2fc8bbead8c5fa13215f335712758704803573a7ae0aadf69fe642",
+      "subject_key": "user",
+      "attribute_key": "gratitude_for_advancements",
+      "object_key": "technology",
+      "scope_key": "disaster_preparation_and_response",
+      "value": "grateful for the advancements in technology that allow us to better prepare and respond to these disasters",
+      "quote": "But I am grateful for the advancements in technology that allow us to better prepare and respond to these disasters.",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "ultrachat_374302",
+      "session_time": "2023/05/25 (Thu) 06:22",
+      "turn_index": 4,
+      "fact_id": "fact_e3040d323c10657bbd5b06c226a6c430b6dc555817eb3a13998b8651f169d04b",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          160,
+          276
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_0eaad4b7127904b40997e2d973f5da7b0def749c9b703d95b1b24468c198998a",
+      "subject_key": "user",
+      "attribute_key": "has_children",
+      "object_key": "UNKNOWN",
+      "scope_key": "UNKNOWN",
+      "value": "energetic kids",
+      "quote": "my energetic kids",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "ultrachat_251072",
+      "session_time": "2023/05/25 (Thu) 07:18",
+      "turn_index": 4,
+      "fact_id": "fact_39e2a7801ef8139c596b74bd3eca2ff0e06af2c4ead214d2916604c66af8c0ef",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          83,
+          100
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_915463591f4a2fa8f9a4a7fd715a91857bc2df3151af8a48ddc9a7393f262b7b",
+      "subject_key": "user",
+      "attribute_key": "participation_status",
+      "object_key": "charity_soccer_tournament",
+      "scope_key": "April 15th",
+      "value": "recently participated in a charity soccer tournament on April 15th",
+      "quote": "I recently participated in a charity soccer tournament on April 15th",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "01a467ee_2",
+      "session_time": "2023/05/25 (Thu) 07:22",
+      "turn_index": 0,
+      "fact_id": "fact_996ccf933da3b5b1284ccab28b3a0eeb4fe6a6d2a404a240937036fdcd605af7",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          141,
+          209
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_915463591f4a2fa8f9a4a7fd715a91857bc2df3151af8a48ddc9a7393f262b7b",
+      "subject_key": "user",
+      "attribute_key": "activity_plan",
+      "object_key": "charity_run",
+      "scope_key": "next_month",
+      "value": "planning to register for a charity run next month",
+      "quote": "I'm planning to register for a charity run next month",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "01a467ee_2",
+      "session_time": "2023/05/25 (Thu) 07:22",
+      "turn_index": 0,
+      "fact_id": "fact_9fc8674f90fa7943719b14e55370a325337315ba3a1764efb7c9fe37c2403169",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          53
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_74f8c3f0d4b9f200d73c6b9e20d20796d42d81010b9e31f767ac60204aa0b573",
+      "subject_key": "user",
+      "attribute_key": "activity_interest",
+      "object_key": "recreational_tennis_league",
+      "scope_key": "UNKNOWN",
+      "value": "thinking of joining a recreational tennis league",
+      "quote": "I'm actually thinking of joining a recreational tennis league as well",
+      "polarity": "POSITIVE",
+      "modality": "POSSIBLE",
+      "session_id": "01a467ee_2",
+      "session_time": "2023/05/25 (Thu) 07:22",
+      "turn_index": 2,
+      "fact_id": "fact_4a4e3b6a78c645ace16a0f8a881946c829a633395c229ae2b0bc0af420f067bf",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          69
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_88e1d1bfe83086030ddc33395b9aa6c9257508f8bf66e4930053006002bf6f36",
+      "subject_key": "user",
+      "attribute_key": "activity_habit",
+      "object_key": "recreational_badminton",
+      "scope_key": "local park",
+      "value": "trying to fit in some recreational badminton games with friends at the local park",
+      "quote": "I've been trying to fit in some recreational badminton games with friends at the local park",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "01a467ee_2",
+      "session_time": "2023/05/25 (Thu) 07:22",
+      "turn_index": 6,
+      "fact_id": "fact_91cbf6696b8fce5be146cb4c0594c1bc827eb55039bb64c580231d30e5c093a6",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          53,
+          144
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_88e1d1bfe83086030ddc33395b9aa6c9257508f8bf66e4930053006002bf6f36",
+      "subject_key": "user",
+      "attribute_key": "event_history",
+      "object_key": "badminton_session",
+      "scope_key": "April 23rd",
+      "value": "most recent session was on April 23rd, when we played three games and had a blast",
+      "quote": "our most recent session was on April 23rd, when we played three games and had a blast",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "01a467ee_2",
+      "session_time": "2023/05/25 (Thu) 07:22",
+      "turn_index": 6,
+      "fact_id": "fact_eadd84bbe2f709917baa21ee612418dbcb888e959b85751902ddf39ef415839b",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          175,
+          260
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_88e1d1bfe83086030ddc33395b9aa6c9257508f8bf66e4930053006002bf6f36",
+      "subject_key": "user",
+      "attribute_key": "game_format_preference",
+      "object_key": "badminton",
+      "scope_key": "UNKNOWN",
+      "value": "usually play doubles",
+      "quote": "We usually play doubles",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "01a467ee_2",
+      "session_time": "2023/05/25 (Thu) 07:22",
+      "turn_index": 6,
+      "fact_id": "fact_f888fddc3d4db5218b4cd2ea216d200109ebfe81e2a3e2fa9972d60c2df30423",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          146,
+          169
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_9c68ad82fcec69c31177e80987353c181750a0bec69ed993e1d009979c6d8b92",
+      "subject_key": "user",
+      "attribute_key": "skill_weakness",
+      "object_key": "backhand_shots",
+      "scope_key": "badminton",
+      "value": "need to work on my backhand shots, as I tend to struggle with those",
+      "quote": "I think I need to work on my backhand shots, as I tend to struggle with those",
+      "polarity": "NEGATIVE",
+      "modality": "ASSERTED",
+      "session_id": "01a467ee_2",
+      "session_time": "2023/05/25 (Thu) 07:22",
+      "turn_index": 8,
+      "fact_id": "fact_152608027795ae0ce1b5e9406cf8a9834f529ec788573d18b651699b61d5fb8c",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          100,
+          177
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_1f860f4f3789c39f745a5cdda8089d972ca4d3def8c0f58056f4812a12f70209",
+      "subject_key": "user",
+      "attribute_key": "attended_event",
+      "object_key": "industry_event",
+      "scope_key": "recent",
+      "value": "recent industry event",
+      "quote": "a recent industry event I attended",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "answer_5126c02d_2",
+      "session_time": "2023/05/25 (Thu) 09:28",
+      "turn_index": 0,
+      "fact_id": "fact_494f5e4136fa2d46e5d9b0b05102b5642de7f1214c7ee2c514c5d5f080bf1768",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          49,
+          83
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_1f860f4f3789c39f745a5cdda8089d972ca4d3def8c0f58056f4812a12f70209",
+      "subject_key": "user",
+      "attribute_key": "follower_count_estimate",
+      "object_key": "instagram",
+      "scope_key": "current",
+      "value": "close to 1300",
+      "quote": "I think I'm close to 1300 now",
+      "polarity": "POSITIVE",
+      "modality": "POSSIBLE",
+      "session_id": "answer_5126c02d_2",
+      "session_time": "2023/05/25 (Thu) 09:28",
+      "turn_index": 0,
+      "fact_id": "fact_56d2a878a5d0ab19f8cd33993cdfd2ae1103449618c084205c72ada741095a1d",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          296,
+          325
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_1f860f4f3789c39f745a5cdda8089d972ca4d3def8c0f58056f4812a12f70209",
+      "subject_key": "user",
+      "attribute_key": "audience_location",
+      "object_key": "instagram",
+      "scope_key": "UNKNOWN",
+      "value": "mostly from the US, UK, and Australia",
+      "quote": "my audience is mostly from the US, UK, and Australia",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "answer_5126c02d_2",
+      "session_time": "2023/05/25 (Thu) 09:28",
+      "turn_index": 0,
+      "fact_id": "fact_5ff4d0167115ae13d70021afe444a15693d874ff70d494c7f8c2a757a84d63f1",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          175,
+          227
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_f614ff355575fdc1a921a86aef31abee49022f2a8357587f1014dd039af8dc0c",
+      "subject_key": "user",
+      "attribute_key": "niche_focus",
+      "object_key": "content_creation",
+      "scope_key": "UNKNOWN",
+      "value": "content creation",
+      "quote": "specific to my niche, like #contentcreation",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "answer_5126c02d_2",
+      "session_time": "2023/05/25 (Thu) 09:28",
+      "turn_index": 2,
+      "fact_id": "fact_f5c63bb2a44cfdb524b7b9e81d5bd3086f77a61c49fc2e1e500c10b421480c9d",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          80,
+          123
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_c7e019bd902a936ed49d53d6f20c6cd5a1f0d29a6028e045ed49f856aa10b19c",
+      "subject_key": "user",
+      "attribute_key": "social_media_engagement",
+      "object_key": "social_media",
+      "scope_key": "recent",
+      "value": "engagement",
+      "quote": "considering my recent growth and engagement on social media",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "answer_5126c02d_2",
+      "session_time": "2023/05/25 (Thu) 09:28",
+      "turn_index": 4,
+      "fact_id": "fact_95b7c6754326ce9e83e0622dd91465be0daae0c86de22cf649c5925e36026d74",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          105,
+          164
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_c7e019bd902a936ed49d53d6f20c6cd5a1f0d29a6028e045ed49f856aa10b19c",
+      "subject_key": "user",
+      "attribute_key": "social_media_growth",
+      "object_key": "social_media",
+      "scope_key": "recent",
+      "value": "recent growth",
+      "quote": "considering my recent growth and engagement on social media",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "answer_5126c02d_2",
+      "session_time": "2023/05/25 (Thu) 09:28",
+      "turn_index": 4,
+      "fact_id": "fact_d6c1082435e86ab2371e6dbb42bc9a5d4b3d5c46edaec705b2bffc971b7941ad",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          105,
+          164
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_15318760d74a3879fcda21c86ca57eadd441fd908632ad9cf6fa6c800a0a31d5",
+      "subject_key": "user",
+      "attribute_key": "collaboration_strategy",
+      "object_key": "micro_influencers",
+      "scope_key": "start",
+      "value": "start with micro-influencers",
+      "quote": "I'll start with micro-influencers",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "answer_5126c02d_2",
+      "session_time": "2023/05/25 (Thu) 09:28",
+      "turn_index": 6,
+      "fact_id": "fact_7fb90e235f4b47e28e43395505b46217f898159add2f844124fd5f8c3a10b011",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          8,
+          41
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_93764774071d2c66fc9ca9bc304fe2a779c7758c97f26831b4b02ab09c37d705",
+      "subject_key": "user",
+      "attribute_key": "has_platform",
+      "object_key": "blog",
+      "scope_key": "UNKNOWN",
+      "value": "my blog",
+      "quote": "guest post on my blog",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "answer_5126c02d_2",
+      "session_time": "2023/05/25 (Thu) 09:28",
+      "turn_index": 8,
+      "fact_id": "fact_5940f9d60a77af6b34ccf7e148fe6121f0ffe67c2d8463c39b60412b820c8932",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          259,
+          280
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_93764774071d2c66fc9ca9bc304fe2a779c7758c97f26831b4b02ab09c37d705",
+      "subject_key": "user",
+      "attribute_key": "collaboration_target",
+      "object_key": "ashley_gaida",
+      "scope_key": "propose_guest_blog_post",
+      "value": "reach out to Ashley Gaida and propose a guest blog post collaboration",
+      "quote": "I'll reach out to Ashley Gaida and propose a guest blog post collaboration",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "answer_5126c02d_2",
+      "session_time": "2023/05/25 (Thu) 09:28",
+      "turn_index": 8,
+      "fact_id": "fact_cbd4e32fd9d61a3815ac80430dca6bfdb363139983816e3b4bba5d671f59a633",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          74
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_df8d04c3719ebb9840d0a926dd7fe33c7970d7c36457ee3d4a9768de7b64607d",
+      "subject_key": "user",
+      "attribute_key": "media_consumption_activity",
+      "object_key": "youtube_videos",
+      "scope_key": "personal_finance",
+      "value": "watching videos from channels like Dave Ramsey and The Financial Diet",
+      "quote": "I've been watching some videos from channels like Dave Ramsey and The Financial Diet",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "f188b48d_2",
+      "session_time": "2023/05/25 (Thu) 09:56",
+      "turn_index": 0,
+      "fact_id": "fact_261a6f94d1c2db109d48fd35857020eb681c84c648098204c9e5b9c72e30287f",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          159,
+          243
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_df8d04c3719ebb9840d0a926dd7fe33c7970d7c36457ee3d4a9768de7b64607d",
+      "subject_key": "user",
+      "attribute_key": "video_watch_count",
+      "object_key": "james_charles_videos",
+      "scope_key": "past_month",
+      "value": "around 10",
+      "quote": "where I've watched around 10 videos in the past month",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "f188b48d_2",
+      "session_time": "2023/05/25 (Thu) 09:56",
+      "turn_index": 0,
+      "fact_id": "fact_77deca082ea9e0c0161f175d31714ced2c321e3e83f04217fea00145c5ae8c9a",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          345,
+          398
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_df8d04c3719ebb9840d0a926dd7fe33c7970d7c36457ee3d4a9768de7b64607d",
+      "subject_key": "user",
+      "attribute_key": "media_following_activity",
+      "object_key": "james_charles_channel",
+      "scope_key": "UNKNOWN",
+      "value": "following",
+      "quote": "I've also been following James Charles' channel",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "f188b48d_2",
+      "session_time": "2023/05/25 (Thu) 09:56",
+      "turn_index": 0,
+      "fact_id": "fact_905a77f439fe5b7da8e36c471a072d44da2e47de4138d1235934ac1d16e5607a",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          296,
+          343
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_df8d04c3719ebb9840d0a926dd7fe33c7970d7c36457ee3d4a9768de7b64607d",
+      "subject_key": "user",
+      "attribute_key": "skill_improvement_goal",
+      "object_key": "budgeting",
+      "scope_key": "UNKNOWN",
+      "value": "trying to improve",
+      "quote": "I've been trying to improve my budgeting skills",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "f188b48d_2",
+      "session_time": "2023/05/25 (Thu) 09:56",
+      "turn_index": 0,
+      "fact_id": "fact_ae181f9e7af61ac37e3f902cb446d966dad1ca9a88fe17c844b0b062ec1a991b",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          47
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_89cec6aa5684cd4bb0cd2f994e62d6dab26197c8df6205542f2dd976dfe0bb0d",
+      "subject_key": "user",
+      "attribute_key": "perception_of_resource",
+      "object_key": "dave_ramsey_books",
+      "scope_key": "UNKNOWN",
+      "value": "heard good things about",
+      "quote": "I've heard good things about Dave Ramsey's books",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "f188b48d_2",
+      "session_time": "2023/05/25 (Thu) 09:56",
+      "turn_index": 2,
+      "fact_id": "fact_0f77ebd0307d4e7100a00ba95fdeab9aa5d19ab14e8c04084d3a819fe7f6df8b",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          102,
+          150
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_89cec6aa5684cd4bb0cd2f994e62d6dab26197c8df6205542f2dd976dfe0bb0d",
+      "subject_key": "user",
+      "attribute_key": "app_usage_current",
+      "object_key": "default_budgeting_app",
+      "scope_key": "phone",
+      "value": "using",
+      "quote": "I've been using the default budgeting app on my phone",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "f188b48d_2",
+      "session_time": "2023/05/25 (Thu) 09:56",
+      "turn_index": 2,
+      "fact_id": "fact_46f9e2a762fe7760dbda47c3c10cc924e843a7f6905ed1b50559746904217ff5",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          270,
+          323
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_89cec6aa5684cd4bb0cd2f994e62d6dab26197c8df6205542f2dd976dfe0bb0d",
+      "subject_key": "user",
+      "attribute_key": "resource_interest",
+      "object_key": "books_and_podcasts",
+      "scope_key": "personal_finance",
+      "value": "definitely interested in checking out",
+      "quote": "I'm definitely interested in checking out some of those resources, especially the books and podcasts",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "f188b48d_2",
+      "session_time": "2023/05/25 (Thu) 09:56",
+      "turn_index": 2,
+      "fact_id": "fact_7b39ce4cb9f5f138007689b585b6c64e17e229ecad65cf6509e8751a2155c527",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          100
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_89cec6aa5684cd4bb0cd2f994e62d6dab26197c8df6205542f2dd976dfe0bb0d",
+      "subject_key": "user",
+      "attribute_key": "satisfaction_with_app",
+      "object_key": "default_budgeting_app",
+      "scope_key": "UNKNOWN",
+      "value": "not really sure if it's the best option",
+      "quote": "but I'm not really sure if it's the best option",
+      "polarity": "NEGATIVE",
+      "modality": "HYPOTHETICAL",
+      "session_id": "f188b48d_2",
+      "session_time": "2023/05/25 (Thu) 09:56",
+      "turn_index": 2,
+      "fact_id": "fact_973d4f3e2ef198c513e165441b9199754280aecc3a6646b9bb08e1acf28fcf66",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          325,
+          372
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_89cec6aa5684cd4bb0cd2f994e62d6dab26197c8df6205542f2dd976dfe0bb0d",
+      "subject_key": "user",
+      "attribute_key": "intent_to_try",
+      "object_key": "dave_ramsey_podcast",
+      "scope_key": "UNKNOWN",
+      "value": "been meaning to try out",
+      "quote": "I've been meaning to try out his podcast as well",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "f188b48d_2",
+      "session_time": "2023/05/25 (Thu) 09:56",
+      "turn_index": 2,
+      "fact_id": "fact_ca1e10e4c380fabe000f31d1c75913ff7b2c69636fcb679fbf65510f8862ddd7",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          156,
+          204
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_76c252099b43c8e556fd100d5b76680ebe1faa9ce458f752a5824bf7a19fa640",
+      "subject_key": "user",
+      "attribute_key": "content_observation",
+      "object_key": "james_charles_videos",
+      "scope_key": "brand_deals_and_sponsorships",
+      "value": "seen some videos where he talks about brand deals and sponsorships",
+      "quote": "I've seen some videos on James Charles' channel where he talks about brand deals and sponsorships",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "f188b48d_2",
+      "session_time": "2023/05/25 (Thu) 09:56",
+      "turn_index": 4,
+      "fact_id": "fact_05df568e43098ff5af187b121aa14afd31526ea35c72fc8886a96c101384e851",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          242,
+          339
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_76c252099b43c8e556fd100d5b76680ebe1faa9ce458f752a5824bf7a19fa640",
+      "subject_key": "user",
+      "attribute_key": "perception_of_apps",
+      "object_key": "mint_and_ynab",
+      "scope_key": "UNKNOWN",
+      "value": "heard good things about both of them",
+      "quote": "I've heard good things about both of them",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "f188b48d_2",
+      "session_time": "2023/05/25 (Thu) 09:56",
+      "turn_index": 4,
+      "fact_id": "fact_346929149c2b664ca5307bdba5fa06bedba0aacebd1c5043ea44824a249605ef",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          67,
+          108
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_76c252099b43c8e556fd100d5b76680ebe1faa9ce458f752a5824bf7a19fa640",
+      "subject_key": "user",
+      "attribute_key": "plan_to_try_apps",
+      "object_key": "mint_and_ynab",
+      "scope_key": "budgeting",
+      "value": "try out ... to see which one I like better",
+      "quote": "I think I'll try out Mint and YNAB to see which one I like better",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "f188b48d_2",
+      "session_time": "2023/05/25 (Thu) 09:56",
+      "turn_index": 4,
+      "fact_id": "fact_ba7816f9f7d45fbb598ec30792e6e3f6283995fb4647e7995c16b12cd012cfe6",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          65
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_76c252099b43c8e556fd100d5b76680ebe1faa9ce458f752a5824bf7a19fa640",
+      "subject_key": "user",
+      "attribute_key": "activity_frequency",
+      "object_key": "youtube_videos",
+      "scope_key": "lately",
+      "value": "watching a lot",
+      "quote": "since I've been watching a lot of YouTube videos lately",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "f188b48d_2",
+      "session_time": "2023/05/25 (Thu) 09:56",
+      "turn_index": 4,
+      "fact_id": "fact_db2d9fe1901822171a044ca2d98f97e0e85a0a71fd9379011d56e1b60a69385b",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          122,
+          177
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_39190e7d481d65a055ea21c11f3fafeb64b879a77998b6d0a918ee2b573b965b",
+      "subject_key": "user",
+      "attribute_key": "knowledge_state",
+      "object_key": "platform_rewards_for_watching",
+      "scope_key": "UNKNOWN",
+      "value": "didn't know they offered rewards for watching videos",
+      "quote": "I didn't know they offered rewards for watching videos",
+      "polarity": "NEGATIVE",
+      "modality": "ASSERTED",
+      "session_id": "f188b48d_2",
+      "session_time": "2023/05/25 (Thu) 09:56",
+      "turn_index": 6,
+      "fact_id": "fact_e9c73c5257095386b010139f13f4fc7040eae3c78876e60d529e3a0228bb9645",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          43,
+          97
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_39190e7d481d65a055ea21c11f3fafeb64b879a77998b6d0a918ee2b573b965b",
+      "subject_key": "user",
+      "attribute_key": "potential_action",
+      "object_key": "reward_platforms",
+      "scope_key": "UNKNOWN",
+      "value": "might have to check them out",
+      "quote": "I might have to check them out",
+      "polarity": "POSITIVE",
+      "modality": "POSSIBLE",
+      "session_id": "f188b48d_2",
+      "session_time": "2023/05/25 (Thu) 09:56",
+      "turn_index": 6,
+      "fact_id": "fact_ee85ac314ab40ef8e57f4e2f53cf7b454ab2806f91481532e0efd68a6cf7579a",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          99,
+          129
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_39190e7d481d65a055ea21c11f3fafeb64b879a77998b6d0a918ee2b573b965b",
+      "subject_key": "user",
+      "attribute_key": "activity_frequency",
+      "object_key": "asmr_videos",
+      "scope_key": "lately",
+      "value": "watching a lot",
+      "quote": "I've been watching a lot of ASMR videos lately",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "f188b48d_2",
+      "session_time": "2023/05/25 (Thu) 09:56",
+      "turn_index": 6,
+      "fact_id": "fact_fd225f1d4c7e635139220ee728d1abeeea26a3af84d0390602af09ec25c14be5",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          212,
+          258
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_1a01f2fcf71f675d737f784de906952d5f9e46ce429bae5fec651dd43466e2ca",
+      "subject_key": "user",
+      "attribute_key": "activity_frequency",
+      "object_key": "asmr_videos",
+      "scope_key": "lately",
+      "value": "watching a lot",
+      "quote": "I've been watching a lot of ASMR videos lately",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "f188b48d_2",
+      "session_time": "2023/05/25 (Thu) 09:56",
+      "turn_index": 8,
+      "fact_id": "fact_9663faebaee3567394e4f31b0c5ec55c8304eaf1f574ef598d07c855caac047b",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          91,
+          137
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_afcf43cbe3c0576adde78e65d01f412129f4369ad97ab4bde08cc104372a6837",
+      "subject_key": "user",
+      "attribute_key": "future_consideration",
+      "object_key": "creating_asmr_content",
+      "scope_key": "future",
+      "value": "will definitely consider creating",
+      "quote": "I think I'll definitely consider creating ASMR content in the future",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "f188b48d_2",
+      "session_time": "2023/05/25 (Thu) 09:56",
+      "turn_index": 10,
+      "fact_id": "fact_3bf5cd1fd98d3ee35d4cbe72801ef43f41f6c8a8d7d3b34ad2dcb3c53852437c",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          68
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_afcf43cbe3c0576adde78e65d01f412129f4369ad97ab4bde08cc104372a6837",
+      "subject_key": "user",
+      "attribute_key": "interest_level",
+      "object_key": "asmr_content_creation",
+      "scope_key": "lately",
+      "value": "really interested in it",
+      "quote": "I've been really interested in it lately",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "f188b48d_2",
+      "session_time": "2023/05/25 (Thu) 09:56",
+      "turn_index": 10,
+      "fact_id": "fact_7e77a80503ffa4f442654e2a8449eb17a158f6954913ddc8f2555e99d4f30bc1",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          70,
+          110
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_c46c6e560a7ae75cd777340a6aaaf168ad6656d819cec887be1f011dca218138",
+      "subject_key": "user",
+      "attribute_key": "plan",
+      "object_key": "support_sustainable_businesses",
+      "scope_key": "UNKNOWN",
+      "value": "supporting sustainable businesses",
+      "quote": "and supporting sustainable businesses",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "ultrachat_207469",
+      "session_time": "2023/05/25 (Thu) 12:29",
+      "turn_index": 8,
+      "fact_id": "fact_0810391d2e98ab360225b203b7d581754f4d9135a6e1bd05f255e514916ac8ee",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          75,
+          112
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_c46c6e560a7ae75cd777340a6aaaf168ad6656d819cec887be1f011dca218138",
+      "subject_key": "user",
+      "attribute_key": "plan",
+      "object_key": "reduce_plastic_waste",
+      "scope_key": "UNKNOWN",
+      "value": "start by reducing my plastic waste",
+      "quote": "I think I'll start by reducing my plastic waste",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "ultrachat_207469",
+      "session_time": "2023/05/25 (Thu) 12:29",
+      "turn_index": 8,
+      "fact_id": "fact_e2c383fde3843375522f79b7b9ce377a95940f23ae31f0023fef8abb06cc48e7",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          27,
+          74
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_b16535ce1d003baf9bf674f31280112b7a57d04e0dafe4608a0eff054bb6dd29",
+      "subject_key": "user",
+      "attribute_key": "activity_participation",
+      "object_key": "hike",
+      "scope_key": "with friends",
+      "value": "went on a hike with friends the week before last",
+      "quote": "I even brought my camera with me on a hike with friends the week before last",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "61d3fec4_4",
+      "session_time": "2023/05/25 (Thu) 15:05",
+      "turn_index": 0,
+      "fact_id": "fact_65d1957af9d70f3ac8b8b49717b76eb249d45314f432fcc255c15ede8d073cf2",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          299,
+          375
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_b16535ce1d003baf9bf674f31280112b7a57d04e0dafe4608a0eff054bb6dd29",
+      "subject_key": "user",
+      "attribute_key": "hobby_interest",
+      "object_key": "photography",
+      "scope_key": "UNKNOWN",
+      "value": "getting more into photography lately",
+      "quote": "I've been getting more into photography lately",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "61d3fec4_4",
+      "session_time": "2023/05/25 (Thu) 15:05",
+      "turn_index": 0,
+      "fact_id": "fact_b1aa8bc2622edc173c457db618168f3bbb5a2d0c3a37002a5a6de48b94eeddc1",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          250,
+          296
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_08bd237a3f2b6eab750d607f9151ce4ce2d4e1d15278b907289f82e283f2add4",
+      "subject_key": "user",
+      "attribute_key": "plan",
+      "object_key": "photo_editing",
+      "scope_key": "photos from hike",
+      "value": "meaning to edit those photos from my hike last week",
+      "quote": "I've been meaning to edit those photos from my hike last week",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "61d3fec4_4",
+      "session_time": "2023/05/25 (Thu) 15:05",
+      "turn_index": 2,
+      "fact_id": "fact_9cb62ce026fd57e1cc09a24401befbae9447383ef07d943c1e255baee7a82201",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          163,
+          224
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_399e210db3e6c31f36afad1196bf6dab401280e32520952ec4da219249fea323",
+      "subject_key": "user",
+      "attribute_key": "activity_participation",
+      "object_key": "camera_feature_experimentation",
+      "scope_key": "panoramic feature",
+      "value": "experimenting with my camera's panoramic feature on that hike",
+      "quote": "I was experimenting with my camera's panoramic feature on that hike",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "61d3fec4_4",
+      "session_time": "2023/05/25 (Thu) 15:05",
+      "turn_index": 4,
+      "fact_id": "fact_d8ca88397d55b429f60a8ae3190fe1a4930f92eb64d0b46699c9ca04287db9e0",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          202,
+          269
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_a1d9e372b9f6513c3f0194a3207d39af14a7550c25c08eb2d6befd87cc4088bb",
+      "subject_key": "user",
+      "attribute_key": "plan",
+      "object_key": "photo_printing",
+      "scope_key": "favorite photos from hike",
+      "value": "thinking of printing some of my favorite photos from my hike and framing them",
+      "quote": "I'm thinking of printing some of my favorite photos from my hike and framing them",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "61d3fec4_4",
+      "session_time": "2023/05/25 (Thu) 15:05",
+      "turn_index": 6,
+      "fact_id": "fact_5c165dd75767cdfcad361f281734e1c08d6a9aafebb0091d1357e3b1117e13ce",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          81
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_883ca904efbb38e4fb83830b4d8191acb610b66a6b55731bd033c21f354eb921",
+      "subject_key": "user",
+      "attribute_key": "plan",
+      "object_key": "night_photography",
+      "scope_key": "cityscapes",
+      "value": "thinking of taking more photos of cityscapes at night",
+      "quote": "I'm thinking of taking more photos of cityscapes at night",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "61d3fec4_4",
+      "session_time": "2023/05/25 (Thu) 15:05",
+      "turn_index": 10,
+      "fact_id": "fact_126f85e429f94b5e394321e5bf8dabdccd200fc0b874b40696a396f83d47f5a8",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          57
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_6e8c3b021f6db580e1487117479e8abc66962ff7cce98a74f0ac559f14df51a2",
+      "subject_key": "user",
+      "attribute_key": "service_usage_history",
+      "object_key": "grubhub",
+      "scope_key": "earlier this week",
+      "value": "tried out a new food delivery service, GrubHub",
+      "quote": "I tried out a new food delivery service, GrubHub, earlier this week",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "c98b3349_3",
+      "session_time": "2023/05/25 (Thu) 15:30",
+      "turn_index": 0,
+      "fact_id": "fact_67f179c7181baec89e0e5f60d36e11da17f7c00bcf00edcd7c1e68a172626ccb",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          231,
+          298
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_6e8c3b021f6db580e1487117479e8abc66962ff7cce98a74f0ac559f14df51a2",
+      "subject_key": "user",
+      "attribute_key": "meal_planning_intent",
+      "object_key": "slow_cooker_chili",
+      "scope_key": "UNKNOWN",
+      "value": "thinking of trying out a new recipe for slow cooker chili",
+      "quote": "I'm thinking of trying out a new recipe for slow cooker chili",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "c98b3349_3",
+      "session_time": "2023/05/25 (Thu) 15:30",
+      "turn_index": 0,
+      "fact_id": "fact_b90701c4cb00b5f8a6b339dd2b9f599ec4e1bea29b86afab3d9c13d3f8f97b53",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          61
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_6e8c3b021f6db580e1487117479e8abc66962ff7cce98a74f0ac559f14df51a2",
+      "subject_key": "user",
+      "attribute_key": "opinion",
+      "object_key": "grubhub",
+      "scope_key": "options",
+      "value": "impressed with their options",
+      "quote": "was impressed with their options",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "c98b3349_3",
+      "session_time": "2023/05/25 (Thu) 15:30",
+      "turn_index": 0,
+      "fact_id": "fact_ec15e1be693f130bc8b1f62b5998cb4c5490e2ad99d232c9ddc1a804c304b4d3",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          303,
+          335
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_8f62b5701b7972ff6b0f5d50dd191dc28273e16e6ffd12d83855ea606cc08b33",
+      "subject_key": "user",
+      "attribute_key": "cooking_plan",
+      "object_key": "slow_cooker_chili",
+      "scope_key": "Sunday",
+      "value": "making the slow cooker chili on Sunday",
+      "quote": "I was thinking of making the slow cooker chili on Sunday",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "c98b3349_3",
+      "session_time": "2023/05/25 (Thu) 15:30",
+      "turn_index": 2,
+      "fact_id": "fact_114d1f5a9f3ddf5855deef43b53ac9386615fbc26dd2c31151bd7a31b3a4d341",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          115,
+          171
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_a98af8e382609edd680d3fd5e6726c5c82d470f58e94ac68294e9970bbe5acd2",
+      "subject_key": "user",
+      "attribute_key": "meal_choice",
+      "object_key": "roasted_vegetables",
+      "scope_key": "Wednesday",
+      "value": "go with the Roasted Vegetables instead of the baked potatoes",
+      "quote": "For Wednesday, I think I'll go with the Roasted Vegetables instead of the baked potatoes",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "c98b3349_3",
+      "session_time": "2023/05/25 (Thu) 15:30",
+      "turn_index": 4,
+      "fact_id": "fact_66b0b8d830ee2cec3637d85f7c315e54b15dfb40b287edc3fdba59d7a3a2699d",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          263,
+          351
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_a98af8e382609edd680d3fd5e6726c5c82d470f58e94ac68294e9970bbe5acd2",
+      "subject_key": "user",
+      "attribute_key": "food_preference",
+      "object_key": "mexican_street_corn_salad",
+      "scope_key": "UNKNOWN",
+      "value": "not really a fan",
+      "quote": "I'm not really a fan of Mexican Street Corn Salad",
+      "polarity": "NEGATIVE",
+      "modality": "ASSERTED",
+      "session_id": "c98b3349_3",
+      "session_time": "2023/05/25 (Thu) 15:30",
+      "turn_index": 4,
+      "fact_id": "fact_6b0135300e93aeb9455365d58e05b0f7907a8fe8c97e396dcaac1be0a612fb7d",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          108,
+          157
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_a98af8e382609edd680d3fd5e6726c5c82d470f58e94ac68294e9970bbe5acd2",
+      "subject_key": "user",
+      "attribute_key": "cooking_plan",
+      "object_key": "croutons",
+      "scope_key": "Friday",
+      "value": "might try making some croutons to go with the Tomato Soup",
+      "quote": "And on Friday, I might try making some croutons to go with the Tomato Soup",
+      "polarity": "POSITIVE",
+      "modality": "POSSIBLE",
+      "session_id": "c98b3349_3",
+      "session_time": "2023/05/25 (Thu) 15:30",
+      "turn_index": 4,
+      "fact_id": "fact_a4f11268685020459bc2033c8b92031eab31a83a6bf98ce010048b368ad5ad22",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          353,
+          427
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_a98af8e382609edd680d3fd5e6726c5c82d470f58e94ac68294e9970bbe5acd2",
+      "subject_key": "user",
+      "attribute_key": "meal_choice",
+      "object_key": "chili_mac_and_garlic_bread",
+      "scope_key": "Tuesday",
+      "value": "great combo",
+      "quote": "But the Chili Mac and Garlic Bread sound like a great combo for Tuesday",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "c98b3349_3",
+      "session_time": "2023/05/25 (Thu) 15:30",
+      "turn_index": 4,
+      "fact_id": "fact_cdec80ab3f7d554939d1622bc1565b2b6c4add274966290f2b0cc3a2a666a73d",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          190,
+          261
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_195e48b54cb6368b809812b9722c7f043fbf528c9f3c24108243668c2c9028ef",
+      "subject_key": "user",
+      "attribute_key": "emotion",
+      "object_key": "making_croutons_from_scratch",
+      "scope_key": "UNKNOWN",
+      "value": "excited to try making croutons from scratch",
+      "quote": "I'm also excited to try making croutons from scratch",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "c98b3349_3",
+      "session_time": "2023/05/25 (Thu) 15:30",
+      "turn_index": 6,
+      "fact_id": "fact_108ce30d5bc409042a7ba54ef20378139c48af3cb4fc1543ce419162369f5a75",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          49,
+          101
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_61df15932d7b24096b9f829253995795f922a81a5bb02f04763dba769dd11ffd",
+      "subject_key": "user",
+      "attribute_key": "shopping_plan",
+      "object_key": "ingredients_online",
+      "scope_key": "local store that partners with GrubHub",
+      "value": "thinking of ordering some ingredients online from a local store that partners with GrubHub",
+      "quote": "I was thinking of ordering some ingredients online from a local store that partners with GrubHub",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "c98b3349_3",
+      "session_time": "2023/05/25 (Thu) 15:30",
+      "turn_index": 8,
+      "fact_id": "fact_30aa60a20ababf7527f2b67849b12ff4ec9c03692c0ac2aa15d1a84317b4010f",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          137,
+          233
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_61df15932d7b24096b9f829253995795f922a81a5bb02f04763dba769dd11ffd",
+      "subject_key": "user",
+      "attribute_key": "cooking_plan",
+      "object_key": "tomato_soup_recipe",
+      "scope_key": "this week",
+      "value": "try it out this week",
+      "quote": "I think I'll try it out this week",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "c98b3349_3",
+      "session_time": "2023/05/25 (Thu) 15:30",
+      "turn_index": 8,
+      "fact_id": "fact_50e4b6a40571bec10c61d7983b24e048193080863950eafafd4ad532d7a5e44e",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          33,
+          66
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_c8dfc2d57964132196a6d4b8343047b27cc2a18a9ad95630d698a5d1c2cc88eb",
+      "subject_key": "user",
+      "attribute_key": "knowledge_correction",
+      "object_key": "grubhub_service_scope",
+      "scope_key": "ordering ingredients",
+      "value": "GrubHub is definitely not for ordering ingredients",
+      "quote": "Yeah, GrubHub is definitely not for ordering ingredients",
+      "polarity": "NEGATIVE",
+      "modality": "ASSERTED",
+      "session_id": "c98b3349_3",
+      "session_time": "2023/05/25 (Thu) 15:30",
+      "turn_index": 10,
+      "fact_id": "fact_826c30d306888b1de004ef30f1b2f9f5cf34ab187b3d5fb37ba2d1f6573194ae",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          30,
+          86
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_778c7ccd4f551247e00e37bbcdc8d8d48f7d2cbc3b93f6134f340ad5ce5c5e67",
+      "subject_key": "user",
+      "attribute_key": "account_usage_plan",
+      "object_key": "new_email_address",
+      "scope_key": "all my online accounts",
+      "value": "trying to use that for all my online accounts now",
+      "quote": "I'm trying to use that for all my online accounts now",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "b65f51fb_5",
+      "session_time": "2023/05/25 (Thu) 15:40",
+      "turn_index": 0,
+      "fact_id": "fact_391f36fa765a41321db573d8fa90600ae81f9b570d7337ce0fdc7ee372adcfc3",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          185,
+          238
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_778c7ccd4f551247e00e37bbcdc8d8d48f7d2cbc3b93f6134f340ad5ce5c5e67",
+      "subject_key": "user",
+      "attribute_key": "email_setup_date",
+      "object_key": "new_email_address",
+      "scope_key": "with new last name",
+      "value": "February 12th",
+      "quote": "I recently set up a new email address with my new last name on February 12th",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "b65f51fb_5",
+      "session_time": "2023/05/25 (Thu) 15:40",
+      "turn_index": 0,
+      "fact_id": "fact_d607695bc94bcfa051b8f3411add82f30f324288aa2c9a7aa1ff2b4ee2735bc8",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          103,
+          179
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_778c7ccd4f551247e00e37bbcdc8d8d48f7d2cbc3b93f6134f340ad5ce5c5e67",
+      "subject_key": "user",
+      "attribute_key": "online_presence_update_status",
+      "object_key": "UNKNOWN",
+      "scope_key": "UNKNOWN",
+      "value": "trying to update my online presence",
+      "quote": "I'm trying to update my online presence",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "b65f51fb_5",
+      "session_time": "2023/05/25 (Thu) 15:40",
+      "turn_index": 0,
+      "fact_id": "fact_e8dc537788c3877094935c9601147e270d88430467ea40254cb8ee9279d166e5",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          39
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_2557a2aac65f1e7fdf2575291027bf632a90c0e17feac26a7fc28c51f135443c",
+      "subject_key": "user",
+      "attribute_key": "organization_method_plan",
+      "object_key": "spreadsheet",
+      "scope_key": "keeping track of updates",
+      "value": "create a spreadsheet to keep everything organized",
+      "quote": "I think I'll create a spreadsheet to keep everything organized",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "b65f51fb_5",
+      "session_time": "2023/05/25 (Thu) 15:40",
+      "turn_index": 8,
+      "fact_id": "fact_8011d35e55c89e3aae22b2113b1c17dcb8f98346c4ce9cd39be5af52ceb0c68a",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          115,
+          177
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_2557a2aac65f1e7fdf2575291027bf632a90c0e17feac26a7fc28c51f135443c",
+      "subject_key": "user",
+      "attribute_key": "worry",
+      "object_key": "missing account updates",
+      "scope_key": "less frequently used ones",
+      "value": "remembering to update all the online accounts, especially the less frequently used ones",
+      "quote": "One thing I'm still worried about is remembering to update all the online accounts, especially the less frequently used ones",
+      "polarity": "NEGATIVE",
+      "modality": "ASSERTED",
+      "session_id": "b65f51fb_5",
+      "session_time": "2023/05/25 (Thu) 15:40",
+      "turn_index": 8,
+      "fact_id": "fact_b732de11f6203fbb5c6d5ffa55c2e9d4c9da059b582b512e1da2aa89304e82ff",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          179,
+          303
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_7fb94180b049a224f7271ad910d89f184da9713fa2622c1d1c4ef3453fc7b94e",
+      "subject_key": "user",
+      "attribute_key": "reminder_plan",
+      "object_key": "specific accounts",
+      "scope_key": "update",
+      "value": "set reminders to update specific accounts",
+      "quote": "set reminders to update specific accounts",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "b65f51fb_5",
+      "session_time": "2023/05/25 (Thu) 15:40",
+      "turn_index": 10,
+      "fact_id": "fact_7eeccae8569e9bb476568a5e5428815cb8a50f7fd7116c9e4c02701f4120f804",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          105,
+          146
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_7fb94180b049a224f7271ad910d89f184da9713fa2622c1d1c4ef3453fc7b94e",
+      "subject_key": "user",
+      "attribute_key": "review_plan",
+      "object_key": "credit report",
+      "scope_key": "identify accounts associated with old information",
+      "value": "review my credit report to identify any accounts that may be associated with my old information",
+      "quote": "I'll also review my credit report to identify any accounts that may be associated with my old information",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "b65f51fb_5",
+      "session_time": "2023/05/25 (Thu) 15:40",
+      "turn_index": 10,
+      "fact_id": "fact_a42304077ee47a14127e81862ca62ab74f8635f4dbccc9e7aab1b159039ccda5",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          148,
+          253
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_7fb94180b049a224f7271ad910d89f184da9713fa2622c1d1c4ef3453fc7b94e",
+      "subject_key": "user",
+      "attribute_key": "tracking_method_plan",
+      "object_key": "spreadsheet",
+      "scope_key": "track progress",
+      "value": "create a spreadsheet to track my progress",
+      "quote": "I'll create a spreadsheet to track my progress",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "b65f51fb_5",
+      "session_time": "2023/05/25 (Thu) 15:40",
+      "turn_index": 10,
+      "fact_id": "fact_f691f1090624d59087aaf82907893c6a0dccb10c9cd55e1fe789c42530f56309",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          54,
+          100
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_8b7406ee37435f3d3f0b7720f4e7b7027525beebef448f8563be8f6d998c78a8",
+      "subject_key": "user",
+      "attribute_key": "hobby_activity_frequency",
+      "object_key": "model_building",
+      "scope_key": "weekends",
+      "value": "around 2-3 hours every Saturday and Sunday",
+      "quote": "spending around 2-3 hours every Saturday and Sunday on it",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "98c6946f_1",
+      "session_time": "2023/05/25 (Thu) 15:56",
+      "turn_index": 0,
+      "fact_id": "fact_e22433c49f871beec79c4b66d30ad49cd92509d80dba802d198986414b8b45bc",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          102,
+          159
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_9ad51cb1d335237ca0beec3275d3add6351ef1485443a1ac302e80b672213240",
+      "subject_key": "user",
+      "attribute_key": "current_project",
+      "object_key": "wwii_german_soldier_figure",
+      "scope_key": "UNKNOWN",
+      "value": "1/16 scale figure of a WWII German soldier",
+      "quote": "my next project, a 1/16 scale figure of a WWII German soldier",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "98c6946f_1",
+      "session_time": "2023/05/25 (Thu) 15:56",
+      "turn_index": 2,
+      "fact_id": "fact_86140781ce79fce102b5ae074e2ec220a8fb8c44adb36bf74c8994f95574b805",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          93,
+          154
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_ba80a75b2e67379f32296d0dacf8ef8937389df90cdd612faca19a2195bf1100",
+      "subject_key": "user",
+      "attribute_key": "material_preference",
+      "object_key": "vallejo_paints",
+      "scope_key": "UNKNOWN",
+      "value": "planning to use Vallejo paints",
+      "quote": "I'm planning to use Vallejo paints for my 1/16 scale WWII German soldier figure",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "98c6946f_1",
+      "session_time": "2023/05/25 (Thu) 15:56",
+      "turn_index": 6,
+      "fact_id": "fact_8ee01216515f2c462e8a89bd2688e2501da22a824abcac5c200decd27f36a28c",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          79
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_ba80a75b2e67379f32296d0dacf8ef8937389df90cdd612faca19a2195bf1100",
+      "subject_key": "user",
+      "attribute_key": "hobby_activity_frequency",
+      "object_key": "model_building",
+      "scope_key": "weekends",
+      "value": "around 2-3 hours every Saturday and Sunday",
+      "quote": "I've been spending around 2-3 hours every Saturday and Sunday on model building",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "98c6946f_1",
+      "session_time": "2023/05/25 (Thu) 15:56",
+      "turn_index": 6,
+      "fact_id": "fact_b0a6506f23ff37bc5b6c40f19f04bd6a5ad15c75a2e522e76fb405c2a6a43308",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          134,
+          213
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_95dc0d051873f24fdf1cdc158f2341bbfe559d3c096e659eaff319c8c5d49f84",
+      "subject_key": "user",
+      "attribute_key": "hobby_activity_frequency",
+      "object_key": "model_building",
+      "scope_key": "weekends",
+      "value": "around 2-3 hours every Saturday and Sunday",
+      "quote": "Since I've been spending around 2-3 hours every Saturday and Sunday on model building",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "98c6946f_1",
+      "session_time": "2023/05/25 (Thu) 15:56",
+      "turn_index": 8,
+      "fact_id": "fact_515cda22522ec1a8b0a278cd36cecce4bde59992e1508c1ae97436131a021c7e",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          96,
+          181
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_016f7b26c9aa2909abfbb1f46ac629223b7e564be66c936a6ad14a0b47620ec8",
+      "subject_key": "user",
+      "attribute_key": "hobby_activity_frequency",
+      "object_key": "model_building",
+      "scope_key": "weekends",
+      "value": "around 2-3 hours every Saturday and Sunday",
+      "quote": "Since I've been spending around 2-3 hours every Saturday and Sunday on model building",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "98c6946f_1",
+      "session_time": "2023/05/25 (Thu) 15:56",
+      "turn_index": 10,
+      "fact_id": "fact_c3ef365b07c63fcc00e584b90cd3f4a62cce31f7e140d758a6a8af3a7571cec1",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          97,
+          182
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_11e2c462fa3b7549eecc2eb5571990d7f1a4412b5664d88186cbe7e66847efaf",
+      "subject_key": "user",
+      "attribute_key": "commute_mode",
+      "object_key": "bike",
+      "scope_key": "daily",
+      "value": "thinking of getting a new bike for my daily commute",
+      "quote": "I'm thinking of getting a new bike for my daily commute.",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "104055de",
+      "session_time": "2023/05/25 (Thu) 16:20",
+      "turn_index": 0,
+      "fact_id": "fact_adc456352db83e68abb4c613a37dc18144d2c57b79a149bb341c45b4a0c087e8",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          56
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_c3e66dc73037331e6e761df36937c18f35fcd3d3aaafd6a5f5e852b0b2c332e0",
+      "subject_key": "user",
+      "attribute_key": "vehicle_location",
+      "object_key": "motorcycle",
+      "scope_key": "garage",
+      "value": "has been sitting in my garage for over a year",
+      "quote": "which has been sitting in my garage for over a year",
+      "polarity": "UNKNOWN",
+      "modality": "ASSERTED",
+      "session_id": "104055de",
+      "session_time": "2023/05/25 (Thu) 16:20",
+      "turn_index": 2,
+      "fact_id": "fact_5f7070725ac7a5e4a50484aba5f15898d28baed37c74b3a8a11ca6e1f4132aca",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          67,
+          118
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_c3e66dc73037331e6e761df36937c18f35fcd3d3aaafd6a5f5e852b0b2c332e0",
+      "subject_key": "user",
+      "attribute_key": "vehicle_status",
+      "object_key": "motorcycle",
+      "scope_key": "UNKNOWN",
+      "value": "considering selling my old motorcycle, a 2005 Yamaha FZ6",
+      "quote": "I'm also considering selling my old motorcycle, a 2005 Yamaha FZ6",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "104055de",
+      "session_time": "2023/05/25 (Thu) 16:20",
+      "turn_index": 2,
+      "fact_id": "fact_8b1d6fe017c8327610e22f87f07ec4c2c03aba2685ce986e5d4ba7824148b417",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          65
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_2368f9374259dbcb0c115f487420b25ffce09fc79bc940ecbb8cdba93c84bc84",
+      "subject_key": "user",
+      "attribute_key": "decision_status",
+      "object_key": "trek_fx_2_specialized_sirrus",
+      "scope_key": "UNKNOWN",
+      "value": "still undecided between the Trek FX 2 and the Specialized Sirrus",
+      "quote": "I'm still undecided between the Trek FX 2 and the Specialized Sirrus",
+      "polarity": "UNKNOWN",
+      "modality": "ASSERTED",
+      "session_id": "104055de",
+      "session_time": "2023/05/25 (Thu) 16:20",
+      "turn_index": 4,
+      "fact_id": "fact_0f3cff01ad3bf2c147bdbe6b0bb8b17fe3aaa1625e2732567d7ac8710f3bfcdb",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          132,
+          200
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_2368f9374259dbcb0c115f487420b25ffce09fc79bc940ecbb8cdba93c84bc84",
+      "subject_key": "user",
+      "attribute_key": "activity_history",
+      "object_key": "test_ride",
+      "scope_key": "local bike shop",
+      "value": "test-rode a few models at the local bike shop on February 12th",
+      "quote": "I test-rode a few models at the local bike shop on February 12th.",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "104055de",
+      "session_time": "2023/05/25 (Thu) 16:20",
+      "turn_index": 4,
+      "fact_id": "fact_3edf62893e2d4315050b4eeca7bff0be414471eaa7a55a7fa623f08006099a9b",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          66,
+          131
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_2368f9374259dbcb0c115f487420b25ffce09fc79bc940ecbb8cdba93c84bc84",
+      "subject_key": "user",
+      "attribute_key": "commute_mode",
+      "object_key": "bike",
+      "scope_key": "daily to work",
+      "value": "considering getting a bike for my daily commute to work",
+      "quote": "I'm also considering getting a bike for my daily commute to work.",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "104055de",
+      "session_time": "2023/05/25 (Thu) 16:20",
+      "turn_index": 4,
+      "fact_id": "fact_6ef4bacb21eba8f2e4e538709e1ec1b2c2cd4480b81c8fc3ed2dee724d9eda62",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          65
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_2368f9374259dbcb0c115f487420b25ffce09fc79bc940ecbb8cdba93c84bc84",
+      "subject_key": "user",
+      "attribute_key": "purchase_history",
+      "object_key": "floor_mats",
+      "scope_key": "january_10th",
+      "value": "replaced my car's floor mats on January 10th, which cost me $120 from the dealership",
+      "quote": "I replaced my car's floor mats on January 10th, which cost me $120 from the dealership.",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "104055de",
+      "session_time": "2023/05/25 (Thu) 16:20",
+      "turn_index": 4,
+      "fact_id": "fact_786fae5b601a8fdd56366c36da6f7ed161653e96d6fc7251ae3b7fe9f75eedbf",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          408,
+          495
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_2368f9374259dbcb0c115f487420b25ffce09fc79bc940ecbb8cdba93c84bc84",
+      "subject_key": "user",
+      "attribute_key": "service_history",
+      "object_key": "car",
+      "scope_key": "february_2nd",
+      "value": "got my car serviced on February 2nd, including an oil change, tire rotation, and brake pad replacement, which totaled $350",
+      "quote": "I got my car serviced on February 2nd, including an oil change, tire rotation, and brake pad replacement, which totaled $350.",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "104055de",
+      "session_time": "2023/05/25 (Thu) 16:20",
+      "turn_index": 4,
+      "fact_id": "fact_a8453e204523ba87a0d83fc7037247e23b7396f1892eaecc17639f6ad53e1d8c",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          277,
+          402
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_a5867eb7bb67870850bcb0622511576afe341b84d6cf97fe86418fb8e5d31437",
+      "subject_key": "user",
+      "attribute_key": "preference",
+      "object_key": "riding_position",
+      "scope_key": "sirrus",
+      "value": "prefer the more upright riding position of the Sirrus",
+      "quote": "I think I prefer the more upright riding position of the Sirrus.",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "104055de",
+      "session_time": "2023/05/25 (Thu) 16:20",
+      "turn_index": 6,
+      "fact_id": "fact_2dc05bf3bca8661210c431bbc231b05fe709fe5fb8e4b32a3c1cc895f971792a",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          45,
+          109
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_a5867eb7bb67870850bcb0622511576afe341b84d6cf97fe86418fb8e5d31437",
+      "subject_key": "user",
+      "attribute_key": "requirement",
+      "object_key": "suspension",
+      "scope_key": "rough_city_roads",
+      "value": "suspension is important to me since I'd be riding on rough city roads",
+      "quote": "suspension is important to me since I'd be riding on rough city roads",
+      "polarity": "POSITIVE",
+      "modality": "HYPOTHETICAL",
+      "session_id": "104055de",
+      "session_time": "2023/05/25 (Thu) 16:20",
+      "turn_index": 6,
+      "fact_id": "fact_8c71ad3237e7c847a5b228b6cac9fdf0b70069626526ddd89465e51a7fe7470e",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          120,
+          189
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_741b9edbfe69490acb01c3b69e9ad7d0fec3b99cac1665d76e66a2ed35a29d6b",
+      "subject_key": "user",
+      "attribute_key": "decision_tendency",
+      "object_key": "specialized_sirrus",
+      "scope_key": "UNKNOWN",
+      "value": "starting to lean towards the Sirrus",
+      "quote": "I think I'm starting to lean towards the Sirrus",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "104055de",
+      "session_time": "2023/05/25 (Thu) 16:20",
+      "turn_index": 8,
+      "fact_id": "fact_f215a91e52d872715ccad68ab812dc629c3d9442db0ebdc8592879f24ac10f13",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          47
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_4d4966a9de202c2dc8674f9018c8a240ab0fc4c5df72f4f57e73b92e5abd6ec2",
+      "subject_key": "user",
+      "attribute_key": "lending_history",
+      "object_key": "car",
+      "scope_key": "mid_january",
+      "value": "lent it to my sister for a week in mid-January",
+      "quote": "I remembered that I lent it to my sister for a week in mid-January",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "104055de",
+      "session_time": "2023/05/25 (Thu) 16:20",
+      "turn_index": 10,
+      "fact_id": "fact_209fa4dd17b7c439024f5cf20cc8cfe586eee4f66028139fab276cfcc7030efb",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          163,
+          229
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_4d4966a9de202c2dc8674f9018c8a240ab0fc4c5df72f4f57e73b92e5abd6ec2",
+      "subject_key": "user",
+      "attribute_key": "expense_history",
+      "object_key": "parking_ticket",
+      "scope_key": "san_francisco",
+      "value": "had to pay $65 to settle",
+      "quote": "She got a parking ticket in downtown San Francisco, which I had to pay $65 to settle.",
+      "polarity": "NEGATIVE",
+      "modality": "ASSERTED",
+      "session_id": "104055de",
+      "session_time": "2023/05/25 (Thu) 16:20",
+      "turn_index": 10,
+      "fact_id": "fact_c54190712dee6671dd6c100a7e0cba4248d43a45e28b3fe6cf49c185de700412",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          231,
+          316
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_1fecc29a79bd4352d31b054ad5218527fc8e40ff1d2576f2aefb6a37f6776448",
+      "subject_key": "user",
+      "attribute_key": "laptop_preference",
+      "object_key": "dell_inspiron_14_5000",
+      "scope_key": "UNKNOWN",
+      "value": "leaning towards the Dell Inspiron 14 5000",
+      "quote": "I'm leaning towards the Dell Inspiron 14 5000.",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "ultrachat_75332",
+      "session_time": "2023/05/25 (Thu) 16:57",
+      "turn_index": 6,
+      "fact_id": "fact_43de6c788a8e6a1229e2a7ac036838515bfddd737c4b5af0347b4756b4f3bbbe",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          6,
+          52
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_9d35b44664c226a86227d77aebac764c4584d80dd5f1474a4b366749d5656168",
+      "subject_key": "user",
+      "attribute_key": "storage_capacity_choice",
+      "object_key": "512gb",
+      "scope_key": "UNKNOWN",
+      "value": "go for the 512GB so I don't have to worry about storage space",
+      "quote": "I think I'll go for the 512GB so I don't have to worry about storage space.",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "ultrachat_75332",
+      "session_time": "2023/05/25 (Thu) 16:57",
+      "turn_index": 8,
+      "fact_id": "fact_cc70a21840238d83422173a5873148d1e04d5f9013c192cc608ca8ef2b6fd6d2",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          75
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_56dfe8cd4698c39fcea4e2072d56c815d3ac0ab704db54134a496d7df7a64f5f",
+      "subject_key": "user",
+      "attribute_key": "work_schedule_habit",
+      "object_key": "late_night",
+      "scope_key": "UNKNOWN",
+      "value": "often work late at night",
+      "quote": "I often work late at night",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "ultrachat_75332",
+      "session_time": "2023/05/25 (Thu) 16:57",
+      "turn_index": 10,
+      "fact_id": "fact_38b3e7c335de8af6b97ee64d7396c623ee390c204c0b5a47fad195708503df83",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          22,
+          48
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_56dfe8cd4698c39fcea4e2072d56c815d3ac0ab704db54134a496d7df7a64f5f",
+      "subject_key": "user",
+      "attribute_key": "feature_preference",
+      "object_key": "touchscreen_display",
+      "scope_key": "navigating_and_scrolling_documents",
+      "value": "find that really helpful for navigating and scrolling through documents",
+      "quote": "I find that really helpful for navigating and scrolling through documents.",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "ultrachat_75332",
+      "session_time": "2023/05/25 (Thu) 16:57",
+      "turn_index": 10,
+      "fact_id": "fact_653861e41755d02f4fd288ce1af2e6e22d73aebf061d3ddd154feefb3a98fb84",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          173,
+          247
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_f12949437a922cc7b31992eca282c20921d832a3794f31064c4db9fddcba274a",
+      "subject_key": "user",
+      "attribute_key": "purchase_decision",
+      "object_key": "dell_inspiron_14_5000_with_ssd_backlit_keyboard_touchscreen",
+      "scope_key": "UNKNOWN",
+      "value": "definitely go for the Dell Inspiron 14 5000 with the SSD, backlit keyboard, and touchscreen display",
+      "quote": "I'll definitely go for the Dell Inspiron 14 5000 with the SSD, backlit keyboard, and touchscreen display.",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "ultrachat_75332",
+      "session_time": "2023/05/25 (Thu) 16:57",
+      "turn_index": 12,
+      "fact_id": "fact_c0b8805af502e4d0c56cd9e320c3d6cb296cffcf50923c1c11659ebc7badc034",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          16,
+          121
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_fba8c87b1cfdb1800cf8ac6c6ecc051e0551bf60af95fc9555b93e8d40abe9f5",
+      "subject_key": "user",
+      "attribute_key": "online_shopping_frequency",
+      "object_key": "UNKNOWN",
+      "scope_key": "past_month",
+      "value": "at least 10 purchases from different websites like Amazon, ASOS, and Zappos",
+      "quote": "I've been making a lot of purchases lately - at least 10 in the past month from different websites like Amazon, ASOS, and Zappos.",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "57bf4122_1",
+      "session_time": "2023/05/25 (Thu) 19:24",
+      "turn_index": 0,
+      "fact_id": "fact_d927ccca411b86ab977c707dc7db83a2f1c492c86c1a20d2277d25ffa491af8a",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          76,
+          205
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_a8c6f1d39d65b82450f9ee828488b4f9e1382fdb3c3e8be24f1540454cb89b6a",
+      "subject_key": "user",
+      "attribute_key": "order_tracking_method",
+      "object_key": "phone_notes_app",
+      "scope_key": "current",
+      "value": "using my phone's notes app to keep track of my orders, but it's getting a bit messy",
+      "quote": "I've been using my phone's notes app to keep track of my orders, but it's getting a bit messy.",
+      "polarity": "NEGATIVE",
+      "modality": "ASSERTED",
+      "session_id": "57bf4122_1",
+      "session_time": "2023/05/25 (Thu) 19:24",
+      "turn_index": 2,
+      "fact_id": "fact_bdca01bd8f55cfb7aaaed22aadf65610321baf21e9bf4d395a907ad51c876bbd",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          52,
+          146
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_cb4dc4fba565d8593790c6c80f53fd04e3b7b548e5d46df3b220744c389888b0",
+      "subject_key": "user",
+      "attribute_key": "planned_order_tracking_columns",
+      "object_key": "spreadsheet",
+      "scope_key": "future",
+      "value": "add a column to track the shipping method and delivery time... And maybe a column for the product category",
+      "quote": "I think I'll also add a column to track the shipping method and delivery time, so I can see which websites are the fastest and most reliable. And maybe a column for the product category, so I can see where I'm spending the most money.",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "57bf4122_1",
+      "session_time": "2023/05/25 (Thu) 19:24",
+      "turn_index": 4,
+      "fact_id": "fact_24f60ddd2c849866b16ad127520f3fc02b871ae063c8db985393405278d40ace",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          23,
+          257
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_cb4dc4fba565d8593790c6c80f53fd04e3b7b548e5d46df3b220744c389888b0",
+      "subject_key": "user",
+      "attribute_key": "shopping_apps_installed",
+      "object_key": "phone",
+      "scope_key": "current",
+      "value": "got a bunch of shopping apps on my phone, and it's getting hard to keep track of which ones I've logged into and which ones I haven't",
+      "quote": "I've got a bunch of shopping apps on my phone, and it's getting hard to keep track of which ones I've logged into and which ones I haven't.",
+      "polarity": "NEGATIVE",
+      "modality": "ASSERTED",
+      "session_id": "57bf4122_1",
+      "session_time": "2023/05/25 (Thu) 19:24",
+      "turn_index": 4,
+      "fact_id": "fact_e887ba146f94a3e8ec25e95af8f0e377e4f4d2adb13665b127285e990f2cd558",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          353,
+          492
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_30331ae0f3a2479bedf70ae6dbb99027a2601054c32de860eb0b26f8c7eb995c",
+      "subject_key": "user",
+      "attribute_key": "goal",
+      "object_key": "online_shopping",
+      "scope_key": "frequency",
+      "value": "reduce my online shopping frequency",
+      "quote": "I've been thinking about how I can reduce my online shopping frequency, like I mentioned earlier.",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "57bf4122_1",
+      "session_time": "2023/05/25 (Thu) 19:24",
+      "turn_index": 6,
+      "fact_id": "fact_233d88d88280b35039958e0f06c7370861db8424256ee314e717db3bcd526ba5",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          97
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_11c9ac4907fcf6ecac7bc67f1384af32b9809502b44c3ae2f8adb2e8abd4a30c",
+      "subject_key": "user",
+      "attribute_key": "policy_consideration",
+      "object_key": "one_in_one_out",
+      "scope_key": "online_shopping",
+      "value": "thinking of implementing a \"one in, one out\" policy for my online shopping",
+      "quote": "I'm thinking of implementing a \"one in, one out\" policy for my online shopping.",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "57bf4122_1",
+      "session_time": "2023/05/25 (Thu) 19:24",
+      "turn_index": 8,
+      "fact_id": "fact_e34efe37920507fed4214e298d9f79b674c8dbb4fca837853141273ca8145022",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          79
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_5783d682f434f5611bca9c2ecc24e81401f37c09efb82416e1044749794a16dd",
+      "subject_key": "user",
+      "attribute_key": "policy_expansion_consideration",
+      "object_key": "electronics_or_home_goods",
+      "scope_key": "online_shopping",
+      "value": "thinking of expanding this policy to other areas of my online shopping, like electronics or home goods",
+      "quote": "I'm thinking of expanding this policy to other areas of my online shopping, like electronics or home goods.",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "57bf4122_1",
+      "session_time": "2023/05/25 (Thu) 19:24",
+      "turn_index": 10,
+      "fact_id": "fact_777103eac8265f98e64565efc181d62daddf571ad6ddc35640d8830304b3c80e",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          107
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_acb187e819833a56ace0ee99a501d413442fab6dd2e5c621682a7201a0d7a1e8",
+      "subject_key": "user",
+      "attribute_key": "uses_device",
+      "object_key": "laptop",
+      "scope_key": "UNKNOWN",
+      "value": "I've been using a can of compressed air to clean out the vents on my laptop",
+      "quote": "I've been using a can of compressed air to clean out the vents on my laptop",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "a135a911",
+      "session_time": "2023/05/25 (Thu) 20:16",
+      "turn_index": 4,
+      "fact_id": "fact_c921cd9b30a83b58941b787e2a852cb56a1b651d7a7a3cc6e9398a90e6c6c70a",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          75
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_13e5683583f39c60d8a8c48fdba5891a94c5d21b88690438477f8377c8edbc1c",
+      "subject_key": "user",
+      "attribute_key": "replaced_item",
+      "object_key": "keyboard_and_mouse",
+      "scope_key": "recently",
+      "value": "I recently replaced mine",
+      "quote": "I recently replaced mine",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "a135a911",
+      "session_time": "2023/05/25 (Thu) 20:16",
+      "turn_index": 6,
+      "fact_id": "fact_1023420ea7b81de61cc08bfcd6cc413726051d163ee66a01182dcb20d75c6d81",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          280,
+          304
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_13e5683583f39c60d8a8c48fdba5891a94c5d21b88690438477f8377c8edbc1c",
+      "subject_key": "user",
+      "attribute_key": "owns_device",
+      "object_key": "desktop_computer",
+      "scope_key": "UNKNOWN",
+      "value": "my desktop computer's fans",
+      "quote": "my desktop computer's fans",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "a135a911",
+      "session_time": "2023/05/25 (Thu) 20:16",
+      "turn_index": 6,
+      "fact_id": "fact_aae7d93a2b55f030c69521aa665399a493d586a400ac8b0f264a9ad2e60f1722",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          46,
+          72
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_13e5683583f39c60d8a8c48fdba5891a94c5d21b88690438477f8377c8edbc1c",
+      "subject_key": "user",
+      "attribute_key": "performed_maintenance",
+      "object_key": "desktop_computer_fans",
+      "scope_key": "recently",
+      "value": "cleaned them out using compressed air and a small brush",
+      "quote": "I recently cleaned them out using compressed air and a small brush",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "a135a911",
+      "session_time": "2023/05/25 (Thu) 20:16",
+      "turn_index": 6,
+      "fact_id": "fact_ee25cefdcafaf5af2bb1cfe1eeaf1566b87b84d4fd5438e5daea3cda14f6ebb5",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          82,
+          148
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_30ff3bd35df1596c0be56743bb5aca15ff20f21ad40b4867e5e1a81cd2e7b248",
+      "subject_key": "user",
+      "attribute_key": "intends_to_perform_task",
+      "object_key": "computer_files_organization",
+      "scope_key": "UNKNOWN",
+      "value": "organize my computer files and folders better",
+      "quote": "I've been meaning to organize my computer files and folders better",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "a135a911",
+      "session_time": "2023/05/25 (Thu) 20:16",
+      "turn_index": 8,
+      "fact_id": "fact_dc90ee61f46f8fd15ae63062b521720c109752001014231b9dddcccc1914c873",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          66
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_d219dadc9d1e9d9a1bc4c550f299f29200249e8601d211747269874e98db8dc0",
+      "subject_key": "user",
+      "attribute_key": "plans_to_perform_backup",
+      "object_key": "external_hard_drive",
+      "scope_key": "regularly",
+      "value": "backup my files regularly to an external hard drive",
+      "quote": "And I'll make sure to backup my files regularly to an external hard drive",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "a135a911",
+      "session_time": "2023/05/25 (Thu) 20:16",
+      "turn_index": 10,
+      "fact_id": "fact_8e528fa3858f1d78c00f7f82884161b818359eedfb4d0d8449a09a3cde022214",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          269,
+          342
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_d219dadc9d1e9d9a1bc4c550f299f29200249e8601d211747269874e98db8dc0",
+      "subject_key": "user",
+      "attribute_key": "plans_to_create_folder_structure",
+      "object_key": "personal_folder",
+      "scope_key": "UNKNOWN",
+      "value": "create a \"Personal\" folder with subfolders for things like finance, hobbies, and documents",
+      "quote": "and a \"Personal\" folder with subfolders for things like finance, hobbies, and documents",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "a135a911",
+      "session_time": "2023/05/25 (Thu) 20:16",
+      "turn_index": 10,
+      "fact_id": "fact_cd557cf0e9fd70027844291039fab87086dd2051a8b5897da21aa2b1c11e9ea7",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          85,
+          172
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_d219dadc9d1e9d9a1bc4c550f299f29200249e8601d211747269874e98db8dc0",
+      "subject_key": "user",
+      "attribute_key": "plans_to_create_folder_structure",
+      "object_key": "work_folder",
+      "scope_key": "UNKNOWN",
+      "value": "create a \"Work\" folder with subfolders for each project I'm working on",
+      "quote": "I think I'll create a \"Work\" folder with subfolders for each project I'm working on",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "a135a911",
+      "session_time": "2023/05/25 (Thu) 20:16",
+      "turn_index": 10,
+      "fact_id": "fact_ffbf414d309df5e9671deff2ec41cc33db701a4b64e7c6fc3a16045123ce63c7",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          83
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_0fee7af2021afd89bf04b06dbf10d2a46d638b863378f2ba66748df9b71c5a41",
+      "subject_key": "user",
+      "attribute_key": "gift_planning",
+      "object_key": "best_friend_birthday",
+      "scope_key": "UNKNOWN",
+      "value": "planning to get a gift for my best friend's birthday",
+      "quote": "I'm planning to get a gift for my best friend's birthday",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "842137f5_2",
+      "session_time": "2023/05/25 (Thu) 21:42",
+      "turn_index": 0,
+      "fact_id": "fact_437d373c589aafd10eab2547c5a01b24fbfbec43a6a404809332c3d2f9180256",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          56
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_0fee7af2021afd89bf04b06dbf10d2a46d638b863378f2ba66748df9b71c5a41",
+      "subject_key": "user",
+      "attribute_key": "activity_frequency",
+      "object_key": "gift_giving",
+      "scope_key": "lately",
+      "value": "doing a lot of gift-giving lately",
+      "quote": "I've been doing a lot of gift-giving lately",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "842137f5_2",
+      "session_time": "2023/05/25 (Thu) 21:42",
+      "turn_index": 0,
+      "fact_id": "fact_681fc93c924d4c4c8f4d9ffc605800a654bbd83674439686b8291914b0debdaf",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          123,
+          166
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_0fee7af2021afd89bf04b06dbf10d2a46d638b863378f2ba66748df9b71c5a41",
+      "subject_key": "user",
+      "attribute_key": "gift_given",
+      "object_key": "gift_card",
+      "scope_key": "to brother",
+      "value": "$25 gift card to his favorite coffee shop",
+      "quote": "and a $25 gift card to his favorite coffee shop",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "842137f5_2",
+      "session_time": "2023/05/25 (Thu) 21:42",
+      "turn_index": 0,
+      "fact_id": "fact_75772eb2aba79d80cab73910fd0ed17fe1e77b6e22a6b2331608875ec5535cf0",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          299,
+          346
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_0fee7af2021afd89bf04b06dbf10d2a46d638b863378f2ba66748df9b71c5a41",
+      "subject_key": "user",
+      "attribute_key": "gift_sent",
+      "object_key": "care_package",
+      "scope_key": "to brother in college",
+      "value": "sent a care package... which had some snacks and personal care items and cost around $50",
+      "quote": "including a care package I sent to my brother who's in college, which had some snacks and personal care items and cost around $50",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "842137f5_2",
+      "session_time": "2023/05/25 (Thu) 21:42",
+      "turn_index": 0,
+      "fact_id": "fact_f49f17c85a1a1facba5a281cdbb54cb501314a3025cd6a85ca8051f6713aaf1a",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          168,
+          297
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_ca6b71037d48be64b9c70e5d6c5dbf65b90e763fcd56bf33f38615cf051656b1",
+      "subject_key": "user",
+      "attribute_key": "friend_preference",
+      "object_key": "personalized_items",
+      "scope_key": "best friend",
+      "value": "likes personalized items",
+      "quote": "She also likes personalized items",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "842137f5_2",
+      "session_time": "2023/05/25 (Thu) 21:42",
+      "turn_index": 2,
+      "fact_id": "fact_18b644f68cf3bfefad86da40eabb0ad3112d01ca7c4fcdd3d3e777ffffbd52a2",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          76,
+          109
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_ca6b71037d48be64b9c70e5d6c5dbf65b90e763fcd56bf33f38615cf051656b1",
+      "subject_key": "user",
+      "attribute_key": "past_gift",
+      "object_key": "phone_case",
+      "scope_key": "to best friend",
+      "value": "got her a phone case last time",
+      "quote": "like the phone case I got for her last time",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "842137f5_2",
+      "session_time": "2023/05/25 (Thu) 21:42",
+      "turn_index": 2,
+      "fact_id": "fact_34d42faf66a5a1a1db53c2f1de882f7a83b50b1542c9d8265bf419b2884baa55",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          141,
+          184
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_ca6b71037d48be64b9c70e5d6c5dbf65b90e763fcd56bf33f38615cf051656b1",
+      "subject_key": "user",
+      "attribute_key": "budget",
+      "object_key": "gift",
+      "scope_key": "for best friend",
+      "value": "spend around $30 to $40 on the gift",
+      "quote": "I think I can spend around $30 to $40 on the gift",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "842137f5_2",
+      "session_time": "2023/05/25 (Thu) 21:42",
+      "turn_index": 2,
+      "fact_id": "fact_c26ee4c1b337caa833948e4b7bf3f6431e66c58c2b0c3e235168861f648a9fff",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          190,
+          239
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_ca6b71037d48be64b9c70e5d6c5dbf65b90e763fcd56bf33f38615cf051656b1",
+      "subject_key": "user",
+      "attribute_key": "friend_preference",
+      "object_key": "coffee",
+      "scope_key": "best friend",
+      "value": "loves coffee",
+      "quote": "My best friend loves coffee",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "842137f5_2",
+      "session_time": "2023/05/25 (Thu) 21:42",
+      "turn_index": 2,
+      "fact_id": "fact_c48fd599f85cc9ca05cae749bc5b1938e35520d2433494a66b045d596509c23d",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          27
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_1d55c7ef984b7196aca4d10819e8dcd9c99092eda2097a74f95bfdb1d1e0fea9",
+      "subject_key": "user",
+      "attribute_key": "gift_given",
+      "object_key": "necklace",
+      "scope_key": "to sister",
+      "value": "got my sister a silver necklace with a small pendant from Zara recently, and it cost $40",
+      "quote": "I also got my sister a silver necklace with a small pendant from Zara recently, and it cost $40",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "842137f5_2",
+      "session_time": "2023/05/25 (Thu) 21:42",
+      "turn_index": 4,
+      "fact_id": "fact_9e927bb899fad2ada74436778fb2f92b59969df706fb7d4169e54646d66e125b",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          95,
+          190
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_921a28c42b72468ef54b2b1448de057bcd97333da76e813fa1f8a8027c360661",
+      "subject_key": "user",
+      "attribute_key": "platform_choice",
+      "object_key": "zazzle_or_redbubble",
+      "scope_key": "for custom gifts",
+      "value": "try Zazzle or Redbubble first",
+      "quote": "I'll try Zazzle or Redbubble first",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "842137f5_2",
+      "session_time": "2023/05/25 (Thu) 21:42",
+      "turn_index": 8,
+      "fact_id": "fact_4a4d9310d4a6f3fb7d9e9e557dc5e106d15cab0b27cc88b00cfbdce2740545c5",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          8,
+          42
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_921a28c42b72468ef54b2b1448de057bcd97333da76e813fa1f8a8027c360661",
+      "subject_key": "user",
+      "attribute_key": "gift_sent",
+      "object_key": "care_package",
+      "scope_key": "from Amazon to brother",
+      "value": "got a care package from Amazon with some snacks and personal care items for my brother, which arrived at his dorm a week later and cost around $50",
+      "quote": "I also got a care package from Amazon with some snacks and personal care items for my brother, which arrived at his dorm a week later and cost around $50",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "842137f5_2",
+      "session_time": "2023/05/25 (Thu) 21:42",
+      "turn_index": 8,
+      "fact_id": "fact_ae0d7e923bfcbfb5ee03f594542dcdac994400695b315df52fde441e9edbc064",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          125,
+          278
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_921a28c42b72468ef54b2b1448de057bcd97333da76e813fa1f8a8027c360661",
+      "subject_key": "user",
+      "attribute_key": "gift_given",
+      "object_key": "gift_card",
+      "scope_key": "to brother",
+      "value": "got him a gift card to his favorite coffee shop for $25",
+      "quote": "got him a gift card to his favorite coffee shop for $25",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "842137f5_2",
+      "session_time": "2023/05/25 (Thu) 21:42",
+      "turn_index": 8,
+      "fact_id": "fact_c5aeb3f3cdd2c7dee487444c15a288a4daac8923ef3bedba293d6c353d3de84d",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          284,
+          339
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_cdd2ea467a8c5fbf454d2cb124444d14082f320daac86ef407d158080547c86a",
+      "subject_key": "user",
+      "attribute_key": "decision",
+      "object_key": "customized_coffee_mug",
+      "scope_key": "for best friend",
+      "value": "keep it simple with just the customized coffee mug for now",
+      "quote": "I think I'll keep it simple with just the customized coffee mug for now",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "842137f5_2",
+      "session_time": "2023/05/25 (Thu) 21:42",
+      "turn_index": 10,
+      "fact_id": "fact_359b0e415850af6dc6469b901d5074839671f9cfc882ac73350add80c91e89f7",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          71
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_cdd2ea467a8c5fbf454d2cb124444d14082f320daac86ef407d158080547c86a",
+      "subject_key": "user",
+      "attribute_key": "purchase",
+      "object_key": "items_for_mom",
+      "scope_key": "at mall last week",
+      "value": "picked up a few things for my mom while I was at the mall last week, including a coffee mug and a scented candle from Bath & Body Works, totaling $25",
+      "quote": "I also picked up a few things for my mom while I was at the mall last week, including a coffee mug and a scented candle from Bath & Body Works, totaling $25",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "842137f5_2",
+      "session_time": "2023/05/25 (Thu) 21:42",
+      "turn_index": 10,
+      "fact_id": "fact_752fb3e6b27be66adf680d5c6f3e1963261ce4b0afbf2cfed11a3f6b8dd2a3dd",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          262,
+          418
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_661b4f3697e451f091544481bcd92e6cb4ddd1f6b4175fcf27c1b791719a99ee",
+      "subject_key": "user",
+      "attribute_key": "arrival_date",
+      "object_key": "nyc",
+      "scope_key": "UNKNOWN",
+      "value": "June 15",
+      "quote": "I've only been here since June 15 when I arrived from Kenya.",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "39709ef6_2",
+      "session_time": "2023/06/05 (Mon) 22:13",
+      "turn_index": 0,
+      "fact_id": "fact_0fb8db0bcfd29e073e197c06df8e7bd3ef8905b10432697cb6c44cd0caa2a9ca",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          182,
+          242
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_661b4f3697e451f091544481bcd92e6cb4ddd1f6b4175fcf27c1b791719a99ee",
+      "subject_key": "user",
+      "attribute_key": "location_residence",
+      "object_key": "nyc",
+      "scope_key": "UNKNOWN",
+      "value": "here in NYC",
+      "quote": "I'm trying to get familiar with the public transportation system here in NYC.",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "39709ef6_2",
+      "session_time": "2023/06/05 (Mon) 22:13",
+      "turn_index": 0,
+      "fact_id": "fact_c07f0920c8aa23ef4044f601630aba47ac6b69e473fbac0bba8509e474f2ad72",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          77
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_661b4f3697e451f091544481bcd92e6cb4ddd1f6b4175fcf27c1b791719a99ee",
+      "subject_key": "user",
+      "attribute_key": "origin_country",
+      "object_key": "kenya",
+      "scope_key": "UNKNOWN",
+      "value": "Kenya",
+      "quote": "when I arrived from Kenya.",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "39709ef6_2",
+      "session_time": "2023/06/05 (Mon) 22:13",
+      "turn_index": 0,
+      "fact_id": "fact_e82dca8a848cd6269dd78d61b6a3de66f95383225fe9b8519311e97fcc610943",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          216,
+          242
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_8faf025f03ab4a96c34932dc000aa1a4ee42b5bc7bbaafb6549cd019d27ce37e",
+      "subject_key": "user",
+      "attribute_key": "language_skill_level",
+      "object_key": "english",
+      "scope_key": "UNKNOWN",
+      "value": "getting my English skills up to speed",
+      "quote": "I'm still getting my English skills up to speed",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "39709ef6_2",
+      "session_time": "2023/06/05 (Mon) 22:13",
+      "turn_index": 4,
+      "fact_id": "fact_3dfa5bf335733758abea253dff2a0f5647d2eac9cd28fa0ca0daaac2159cb3ec",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          165,
+          212
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_8faf025f03ab4a96c34932dc000aa1a4ee42b5bc7bbaafb6549cd019d27ce37e",
+      "subject_key": "user",
+      "attribute_key": "job_search_status",
+      "object_key": "UNKNOWN",
+      "scope_key": "UNKNOWN",
+      "value": "looking for a job",
+      "quote": "I've been looking for a job",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "39709ef6_2",
+      "session_time": "2023/06/05 (Mon) 22:13",
+      "turn_index": 4,
+      "fact_id": "fact_a19cc2ac8b74bcb9050c9b729a1edafe53d28ac73a6e5f872688536834d03dce",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          82,
+          109
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_2d44e1ceb58602396faa2c8db181abb8e811cc4c7389066aed85473d4f0adc52",
+      "subject_key": "user",
+      "attribute_key": "experience_domain",
+      "object_key": "computers",
+      "scope_key": "kenya",
+      "value": "some experience with computers back in Kenya",
+      "quote": "since I've had some experience with computers back in Kenya.",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "39709ef6_2",
+      "session_time": "2023/06/05 (Mon) 22:13",
+      "turn_index": 8,
+      "fact_id": "fact_0d04a2206d7c3481e9784d59cc268d9615b91faf4370645eb4dc7971e49a0394",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          53,
+          113
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_73a0412f0d5aad5754db4071360a67005d35d116ad135e51cdede125243f9817",
+      "subject_key": "user",
+      "attribute_key": "searching_for",
+      "object_key": "soundbar",
+      "scope_key": "UNKNOWN",
+      "value": "new soundbar",
+      "quote": "I'm looking for a new soundbar",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "74ef19f0_1",
+      "session_time": "2023/06/08 (Thu) 20:21",
+      "turn_index": 0,
+      "fact_id": "fact_48f7dd15b2782899b6117de59be02da9ab06ef8b1a1cbdeb14366e49ea7511a0",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          30
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_73a0412f0d5aad5754db4071360a67005d35d116ad135e51cdede125243f9817",
+      "subject_key": "user",
+      "attribute_key": "purchase_price",
+      "object_key": "smart_tv",
+      "scope_key": "original_listed",
+      "value": "$700",
+      "quote": "the original price was $700",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "74ef19f0_1",
+      "session_time": "2023/06/08 (Thu) 20:21",
+      "turn_index": 0,
+      "fact_id": "fact_9c45496ddde428d4e74ef4879d919a1996b2f698d8863c9293fec39520f1a072",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          138,
+          165
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_73a0412f0d5aad5754db4071360a67005d35d116ad135e51cdede125243f9817",
+      "subject_key": "user",
+      "attribute_key": "has_item",
+      "object_key": "smart_tv",
+      "scope_key": "UNKNOWN",
+      "value": "new smart TV",
+      "quote": "my new smart TV",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "74ef19f0_1",
+      "session_time": "2023/06/08 (Thu) 20:21",
+      "turn_index": 0,
+      "fact_id": "fact_ee7dfa5952aef0f6216ea6eff5ba81257e7044b68df4d550fc8e2f9819bb0589",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          42,
+          57
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_947876966d05e45d4296cc3836bca2fb555c3e8bfcc6fdd27b110be6f51a61f1",
+      "subject_key": "user",
+      "attribute_key": "budget_range",
+      "object_key": "soundbar",
+      "scope_key": "UNKNOWN",
+      "value": "around $300-$400",
+      "quote": "thinking of spending around $300-$400",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "74ef19f0_1",
+      "session_time": "2023/06/08 (Thu) 20:21",
+      "turn_index": 2,
+      "fact_id": "fact_0b8cce2ba3e21ca121a41d8f7dbe4ad51905c1a35c8e6558f2d8e6b66b51b7c7",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          4,
+          41
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_947876966d05e45d4296cc3836bca2fb555c3e8bfcc6fdd27b110be6f51a61f1",
+      "subject_key": "user",
+      "attribute_key": "usage_intent",
+      "object_key": "soundbar",
+      "scope_key": "movies_and_tv_shows",
+      "value": "watching movies and TV shows mostly",
+      "quote": "using it for watching movies and TV shows mostly",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "74ef19f0_1",
+      "session_time": "2023/06/08 (Thu) 20:21",
+      "turn_index": 2,
+      "fact_id": "fact_6d56ddfd2e67b4828835e8933e8b54324c706b1485c88e5eee9877cf5dd81bf6",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          194,
+          242
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_947876966d05e45d4296cc3836bca2fb555c3e8bfcc6fdd27b110be6f51a61f1",
+      "subject_key": "user",
+      "attribute_key": "room_size",
+      "object_key": "listening_room",
+      "scope_key": "UNKNOWN",
+      "value": "medium-sized",
+      "quote": "The room is medium-sized",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "74ef19f0_1",
+      "session_time": "2023/06/08 (Thu) 20:21",
+      "turn_index": 2,
+      "fact_id": "fact_a01b05d55bc6b3ff596a345c8cd5d7ffe87a189640f2070c3f40cfaf6f06f8a8",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          156,
+          180
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_947876966d05e45d4296cc3836bca2fb555c3e8bfcc6fdd27b110be6f51a61f1",
+      "subject_key": "user",
+      "attribute_key": "preference_brand",
+      "object_key": "soundbar",
+      "scope_key": "UNKNOWN",
+      "value": "no specific brand in mind",
+      "quote": "I don't have a specific brand in mind",
+      "polarity": "NEGATIVE",
+      "modality": "ASSERTED",
+      "session_id": "74ef19f0_1",
+      "session_time": "2023/06/08 (Thu) 20:21",
+      "turn_index": 2,
+      "fact_id": "fact_b8a5aff1260b89a5d73899e409dc919443c27e5db6207def589def4998fec9a3",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          43,
+          80
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_947876966d05e45d4296cc3836bca2fb555c3e8bfcc6fdd27b110be6f51a61f1",
+      "subject_key": "user",
+      "attribute_key": "preference_feature",
+      "object_key": "sound_quality",
+      "scope_key": "soundbar",
+      "value": "good",
+      "quote": "want something with good sound quality",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "74ef19f0_1",
+      "session_time": "2023/06/08 (Thu) 20:21",
+      "turn_index": 2,
+      "fact_id": "fact_ea339b79a5f5b89310e080383aad6332663cbeb8be3f0ce1b7a7dbeb0725bd3a",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          91,
+          129
+        ]
+      ]
+    },
+    {
+      "evidence_id": "ev_0e53f55046ee3db7e925e5a9ef1f8090048f22020439786efdfefffbedb23660",
+      "subject_key": "user",
+      "attribute_key": "decision",
+      "object_key": "sonos_beam_with_wireless_subwoofer",
+      "scope_key": "UNKNOWN",
+      "value": "go with the Sonos Beam with Wireless Subwoofer",
+      "quote": "I think I'll go with the Sonos Beam with Wireless Subwoofer",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "74ef19f0_1",
+      "session_time": "2023/06/08 (Thu) 20:21",
+      "turn_index": 4,
+      "fact_id": "fact_5f7409cb8a1e1e5cfd52df755cb8038a3f8c4e2291a3918ef198731a5fcc8cab",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          59
+        ]
+      ]
+    }
+  ],
+  "skipped_candidates": [
+    {
+      "candidate": {
+        "evidence_id": "ev_947876966d05e45d4296cc3836bca2fb555c3e8bfcc6fdd27b110be6f51a61f1",
+        "subject_key": "user",
+        "attribute_key": "preference_feature",
+        "object_key": "wireless_subwoofer",
+        "scope_key": "soundbar",
+        "value": "required",
+        "quote": "want something with ... a wireless subwoofer",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED"
+      },
+      "reason": "quote_not_in_source"
+    },
+    {
+      "candidate": {
+        "evidence_id": "ev_d219dadc9d1e9d9a1bc4c550f299f29200249e8601d211747269874e98db8dc0",
+        "subject_key": "user",
+        "attribute_key": "plans_to_create_folder_structure",
+        "object_key": "someday_folder",
+        "scope_key": "UNKNOWN",
+        "value": "create a \"Someday\" folder for files that don't have a specific deadline or category",
+        "quote": "And I'll also create a \"Someday\" folder for files that don't have a specific deadline or category",
+        "polarity": "POSITIVE",
+        "modality": "PLAN"
+      },
+      "reason": "quote_not_in_source"
+    },
+    {
+      "candidate": {
+        "evidence_id": "ev_f614ff355575fdc1a921a86aef31abee49022f2a8357587f1014dd039af8dc0c",
+        "subject_key": "user",
+        "attribute_key": "niche_focus",
+        "object_key": "digital_marketing",
+        "scope_key": "UNKNOWN",
+        "value": "digital marketing",
+        "quote": "specific to my niche, like ... #digitalmarketing",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED"
+      },
+      "reason": "quote_not_in_source"
+    },
+    {
+      "candidate": {
+        "evidence_id": "ev_1db192d2b41e9a2e0cc5c5ebb484d487d73123a903f51e9a90fe4013c799ea26",
+        "subject_key": "user",
+        "attribute_key": "emotional_response_to_concept",
+        "object_key": "plate_tectonics",
+        "scope_key": "UNKNOWN",
+        "value": "realize how small and insignificant we are compared to the forces of nature; fascinating yet terrifying at the same time",
+        "quote": "Wow, plate tectonics really makes me realize how small and insignificant we are compared to the forces of nature. It's fascinating yet terrifying at the same time.",
+        "polarity": "MIXED",
+        "modality": "ASSERTED"
+      },
+      "reason": "invalid_qualifier"
+    }
+  ],
+  "question_or_gold_used": false
+}

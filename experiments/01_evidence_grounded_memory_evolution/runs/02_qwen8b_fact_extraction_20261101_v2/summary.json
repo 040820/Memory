@@ -1,0 +1,17 @@
+{
+  "turn_count": 15,
+  "status_counts": {
+    "parsed": 15
+  },
+  "turns_with_candidates": 5,
+  "candidate_count": 7,
+  "skipped_count": 0,
+  "usage_sum": {
+    "prompt_tokens": 2751,
+    "total_tokens": 3034,
+    "completion_tokens": 283
+  },
+  "all_candidates_unverified": true,
+  "memory_updates_applied": false,
+  "interpretation": "format and exact quote matching only; semantic correctness not verified"
+}

@@ -1,0 +1,11 @@
+[1/10] hard route=DEFER reasons=['SEMANTIC_NOT_SUPPORTED', 'SCOPE_UNCLEAR'] tokens=1181 elapsed=5.67s
+[2/10] at_most route=TECHNICAL_ERROR reasons=['INVALID_SCHEMA'] tokens=1130 elapsed=4.7s
+[3/10] plan route=DEFER reasons=['SEMANTIC_NOT_SUPPORTED', 'SCOPE_UNCLEAR', 'TIME_REFERENCE_UNALIGNED', 'MODALITY_UNALIGNED'] tokens=1166 elapsed=3.99s
+[4/10] not_moved route=DEFER reasons=['SEMANTIC_NOT_SUPPORTED', 'POLARITY_UNALIGNED'] tokens=1133 elapsed=4.1s
+[5/10] other route=TECHNICAL_ERROR reasons=['INVALID_SCHEMA'] tokens=1120 elapsed=3.97s
+[6/10] current route=REVIEW_NEXT reasons=[] tokens=1082 elapsed=4.15s
+[7/10] past route=REVIEW_NEXT reasons=[] tokens=1110 elapsed=3.43s
+[8/10] approx route=DEFER reasons=['SEMANTIC_NOT_SUPPORTED', 'SCOPE_UNCLEAR', 'PRECISION_UNALIGNED'] tokens=1153 elapsed=4.44s
+[9/10] negation route=DEFER reasons=['SEMANTIC_NOT_SUPPORTED', 'POLARITY_UNALIGNED'] tokens=1153 elapsed=4.53s
+[10/10] possibility route=TECHNICAL_ERROR reasons=['INVALID_SCHEMA'] tokens=1165 elapsed=4.93s
+COMPLETED: advisory review saved; no memory updates applied

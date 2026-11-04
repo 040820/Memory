@@ -1,0 +1,18 @@
+PAIR 1/17 status=proposed relation=COMPLEMENT tokens=1011
+PAIR 2/17 status=proposed relation=COMPLEMENT tokens=1048
+PAIR 3/17 status=proposed relation=COEXIST tokens=1077
+PAIR 4/17 status=proposed relation=UNRELATED tokens=1027
+PAIR 5/17 status=proposed relation=DUPLICATE tokens=1150
+PAIR 6/17 status=proposed relation=COMPLEMENT tokens=1039
+PAIR 7/17 status=proposed relation=DUPLICATE tokens=1041
+PAIR 8/17 status=proposed relation=DUPLICATE tokens=1108
+PAIR 9/17 status=proposed relation=CHANGE tokens=1074
+PAIR 10/17 status=proposed relation=DUPLICATE tokens=1025
+PAIR 11/17 status=proposed relation=DUPLICATE tokens=1066
+PAIR 12/17 status=proposed relation=DUPLICATE tokens=1098
+PAIR 13/17 status=proposed relation=DUPLICATE tokens=1097
+PAIR 14/17 status=proposed relation=DUPLICATE tokens=1096
+PAIR 15/17 status=proposed relation=DUPLICATE tokens=1107
+PAIR 16/17 status=proposed relation=DUPLICATE tokens=1074
+PAIR 17/17 status=proposed relation=DUPLICATE tokens=1065
+COMPLETED {"pairs": 17, "statuses": {"proposed": 17}, "relations": {"COMPLEMENT": 3, "COEXIST": 1, "UNRELATED": 1, "DUPLICATE": 11, "CHANGE": 1}, "total_tokens": 18203, "applied_updates": 0, "semantic_support_verified": false, "question_or_gold_used": false}

@@ -1,0 +1,31 @@
+{
+  "cases": 17,
+  "routes": {
+    "DEFER": 12,
+    "REVIEW_NEXT": 5
+  },
+  "source_check": {
+    "PASS": 17
+  },
+  "component_evidence_check": {
+    "PASS": 15,
+    "FAIL": 2
+  },
+  "reason_counts_overlap": {
+    "SEMANTIC_NOT_SUPPORTED": 1,
+    "TIME_REFERENCE_UNALIGNED": 1,
+    "SCOPE_UNCLEAR": 9,
+    "REFERENCE_ANTECEDENT_NOT_IN_QUOTE": 1,
+    "REFERENCE_QUOTE_INVALID": 1,
+    "SUPPORTED_WITH_UNMATCHED_COMPONENT": 3,
+    "PRECISION_UNALIGNED": 1
+  },
+  "tokens": 31995,
+  "applied_updates": 0,
+  "limitations": [
+    "component anchors are lexical references not semantic proof",
+    "model may omit anaphoric dependencies",
+    "not human-verified and no gold labels",
+    "same model for extraction and review"
+  ]
+}

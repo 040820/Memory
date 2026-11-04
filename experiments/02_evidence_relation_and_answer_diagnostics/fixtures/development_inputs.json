@@ -1,0 +1,132 @@
+[
+  {
+    "id": "move",
+    "old": {
+      "evidence_id": "move_old",
+      "speaker": "user",
+      "text": "I live in Beijing."
+    },
+    "new": {
+      "evidence_id": "move_new",
+      "speaker": "user",
+      "text": "I moved from Beijing to Shanghai."
+    }
+  },
+  {
+    "id": "correct",
+    "old": {
+      "evidence_id": "correct_old",
+      "speaker": "user",
+      "text": "I have two cats."
+    },
+    "new": {
+      "evidence_id": "correct_new",
+      "speaker": "user",
+      "text": "I need to correct what I said: I have three cats, not two."
+    }
+  },
+  {
+    "id": "later_not_proof",
+    "old": {
+      "evidence_id": "later_not_proof_old",
+      "speaker": "user",
+      "text": "I live in Beijing."
+    },
+    "new": {
+      "evidence_id": "later_not_proof_new",
+      "speaker": "user",
+      "text": "I live in Shanghai."
+    }
+  },
+  {
+    "id": "plan",
+    "old": {
+      "evidence_id": "plan_old",
+      "speaker": "user",
+      "text": "I live in Beijing."
+    },
+    "new": {
+      "evidence_id": "plan_new",
+      "speaker": "user",
+      "text": "I plan to move to Shanghai next year."
+    }
+  },
+  {
+    "id": "hobby",
+    "old": {
+      "evidence_id": "hobby_old",
+      "speaker": "user",
+      "text": "I enjoy swimming."
+    },
+    "new": {
+      "evidence_id": "hobby_new",
+      "speaker": "user",
+      "text": "I enjoy hiking."
+    }
+  },
+  {
+    "id": "repeat",
+    "old": {
+      "evidence_id": "repeat_old",
+      "speaker": "user",
+      "text": "I work as a teacher."
+    },
+    "new": {
+      "evidence_id": "repeat_new",
+      "speaker": "user",
+      "text": "My job is teaching."
+    }
+  },
+  {
+    "id": "complement",
+    "old": {
+      "evidence_id": "complement_old",
+      "speaker": "user",
+      "text": "I work as a teacher."
+    },
+    "new": {
+      "evidence_id": "complement_new",
+      "speaker": "user",
+      "text": "I teach mathematics at a school."
+    }
+  },
+  {
+    "id": "uncertain_number",
+    "old": {
+      "evidence_id": "uncertain_number_old",
+      "speaker": "user",
+      "text": "I have 1250 books."
+    },
+    "new": {
+      "evidence_id": "uncertain_number_new",
+      "speaker": "user",
+      "text": "I think I have about 1300 books."
+    }
+  },
+  {
+    "id": "relative",
+    "old": {
+      "evidence_id": "relative_old",
+      "speaker": "user",
+      "text": "I work as a teacher."
+    },
+    "new": {
+      "evidence_id": "relative_new",
+      "speaker": "user",
+      "text": "My sister works as a doctor."
+    }
+  },
+  {
+    "id": "negation",
+    "old": {
+      "evidence_id": "negation_old",
+      "speaker": "user",
+      "text": "I live in Beijing."
+    },
+    "new": {
+      "evidence_id": "negation_new",
+      "speaker": "user",
+      "text": "I do not live in Beijing anymore."
+    }
+  }
+]

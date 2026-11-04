@@ -1,0 +1,6 @@
+[1/5] plan route=DEFER reasons=['SEMANTIC_NOT_SUPPORTED', 'SCOPE_UNCLEAR', 'TIME_REFERENCE_UNALIGNED', 'MODALITY_UNALIGNED'] tokens=1511 elapsed=5.42s
+[2/5] other route=DEFER reasons=['SUBJECT_NOT_CONFIRMED', 'SEMANTIC_NOT_SUPPORTED', 'REFERENCE_ANTECEDENT_NOT_IN_QUOTE'] tokens=1514 elapsed=5.89s
+[3/5] current route=DEFER reasons=['REFERENCE_ANTECEDENT_NOT_IN_QUOTE'] tokens=1465 elapsed=5.43s
+[4/5] city_explicit route=TECHNICAL_ERROR reasons=['INVALID_SCHEMA'] tokens=1343 elapsed=3.98s
+[5/5] city_unknown route=DEFER reasons=['SEMANTIC_NOT_SUPPORTED', 'SCOPE_UNCLEAR', 'COMPONENT_EVIDENCE_MISSING:value'] tokens=1468 elapsed=5.47s
+COMPLETED: advisory review saved; no memory updates applied

@@ -1,0 +1,17 @@
+{
+  "pairs": 17,
+  "statuses": {
+    "proposed": 17
+  },
+  "relations": {
+    "COMPLEMENT": 3,
+    "COEXIST": 1,
+    "UNRELATED": 1,
+    "DUPLICATE": 11,
+    "CHANGE": 1
+  },
+  "total_tokens": 18203,
+  "applied_updates": 0,
+  "semantic_support_verified": false,
+  "question_or_gold_used": false
+}

@@ -1,0 +1,7 @@
+{
+  "move_now": "Shanghai",
+  "move_before": "Beijing",
+  "correct_count": "3 cats",
+  "later_now": "insufficient to determine current residence",
+  "negation_now": "current residence unspecified; no longer Beijing"
+}

@@ -1,0 +1,176 @@
+{
+  "origin": "posthoc_reparse_no_model_call",
+  "source_ids": [
+    "ev_2b754075a42b7f539466990b6c3610407c29e6bdad394f53fba39a3e903989e0",
+    "ev_0c4ed4568f201193681893bb5e791d3f2c41b41245ad044318e7d9db9f60da34",
+    "ev_4264ad80138a0bf5980c975a81d8954c9f7628e49dbd8e9dbe2f38e6b35b8942"
+  ],
+  "result": {
+    "status": "parsed",
+    "facts": [
+      {
+        "evidence_id": "ev_2b754075a42b7f539466990b6c3610407c29e6bdad394f53fba39a3e903989e0",
+        "subject_key": "user",
+        "attribute_key": "business_ownership",
+        "object_key": "sheba_consulting",
+        "scope_key": "UNKNOWN",
+        "value": "owns a fractional leadership consulting company named Sheba Consulting",
+        "quote": "i own a fractional leadership consulting company by the name of Sheba Consulting.",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "session_id": "sharegpt_gYShON7_0",
+        "session_time": "2023/05/04 (Thu) 21:52",
+        "turn_index": 0,
+        "fact_id": "fact_f21fdd8ced0350935a9e627abc6789610da17471f287b114ca28558d8fb67756",
+        "status": "unverified",
+        "normalization_status": "model_proposed",
+        "quote_spans": [
+          [
+            0,
+            81
+          ]
+        ]
+      },
+      {
+        "evidence_id": "ev_2b754075a42b7f539466990b6c3610407c29e6bdad394f53fba39a3e903989e0",
+        "subject_key": "user",
+        "attribute_key": "professional_experience",
+        "object_key": "executive_role",
+        "scope_key": "UNKNOWN",
+        "value": "has a ton of experience as an executive",
+        "quote": "I have a ton of experience as an executive",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "session_id": "sharegpt_gYShON7_0",
+        "session_time": "2023/05/04 (Thu) 21:52",
+        "turn_index": 0,
+        "fact_id": "fact_7ba1ea8ad88f15cf51e94c252a4c7090191f654ee3f31e2427cbcbefdbae39d6",
+        "status": "unverified",
+        "normalization_status": "model_proposed",
+        "quote_spans": [
+          [
+            82,
+            124
+          ]
+        ]
+      },
+      {
+        "evidence_id": "ev_2b754075a42b7f539466990b6c3610407c29e6bdad394f53fba39a3e903989e0",
+        "subject_key": "user",
+        "attribute_key": "business_status",
+        "object_key": "sheba_consulting",
+        "scope_key": "recently",
+        "value": "business has declined due to economic decline",
+        "quote": "recently the economy has declined and with it my business.",
+        "polarity": "NEGATIVE",
+        "modality": "ASSERTED",
+        "session_id": "sharegpt_gYShON7_0",
+        "session_time": "2023/05/04 (Thu) 21:52",
+        "turn_index": 0,
+        "fact_id": "fact_bee7d49f18e29d271a50d8e8b47d1c885ef7dfe2391d4c459e100e31128ecf87",
+        "status": "unverified",
+        "normalization_status": "model_proposed",
+        "quote_spans": [
+          [
+            129,
+            187
+          ]
+        ]
+      },
+      {
+        "evidence_id": "ev_2b754075a42b7f539466990b6c3610407c29e6bdad394f53fba39a3e903989e0",
+        "subject_key": "user",
+        "attribute_key": "client_acquisition_effort",
+        "object_key": "new_clients",
+        "scope_key": "UNKNOWN",
+        "value": "did everything possible to reach new clients but progress is too slow",
+        "quote": "I did everything possible to reach new clients and it is too slow.",
+        "polarity": "NEGATIVE",
+        "modality": "ASSERTED",
+        "session_id": "sharegpt_gYShON7_0",
+        "session_time": "2023/05/04 (Thu) 21:52",
+        "turn_index": 0,
+        "fact_id": "fact_657e09305a240d5588b49617162bd26b70cc464f12053b90ab97169d955e29dd",
+        "status": "unverified",
+        "normalization_status": "model_proposed",
+        "quote_spans": [
+          [
+            188,
+            254
+          ]
+        ]
+      },
+      {
+        "evidence_id": "ev_4264ad80138a0bf5980c975a81d8954c9f7628e49dbd8e9dbe2f38e6b35b8942",
+        "subject_key": "user",
+        "attribute_key": "content_creation_activity",
+        "object_key": "thought_leadership_content",
+        "scope_key": "UNKNOWN",
+        "value": "creates thought leadership content",
+        "quote": "i do create thought leadership content",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "session_id": "sharegpt_gYShON7_0",
+        "session_time": "2023/05/04 (Thu) 21:52",
+        "turn_index": 4,
+        "fact_id": "fact_b9142958cba43a3793b6b23ba7b6acff8d815aed52602b97e75f5909c6031449",
+        "status": "unverified",
+        "normalization_status": "model_proposed",
+        "quote_spans": [
+          [
+            107,
+            145
+          ]
+        ]
+      },
+      {
+        "evidence_id": "ev_4264ad80138a0bf5980c975a81d8954c9f7628e49dbd8e9dbe2f38e6b35b8942",
+        "subject_key": "user",
+        "attribute_key": "publication_contribution",
+        "object_key": "entrepreneur_magazine",
+        "scope_key": "regularly",
+        "value": "regularly writes to entrepreneur magazine",
+        "quote": "regularly write to entrepreneur magazine",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "session_id": "sharegpt_gYShON7_0",
+        "session_time": "2023/05/04 (Thu) 21:52",
+        "turn_index": 4,
+        "fact_id": "fact_4bb571e069e97d53e2636cc208d1c5fdf0a1c61a03602fbf932b4985805369c9",
+        "status": "unverified",
+        "normalization_status": "model_proposed",
+        "quote_spans": [
+          [
+            150,
+            190
+          ]
+        ]
+      },
+      {
+        "evidence_id": "ev_4264ad80138a0bf5980c975a81d8954c9f7628e49dbd8e9dbe2f38e6b35b8942",
+        "subject_key": "user",
+        "attribute_key": "publication_contribution",
+        "object_key": "forbes",
+        "scope_key": "regularly",
+        "value": "regularly writes for forbes",
+        "quote": "and forbes",
+        "polarity": "POSITIVE",
+        "modality": "ASSERTED",
+        "session_id": "sharegpt_gYShON7_0",
+        "session_time": "2023/05/04 (Thu) 21:52",
+        "turn_index": 4,
+        "fact_id": "fact_b4fee6bfb009d74226282780fdeee9ea7791bdd9a99c2b20e6cf70ae4adfb2f2",
+        "status": "unverified",
+        "normalization_status": "model_proposed",
+        "quote_spans": [
+          [
+            191,
+            201
+          ]
+        ]
+      }
+    ],
+    "skipped": [],
+    "duplicates": 0
+  }
+}

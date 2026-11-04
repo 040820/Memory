@@ -1,0 +1,236 @@
+2026-11-01 06:09:54 - DynamicMemory - INFO - Configuration loaded from /home/cwf/Code/LiCoMemory-main/experiments/evidence_memory_pilot/baseline_qwen.yaml
+2026-11-01 06:09:54 - DynamicMemory - INFO - LLM Manager initialized with model: qwen3-8b, concurrent: True, max_concurrent: 4
+2026-11-01 06:09:54 - DynamicMemory - INFO - Dialog Chunk Processor initialized for LongmemEval dataset
+2026-11-01 06:09:54 - DynamicMemory - INFO - Chunk Processor initialized for LongmemEval dataset
+2026-11-01 06:09:54 - DynamicMemory - INFO - Graph Builder initialized
+2026-11-01 06:09:54 - DynamicMemory - INFO - Dynamic Memory initialized
+2026-11-01 06:09:54 - DynamicMemory - INFO - Entity Extractor initialized
+2026-11-01 06:09:54 - DynamicMemory - INFO - Dialogue Extractor initialized with LongmemEval prompt
+2026-11-01 06:09:54 - DynamicMemory - INFO - Session Summarizer initialized
+2026-11-01 06:09:54 - DynamicMemory - INFO - Extractors initialized with LLM manager and cost tracking
+2026-11-01 06:09:54 - DynamicMemory - INFO - GraphRAG Core initialized
+2026-11-01 06:09:54 - DynamicMemory - INFO - GraphRAG initialized successfully
+2026-11-01 06:09:54 - DynamicMemory - INFO - Inserting 44 documents
+2026-11-01 06:09:54 - DynamicMemory - INFO - 🏗️ Starting total graph building process
+2026-11-01 06:09:54 - DynamicMemory - INFO - Generating session summaries...
+2026-11-01 06:09:54 - DynamicMemory - INFO - Starting session summary generation...
+2026-11-01 06:09:54 - DynamicMemory - INFO - Found 44 unique sessions to summarize
+Stage 1: Session Summary Generation:   0%|          | 0/44 [00:00<?, ?calls/s]2026-11-01 06:09:54 - DynamicMemory - INFO - Stage 1: Processing 44 session summaries
+2026-11-01 06:09:54 - DynamicMemory - INFO - Batch concurrent processing 44 requests, max concurrent: 4
+2026-11-01 06:10:09 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 1: Session Summary Generation:   2%|▏         | 1/44 [00:14<10:13, 14.27s/calls]2026-11-01 06:10:09 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 1: Session Summary Generation:   5%|▍         | 2/44 [00:15<04:30,  6.44s/calls]2026-11-01 06:10:14 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 1: Session Summary Generation:   7%|▋         | 3/44 [00:19<03:39,  5.35s/calls]2026-11-01 06:10:19 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 1: Session Summary Generation:   9%|▉         | 4/44 [00:24<03:35,  5.38s/calls]2026-11-01 06:10:22 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 1: Session Summary Generation:  11%|█▏        | 5/44 [00:28<03:01,  4.66s/calls]2026-11-01 06:10:28 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 1: Session Summary Generation:  14%|█▎        | 6/44 [00:33<03:11,  5.04s/calls]2026-11-01 06:10:32 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 1: Session Summary Generation:  16%|█▌        | 7/44 [00:37<02:48,  4.55s/calls]2026-11-01 06:10:37 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 1: Session Summary Generation:  18%|█▊        | 8/44 [00:42<02:51,  4.78s/calls]2026-11-01 06:10:38 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 1: Session Summary Generation:  20%|██        | 9/44 [00:44<02:10,  3.72s/calls]2026-11-01 06:10:44 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 1: Session Summary Generation:  23%|██▎       | 10/44 [00:49<02:25,  4.28s/calls]2026-11-01 06:10:48 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 1: Session Summary Generation:  25%|██▌       | 11/44 [00:54<02:24,  4.38s/calls]2026-11-01 06:10:53 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 1: Session Summary Generation:  27%|██▋       | 12/44 [00:59<02:24,  4.53s/calls]2026-11-01 06:10:56 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 1: Session Summary Generation:  30%|██▉       | 13/44 [01:01<02:02,  3.94s/calls]2026-11-01 06:11:02 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 1: Session Summary Generation:  32%|███▏      | 14/44 [01:08<02:20,  4.67s/calls]2026-11-01 06:11:05 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 1: Session Summary Generation:  34%|███▍      | 15/44 [01:10<02:00,  4.16s/calls]2026-11-01 06:11:08 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 1: Session Summary Generation:  36%|███▋      | 16/44 [01:13<01:42,  3.65s/calls]2026-11-01 06:11:09 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 1: Session Summary Generation:  39%|███▊      | 17/44 [01:15<01:23,  3.09s/calls]2026-11-01 06:11:18 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 1: Session Summary Generation:  41%|████      | 18/44 [01:23<02:01,  4.67s/calls]2026-11-01 06:11:20 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 1: Session Summary Generation:  43%|████▎     | 19/44 [01:25<01:39,  3.97s/calls]2026-11-01 06:11:22 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 1: Session Summary Generation:  45%|████▌     | 20/44 [01:27<01:16,  3.19s/calls]2026-11-01 06:11:27 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 1: Session Summary Generation:  48%|████▊     | 21/44 [01:32<01:26,  3.75s/calls]2026-11-01 06:11:34 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 1: Session Summary Generation:  50%|█████     | 22/44 [01:40<01:49,  4.97s/calls]2026-11-01 06:11:36 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 1: Session Summary Generation:  52%|█████▏    | 23/44 [01:41<01:23,  3.96s/calls]2026-11-01 06:11:41 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 1: Session Summary Generation:  55%|█████▍    | 24/44 [01:46<01:22,  4.14s/calls]2026-11-01 06:11:42 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 1: Session Summary Generation:  57%|█████▋    | 25/44 [01:48<01:05,  3.44s/calls]2026-11-01 06:11:50 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 1: Session Summary Generation:  59%|█████▉    | 26/44 [01:56<01:25,  4.77s/calls]2026-11-01 06:11:52 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 1: Session Summary Generation:  61%|██████▏   | 27/44 [01:57<01:03,  3.72s/calls]2026-11-01 06:11:54 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 1: Session Summary Generation:  64%|██████▎   | 28/44 [02:00<00:55,  3.45s/calls]2026-11-01 06:12:00 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 1: Session Summary Generation:  66%|██████▌   | 29/44 [02:05<01:00,  4.05s/calls]2026-11-01 06:12:05 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 1: Session Summary Generation:  68%|██████▊   | 30/44 [02:10<00:59,  4.26s/calls]2026-11-01 06:12:06 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 1: Session Summary Generation:  70%|███████   | 31/44 [02:11<00:42,  3.29s/calls]2026-11-01 06:12:07 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 1: Session Summary Generation:  73%|███████▎  | 32/44 [02:12<00:31,  2.63s/calls]2026-11-01 06:12:10 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 1: Session Summary Generation:  75%|███████▌  | 33/44 [02:15<00:31,  2.84s/calls]2026-11-01 06:12:14 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 1: Session Summary Generation:  77%|███████▋  | 34/44 [02:19<00:30,  3.06s/calls]2026-11-01 06:12:15 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 1: Session Summary Generation:  80%|███████▉  | 35/44 [02:20<00:22,  2.47s/calls]2026-11-01 06:12:22 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 1: Session Summary Generation:  82%|████████▏ | 36/44 [02:27<00:31,  3.91s/calls]2026-11-01 06:12:23 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 1: Session Summary Generation:  84%|████████▍ | 37/44 [02:29<00:21,  3.13s/calls]2026-11-01 06:12:25 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 1: Session Summary Generation:  86%|████████▋ | 38/44 [02:30<00:16,  2.68s/calls]2026-11-01 06:12:29 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 1: Session Summary Generation:  89%|████████▊ | 39/44 [02:34<00:15,  3.01s/calls]2026-11-01 06:12:32 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 1: Session Summary Generation:  91%|█████████ | 40/44 [02:38<00:12,  3.24s/calls]2026-11-01 06:12:36 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 1: Session Summary Generation:  93%|█████████▎| 41/44 [02:41<00:10,  3.35s/calls]2026-11-01 06:12:38 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 1: Session Summary Generation:  95%|█████████▌| 42/44 [02:44<00:06,  3.02s/calls]2026-11-01 06:12:44 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 1: Session Summary Generation:  98%|█████████▊| 43/44 [02:49<00:03,  3.75s/calls]2026-11-01 06:12:44 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 1: Session Summary Generation: 100%|██████████| 44/44 [02:49<00:00,  2.71s/calls]2026-11-01 06:12:44 - DynamicMemory - INFO - Generated summaries for 44 sessions
+Stage 1: Session Summary Generation: 100%|██████████| 44/44 [02:49<00:00,  3.86s/calls]
+2026-11-01 06:12:44 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+2026-11-01 06:12:44 - DynamicMemory - INFO - 📝 Summary generation completed in 169.78s
+2026-11-01 06:12:44 - DynamicMemory - INFO - Saved 44 summaries to /home/cwf/Code/LiCoMemory-main/experiments/evidence_memory_pilot/server_longmem_a2f3aa27_20261101/session_summaries.json
+2026-11-01 06:12:44 - DynamicMemory - INFO - Generated and saved 44 session summaries
+2026-11-01 06:12:44 - DynamicMemory - INFO - Generated 44 session summaries
+2026-11-01 06:12:44 - DynamicMemory - INFO - Processed 44 documents into 227 chunks with unique chunk IDs
+2026-11-01 06:12:44 - DynamicMemory - INFO - Processed 227 chunks from 44 documents
+2026-11-01 06:12:44 - DynamicMemory - INFO - Graph build mode: force=True, add=False
+2026-11-01 06:12:44 - DynamicMemory - INFO - 🏗️ Build from scratch mode: force rebuild
+2026-11-01 06:12:44 - DynamicMemory - INFO - Starting to build graph from 227 chunks
+2026-11-01 06:12:44 - DynamicMemory - INFO - 🏗️ Starting total graph building process
+2026-11-01 06:12:44 - DynamicMemory - INFO - Clearing existing graph and chunk storage...
+2026-11-01 06:12:44 - DynamicMemory - INFO - ✅ Cleared existing graph and chunk storage
+2026-11-01 06:12:44 - DynamicMemory - INFO - Storing original chunk data...
+2026-11-01 06:12:44 - DynamicMemory - INFO - Stored 227 chunks in chunk_storage
+2026-11-01 06:12:44 - DynamicMemory - INFO - Extracting entities and relationships using dialogue mode...
+Stage 2: Dialogue Entity & Relationship Extraction:   0%|          | 0/227 [00:00<?, ?calls/s]2026-11-01 06:12:44 - DynamicMemory - INFO - Stage 2: Processing 227 chunks for entity and relationship extraction
+2026-11-01 06:12:44 - DynamicMemory - INFO - Batch concurrent processing 227 requests, max concurrent: 4
+2026-11-01 06:13:11 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:   0%|          | 1/227 [00:26<1:41:03, 26.83s/calls]2026-11-01 06:13:22 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:   1%|          | 2/227 [00:37<1:05:50, 17.56s/calls]2026-11-01 06:13:22 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:   1%|▏         | 3/227 [00:38<35:59,  9.64s/calls]  2026-11-01 06:13:22 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+2026-11-01 06:13:50 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:   2%|▏         | 5/227 [01:05<44:31, 12.03s/calls]2026-11-01 06:14:01 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:   3%|▎         | 6/227 [01:16<43:13, 11.74s/calls]2026-11-01 06:14:01 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:   3%|▎         | 7/227 [01:17<30:45,  8.39s/calls]2026-11-01 06:14:01 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+2026-11-01 06:14:28 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:   4%|▍         | 9/227 [01:43<38:23, 10.57s/calls]2026-11-01 06:14:38 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:   4%|▍         | 10/227 [01:54<38:16, 10.58s/calls]2026-11-01 06:14:38 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:   5%|▍         | 11/227 [01:54<28:25,  7.89s/calls]2026-11-01 06:14:38 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+2026-11-01 06:15:02 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:   6%|▌         | 13/227 [02:18<34:12,  9.59s/calls]2026-11-01 06:15:10 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:   6%|▌         | 14/227 [02:26<32:51,  9.25s/calls]2026-11-01 06:15:16 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:   7%|▋         | 15/227 [02:32<29:51,  8.45s/calls]2026-11-01 06:15:16 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+2026-11-01 06:15:37 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:   7%|▋         | 17/227 [02:52<32:04,  9.16s/calls]2026-11-01 06:15:40 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:   8%|▊         | 18/227 [02:55<26:52,  7.71s/calls]2026-11-01 06:15:46 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:   8%|▊         | 19/227 [03:02<26:03,  7.52s/calls]2026-11-01 06:15:47 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:   9%|▉         | 20/227 [03:03<20:00,  5.80s/calls]2026-11-01 06:16:03 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:   9%|▉         | 21/227 [03:19<29:28,  8.58s/calls]2026-11-01 06:16:06 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  10%|▉         | 22/227 [03:21<23:31,  6.89s/calls]2026-11-01 06:16:10 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  10%|█         | 23/227 [03:25<20:41,  6.09s/calls]2026-11-01 06:16:15 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  11%|█         | 24/227 [03:30<19:21,  5.72s/calls]2026-11-01 06:16:21 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  11%|█         | 25/227 [03:37<20:00,  5.94s/calls]2026-11-01 06:16:42 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  11%|█▏        | 26/227 [03:58<34:42, 10.36s/calls]2026-11-01 06:16:47 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  12%|█▏        | 27/227 [04:02<28:40,  8.60s/calls]2026-11-01 06:16:52 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  12%|█▏        | 28/227 [04:08<25:42,  7.75s/calls]2026-11-01 06:16:59 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  13%|█▎        | 29/227 [04:15<24:35,  7.45s/calls]2026-11-01 06:17:13 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  13%|█▎        | 30/227 [04:28<30:17,  9.23s/calls]2026-11-01 06:17:15 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  14%|█▎        | 31/227 [04:31<23:51,  7.30s/calls]2026-11-01 06:17:21 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  14%|█▍        | 32/227 [04:36<21:50,  6.72s/calls]2026-11-01 06:17:30 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  15%|█▍        | 33/227 [04:46<24:25,  7.55s/calls]2026-11-01 06:17:51 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  15%|█▍        | 34/227 [05:06<37:04, 11.52s/calls]2026-11-01 06:17:54 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  15%|█▌        | 35/227 [05:09<28:29,  8.90s/calls]2026-11-01 06:17:59 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  16%|█▌        | 36/227 [05:15<25:01,  7.86s/calls]2026-11-01 06:18:09 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  16%|█▋        | 37/227 [05:24<26:19,  8.31s/calls]2026-11-01 06:18:29 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  17%|█▋        | 38/227 [05:44<37:37, 11.94s/calls]2026-11-01 06:18:32 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  17%|█▋        | 39/227 [05:47<28:44,  9.17s/calls]2026-11-01 06:18:38 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  18%|█▊        | 40/227 [05:53<25:43,  8.25s/calls]2026-11-01 06:18:47 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  18%|█▊        | 41/227 [06:02<26:27,  8.53s/calls]2026-11-01 06:19:08 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  19%|█▊        | 42/227 [06:23<37:27, 12.15s/calls]2026-11-01 06:19:10 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  19%|█▉        | 43/227 [06:26<28:26,  9.28s/calls]2026-11-01 06:19:15 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  19%|█▉        | 44/227 [06:31<24:29,  8.03s/calls]2026-11-01 06:19:25 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  20%|█▉        | 45/227 [06:40<25:56,  8.55s/calls]2026-11-01 06:19:27 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  20%|██        | 46/227 [06:42<19:28,  6.46s/calls]2026-11-01 06:19:47 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  21%|██        | 47/227 [07:03<32:20, 10.78s/calls]2026-11-01 06:19:53 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  21%|██        | 48/227 [07:08<27:13,  9.12s/calls]2026-11-01 06:20:02 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  22%|██▏       | 49/227 [07:17<26:59,  9.10s/calls]2026-11-01 06:20:04 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  22%|██▏       | 50/227 [07:19<20:23,  6.91s/calls]2026-11-01 06:20:24 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  22%|██▏       | 51/227 [07:40<32:35, 11.11s/calls]2026-11-01 06:20:30 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  23%|██▎       | 52/227 [07:45<27:24,  9.40s/calls]2026-11-01 06:20:39 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  23%|██▎       | 53/227 [07:55<27:07,  9.35s/calls]2026-11-01 06:20:41 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  24%|██▍       | 54/227 [07:56<20:16,  7.03s/calls]2026-11-01 06:21:03 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  24%|██▍       | 55/227 [08:18<32:58, 11.51s/calls]2026-11-01 06:21:06 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  25%|██▍       | 56/227 [08:21<25:49,  9.06s/calls]2026-11-01 06:21:08 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  25%|██▌       | 57/227 [08:23<19:20,  6.83s/calls]2026-11-01 06:21:19 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  26%|██▌       | 58/227 [08:35<23:12,  8.24s/calls]2026-11-01 06:21:40 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  26%|██▌       | 59/227 [08:56<34:00, 12.15s/calls]2026-11-01 06:21:44 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  26%|██▋       | 60/227 [08:59<26:32,  9.54s/calls]2026-11-01 06:21:45 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  27%|██▋       | 61/227 [09:01<19:43,  7.13s/calls]2026-11-01 06:21:51 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  27%|██▋       | 62/227 [09:07<18:34,  6.75s/calls]2026-11-01 06:21:57 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  28%|██▊       | 63/227 [09:12<17:22,  6.36s/calls]2026-11-01 06:21:59 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  28%|██▊       | 64/227 [09:15<13:59,  5.15s/calls]2026-11-01 06:22:07 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  29%|██▊       | 65/227 [09:22<15:52,  5.88s/calls]2026-11-01 06:22:28 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  29%|██▉       | 66/227 [09:44<28:33, 10.65s/calls]2026-11-01 06:22:34 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  30%|██▉       | 67/227 [09:50<24:24,  9.15s/calls]2026-11-01 06:22:36 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  30%|██▉       | 68/227 [09:52<18:50,  7.11s/calls]2026-11-01 06:22:44 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  30%|███       | 69/227 [10:00<19:20,  7.34s/calls]2026-11-01 06:23:06 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  31%|███       | 70/227 [10:22<30:46, 11.76s/calls]2026-11-01 06:23:08 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  31%|███▏      | 71/227 [10:23<22:28,  8.65s/calls]2026-11-01 06:23:15 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  32%|███▏      | 72/227 [10:30<21:12,  8.21s/calls]2026-11-01 06:23:23 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  32%|███▏      | 73/227 [10:38<20:43,  8.08s/calls]2026-11-01 06:23:34 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  33%|███▎      | 74/227 [10:50<23:22,  9.17s/calls]2026-11-01 06:23:45 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  33%|███▎      | 75/227 [11:00<24:14,  9.57s/calls]2026-11-01 06:23:46 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  33%|███▎      | 76/227 [11:02<17:51,  7.10s/calls]2026-11-01 06:24:00 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  34%|███▍      | 77/227 [11:16<22:47,  9.12s/calls]2026-11-01 06:24:12 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  34%|███▍      | 78/227 [11:27<24:42,  9.95s/calls]2026-11-01 06:24:13 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  35%|███▍      | 79/227 [11:28<17:47,  7.22s/calls]2026-11-01 06:24:23 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  35%|███▌      | 80/227 [11:38<19:46,  8.07s/calls]2026-11-01 06:24:31 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  36%|███▌      | 81/227 [11:47<19:59,  8.22s/calls]2026-11-01 06:24:35 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  36%|███▌      | 82/227 [11:50<16:12,  6.71s/calls]2026-11-01 06:24:50 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  37%|███▋      | 83/227 [12:05<22:20,  9.31s/calls]2026-11-01 06:25:01 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  37%|███▋      | 84/227 [12:17<23:29,  9.86s/calls]2026-11-01 06:25:10 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  37%|███▋      | 85/227 [12:25<22:21,  9.45s/calls]2026-11-01 06:25:13 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  38%|███▊      | 86/227 [12:28<17:43,  7.54s/calls]2026-11-01 06:25:29 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  38%|███▊      | 87/227 [12:45<23:46, 10.19s/calls]2026-11-01 06:25:39 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  39%|███▉      | 88/227 [12:55<23:33, 10.17s/calls]2026-11-01 06:25:48 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  39%|███▉      | 89/227 [13:03<22:16,  9.69s/calls]2026-11-01 06:25:51 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  40%|███▉      | 90/227 [13:06<17:22,  7.61s/calls]2026-11-01 06:25:51 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  40%|████      | 91/227 [13:07<12:40,  5.59s/calls]2026-11-01 06:26:16 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  41%|████      | 92/227 [13:32<25:37, 11.39s/calls]2026-11-01 06:26:27 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  41%|████      | 93/227 [13:42<24:45, 11.08s/calls]2026-11-01 06:26:30 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  41%|████▏     | 94/227 [13:45<19:09,  8.65s/calls]2026-11-01 06:26:31 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  42%|████▏     | 95/227 [13:46<13:53,  6.31s/calls]2026-11-01 06:26:40 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  42%|████▏     | 96/227 [13:55<15:44,  7.21s/calls]2026-11-01 06:26:56 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  43%|████▎     | 97/227 [14:11<21:16,  9.82s/calls]2026-11-01 06:27:05 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  43%|████▎     | 98/227 [14:21<20:51,  9.70s/calls]2026-11-01 06:27:05 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+2026-11-01 06:27:06 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  44%|████▍     | 100/227 [14:22<11:37,  5.49s/calls]2026-11-01 06:27:26 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  44%|████▍     | 101/227 [14:41<18:47,  8.95s/calls]2026-11-01 06:27:39 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  45%|████▍     | 102/227 [14:54<20:41,  9.93s/calls]2026-11-01 06:27:45 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  45%|████▌     | 103/227 [15:00<18:36,  9.01s/calls]2026-11-01 06:27:45 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+2026-11-01 06:28:05 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  46%|████▋     | 105/227 [15:20<19:04,  9.38s/calls]2026-11-01 06:28:18 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  47%|████▋     | 106/227 [15:34<20:59, 10.41s/calls]2026-11-01 06:28:29 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  47%|████▋     | 107/227 [15:44<20:51, 10.43s/calls]2026-11-01 06:28:29 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+2026-11-01 06:29:04 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  48%|████▊     | 109/227 [16:19<26:19, 13.39s/calls]2026-11-01 06:29:20 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  48%|████▊     | 110/227 [16:35<27:21, 14.03s/calls]2026-11-01 06:29:26 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  49%|████▉     | 111/227 [16:41<23:10, 11.99s/calls]2026-11-01 06:29:36 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  49%|████▉     | 112/227 [16:52<22:15, 11.61s/calls]2026-11-01 06:30:12 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  50%|████▉     | 113/227 [17:27<34:22, 18.10s/calls]2026-11-01 06:30:24 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  50%|█████     | 114/227 [17:39<30:58, 16.45s/calls]2026-11-01 06:30:29 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  51%|█████     | 115/227 [17:44<24:30, 13.13s/calls]2026-11-01 06:30:45 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  51%|█████     | 116/227 [18:00<25:47, 13.94s/calls]2026-11-01 06:31:20 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  52%|█████▏    | 117/227 [18:35<36:52, 20.12s/calls]2026-11-01 06:31:32 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  52%|█████▏    | 118/227 [18:47<32:11, 17.72s/calls]2026-11-01 06:31:37 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  52%|█████▏    | 119/227 [18:52<24:59, 13.88s/calls]2026-11-01 06:31:52 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  53%|█████▎    | 120/227 [19:08<25:45, 14.45s/calls]2026-11-01 06:32:06 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  53%|█████▎    | 121/227 [19:21<25:04, 14.19s/calls]2026-11-01 06:32:18 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  54%|█████▎    | 122/227 [19:33<23:29, 13.42s/calls]2026-11-01 06:32:36 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  54%|█████▍    | 123/227 [19:51<25:52, 14.93s/calls]2026-11-01 06:32:44 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  55%|█████▍    | 124/227 [19:59<22:04, 12.86s/calls]2026-11-01 06:33:14 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  55%|█████▌    | 125/227 [20:29<30:31, 17.96s/calls]2026-11-01 06:33:24 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  56%|█████▌    | 126/227 [20:40<26:27, 15.72s/calls]2026-11-01 06:33:25 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  56%|█████▌    | 127/227 [20:41<18:50, 11.30s/calls]2026-11-01 06:33:44 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  56%|█████▋    | 128/227 [21:00<22:19, 13.53s/calls]2026-11-01 06:34:09 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  57%|█████▋    | 129/227 [21:24<27:40, 16.94s/calls]2026-11-01 06:34:33 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  57%|█████▋    | 130/227 [21:49<30:50, 19.08s/calls]2026-11-01 06:34:34 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  58%|█████▊    | 131/227 [21:49<21:46, 13.60s/calls]2026-11-01 06:34:53 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  58%|█████▊    | 132/227 [22:08<23:55, 15.11s/calls]2026-11-01 06:35:05 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  59%|█████▊    | 133/227 [22:20<22:11, 14.16s/calls]2026-11-01 06:35:18 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  59%|█████▉    | 134/227 [22:33<21:25, 13.82s/calls]2026-11-01 06:35:42 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  59%|█████▉    | 135/227 [22:58<26:11, 17.08s/calls]2026-11-01 06:36:01 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  60%|█████▉    | 136/227 [23:16<26:31, 17.49s/calls]2026-11-01 06:36:12 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  60%|██████    | 137/227 [23:28<23:35, 15.73s/calls]2026-11-01 06:36:22 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  61%|██████    | 138/227 [23:38<20:41, 13.95s/calls]2026-11-01 06:36:25 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  61%|██████    | 139/227 [23:40<15:34, 10.62s/calls]2026-11-01 06:36:49 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  62%|██████▏   | 140/227 [24:04<21:04, 14.54s/calls]2026-11-01 06:37:09 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  62%|██████▏   | 141/227 [24:24<23:22, 16.31s/calls]2026-11-01 06:37:19 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  63%|██████▎   | 142/227 [24:34<20:12, 14.27s/calls]2026-11-01 06:37:26 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  63%|██████▎   | 143/227 [24:42<17:16, 12.34s/calls]2026-11-01 06:37:29 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  63%|██████▎   | 144/227 [24:44<12:55,  9.34s/calls]2026-11-01 06:37:50 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  64%|██████▍   | 145/227 [25:05<17:35, 12.88s/calls]2026-11-01 06:38:04 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  64%|██████▍   | 146/227 [25:20<17:57, 13.30s/calls]2026-11-01 06:38:07 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  65%|██████▍   | 147/227 [25:23<13:44, 10.31s/calls]2026-11-01 06:38:37 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  65%|██████▌   | 148/227 [25:52<21:05, 16.02s/calls]2026-11-01 06:38:46 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  66%|██████▌   | 149/227 [26:01<18:05, 13.92s/calls]2026-11-01 06:38:53 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  66%|██████▌   | 150/227 [26:09<15:21, 11.96s/calls]2026-11-01 06:39:15 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  67%|██████▋   | 151/227 [26:30<18:50, 14.88s/calls]2026-11-01 06:39:44 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+Stage 2: Dialogue Entity & Relationship Extraction:  67%|██████▋   | 152/227 [27:00<24:05, 19.27s/calls]

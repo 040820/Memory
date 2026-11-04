@@ -1,0 +1,1805 @@
+[
+  {
+    "source_response_file": "0ea5ce49baefd873baa50ac886a6502136c024328868efd40aac7f8e8459e90a.json",
+    "source_response_sha256": "2d65b258299cc7a109277a259a97d80944c5b265ec5d100d699fbc33607eda7c",
+    "old_fact": {
+      "evidence_id": "ev_ba80a75b2e67379f32296d0dacf8ef8937389df90cdd612faca19a2195bf1100",
+      "subject_key": "user",
+      "attribute_key": "hobby_activity_frequency",
+      "object_key": "model_building",
+      "scope_key": "weekends",
+      "value": "around 2-3 hours every Saturday and Sunday",
+      "quote": "I've been spending around 2-3 hours every Saturday and Sunday on model building",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "98c6946f_1",
+      "session_time": "2023/05/25 (Thu) 15:56",
+      "turn_index": 6,
+      "fact_id": "fact_b0a6506f23ff37bc5b6c40f19f04bd6a5ad15c75a2e522e76fb405c2a6a43308",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          134,
+          213
+        ]
+      ],
+      "search_attribute_key": "hobby_activity_frequency",
+      "attribute_normalization": {
+        "raw": "hobby_activity_frequency",
+        "key": "hobby_activity_frequency",
+        "rules": [],
+        "status": "candidate_only",
+        "version": "lexical_v1_dev"
+      }
+    },
+    "new_fact": {
+      "evidence_id": "ev_016f7b26c9aa2909abfbb1f46ac629223b7e564be66c936a6ad14a0b47620ec8",
+      "subject_key": "user",
+      "attribute_key": "hobby_activity_frequency",
+      "object_key": "model_building",
+      "scope_key": "weekends",
+      "value": "around 2-3 hours every Saturday and Sunday",
+      "quote": "Since I've been spending around 2-3 hours every Saturday and Sunday on model building",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "98c6946f_1",
+      "session_time": "2023/05/25 (Thu) 15:56",
+      "turn_index": 10,
+      "fact_id": "fact_c3ef365b07c63fcc00e584b90cd3f4a62cce31f7e140d758a6a8af3a7571cec1",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          97,
+          182
+        ]
+      ],
+      "search_attribute_key": "hobby_activity_frequency",
+      "attribute_normalization": {
+        "raw": "hobby_activity_frequency",
+        "key": "hobby_activity_frequency",
+        "rules": [],
+        "status": "candidate_only",
+        "version": "lexical_v1_dev"
+      }
+    },
+    "pair": {
+      "old_fact_id": "fact_b0a6506f23ff37bc5b6c40f19f04bd6a5ad15c75a2e522e76fb405c2a6a43308",
+      "new_fact_id": "fact_c3ef365b07c63fcc00e584b90cd3f4a62cce31f7e140d758a6a8af3a7571cec1",
+      "old_evidence_id": "ev_ba80a75b2e67379f32296d0dacf8ef8937389df90cdd612faca19a2195bf1100",
+      "new_evidence_id": "ev_016f7b26c9aa2909abfbb1f46ac629223b7e564be66c936a6ad14a0b47620ec8",
+      "subject_match": "KEY_MATCH_UNVERIFIED",
+      "attribute_match": "KEY_MATCH_UNVERIFIED",
+      "object_match": "MATCH",
+      "scope_match": "MATCH",
+      "time_order": "BEFORE_SAME_SESSION",
+      "candidate_path": "exact_proposed_subject_attribute_keys",
+      "candidate_only": true
+    },
+    "result": {
+      "status": "proposed",
+      "relation": "DUPLICATE",
+      "action": "DEFER",
+      "applied": false,
+      "eligible_for_state_update": false,
+      "caveats": [
+        "MODEL_RELATION_UNVERIFIED"
+      ],
+      "citations": [
+        {
+          "evidence_id": "ev_ba80a75b2e67379f32296d0dacf8ef8937389df90cdd612faca19a2195bf1100",
+          "start": 134,
+          "end": 213,
+          "quote": "I've been spending around 2-3 hours every Saturday and Sunday on model building"
+        },
+        {
+          "evidence_id": "ev_016f7b26c9aa2909abfbb1f46ac629223b7e564be66c936a6ad14a0b47620ec8",
+          "start": 97,
+          "end": 182,
+          "quote": "Since I've been spending around 2-3 hours every Saturday and Sunday on model building"
+        }
+      ],
+      "model_reason": "Both facts assert the exact same value ('around 2-3 hours every Saturday and Sunday') for the same subject, attribute, object, and scope within the same session. The slight difference in wording is due to sentence structure (one starts a clause, the other follows 'Since'), but the informational content regarding frequency is identical.",
+      "semantic_support_verified": false
+    }
+  },
+  {
+    "source_response_file": "1bb9826010bd57042ab16b8644b9857db57dd26ea3ac4146ba2ade7e820f56ee.json",
+    "source_response_sha256": "cbfdda691a79298a022e877e237a9595162f74a8aad88da83ab982023224b8ee",
+    "old_fact": {
+      "evidence_id": "ev_239c24026df9d596442a6ab14493e499e6aa3af5a337429b7835fed8767f3390",
+      "subject_key": "user",
+      "attribute_key": "travel_plan",
+      "object_key": "disneyland_resort",
+      "scope_key": "UNKNOWN",
+      "value": "planning a trip soon",
+      "quote": "I'm planning a trip to Disneyland Resort soon",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "1d015773_1",
+      "session_time": "2023/05/03 (Wed) 14:25",
+      "turn_index": 0,
+      "fact_id": "fact_54455c198a3fb3620dd01ed1cba591678957da43da0e9721caf2a8e11c6c8e8b",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          45
+        ]
+      ],
+      "search_attribute_key": "travel_plan",
+      "attribute_normalization": {
+        "raw": "travel_plan",
+        "key": "travel_plan",
+        "rules": [],
+        "status": "candidate_only",
+        "version": "lexical_v1_dev"
+      }
+    },
+    "new_fact": {
+      "evidence_id": "ev_fda7274093087a90c8b0f881fa93724106676cc87e38ef5493d989d6be64e525",
+      "subject_key": "user",
+      "attribute_key": "travel_plan",
+      "object_key": "UNKNOWN",
+      "scope_key": "destination_country",
+      "value": "planning a trip",
+      "quote": "I'm planning a trip",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "719a18dd_1",
+      "session_time": "2023/05/10 (Wed) 17:27",
+      "turn_index": 0,
+      "fact_id": "fact_5d4832e9ef25fcd454c205acdf6d234870ce17dba2fc3702365361d4a727b5e2",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          19
+        ]
+      ],
+      "search_attribute_key": "travel_plan",
+      "attribute_normalization": {
+        "raw": "travel_plan",
+        "key": "travel_plan",
+        "rules": [],
+        "status": "candidate_only",
+        "version": "lexical_v1_dev"
+      }
+    },
+    "pair": {
+      "old_fact_id": "fact_54455c198a3fb3620dd01ed1cba591678957da43da0e9721caf2a8e11c6c8e8b",
+      "new_fact_id": "fact_5d4832e9ef25fcd454c205acdf6d234870ce17dba2fc3702365361d4a727b5e2",
+      "old_evidence_id": "ev_239c24026df9d596442a6ab14493e499e6aa3af5a337429b7835fed8767f3390",
+      "new_evidence_id": "ev_fda7274093087a90c8b0f881fa93724106676cc87e38ef5493d989d6be64e525",
+      "subject_match": "KEY_MATCH_UNVERIFIED",
+      "attribute_match": "KEY_MATCH_UNVERIFIED",
+      "object_match": "UNKNOWN",
+      "scope_match": "UNKNOWN",
+      "time_order": "BEFORE",
+      "candidate_path": "exact_proposed_subject_attribute_keys",
+      "candidate_only": true
+    },
+    "result": {
+      "status": "proposed",
+      "relation": "UNRELATED",
+      "action": "DEFER",
+      "applied": false,
+      "eligible_for_state_update": false,
+      "caveats": [
+        "MODEL_RELATION_UNVERIFIED",
+        "OLD_STATEMENT_UNCERTAIN",
+        "NEW_STATEMENT_UNCERTAIN"
+      ],
+      "citations": [
+        {
+          "evidence_id": "ev_239c24026df9d596442a6ab14493e499e6aa3af5a337429b7835fed8767f3390",
+          "start": 0,
+          "end": 45,
+          "quote": "I'm planning a trip to Disneyland Resort soon"
+        },
+        {
+          "evidence_id": "ev_fda7274093087a90c8b0f881fa93724106676cc87e38ef5493d989d6be64e525",
+          "start": 0,
+          "end": 103,
+          "quote": "I'm planning a trip and was wondering if you could give me some news updates on my destination country."
+        }
+      ],
+      "model_reason": "The old fact specifies a trip to Disneyland Resort, while the new fact refers to a trip with an unspecified destination country. These are distinct travel plans or potentially different trips; there is no evidence that one replaces or corrects the other, nor do they share sufficient specific details to be considered duplicates or complements of the same event.",
+      "semantic_support_verified": false
+    }
+  },
+  {
+    "source_response_file": "1fd25d2a9c40aadfc09357e848589137088004e2a91a7ef3ee3b0c9751be299e.json",
+    "source_response_sha256": "c7e2c88db5f8901f31ee16499d0db0814f2fd79bf6096b06d104cfe097a47016",
+    "old_fact": {
+      "evidence_id": "ev_414af29fd0585fcb84f5be85def423bee4c21881fef27f45625ce13afad436a5",
+      "subject_key": "user",
+      "attribute_key": "travel_plan",
+      "object_key": "star_wars_ride",
+      "scope_key": "UNKNOWN",
+      "value": "thinking of checking out the new Star Wars ride while I'm there",
+      "quote": "I'm also thinking of checking out the new Star Wars ride while I'm there",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "1d015773_1",
+      "session_time": "2023/05/03 (Wed) 14:25",
+      "turn_index": 2,
+      "fact_id": "fact_1097faa9c3c23ba52bcdc0454c840ae8fcaef36ae0890c4a850d96a776bc3179",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          72
+        ]
+      ],
+      "search_attribute_key": "travel_plan",
+      "attribute_normalization": {
+        "raw": "travel_plan",
+        "key": "travel_plan",
+        "rules": [],
+        "status": "candidate_only",
+        "version": "lexical_v1_dev"
+      }
+    },
+    "new_fact": {
+      "evidence_id": "ev_fda7274093087a90c8b0f881fa93724106676cc87e38ef5493d989d6be64e525",
+      "subject_key": "user",
+      "attribute_key": "travel_plan",
+      "object_key": "UNKNOWN",
+      "scope_key": "destination_country",
+      "value": "planning a trip",
+      "quote": "I'm planning a trip",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "719a18dd_1",
+      "session_time": "2023/05/10 (Wed) 17:27",
+      "turn_index": 0,
+      "fact_id": "fact_5d4832e9ef25fcd454c205acdf6d234870ce17dba2fc3702365361d4a727b5e2",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          19
+        ]
+      ],
+      "search_attribute_key": "travel_plan",
+      "attribute_normalization": {
+        "raw": "travel_plan",
+        "key": "travel_plan",
+        "rules": [],
+        "status": "candidate_only",
+        "version": "lexical_v1_dev"
+      }
+    },
+    "pair": {
+      "old_fact_id": "fact_1097faa9c3c23ba52bcdc0454c840ae8fcaef36ae0890c4a850d96a776bc3179",
+      "new_fact_id": "fact_5d4832e9ef25fcd454c205acdf6d234870ce17dba2fc3702365361d4a727b5e2",
+      "old_evidence_id": "ev_414af29fd0585fcb84f5be85def423bee4c21881fef27f45625ce13afad436a5",
+      "new_evidence_id": "ev_fda7274093087a90c8b0f881fa93724106676cc87e38ef5493d989d6be64e525",
+      "subject_match": "KEY_MATCH_UNVERIFIED",
+      "attribute_match": "KEY_MATCH_UNVERIFIED",
+      "object_match": "UNKNOWN",
+      "scope_match": "UNKNOWN",
+      "time_order": "BEFORE",
+      "candidate_path": "exact_proposed_subject_attribute_keys",
+      "candidate_only": true
+    },
+    "result": {
+      "status": "proposed",
+      "relation": "COMPLEMENT",
+      "action": "DEFER",
+      "applied": false,
+      "eligible_for_state_update": false,
+      "caveats": [
+        "MODEL_RELATION_UNVERIFIED",
+        "OLD_STATEMENT_UNCERTAIN",
+        "NEW_STATEMENT_UNCERTAIN"
+      ],
+      "citations": [
+        {
+          "evidence_id": "ev_414af29fd0585fcb84f5be85def423bee4c21881fef27f45625ce13afad436a5",
+          "start": 0,
+          "end": 73,
+          "quote": "I'm also thinking of checking out the new Star Wars ride while I'm there."
+        },
+        {
+          "evidence_id": "ev_fda7274093087a90c8b0f881fa93724106676cc87e38ef5493d989d6be64e525",
+          "start": 0,
+          "end": 103,
+          "quote": "I'm planning a trip and was wondering if you could give me some news updates on my destination country."
+        }
+      ],
+      "model_reason": "The old fact describes a specific activity (Star Wars ride) within a trip, while the new fact describes the general plan of traveling and seeking news about the destination. These are distinct aspects of the user's travel plans that coexist without contradiction or replacement.",
+      "semantic_support_verified": false
+    }
+  },
+  {
+    "source_response_file": "348131c042d1ed840780887804c621f23a4a47a3e435fab3a9aee7bb3bcedf5f.json",
+    "source_response_sha256": "c121950155da6691b428262b09831c0206903da8d381e4c66ffed10b72b37e80",
+    "old_fact": {
+      "evidence_id": "ev_95dc0d051873f24fdf1cdc158f2341bbfe559d3c096e659eaff319c8c5d49f84",
+      "subject_key": "user",
+      "attribute_key": "hobby_activity_frequency",
+      "object_key": "model_building",
+      "scope_key": "weekends",
+      "value": "around 2-3 hours every Saturday and Sunday",
+      "quote": "Since I've been spending around 2-3 hours every Saturday and Sunday on model building",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "98c6946f_1",
+      "session_time": "2023/05/25 (Thu) 15:56",
+      "turn_index": 8,
+      "fact_id": "fact_515cda22522ec1a8b0a278cd36cecce4bde59992e1508c1ae97436131a021c7e",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          96,
+          181
+        ]
+      ],
+      "search_attribute_key": "hobby_activity_frequency",
+      "attribute_normalization": {
+        "raw": "hobby_activity_frequency",
+        "key": "hobby_activity_frequency",
+        "rules": [],
+        "status": "candidate_only",
+        "version": "lexical_v1_dev"
+      }
+    },
+    "new_fact": {
+      "evidence_id": "ev_016f7b26c9aa2909abfbb1f46ac629223b7e564be66c936a6ad14a0b47620ec8",
+      "subject_key": "user",
+      "attribute_key": "hobby_activity_frequency",
+      "object_key": "model_building",
+      "scope_key": "weekends",
+      "value": "around 2-3 hours every Saturday and Sunday",
+      "quote": "Since I've been spending around 2-3 hours every Saturday and Sunday on model building",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "98c6946f_1",
+      "session_time": "2023/05/25 (Thu) 15:56",
+      "turn_index": 10,
+      "fact_id": "fact_c3ef365b07c63fcc00e584b90cd3f4a62cce31f7e140d758a6a8af3a7571cec1",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          97,
+          182
+        ]
+      ],
+      "search_attribute_key": "hobby_activity_frequency",
+      "attribute_normalization": {
+        "raw": "hobby_activity_frequency",
+        "key": "hobby_activity_frequency",
+        "rules": [],
+        "status": "candidate_only",
+        "version": "lexical_v1_dev"
+      }
+    },
+    "pair": {
+      "old_fact_id": "fact_515cda22522ec1a8b0a278cd36cecce4bde59992e1508c1ae97436131a021c7e",
+      "new_fact_id": "fact_c3ef365b07c63fcc00e584b90cd3f4a62cce31f7e140d758a6a8af3a7571cec1",
+      "old_evidence_id": "ev_95dc0d051873f24fdf1cdc158f2341bbfe559d3c096e659eaff319c8c5d49f84",
+      "new_evidence_id": "ev_016f7b26c9aa2909abfbb1f46ac629223b7e564be66c936a6ad14a0b47620ec8",
+      "subject_match": "KEY_MATCH_UNVERIFIED",
+      "attribute_match": "KEY_MATCH_UNVERIFIED",
+      "object_match": "MATCH",
+      "scope_match": "MATCH",
+      "time_order": "BEFORE_SAME_SESSION",
+      "candidate_path": "exact_proposed_subject_attribute_keys",
+      "candidate_only": true
+    },
+    "result": {
+      "status": "proposed",
+      "relation": "DUPLICATE",
+      "action": "DEFER",
+      "applied": false,
+      "eligible_for_state_update": false,
+      "caveats": [
+        "MODEL_RELATION_UNVERIFIED"
+      ],
+      "citations": [
+        {
+          "evidence_id": "ev_95dc0d051873f24fdf1cdc158f2341bbfe559d3c096e659eaff319c8c5d49f84",
+          "start": 96,
+          "end": 181,
+          "quote": "Since I've been spending around 2-3 hours every Saturday and Sunday on model building"
+        },
+        {
+          "evidence_id": "ev_016f7b26c9aa2909abfbb1f46ac629223b7e564be66c936a6ad14a0b47620ec8",
+          "start": 97,
+          "end": 182,
+          "quote": "Since I've been spending around 2-3 hours every Saturday and Sunday on model building"
+        }
+      ],
+      "model_reason": "Both facts assert the exact same value ('around 2-3 hours every Saturday and Sunday') for the same subject, attribute, object, and scope. The source texts are from the same session time and contain identical phrasing regarding the hobby frequency, indicating they represent the same information retrieved twice.",
+      "semantic_support_verified": false
+    }
+  },
+  {
+    "source_response_file": "354aaa11c4f6a2fcee237aed2620172d7a33240d981f40ecf44afa022942c1e9.json",
+    "source_response_sha256": "a9580c3892a742323a7f3e534593013b0648800fb745439510c719c933fe51ad",
+    "old_fact": {
+      "evidence_id": "ev_d88d5444bebfd93fe8b581abe6c30da1464abf7a4d62845d26d6571a09083588",
+      "subject_key": "user",
+      "attribute_key": "action_completed",
+      "object_key": "book_wild",
+      "scope_key": "February",
+      "value": "read \"Wild\" by Cheryl Strayed in February",
+      "quote": "reading \"Wild\" by Cheryl Strayed in February",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "fc9d19f7_2",
+      "session_time": "2023/05/25 (Thu) 05:48",
+      "turn_index": 0,
+      "fact_id": "fact_bbd24c3ca92eeb30d4724f2d241abd1c809d57a8c7ca4f04a58b8b4332d9199c",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          227,
+          271
+        ]
+      ],
+      "search_attribute_key": "action_completed",
+      "attribute_normalization": {
+        "raw": "action_completed",
+        "key": "action_completed",
+        "rules": [],
+        "status": "candidate_only",
+        "version": "lexical_v1_dev"
+      }
+    },
+    "new_fact": {
+      "evidence_id": "ev_eda096f8d9fec2899f69328c2e22cac19681a9a23c5ce9566e1b8d8852b64676",
+      "subject_key": "user",
+      "attribute_key": "action_completed",
+      "object_key": "book_wild",
+      "scope_key": "February",
+      "value": "already read \"Wild\" by Cheryl Strayed in February",
+      "quote": "Since I already read \"Wild\" by Cheryl Strayed in February",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "fc9d19f7_2",
+      "session_time": "2023/05/25 (Thu) 05:48",
+      "turn_index": 10,
+      "fact_id": "fact_1517a494dbdf9b13564fab84e3f401aec9c1930ee20c9d9c849d5acc5383a658",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          157,
+          214
+        ]
+      ],
+      "search_attribute_key": "action_completed",
+      "attribute_normalization": {
+        "raw": "action_completed",
+        "key": "action_completed",
+        "rules": [],
+        "status": "candidate_only",
+        "version": "lexical_v1_dev"
+      }
+    },
+    "pair": {
+      "old_fact_id": "fact_bbd24c3ca92eeb30d4724f2d241abd1c809d57a8c7ca4f04a58b8b4332d9199c",
+      "new_fact_id": "fact_1517a494dbdf9b13564fab84e3f401aec9c1930ee20c9d9c849d5acc5383a658",
+      "old_evidence_id": "ev_d88d5444bebfd93fe8b581abe6c30da1464abf7a4d62845d26d6571a09083588",
+      "new_evidence_id": "ev_eda096f8d9fec2899f69328c2e22cac19681a9a23c5ce9566e1b8d8852b64676",
+      "subject_match": "KEY_MATCH_UNVERIFIED",
+      "attribute_match": "KEY_MATCH_UNVERIFIED",
+      "object_match": "MATCH",
+      "scope_match": "MATCH",
+      "time_order": "BEFORE_SAME_SESSION",
+      "candidate_path": "exact_proposed_subject_attribute_keys",
+      "candidate_only": true
+    },
+    "result": {
+      "status": "proposed",
+      "relation": "DUPLICATE",
+      "action": "DEFER",
+      "applied": false,
+      "eligible_for_state_update": false,
+      "caveats": [
+        "MODEL_RELATION_UNVERIFIED"
+      ],
+      "citations": [
+        {
+          "evidence_id": "ev_d88d5444bebfd93fe8b581abe6c30da1464abf7a4d62845d26d6571a09083588",
+          "start": 185,
+          "end": 299,
+          "quote": "I was inspired to get outdoors more after reading \"Wild\" by Cheryl Strayed in February, which was an amazing book."
+        },
+        {
+          "evidence_id": "ev_eda096f8d9fec2899f69328c2e22cac19681a9a23c5ce9566e1b8d8852b64676",
+          "start": 157,
+          "end": 246,
+          "quote": "Since I already read \"Wild\" by Cheryl Strayed in February, I'm looking for something new."
+        }
+      ],
+      "model_reason": "Both facts assert the same completed action (reading 'Wild' in February) by the same subject within the same session. The second statement is a restatement of the information provided in the first, not a correction or change.",
+      "semantic_support_verified": false
+    }
+  },
+  {
+    "source_response_file": "478e9f9cde63b84c8d7a3094c1895538f5fdd0ea86668b0ae8362bed9d780aa0.json",
+    "source_response_sha256": "87344c1d2892d337badd944d9c705e43bdfbf0197a262f8c08de55bf86c92132",
+    "old_fact": {
+      "evidence_id": "ev_8b7406ee37435f3d3f0b7720f4e7b7027525beebef448f8563be8f6d998c78a8",
+      "subject_key": "user",
+      "attribute_key": "hobby_activity_frequency",
+      "object_key": "model_building",
+      "scope_key": "weekends",
+      "value": "around 2-3 hours every Saturday and Sunday",
+      "quote": "spending around 2-3 hours every Saturday and Sunday on it",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "98c6946f_1",
+      "session_time": "2023/05/25 (Thu) 15:56",
+      "turn_index": 0,
+      "fact_id": "fact_e22433c49f871beec79c4b66d30ad49cd92509d80dba802d198986414b8b45bc",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          102,
+          159
+        ]
+      ],
+      "search_attribute_key": "hobby_activity_frequency",
+      "attribute_normalization": {
+        "raw": "hobby_activity_frequency",
+        "key": "hobby_activity_frequency",
+        "rules": [],
+        "status": "candidate_only",
+        "version": "lexical_v1_dev"
+      }
+    },
+    "new_fact": {
+      "evidence_id": "ev_95dc0d051873f24fdf1cdc158f2341bbfe559d3c096e659eaff319c8c5d49f84",
+      "subject_key": "user",
+      "attribute_key": "hobby_activity_frequency",
+      "object_key": "model_building",
+      "scope_key": "weekends",
+      "value": "around 2-3 hours every Saturday and Sunday",
+      "quote": "Since I've been spending around 2-3 hours every Saturday and Sunday on model building",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "98c6946f_1",
+      "session_time": "2023/05/25 (Thu) 15:56",
+      "turn_index": 8,
+      "fact_id": "fact_515cda22522ec1a8b0a278cd36cecce4bde59992e1508c1ae97436131a021c7e",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          96,
+          181
+        ]
+      ],
+      "search_attribute_key": "hobby_activity_frequency",
+      "attribute_normalization": {
+        "raw": "hobby_activity_frequency",
+        "key": "hobby_activity_frequency",
+        "rules": [],
+        "status": "candidate_only",
+        "version": "lexical_v1_dev"
+      }
+    },
+    "pair": {
+      "old_fact_id": "fact_e22433c49f871beec79c4b66d30ad49cd92509d80dba802d198986414b8b45bc",
+      "new_fact_id": "fact_515cda22522ec1a8b0a278cd36cecce4bde59992e1508c1ae97436131a021c7e",
+      "old_evidence_id": "ev_8b7406ee37435f3d3f0b7720f4e7b7027525beebef448f8563be8f6d998c78a8",
+      "new_evidence_id": "ev_95dc0d051873f24fdf1cdc158f2341bbfe559d3c096e659eaff319c8c5d49f84",
+      "subject_match": "KEY_MATCH_UNVERIFIED",
+      "attribute_match": "KEY_MATCH_UNVERIFIED",
+      "object_match": "MATCH",
+      "scope_match": "MATCH",
+      "time_order": "BEFORE_SAME_SESSION",
+      "candidate_path": "exact_proposed_subject_attribute_keys",
+      "candidate_only": true
+    },
+    "result": {
+      "status": "proposed",
+      "relation": "DUPLICATE",
+      "action": "DEFER",
+      "applied": false,
+      "eligible_for_state_update": false,
+      "caveats": [
+        "MODEL_RELATION_UNVERIFIED"
+      ],
+      "citations": [
+        {
+          "evidence_id": "ev_8b7406ee37435f3d3f0b7720f4e7b7027525beebef448f8563be8f6d998c78a8",
+          "start": 102,
+          "end": 159,
+          "quote": "spending around 2-3 hours every Saturday and Sunday on it"
+        },
+        {
+          "evidence_id": "ev_95dc0d051873f24fdf1cdc158f2341bbfe559d3c096e659eaff319c8c5d49f84",
+          "start": 96,
+          "end": 181,
+          "quote": "Since I've been spending around 2-3 hours every Saturday and Sunday on model building"
+        }
+      ],
+      "model_reason": "Both facts assert the same subject (user), attribute (hobby_activity_frequency), object (model_building), scope (weekends), and value (around 2-3 hours every Saturday and Sunday) within the same session time. The slight variation in wording ('on it' vs 'on model building') does not change the semantic content, indicating they are duplicate extractions of the same information.",
+      "semantic_support_verified": false
+    }
+  },
+  {
+    "source_response_file": "537c00da49cfcd5c008554e08a89180b78a0fcb8fe86d389f20e2285b0facf59.json",
+    "source_response_sha256": "1db5b5929dbe13ffcda7e7b44e92f9097cf4aeb33e802cad5593fed93d6d3b7b",
+    "old_fact": {
+      "evidence_id": "ev_8b7406ee37435f3d3f0b7720f4e7b7027525beebef448f8563be8f6d998c78a8",
+      "subject_key": "user",
+      "attribute_key": "hobby_activity_frequency",
+      "object_key": "model_building",
+      "scope_key": "weekends",
+      "value": "around 2-3 hours every Saturday and Sunday",
+      "quote": "spending around 2-3 hours every Saturday and Sunday on it",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "98c6946f_1",
+      "session_time": "2023/05/25 (Thu) 15:56",
+      "turn_index": 0,
+      "fact_id": "fact_e22433c49f871beec79c4b66d30ad49cd92509d80dba802d198986414b8b45bc",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          102,
+          159
+        ]
+      ],
+      "search_attribute_key": "hobby_activity_frequency",
+      "attribute_normalization": {
+        "raw": "hobby_activity_frequency",
+        "key": "hobby_activity_frequency",
+        "rules": [],
+        "status": "candidate_only",
+        "version": "lexical_v1_dev"
+      }
+    },
+    "new_fact": {
+      "evidence_id": "ev_ba80a75b2e67379f32296d0dacf8ef8937389df90cdd612faca19a2195bf1100",
+      "subject_key": "user",
+      "attribute_key": "hobby_activity_frequency",
+      "object_key": "model_building",
+      "scope_key": "weekends",
+      "value": "around 2-3 hours every Saturday and Sunday",
+      "quote": "I've been spending around 2-3 hours every Saturday and Sunday on model building",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "98c6946f_1",
+      "session_time": "2023/05/25 (Thu) 15:56",
+      "turn_index": 6,
+      "fact_id": "fact_b0a6506f23ff37bc5b6c40f19f04bd6a5ad15c75a2e522e76fb405c2a6a43308",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          134,
+          213
+        ]
+      ],
+      "search_attribute_key": "hobby_activity_frequency",
+      "attribute_normalization": {
+        "raw": "hobby_activity_frequency",
+        "key": "hobby_activity_frequency",
+        "rules": [],
+        "status": "candidate_only",
+        "version": "lexical_v1_dev"
+      }
+    },
+    "pair": {
+      "old_fact_id": "fact_e22433c49f871beec79c4b66d30ad49cd92509d80dba802d198986414b8b45bc",
+      "new_fact_id": "fact_b0a6506f23ff37bc5b6c40f19f04bd6a5ad15c75a2e522e76fb405c2a6a43308",
+      "old_evidence_id": "ev_8b7406ee37435f3d3f0b7720f4e7b7027525beebef448f8563be8f6d998c78a8",
+      "new_evidence_id": "ev_ba80a75b2e67379f32296d0dacf8ef8937389df90cdd612faca19a2195bf1100",
+      "subject_match": "KEY_MATCH_UNVERIFIED",
+      "attribute_match": "KEY_MATCH_UNVERIFIED",
+      "object_match": "MATCH",
+      "scope_match": "MATCH",
+      "time_order": "BEFORE_SAME_SESSION",
+      "candidate_path": "exact_proposed_subject_attribute_keys",
+      "candidate_only": true
+    },
+    "result": {
+      "status": "proposed",
+      "relation": "DUPLICATE",
+      "action": "DEFER",
+      "applied": false,
+      "eligible_for_state_update": false,
+      "caveats": [
+        "MODEL_RELATION_UNVERIFIED"
+      ],
+      "citations": [
+        {
+          "evidence_id": "ev_8b7406ee37435f3d3f0b7720f4e7b7027525beebef448f8563be8f6d998c78a8",
+          "start": 102,
+          "end": 159,
+          "quote": "spending around 2-3 hours every Saturday and Sunday on it"
+        },
+        {
+          "evidence_id": "ev_ba80a75b2e67379f32296d0dacf8ef8937389df90cdd612faca19a2195bf1100",
+          "start": 134,
+          "end": 213,
+          "quote": "I've been spending around 2-3 hours every Saturday and Sunday on model building"
+        }
+      ],
+      "model_reason": "Both facts assert the exact same frequency (2-3 hours), scope (Saturday and Sunday), and activity (model building) for the user. The sources are from the same session time, indicating redundant extraction of the same statement.",
+      "semantic_support_verified": false
+    }
+  },
+  {
+    "source_response_file": "71f5ce62965370e1f9c916e102e483225a777477af2226feb00fcd1092378b81.json",
+    "source_response_sha256": "cd35ed07259f407ac5e141880bae676ff3ae2b1f89f4b1e9b05b8525065423d1",
+    "old_fact": {
+      "evidence_id": "ev_761019ea9e1bdc2ac91419ff3ff6238dc38df9121db8df80ec3c520db6757531",
+      "subject_key": "user",
+      "attribute_key": "transportation_choice",
+      "object_key": "airlink_100_bus",
+      "scope_key": "UNKNOWN",
+      "value": "go with the Airlink 100 Bus",
+      "quote": "I think I'll go with the Airlink 100 Bus",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "b4f28f96_1",
+      "session_time": "2023/05/25 (Thu) 04:55",
+      "turn_index": 2,
+      "fact_id": "fact_f70bc626f8e1aebf9ea2671f4bc0ae3497f11b450cc37eb2b258bce330405b9c",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          40
+        ]
+      ],
+      "search_attribute_key": "transportation_choice",
+      "attribute_normalization": {
+        "raw": "transportation_choice",
+        "key": "transportation_choice",
+        "rules": [],
+        "status": "candidate_only",
+        "version": "lexical_v1_dev"
+      }
+    },
+    "new_fact": {
+      "evidence_id": "ev_1e702a599654ffd81b00de5233d03d858c4c9edd83163c463a6be1d025b4f52f",
+      "subject_key": "user",
+      "attribute_key": "transportation_choice",
+      "object_key": "airlink_100_bus",
+      "scope_key": "haymarket_station",
+      "value": "take the Airlink 100 Bus all the way to Haymarket Station",
+      "quote": "I'll take the Airlink 100 Bus all the way to Haymarket Station then",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "b4f28f96_1",
+      "session_time": "2023/05/25 (Thu) 04:55",
+      "turn_index": 6,
+      "fact_id": "fact_9a058eafc8d5822c1c0e4f008329d4789d3ccded81d49e06db9cf8a1b59b509f",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          67
+        ]
+      ],
+      "search_attribute_key": "transportation_choice",
+      "attribute_normalization": {
+        "raw": "transportation_choice",
+        "key": "transportation_choice",
+        "rules": [],
+        "status": "candidate_only",
+        "version": "lexical_v1_dev"
+      }
+    },
+    "pair": {
+      "old_fact_id": "fact_f70bc626f8e1aebf9ea2671f4bc0ae3497f11b450cc37eb2b258bce330405b9c",
+      "new_fact_id": "fact_9a058eafc8d5822c1c0e4f008329d4789d3ccded81d49e06db9cf8a1b59b509f",
+      "old_evidence_id": "ev_761019ea9e1bdc2ac91419ff3ff6238dc38df9121db8df80ec3c520db6757531",
+      "new_evidence_id": "ev_1e702a599654ffd81b00de5233d03d858c4c9edd83163c463a6be1d025b4f52f",
+      "subject_match": "KEY_MATCH_UNVERIFIED",
+      "attribute_match": "KEY_MATCH_UNVERIFIED",
+      "object_match": "MATCH",
+      "scope_match": "UNKNOWN",
+      "time_order": "BEFORE_SAME_SESSION",
+      "candidate_path": "exact_proposed_subject_attribute_keys",
+      "candidate_only": true
+    },
+    "result": {
+      "status": "proposed",
+      "relation": "COMPLEMENT",
+      "action": "DEFER",
+      "applied": false,
+      "eligible_for_state_update": false,
+      "caveats": [
+        "MODEL_RELATION_UNVERIFIED",
+        "OLD_STATEMENT_UNCERTAIN",
+        "NEW_STATEMENT_UNCERTAIN"
+      ],
+      "citations": [
+        {
+          "evidence_id": "ev_761019ea9e1bdc2ac91419ff3ff6238dc38df9121db8df80ec3c520db6757531",
+          "start": 0,
+          "end": 86,
+          "quote": "I think I'll go with the Airlink 100 Bus. It seems like a more budget-friendly option."
+        },
+        {
+          "evidence_id": "ev_1e702a599654ffd81b00de5233d03d858c4c9edd83163c463a6be1d025b4f52f",
+          "start": 0,
+          "end": 68,
+          "quote": "I'll take the Airlink 100 Bus all the way to Haymarket Station then."
+        }
+      ],
+      "model_reason": "Both statements express the same core plan (using the Airlink 100 Bus) within the same session. The new statement adds specific detail regarding the destination ('all the way to Haymarket Station'), which complements rather than contradicts or replaces the initial general choice.",
+      "semantic_support_verified": false
+    }
+  },
+  {
+    "source_response_file": "767c53f464c7df47d9ec5aa6dd226f852291801255c27f902d5db27a9fc48f79.json",
+    "source_response_sha256": "f447ca098ef5bce94df4ce8878c853ad071ab3121304138cd2b6235a422cab13",
+    "old_fact": {
+      "evidence_id": "ev_239c24026df9d596442a6ab14493e499e6aa3af5a337429b7835fed8767f3390",
+      "subject_key": "user",
+      "attribute_key": "travel_plan",
+      "object_key": "disneyland_resort",
+      "scope_key": "UNKNOWN",
+      "value": "planning a trip soon",
+      "quote": "I'm planning a trip to Disneyland Resort soon",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "1d015773_1",
+      "session_time": "2023/05/03 (Wed) 14:25",
+      "turn_index": 0,
+      "fact_id": "fact_54455c198a3fb3620dd01ed1cba591678957da43da0e9721caf2a8e11c6c8e8b",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          45
+        ]
+      ],
+      "search_attribute_key": "travel_plan",
+      "attribute_normalization": {
+        "raw": "travel_plan",
+        "key": "travel_plan",
+        "rules": [],
+        "status": "candidate_only",
+        "version": "lexical_v1_dev"
+      }
+    },
+    "new_fact": {
+      "evidence_id": "ev_8c32baf074e8a3d1230b36f3b94ed525d194785e873ecb248356e8f0481ecd32",
+      "subject_key": "user",
+      "attribute_key": "travel_plan",
+      "object_key": "disneyland_resort",
+      "scope_key": "again soon",
+      "value": "thinking of visiting the Disneyland Resort again soon",
+      "quote": "I'm also thinking of visiting the Disneyland Resort again soon",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "1d015773_1",
+      "session_time": "2023/05/03 (Wed) 14:25",
+      "turn_index": 6,
+      "fact_id": "fact_90a92f79b63f5e23024eddd5a01381f31a969f0ee74ff6b5495ee9520a9ee06d",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          62
+        ]
+      ],
+      "search_attribute_key": "travel_plan",
+      "attribute_normalization": {
+        "raw": "travel_plan",
+        "key": "travel_plan",
+        "rules": [],
+        "status": "candidate_only",
+        "version": "lexical_v1_dev"
+      }
+    },
+    "pair": {
+      "old_fact_id": "fact_54455c198a3fb3620dd01ed1cba591678957da43da0e9721caf2a8e11c6c8e8b",
+      "new_fact_id": "fact_90a92f79b63f5e23024eddd5a01381f31a969f0ee74ff6b5495ee9520a9ee06d",
+      "old_evidence_id": "ev_239c24026df9d596442a6ab14493e499e6aa3af5a337429b7835fed8767f3390",
+      "new_evidence_id": "ev_8c32baf074e8a3d1230b36f3b94ed525d194785e873ecb248356e8f0481ecd32",
+      "subject_match": "KEY_MATCH_UNVERIFIED",
+      "attribute_match": "KEY_MATCH_UNVERIFIED",
+      "object_match": "MATCH",
+      "scope_match": "UNKNOWN",
+      "time_order": "BEFORE_SAME_SESSION",
+      "candidate_path": "exact_proposed_subject_attribute_keys",
+      "candidate_only": true
+    },
+    "result": {
+      "status": "proposed",
+      "relation": "COEXIST",
+      "action": "DEFER",
+      "applied": false,
+      "eligible_for_state_update": false,
+      "caveats": [
+        "MODEL_RELATION_UNVERIFIED",
+        "OLD_STATEMENT_UNCERTAIN",
+        "NEW_STATEMENT_UNCERTAIN"
+      ],
+      "citations": [
+        {
+          "evidence_id": "ev_239c24026df9d596442a6ab14493e499e6aa3af5a337429b7835fed8767f3390",
+          "start": 0,
+          "end": 113,
+          "quote": "I'm planning a trip to Disneyland Resort soon and I was wondering if you could recommend some good places to eat."
+        },
+        {
+          "evidence_id": "ev_8c32baf074e8a3d1230b36f3b94ed525d194785e873ecb248356e8f0481ecd32",
+          "start": 0,
+          "end": 164,
+          "quote": "I'm also thinking of visiting the Disneyland Resort again soon, and I was wondering if you could recommend some character meet-and-greets that my niece would enjoy."
+        }
+      ],
+      "model_reason": "Both facts describe the user's plan to visit Disneyland Resort soon within the same session. The first fact focuses on dining recommendations (fried chicken), while the second focuses on character meet-and-greets for a niece. These are distinct aspects of the same travel plan or potentially two separate trips mentioned in the same context, but they do not contradict or replace each other; they coexist as different details about the user's intentions.",
+      "semantic_support_verified": false
+    }
+  },
+  {
+    "source_response_file": "7b8d9b86daadb5330410512a2b98c008ddbecc15e7ddde3380dc8a4d84f6bfa6.json",
+    "source_response_sha256": "4157457bc1da628ac18b591e490854cc85dd6fde2e9f8f15817d062ef19badb1",
+    "old_fact": {
+      "evidence_id": "ev_ba80a75b2e67379f32296d0dacf8ef8937389df90cdd612faca19a2195bf1100",
+      "subject_key": "user",
+      "attribute_key": "hobby_activity_frequency",
+      "object_key": "model_building",
+      "scope_key": "weekends",
+      "value": "around 2-3 hours every Saturday and Sunday",
+      "quote": "I've been spending around 2-3 hours every Saturday and Sunday on model building",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "98c6946f_1",
+      "session_time": "2023/05/25 (Thu) 15:56",
+      "turn_index": 6,
+      "fact_id": "fact_b0a6506f23ff37bc5b6c40f19f04bd6a5ad15c75a2e522e76fb405c2a6a43308",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          134,
+          213
+        ]
+      ],
+      "search_attribute_key": "hobby_activity_frequency",
+      "attribute_normalization": {
+        "raw": "hobby_activity_frequency",
+        "key": "hobby_activity_frequency",
+        "rules": [],
+        "status": "candidate_only",
+        "version": "lexical_v1_dev"
+      }
+    },
+    "new_fact": {
+      "evidence_id": "ev_95dc0d051873f24fdf1cdc158f2341bbfe559d3c096e659eaff319c8c5d49f84",
+      "subject_key": "user",
+      "attribute_key": "hobby_activity_frequency",
+      "object_key": "model_building",
+      "scope_key": "weekends",
+      "value": "around 2-3 hours every Saturday and Sunday",
+      "quote": "Since I've been spending around 2-3 hours every Saturday and Sunday on model building",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "98c6946f_1",
+      "session_time": "2023/05/25 (Thu) 15:56",
+      "turn_index": 8,
+      "fact_id": "fact_515cda22522ec1a8b0a278cd36cecce4bde59992e1508c1ae97436131a021c7e",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          96,
+          181
+        ]
+      ],
+      "search_attribute_key": "hobby_activity_frequency",
+      "attribute_normalization": {
+        "raw": "hobby_activity_frequency",
+        "key": "hobby_activity_frequency",
+        "rules": [],
+        "status": "candidate_only",
+        "version": "lexical_v1_dev"
+      }
+    },
+    "pair": {
+      "old_fact_id": "fact_b0a6506f23ff37bc5b6c40f19f04bd6a5ad15c75a2e522e76fb405c2a6a43308",
+      "new_fact_id": "fact_515cda22522ec1a8b0a278cd36cecce4bde59992e1508c1ae97436131a021c7e",
+      "old_evidence_id": "ev_ba80a75b2e67379f32296d0dacf8ef8937389df90cdd612faca19a2195bf1100",
+      "new_evidence_id": "ev_95dc0d051873f24fdf1cdc158f2341bbfe559d3c096e659eaff319c8c5d49f84",
+      "subject_match": "KEY_MATCH_UNVERIFIED",
+      "attribute_match": "KEY_MATCH_UNVERIFIED",
+      "object_match": "MATCH",
+      "scope_match": "MATCH",
+      "time_order": "BEFORE_SAME_SESSION",
+      "candidate_path": "exact_proposed_subject_attribute_keys",
+      "candidate_only": true
+    },
+    "result": {
+      "status": "proposed",
+      "relation": "DUPLICATE",
+      "action": "DEFER",
+      "applied": false,
+      "eligible_for_state_update": false,
+      "caveats": [
+        "MODEL_RELATION_UNVERIFIED"
+      ],
+      "citations": [
+        {
+          "evidence_id": "ev_ba80a75b2e67379f32296d0dacf8ef8937389df90cdd612faca19a2195bf1100",
+          "start": 134,
+          "end": 213,
+          "quote": "I've been spending around 2-3 hours every Saturday and Sunday on model building"
+        },
+        {
+          "evidence_id": "ev_95dc0d051873f24fdf1cdc158f2341bbfe559d3c096e659eaff319c8c5d49f84",
+          "start": 96,
+          "end": 181,
+          "quote": "Since I've been spending around 2-3 hours every Saturday and Sunday on model building"
+        }
+      ],
+      "model_reason": "Both facts assert the exact same activity frequency (2-3 hours on weekends) for the same subject (user) and object (model building). The sources are from the same session time, indicating they are redundant extractions of the same statement rather than a change or correction.",
+      "semantic_support_verified": false
+    }
+  },
+  {
+    "source_response_file": "9a7a18e318a6780ced5e9039f9d0ceb493ef442e60995d818c699df0b99b3223.json",
+    "source_response_sha256": "6c35c4e974a64c0246e79b54ec0f50804450a5b5725d5acce0d13ba280b1c71e",
+    "old_fact": {
+      "evidence_id": "ev_8b7406ee37435f3d3f0b7720f4e7b7027525beebef448f8563be8f6d998c78a8",
+      "subject_key": "user",
+      "attribute_key": "hobby_activity_frequency",
+      "object_key": "model_building",
+      "scope_key": "weekends",
+      "value": "around 2-3 hours every Saturday and Sunday",
+      "quote": "spending around 2-3 hours every Saturday and Sunday on it",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "98c6946f_1",
+      "session_time": "2023/05/25 (Thu) 15:56",
+      "turn_index": 0,
+      "fact_id": "fact_e22433c49f871beec79c4b66d30ad49cd92509d80dba802d198986414b8b45bc",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          102,
+          159
+        ]
+      ],
+      "search_attribute_key": "hobby_activity_frequency",
+      "attribute_normalization": {
+        "raw": "hobby_activity_frequency",
+        "key": "hobby_activity_frequency",
+        "rules": [],
+        "status": "candidate_only",
+        "version": "lexical_v1_dev"
+      }
+    },
+    "new_fact": {
+      "evidence_id": "ev_016f7b26c9aa2909abfbb1f46ac629223b7e564be66c936a6ad14a0b47620ec8",
+      "subject_key": "user",
+      "attribute_key": "hobby_activity_frequency",
+      "object_key": "model_building",
+      "scope_key": "weekends",
+      "value": "around 2-3 hours every Saturday and Sunday",
+      "quote": "Since I've been spending around 2-3 hours every Saturday and Sunday on model building",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "98c6946f_1",
+      "session_time": "2023/05/25 (Thu) 15:56",
+      "turn_index": 10,
+      "fact_id": "fact_c3ef365b07c63fcc00e584b90cd3f4a62cce31f7e140d758a6a8af3a7571cec1",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          97,
+          182
+        ]
+      ],
+      "search_attribute_key": "hobby_activity_frequency",
+      "attribute_normalization": {
+        "raw": "hobby_activity_frequency",
+        "key": "hobby_activity_frequency",
+        "rules": [],
+        "status": "candidate_only",
+        "version": "lexical_v1_dev"
+      }
+    },
+    "pair": {
+      "old_fact_id": "fact_e22433c49f871beec79c4b66d30ad49cd92509d80dba802d198986414b8b45bc",
+      "new_fact_id": "fact_c3ef365b07c63fcc00e584b90cd3f4a62cce31f7e140d758a6a8af3a7571cec1",
+      "old_evidence_id": "ev_8b7406ee37435f3d3f0b7720f4e7b7027525beebef448f8563be8f6d998c78a8",
+      "new_evidence_id": "ev_016f7b26c9aa2909abfbb1f46ac629223b7e564be66c936a6ad14a0b47620ec8",
+      "subject_match": "KEY_MATCH_UNVERIFIED",
+      "attribute_match": "KEY_MATCH_UNVERIFIED",
+      "object_match": "MATCH",
+      "scope_match": "MATCH",
+      "time_order": "BEFORE_SAME_SESSION",
+      "candidate_path": "exact_proposed_subject_attribute_keys",
+      "candidate_only": true
+    },
+    "result": {
+      "status": "proposed",
+      "relation": "DUPLICATE",
+      "action": "DEFER",
+      "applied": false,
+      "eligible_for_state_update": false,
+      "caveats": [
+        "MODEL_RELATION_UNVERIFIED"
+      ],
+      "citations": [
+        {
+          "evidence_id": "ev_8b7406ee37435f3d3f0b7720f4e7b7027525beebef448f8563be8f6d998c78a8",
+          "start": 102,
+          "end": 159,
+          "quote": "spending around 2-3 hours every Saturday and Sunday on it"
+        },
+        {
+          "evidence_id": "ev_016f7b26c9aa2909abfbb1f46ac629223b7e564be66c936a6ad14a0b47620ec8",
+          "start": 97,
+          "end": 182,
+          "quote": "Since I've been spending around 2-3 hours every Saturday and Sunday on model building"
+        }
+      ],
+      "model_reason": "Both facts assert the same subject (user), attribute (hobby_activity_frequency), object (model_building), scope (weekends), and value (around 2-3 hours every Saturday and Sunday). The sources are from the same session time, indicating they are redundant statements of the same information.",
+      "semantic_support_verified": false
+    }
+  },
+  {
+    "source_response_file": "a4d4813d2dd8aaae717d8d0088c6a57f26833bcbf9da8ae27e909a13b478cf28.json",
+    "source_response_sha256": "6ffb07d92def422a6711e5d697aaec1f41327fe7d9f2899ce66115cf91dadd84",
+    "old_fact": {
+      "evidence_id": "ev_0fee7af2021afd89bf04b06dbf10d2a46d638b863378f2ba66748df9b71c5a41",
+      "subject_key": "user",
+      "attribute_key": "gift_given",
+      "object_key": "gift_card",
+      "scope_key": "to brother",
+      "value": "$25 gift card to his favorite coffee shop",
+      "quote": "and a $25 gift card to his favorite coffee shop",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "842137f5_2",
+      "session_time": "2023/05/25 (Thu) 21:42",
+      "turn_index": 0,
+      "fact_id": "fact_75772eb2aba79d80cab73910fd0ed17fe1e77b6e22a6b2331608875ec5535cf0",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          299,
+          346
+        ]
+      ],
+      "search_attribute_key": "gift_given",
+      "attribute_normalization": {
+        "raw": "gift_given",
+        "key": "gift_given",
+        "rules": [],
+        "status": "candidate_only",
+        "version": "lexical_v1_dev"
+      }
+    },
+    "new_fact": {
+      "evidence_id": "ev_921a28c42b72468ef54b2b1448de057bcd97333da76e813fa1f8a8027c360661",
+      "subject_key": "user",
+      "attribute_key": "gift_given",
+      "object_key": "gift_card",
+      "scope_key": "to brother",
+      "value": "got him a gift card to his favorite coffee shop for $25",
+      "quote": "got him a gift card to his favorite coffee shop for $25",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "842137f5_2",
+      "session_time": "2023/05/25 (Thu) 21:42",
+      "turn_index": 8,
+      "fact_id": "fact_c5aeb3f3cdd2c7dee487444c15a288a4daac8923ef3bedba293d6c353d3de84d",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          284,
+          339
+        ]
+      ],
+      "search_attribute_key": "gift_given",
+      "attribute_normalization": {
+        "raw": "gift_given",
+        "key": "gift_given",
+        "rules": [],
+        "status": "candidate_only",
+        "version": "lexical_v1_dev"
+      }
+    },
+    "pair": {
+      "old_fact_id": "fact_75772eb2aba79d80cab73910fd0ed17fe1e77b6e22a6b2331608875ec5535cf0",
+      "new_fact_id": "fact_c5aeb3f3cdd2c7dee487444c15a288a4daac8923ef3bedba293d6c353d3de84d",
+      "old_evidence_id": "ev_0fee7af2021afd89bf04b06dbf10d2a46d638b863378f2ba66748df9b71c5a41",
+      "new_evidence_id": "ev_921a28c42b72468ef54b2b1448de057bcd97333da76e813fa1f8a8027c360661",
+      "subject_match": "KEY_MATCH_UNVERIFIED",
+      "attribute_match": "KEY_MATCH_UNVERIFIED",
+      "object_match": "MATCH",
+      "scope_match": "MATCH",
+      "time_order": "BEFORE_SAME_SESSION",
+      "candidate_path": "exact_proposed_subject_attribute_keys",
+      "candidate_only": true
+    },
+    "result": {
+      "status": "proposed",
+      "relation": "DUPLICATE",
+      "action": "DEFER",
+      "applied": false,
+      "eligible_for_state_update": false,
+      "caveats": [
+        "MODEL_RELATION_UNVERIFIED"
+      ],
+      "citations": [
+        {
+          "evidence_id": "ev_0fee7af2021afd89bf04b06dbf10d2a46d638b863378f2ba66748df9b71c5a41",
+          "start": 299,
+          "end": 346,
+          "quote": "and a $25 gift card to his favorite coffee shop"
+        },
+        {
+          "evidence_id": "ev_921a28c42b72468ef54b2b1448de057bcd97333da76e813fa1f8a8027c360661",
+          "start": 284,
+          "end": 339,
+          "quote": "got him a gift card to his favorite coffee shop for $25"
+        }
+      ],
+      "model_reason": "Both facts describe the same event (giving a $25 gift card to the brother's favorite coffee shop) within the same session and timeframe. The wording differs slightly but conveys identical information regarding the subject, object, value, and recipient.",
+      "semantic_support_verified": false
+    }
+  },
+  {
+    "source_response_file": "b4eee0e87e767a843bcce67e3a237944941251b398a84c792d61c7bf25a23145.json",
+    "source_response_sha256": "dd85575e62ac1fe506f5a7c6de4cb174841d0c0b47c355c2be3a6dff3ce56b43",
+    "old_fact": {
+      "evidence_id": "ev_fda7274093087a90c8b0f881fa93724106676cc87e38ef5493d989d6be64e525",
+      "subject_key": "user",
+      "attribute_key": "travel_plan",
+      "object_key": "UNKNOWN",
+      "scope_key": "destination_country",
+      "value": "planning a trip",
+      "quote": "I'm planning a trip",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "719a18dd_1",
+      "session_time": "2023/05/10 (Wed) 17:27",
+      "turn_index": 0,
+      "fact_id": "fact_5d4832e9ef25fcd454c205acdf6d234870ce17dba2fc3702365361d4a727b5e2",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          19
+        ]
+      ],
+      "search_attribute_key": "travel_plan",
+      "attribute_normalization": {
+        "raw": "travel_plan",
+        "key": "travel_plan",
+        "rules": [],
+        "status": "candidate_only",
+        "version": "lexical_v1_dev"
+      }
+    },
+    "new_fact": {
+      "evidence_id": "ev_46645ad83167e62b72de36e5d35a11934d12b3e8d2694dad59f1edc8760603eb",
+      "subject_key": "user",
+      "attribute_key": "travel_plan",
+      "object_key": "hawaii",
+      "scope_key": "UNKNOWN",
+      "value": "planning a trip to Hawaii",
+      "quote": "I'm planning a trip to Hawaii",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "c11b64f3_1",
+      "session_time": "2023/05/24 (Wed) 15:18",
+      "turn_index": 0,
+      "fact_id": "fact_395cfbad71c492c0c0bd06502111333fa792d6c296352d2c8eceef7f3d34530f",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          29
+        ]
+      ],
+      "search_attribute_key": "travel_plan",
+      "attribute_normalization": {
+        "raw": "travel_plan",
+        "key": "travel_plan",
+        "rules": [],
+        "status": "candidate_only",
+        "version": "lexical_v1_dev"
+      }
+    },
+    "pair": {
+      "old_fact_id": "fact_5d4832e9ef25fcd454c205acdf6d234870ce17dba2fc3702365361d4a727b5e2",
+      "new_fact_id": "fact_395cfbad71c492c0c0bd06502111333fa792d6c296352d2c8eceef7f3d34530f",
+      "old_evidence_id": "ev_fda7274093087a90c8b0f881fa93724106676cc87e38ef5493d989d6be64e525",
+      "new_evidence_id": "ev_46645ad83167e62b72de36e5d35a11934d12b3e8d2694dad59f1edc8760603eb",
+      "subject_match": "KEY_MATCH_UNVERIFIED",
+      "attribute_match": "KEY_MATCH_UNVERIFIED",
+      "object_match": "UNKNOWN",
+      "scope_match": "UNKNOWN",
+      "time_order": "BEFORE",
+      "candidate_path": "exact_proposed_subject_attribute_keys",
+      "candidate_only": true
+    },
+    "result": {
+      "status": "proposed",
+      "relation": "COMPLEMENT",
+      "action": "DEFER",
+      "applied": false,
+      "eligible_for_state_update": false,
+      "caveats": [
+        "MODEL_RELATION_UNVERIFIED",
+        "OLD_STATEMENT_UNCERTAIN",
+        "NEW_STATEMENT_UNCERTAIN"
+      ],
+      "citations": [
+        {
+          "evidence_id": "ev_fda7274093087a90c8b0f881fa93724106676cc87e38ef5493d989d6be64e525",
+          "start": 0,
+          "end": 103,
+          "quote": "I'm planning a trip and was wondering if you could give me some news updates on my destination country."
+        },
+        {
+          "evidence_id": "ev_46645ad83167e62b72de36e5d35a11934d12b3e8d2694dad59f1edc8760603eb",
+          "start": 0,
+          "end": 107,
+          "quote": "I'm planning a trip to Hawaii and I was wondering if you could recommend some good surf schools in Waikiki."
+        }
+      ],
+      "model_reason": "The old fact establishes the existence of a travel plan but leaves the destination unspecified (object_key UNKNOWN). The new fact specifies the destination as Hawaii. These are not conflicting or changing values, but rather the new information complements the old by filling in the missing detail about the destination.",
+      "semantic_support_verified": false
+    }
+  },
+  {
+    "source_response_file": "ccd592eb892b21718209d1cb2d298f8a71118d6c8118d68e157a15544a1ee6ed.json",
+    "source_response_sha256": "b0a391093c7e564515ee99b75d6d09c1b305b72310067b582f63534606cf65ed",
+    "old_fact": {
+      "evidence_id": "ev_9c2ceaa7b1138c1446fc470e648a273b253e51aa219076e45a0c221ea7c2a4c9",
+      "subject_key": "user",
+      "attribute_key": "social_media_followers_count",
+      "object_key": "instagram",
+      "scope_key": "UNKNOWN",
+      "value": "1250",
+      "quote": "I've got 1250 followers on Instagram now",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "answer_5126c02d_1",
+      "session_time": "2023/05/25 (Thu) 05:26",
+      "turn_index": 2,
+      "fact_id": "fact_3465f0dd313bea80cd16ec3e93b7e697319e52f45de0e14ee8c503f18ce1e8d8",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          330,
+          370
+        ]
+      ],
+      "search_attribute_key": "follower_count",
+      "attribute_normalization": {
+        "raw": "social_media_followers_count",
+        "key": "follower_count",
+        "rules": [
+          "remove_social_media_prefix_with_platform",
+          "singularize_followers"
+        ],
+        "status": "candidate_only",
+        "version": "lexical_v1_dev"
+      }
+    },
+    "new_fact": {
+      "evidence_id": "ev_1f860f4f3789c39f745a5cdda8089d972ca4d3def8c0f58056f4812a12f70209",
+      "subject_key": "user",
+      "attribute_key": "follower_count_estimate",
+      "object_key": "instagram",
+      "scope_key": "current",
+      "value": "close to 1300",
+      "quote": "I think I'm close to 1300 now",
+      "polarity": "POSITIVE",
+      "modality": "POSSIBLE",
+      "session_id": "answer_5126c02d_2",
+      "session_time": "2023/05/25 (Thu) 09:28",
+      "turn_index": 0,
+      "fact_id": "fact_56d2a878a5d0ab19f8cd33993cdfd2ae1103449618c084205c72ada741095a1d",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          296,
+          325
+        ]
+      ],
+      "search_attribute_key": "follower_count",
+      "attribute_normalization": {
+        "raw": "follower_count_estimate",
+        "key": "follower_count",
+        "rules": [
+          "remove_estimate_qualifier"
+        ],
+        "status": "candidate_only",
+        "version": "lexical_v1_dev"
+      }
+    },
+    "pair": {
+      "old_fact_id": "fact_3465f0dd313bea80cd16ec3e93b7e697319e52f45de0e14ee8c503f18ce1e8d8",
+      "new_fact_id": "fact_56d2a878a5d0ab19f8cd33993cdfd2ae1103449618c084205c72ada741095a1d",
+      "old_evidence_id": "ev_9c2ceaa7b1138c1446fc470e648a273b253e51aa219076e45a0c221ea7c2a4c9",
+      "new_evidence_id": "ev_1f860f4f3789c39f745a5cdda8089d972ca4d3def8c0f58056f4812a12f70209",
+      "subject_match": "KEY_MATCH_UNVERIFIED",
+      "attribute_match": "KEY_MATCH_UNVERIFIED",
+      "object_match": "MATCH",
+      "scope_match": "UNKNOWN",
+      "time_order": "BEFORE",
+      "candidate_path": "proposed_normalized_attribute_key",
+      "candidate_only": true
+    },
+    "result": {
+      "status": "proposed",
+      "relation": "CHANGE",
+      "action": "DEFER",
+      "applied": false,
+      "eligible_for_state_update": false,
+      "caveats": [
+        "MODEL_RELATION_UNVERIFIED",
+        "NEW_STATEMENT_UNCERTAIN"
+      ],
+      "citations": [
+        {
+          "evidence_id": "ev_9c2ceaa7b1138c1446fc470e648a273b253e51aa219076e45a0c221ea7c2a4c9",
+          "start": 330,
+          "end": 370,
+          "quote": "I've got 1250 followers on Instagram now"
+        },
+        {
+          "evidence_id": "ev_1f860f4f3789c39f745a5cdda8089d972ca4d3def8c0f58056f4812a12f70209",
+          "start": 296,
+          "end": 325,
+          "quote": "I think I'm close to 1300 now"
+        }
+      ],
+      "model_reason": "The user reports an increase in follower count from a specific number (1250) to an approximate higher number (close to 1300) within the same day, indicating a change in state rather than a correction of a previous error.",
+      "semantic_support_verified": false
+    }
+  },
+  {
+    "source_response_file": "d096e37489faf1f184d1b0b7a2079776d8cb0d15a47542b146682cc809dac668.json",
+    "source_response_sha256": "f39ce5010979507731d37f12c5adf4331a5be1c722fa1f7a78054356eb737e92",
+    "old_fact": {
+      "evidence_id": "ev_1a8269b9fc02530b1e6e22458a0f742c8d35b7d008a6716f26b0ef912a77a628",
+      "subject_key": "user",
+      "attribute_key": "plan_item",
+      "object_key": "kindle",
+      "scope_key": "on the hike",
+      "value": "planning to bring my Kindle with me on the hike",
+      "quote": "I'm planning to bring my Kindle with me on the hike",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "fc9d19f7_2",
+      "session_time": "2023/05/25 (Thu) 05:48",
+      "turn_index": 8,
+      "fact_id": "fact_0b2b1395c1d021084a9e3b75319783dfd23dbe26405419e69deb98f616ea07bf",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          51
+        ]
+      ],
+      "search_attribute_key": "plan_item",
+      "attribute_normalization": {
+        "raw": "plan_item",
+        "key": "plan_item",
+        "rules": [],
+        "status": "candidate_only",
+        "version": "lexical_v1_dev"
+      }
+    },
+    "new_fact": {
+      "evidence_id": "ev_eda096f8d9fec2899f69328c2e22cac19681a9a23c5ce9566e1b8d8852b64676",
+      "subject_key": "user",
+      "attribute_key": "plan_item",
+      "object_key": "kindle",
+      "scope_key": "on the hike",
+      "value": "planning to bring my Kindle with me on the hike",
+      "quote": "I'm planning to bring my Kindle with me on the hike",
+      "polarity": "POSITIVE",
+      "modality": "PLAN",
+      "session_id": "fc9d19f7_2",
+      "session_time": "2023/05/25 (Thu) 05:48",
+      "turn_index": 10,
+      "fact_id": "fact_035b52008a7f02795e496bc0229af6a60d9b53b7840a306244a77299b2a51ffc",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          0,
+          51
+        ]
+      ],
+      "search_attribute_key": "plan_item",
+      "attribute_normalization": {
+        "raw": "plan_item",
+        "key": "plan_item",
+        "rules": [],
+        "status": "candidate_only",
+        "version": "lexical_v1_dev"
+      }
+    },
+    "pair": {
+      "old_fact_id": "fact_0b2b1395c1d021084a9e3b75319783dfd23dbe26405419e69deb98f616ea07bf",
+      "new_fact_id": "fact_035b52008a7f02795e496bc0229af6a60d9b53b7840a306244a77299b2a51ffc",
+      "old_evidence_id": "ev_1a8269b9fc02530b1e6e22458a0f742c8d35b7d008a6716f26b0ef912a77a628",
+      "new_evidence_id": "ev_eda096f8d9fec2899f69328c2e22cac19681a9a23c5ce9566e1b8d8852b64676",
+      "subject_match": "KEY_MATCH_UNVERIFIED",
+      "attribute_match": "KEY_MATCH_UNVERIFIED",
+      "object_match": "MATCH",
+      "scope_match": "MATCH",
+      "time_order": "BEFORE_SAME_SESSION",
+      "candidate_path": "exact_proposed_subject_attribute_keys",
+      "candidate_only": true
+    },
+    "result": {
+      "status": "proposed",
+      "relation": "DUPLICATE",
+      "action": "DEFER",
+      "applied": false,
+      "eligible_for_state_update": false,
+      "caveats": [
+        "MODEL_RELATION_UNVERIFIED",
+        "OLD_STATEMENT_UNCERTAIN",
+        "NEW_STATEMENT_UNCERTAIN"
+      ],
+      "citations": [
+        {
+          "evidence_id": "ev_1a8269b9fc02530b1e6e22458a0f742c8d35b7d008a6716f26b0ef912a77a628",
+          "start": 0,
+          "end": 217,
+          "quote": "I'm planning to bring my Kindle with me on the hike, and I was wondering if you have any book recommendations that would be great for a solo hike like this. Something that's engaging, but not too heavy or distracting."
+        },
+        {
+          "evidence_id": "ev_eda096f8d9fec2899f69328c2e22cac19681a9a23c5ce9566e1b8d8852b64676",
+          "start": 0,
+          "end": 307,
+          "quote": "I'm planning to bring my Kindle with me on the hike, and I was wondering if you have any book recommendations that would be great for a solo hike like this. Since I already read \"Wild\" by Cheryl Strayed in February, I'm looking for something new. Something that's engaging, but not too heavy or distracting."
+        }
+      ],
+      "model_reason": "Both facts assert the identical plan (bringing a Kindle on the hike) from the same session time. The 'new' source text contains additional context about previous reading habits, but the core fact regarding the Kindle plan is unchanged and redundant.",
+      "semantic_support_verified": false
+    }
+  },
+  {
+    "source_response_file": "d7d4e7cf3b2235496184aa2a3d3631ad36bf90127416df2ae5735f2944d51118.json",
+    "source_response_sha256": "a05c16c4c1c107a9e2e7d15d57f6ca3da4c6aed2cb8f39eb39ac9320953937dc",
+    "old_fact": {
+      "evidence_id": "ev_22a2e27ff2dbd53fb44ef0e3bf8abe5dc73d4b0f7b24d4159c65d2a076d9aabd",
+      "subject_key": "user",
+      "attribute_key": "training_consistency",
+      "object_key": "running",
+      "scope_key": "8 weeks leading up to the Spring Fling Run",
+      "value": "pretty consistent with my training, logging over 100 miles of running in the 8 weeks leading up to the Spring Fling Run",
+      "quote": "I've been pretty consistent with my training, logging over 100 miles of running in the 8 weeks leading up to the Spring Fling Run",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "80a5717e_1",
+      "session_time": "2023/05/25 (Thu) 02:20",
+      "turn_index": 0,
+      "fact_id": "fact_2b142c613f47d5f459c5d22e74eaa586ad9cb1e8adf102c11da308a897f79518",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          102,
+          231
+        ]
+      ],
+      "search_attribute_key": "training_consistency",
+      "attribute_normalization": {
+        "raw": "training_consistency",
+        "key": "training_consistency",
+        "rules": [],
+        "status": "candidate_only",
+        "version": "lexical_v1_dev"
+      }
+    },
+    "new_fact": {
+      "evidence_id": "ev_689370a75992972ba266881d3fb5f9967c8738e310c7a47b960ee5afacbae999",
+      "subject_key": "user",
+      "attribute_key": "training_consistency",
+      "object_key": "running",
+      "scope_key": "8 weeks leading up to the Spring Fling Run",
+      "value": "pretty consistent with my training, logging over 100 miles of running in the 8 weeks leading up to the Spring Fling Run",
+      "quote": "I've been pretty consistent with my training, logging over 100 miles of running in the 8 weeks leading up to the Spring Fling Run",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "80a5717e_1",
+      "session_time": "2023/05/25 (Thu) 02:20",
+      "turn_index": 6,
+      "fact_id": "fact_65b34f7abcf9c018bdadfe0a49887fbfae70296a83f9ea7578bd926f275847ff",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          85,
+          214
+        ]
+      ],
+      "search_attribute_key": "training_consistency",
+      "attribute_normalization": {
+        "raw": "training_consistency",
+        "key": "training_consistency",
+        "rules": [],
+        "status": "candidate_only",
+        "version": "lexical_v1_dev"
+      }
+    },
+    "pair": {
+      "old_fact_id": "fact_2b142c613f47d5f459c5d22e74eaa586ad9cb1e8adf102c11da308a897f79518",
+      "new_fact_id": "fact_65b34f7abcf9c018bdadfe0a49887fbfae70296a83f9ea7578bd926f275847ff",
+      "old_evidence_id": "ev_22a2e27ff2dbd53fb44ef0e3bf8abe5dc73d4b0f7b24d4159c65d2a076d9aabd",
+      "new_evidence_id": "ev_689370a75992972ba266881d3fb5f9967c8738e310c7a47b960ee5afacbae999",
+      "subject_match": "KEY_MATCH_UNVERIFIED",
+      "attribute_match": "KEY_MATCH_UNVERIFIED",
+      "object_match": "MATCH",
+      "scope_match": "MATCH",
+      "time_order": "BEFORE_SAME_SESSION",
+      "candidate_path": "exact_proposed_subject_attribute_keys",
+      "candidate_only": true
+    },
+    "result": {
+      "status": "proposed",
+      "relation": "DUPLICATE",
+      "action": "DEFER",
+      "applied": false,
+      "eligible_for_state_update": false,
+      "caveats": [
+        "MODEL_RELATION_UNVERIFIED"
+      ],
+      "citations": [
+        {
+          "evidence_id": "ev_22a2e27ff2dbd53fb44ef0e3bf8abe5dc73d4b0f7b24d4159c65d2a076d9aabd",
+          "start": 102,
+          "end": 231,
+          "quote": "I've been pretty consistent with my training, logging over 100 miles of running in the 8 weeks leading up to the Spring Fling Run"
+        },
+        {
+          "evidence_id": "ev_689370a75992972ba266881d3fb5f9967c8738e310c7a47b960ee5afacbae999",
+          "start": 85,
+          "end": 214,
+          "quote": "I've been pretty consistent with my training, logging over 100 miles of running in the 8 weeks leading up to the Spring Fling Run"
+        }
+      ],
+      "model_reason": "Both facts assert the exact same statement regarding training consistency and mileage for the same specific time period (8 weeks before Spring Fling Run) within the same session. The surrounding context differs slightly (tips vs. hill repeats), but the core factual claim is identical.",
+      "semantic_support_verified": false
+    }
+  },
+  {
+    "source_response_file": "f3813c42e7a08f73471c5da264224a31ea52ebd9c6887036b34d83b5f8bcd247.json",
+    "source_response_sha256": "c8e76c160b2d9741ddd25ed65db6427456eab1c8c72bf0dfac9384e0f4764f3b",
+    "old_fact": {
+      "evidence_id": "ev_39190e7d481d65a055ea21c11f3fafeb64b879a77998b6d0a918ee2b573b965b",
+      "subject_key": "user",
+      "attribute_key": "activity_frequency",
+      "object_key": "asmr_videos",
+      "scope_key": "lately",
+      "value": "watching a lot",
+      "quote": "I've been watching a lot of ASMR videos lately",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "f188b48d_2",
+      "session_time": "2023/05/25 (Thu) 09:56",
+      "turn_index": 6,
+      "fact_id": "fact_fd225f1d4c7e635139220ee728d1abeeea26a3af84d0390602af09ec25c14be5",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          212,
+          258
+        ]
+      ],
+      "search_attribute_key": "activity_frequency",
+      "attribute_normalization": {
+        "raw": "activity_frequency",
+        "key": "activity_frequency",
+        "rules": [],
+        "status": "candidate_only",
+        "version": "lexical_v1_dev"
+      }
+    },
+    "new_fact": {
+      "evidence_id": "ev_1a01f2fcf71f675d737f784de906952d5f9e46ce429bae5fec651dd43466e2ca",
+      "subject_key": "user",
+      "attribute_key": "activity_frequency",
+      "object_key": "asmr_videos",
+      "scope_key": "lately",
+      "value": "watching a lot",
+      "quote": "I've been watching a lot of ASMR videos lately",
+      "polarity": "POSITIVE",
+      "modality": "ASSERTED",
+      "session_id": "f188b48d_2",
+      "session_time": "2023/05/25 (Thu) 09:56",
+      "turn_index": 8,
+      "fact_id": "fact_9663faebaee3567394e4f31b0c5ec55c8304eaf1f574ef598d07c855caac047b",
+      "status": "unverified",
+      "normalization_status": "model_proposed",
+      "quote_spans": [
+        [
+          91,
+          137
+        ]
+      ],
+      "search_attribute_key": "activity_frequency",
+      "attribute_normalization": {
+        "raw": "activity_frequency",
+        "key": "activity_frequency",
+        "rules": [],
+        "status": "candidate_only",
+        "version": "lexical_v1_dev"
+      }
+    },
+    "pair": {
+      "old_fact_id": "fact_fd225f1d4c7e635139220ee728d1abeeea26a3af84d0390602af09ec25c14be5",
+      "new_fact_id": "fact_9663faebaee3567394e4f31b0c5ec55c8304eaf1f574ef598d07c855caac047b",
+      "old_evidence_id": "ev_39190e7d481d65a055ea21c11f3fafeb64b879a77998b6d0a918ee2b573b965b",
+      "new_evidence_id": "ev_1a01f2fcf71f675d737f784de906952d5f9e46ce429bae5fec651dd43466e2ca",
+      "subject_match": "KEY_MATCH_UNVERIFIED",
+      "attribute_match": "KEY_MATCH_UNVERIFIED",
+      "object_match": "MATCH",
+      "scope_match": "MATCH",
+      "time_order": "BEFORE_SAME_SESSION",
+      "candidate_path": "exact_proposed_subject_attribute_keys",
+      "candidate_only": true
+    },
+    "result": {
+      "status": "proposed",
+      "relation": "DUPLICATE",
+      "action": "DEFER",
+      "applied": false,
+      "eligible_for_state_update": false,
+      "caveats": [
+        "MODEL_RELATION_UNVERIFIED"
+      ],
+      "citations": [
+        {
+          "evidence_id": "ev_39190e7d481d65a055ea21c11f3fafeb64b879a77998b6d0a918ee2b573b965b",
+          "start": 212,
+          "end": 258,
+          "quote": "I've been watching a lot of ASMR videos lately"
+        },
+        {
+          "evidence_id": "ev_1a01f2fcf71f675d737f784de906952d5f9e46ce429bae5fec651dd43466e2ca",
+          "start": 91,
+          "end": 137,
+          "quote": "I've been watching a lot of ASMR videos lately"
+        }
+      ],
+      "model_reason": "Both facts assert the exact same activity (watching ASMR videos), frequency ('a lot'), and temporal scope ('lately') for the same subject within the same session time. The statements are identical in meaning and wording.",
+      "semantic_support_verified": false
+    }
+  }
+]

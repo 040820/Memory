@@ -1,0 +1,597 @@
+2026-11-01 07:08:30 - DynamicMemory - INFO - Configuration loaded from /home/cwf/Code/LiCoMemory-main/experiments/evidence_memory_pilot/baseline_qwen.yaml
+2026-11-01 07:08:30 - DynamicMemory - INFO - LLM Manager initialized with model: qwen3-8b, concurrent: True, max_concurrent: 4
+2026-11-01 07:08:31 - DynamicMemory - INFO - Dialog Chunk Processor initialized for LongmemEval dataset
+2026-11-01 07:08:31 - DynamicMemory - INFO - Chunk Processor initialized for LongmemEval dataset
+2026-11-01 07:08:31 - DynamicMemory - INFO - Graph Builder initialized
+2026-11-01 07:08:31 - DynamicMemory - INFO - Dynamic Memory initialized
+2026-11-01 07:08:31 - DynamicMemory - INFO - Entity Extractor initialized
+2026-11-01 07:08:31 - DynamicMemory - INFO - Dialogue Extractor initialized with LongmemEval prompt
+2026-11-01 07:08:31 - DynamicMemory - INFO - Session Summarizer initialized
+2026-11-01 07:08:31 - DynamicMemory - INFO - Extractors initialized with LLM manager and cost tracking
+2026-11-01 07:08:31 - DynamicMemory - INFO - GraphRAG Core initialized
+2026-11-01 07:08:31 - DynamicMemory - INFO - GraphRAG initialized successfully
+2026-11-01 07:08:31 - DynamicMemory - INFO - Processed 44 documents into 227 chunks with unique chunk IDs
+2026-11-01 07:08:57 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 3 OF 227 completed 1
+2026-11-01 07:09:08 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 1 OF 227 completed 2
+2026-11-01 07:09:08 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 2 OF 227 completed 3
+2026-11-01 07:09:08 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 4 OF 227 completed 4
+2026-11-01 07:09:46 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 5 OF 227 completed 5
+2026-11-01 07:09:46 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 6 OF 227 completed 6
+2026-11-01 07:09:46 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 7 OF 227 completed 7
+2026-11-01 07:09:46 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 8 OF 227 completed 8
+2026-11-01 07:10:20 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 12 OF 227 completed 9
+2026-11-01 07:10:24 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 9 OF 227 completed 10
+2026-11-01 07:10:24 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 10 OF 227 completed 11
+2026-11-01 07:10:24 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 11 OF 227 completed 12
+2026-11-01 07:10:55 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 14 OF 227 completed 13
+2026-11-01 07:10:57 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 13 OF 227 completed 14
+2026-11-01 07:11:02 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 15 OF 227 completed 15
+2026-11-01 07:11:02 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 16 OF 227 completed 16
+2026-11-01 07:11:23 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 19 OF 227 completed 17
+2026-11-01 07:11:30 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 20 OF 227 completed 18
+2026-11-01 07:11:40 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 17 OF 227 completed 19
+2026-11-01 07:11:40 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 18 OF 227 completed 20
+2026-11-01 07:12:03 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 21 OF 227 completed 21
+2026-11-01 07:12:04 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 22 OF 227 completed 22
+2026-11-01 07:12:05 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 24 OF 227 completed 23
+2026-11-01 07:12:08 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 23 OF 227 completed 24
+2026-11-01 07:12:27 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 25 OF 227 completed 25
+2026-11-01 07:12:46 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 26 OF 227 completed 26
+2026-11-01 07:12:46 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 27 OF 227 completed 27
+2026-11-01 07:12:46 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 28 OF 227 completed 28
+2026-11-01 07:13:11 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 31 OF 227 completed 29
+2026-11-01 07:13:22 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 29 OF 227 completed 30
+2026-11-01 07:13:22 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 32 OF 227 completed 31
+2026-11-01 07:13:22 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 30 OF 227 completed 32
+2026-11-01 07:13:35 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 33 OF 227 completed 33
+2026-11-01 07:13:59 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 34 OF 227 completed 34
+2026-11-01 07:13:59 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 35 OF 227 completed 35
+2026-11-01 07:13:59 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 36 OF 227 completed 36
+2026-11-01 07:14:35 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 37 OF 227 completed 37
+2026-11-01 07:14:37 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 38 OF 227 completed 38
+2026-11-01 07:14:37 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 39 OF 227 completed 39
+2026-11-01 07:14:37 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 40 OF 227 completed 40
+2026-11-01 07:15:14 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 43 OF 227 completed 41
+2026-11-01 07:15:15 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 41 OF 227 completed 42
+2026-11-01 07:15:15 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 42 OF 227 completed 43
+2026-11-01 07:15:15 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 44 OF 227 completed 44
+2026-11-01 07:15:34 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 46 OF 227 completed 45
+2026-11-01 07:15:34 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 48 OF 227 completed 46
+2026-11-01 07:15:51 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 47 OF 227 completed 47
+2026-11-01 07:15:52 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 45 OF 227 completed 48
+2026-11-01 07:16:29 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 49 OF 227 completed 49
+2026-11-01 07:16:29 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 50 OF 227 completed 50
+2026-11-01 07:16:29 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 51 OF 227 completed 51
+2026-11-01 07:16:29 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 52 OF 227 completed 52
+2026-11-01 07:17:01 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 56 OF 227 completed 53
+2026-11-01 07:17:08 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 53 OF 227 completed 54
+2026-11-01 07:17:08 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 54 OF 227 completed 55
+2026-11-01 07:17:08 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 55 OF 227 completed 56
+2026-11-01 07:17:35 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 57 OF 227 completed 57
+2026-11-01 07:17:46 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 58 OF 227 completed 58
+2026-11-01 07:17:46 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 59 OF 227 completed 59
+2026-11-01 07:17:46 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 60 OF 227 completed 60
+2026-11-01 07:17:54 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 64 OF 227 completed 61
+2026-11-01 07:18:20 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 62 OF 227 completed 62
+2026-11-01 07:18:22 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 61 OF 227 completed 63
+2026-11-01 07:18:22 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 63 OF 227 completed 64
+2026-11-01 07:18:36 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 65 OF 227 completed 65
+2026-11-01 07:19:00 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 66 OF 227 completed 66
+2026-11-01 07:19:00 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 67 OF 227 completed 67
+2026-11-01 07:19:00 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 68 OF 227 completed 68
+2026-11-01 07:19:33 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 71 OF 227 completed 69
+2026-11-01 07:19:37 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 69 OF 227 completed 70
+2026-11-01 07:19:37 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 70 OF 227 completed 71
+2026-11-01 07:19:37 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 72 OF 227 completed 72
+2026-11-01 07:19:56 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 76 OF 227 completed 73
+2026-11-01 07:20:17 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 73 OF 227 completed 74
+2026-11-01 07:20:17 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 74 OF 227 completed 75
+2026-11-01 07:20:17 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 75 OF 227 completed 76
+2026-11-01 07:20:44 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 80 OF 227 completed 77
+2026-11-01 07:20:54 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 77 OF 227 completed 78
+2026-11-01 07:20:54 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 78 OF 227 completed 79
+2026-11-01 07:20:54 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 79 OF 227 completed 80
+2026-11-01 07:21:08 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 83 OF 227 completed 81
+2026-11-01 07:21:31 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 82 OF 227 completed 82
+2026-11-01 07:21:32 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 81 OF 227 completed 83
+2026-11-01 07:21:32 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 84 OF 227 completed 84
+2026-11-01 07:22:09 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 85 OF 227 completed 85
+2026-11-01 07:22:09 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 86 OF 227 completed 86
+2026-11-01 07:22:09 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 87 OF 227 completed 87
+2026-11-01 07:22:09 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 88 OF 227 completed 88
+2026-11-01 07:22:28 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 91 OF 227 completed 89
+2026-11-01 07:22:46 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 89 OF 227 completed 90
+2026-11-01 07:22:46 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 92 OF 227 completed 91
+2026-11-01 07:22:46 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 90 OF 227 completed 92
+2026-11-01 07:23:24 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 93 OF 227 completed 93
+2026-11-01 07:23:24 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 94 OF 227 completed 94
+2026-11-01 07:23:25 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 95 OF 227 completed 95
+2026-11-01 07:23:25 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 96 OF 227 completed 96
+2026-11-01 07:23:35 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 98 OF 227 completed 97
+2026-11-01 07:23:59 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 99 OF 227 completed 98
+2026-11-01 07:24:00 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 100 OF 227 completed 99
+2026-11-01 07:24:02 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 97 OF 227 completed 100
+2026-11-01 07:24:30 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 101 OF 227 completed 101
+2026-11-01 07:24:38 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 102 OF 227 completed 102
+2026-11-01 07:24:38 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 103 OF 227 completed 103
+2026-11-01 07:24:38 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 104 OF 227 completed 104
+2026-11-01 07:25:17 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 105 OF 227 completed 105
+2026-11-01 07:25:17 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 107 OF 227 completed 106
+2026-11-01 07:25:17 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 106 OF 227 completed 107
+2026-11-01 07:25:17 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 108 OF 227 completed 108
+2026-11-01 07:25:48 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 111 OF 227 completed 109
+2026-11-01 07:25:55 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 109 OF 227 completed 110
+2026-11-01 07:25:55 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 110 OF 227 completed 111
+2026-11-01 07:25:55 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 112 OF 227 completed 112
+2026-11-01 07:26:28 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 113 OF 227 completed 113
+2026-11-01 07:26:32 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 114 OF 227 completed 114
+2026-11-01 07:26:32 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 115 OF 227 completed 115
+2026-11-01 07:26:32 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 116 OF 227 completed 116
+2026-11-01 07:27:09 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 117 OF 227 completed 117
+2026-11-01 07:27:09 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 118 OF 227 completed 118
+2026-11-01 07:27:09 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 119 OF 227 completed 119
+2026-11-01 07:27:09 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 120 OF 227 completed 120
+2026-11-01 07:27:29 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 122 OF 227 completed 121
+2026-11-01 07:27:32 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 124 OF 227 completed 122
+2026-11-01 07:27:45 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 121 OF 227 completed 123
+2026-11-01 07:27:45 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 123 OF 227 completed 124
+2026-11-01 07:27:57 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 127 OF 227 completed 125
+2026-11-01 07:28:07 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 128 OF 227 completed 126
+2026-11-01 07:28:22 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 125 OF 227 completed 127
+2026-11-01 07:28:22 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 126 OF 227 completed 128
+2026-11-01 07:28:53 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 129 OF 227 completed 129
+2026-11-01 07:29:01 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 130 OF 227 completed 130
+2026-11-01 07:29:01 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 131 OF 227 completed 131
+2026-11-01 07:29:01 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 132 OF 227 completed 132
+2026-11-01 07:29:18 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 134 OF 227 completed 133
+2026-11-01 07:29:38 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 133 OF 227 completed 134
+2026-11-01 07:29:38 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 135 OF 227 completed 135
+2026-11-01 07:29:38 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 136 OF 227 completed 136
+2026-11-01 07:29:50 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 140 OF 227 completed 137
+2026-11-01 07:30:17 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 137 OF 227 completed 138
+2026-11-01 07:30:17 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 138 OF 227 completed 139
+2026-11-01 07:30:17 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 139 OF 227 completed 140
+2026-11-01 07:30:37 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 144 OF 227 completed 141
+2026-11-01 07:30:41 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 143 OF 227 completed 142
+2026-11-01 07:30:45 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 141 OF 227 completed 143
+2026-11-01 07:30:53 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 142 OF 227 completed 144
+2026-11-01 07:31:15 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 147 OF 227 completed 145
+2026-11-01 07:31:16 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 145 OF 227 completed 146
+2026-11-01 07:31:18 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 146 OF 227 completed 147
+2026-11-01 07:31:30 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 148 OF 227 completed 148
+2026-11-01 07:31:52 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 150 OF 227 completed 149
+2026-11-01 07:32:04 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 149 OF 227 completed 150
+2026-11-01 07:32:06 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 152 OF 227 completed 151
+2026-11-01 07:32:06 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 151 OF 227 completed 152
+2026-11-01 07:32:43 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 153 OF 227 completed 153
+2026-11-01 07:32:43 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 154 OF 227 completed 154
+2026-11-01 07:32:43 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 155 OF 227 completed 155
+2026-11-01 07:32:43 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 156 OF 227 completed 156
+2026-11-01 07:33:20 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 157 OF 227 completed 157
+2026-11-01 07:33:20 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 158 OF 227 completed 158
+2026-11-01 07:33:20 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 159 OF 227 completed 159
+2026-11-01 07:33:20 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 160 OF 227 completed 160
+2026-11-01 07:33:59 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 161 OF 227 completed 161
+2026-11-01 07:33:59 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 162 OF 227 completed 162
+2026-11-01 07:33:59 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 163 OF 227 completed 163
+2026-11-01 07:33:59 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 164 OF 227 completed 164
+2026-11-01 07:34:37 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 165 OF 227 completed 165
+2026-11-01 07:34:37 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 166 OF 227 completed 166
+2026-11-01 07:34:37 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 167 OF 227 completed 167
+2026-11-01 07:34:37 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 168 OF 227 completed 168
+2026-11-01 07:34:51 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 169 OF 227 completed 169
+2026-11-01 07:34:54 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 170 OF 227 completed 170
+2026-11-01 07:34:56 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 171 OF 227 completed 171
+2026-11-01 07:35:13 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 172 OF 227 completed 172
+2026-11-01 07:35:47 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 176 OF 227 completed 173
+2026-11-01 07:35:55 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 175 OF 227 completed 174
+2026-11-01 07:36:03 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 174 OF 227 completed 175
+2026-11-01 07:36:15 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 173 OF 227 completed 176
+2026-11-01 07:36:44 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 178 OF 227 completed 177
+2026-11-01 07:36:52 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 177 OF 227 completed 178
+2026-11-01 07:37:14 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 180 OF 227 completed 179
+2026-11-01 07:37:19 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 179 OF 227 completed 180
+2026-11-01 07:37:54 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 181 OF 227 completed 181
+2026-11-01 07:38:26 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 182 OF 227 completed 182
+2026-11-01 07:38:26 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 183 OF 227 completed 183
+2026-11-01 07:38:26 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 184 OF 227 completed 184
+2026-11-01 07:38:49 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 187 OF 227 completed 185
+2026-11-01 07:39:17 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 186 OF 227 completed 186
+2026-11-01 07:39:32 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 185 OF 227 completed 187
+2026-11-01 07:39:32 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 188 OF 227 completed 188
+2026-11-01 07:39:54 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 191 OF 227 completed 189
+2026-11-01 07:40:03 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 190 OF 227 completed 190
+2026-11-01 07:40:04 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 192 OF 227 completed 191
+2026-11-01 07:40:16 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 189 OF 227 completed 192
+2026-11-01 07:40:18 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 194 OF 227 completed 193
+2026-11-01 07:40:18 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 195 OF 227 completed 194
+2026-11-01 07:40:45 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 193 OF 227 completed 195
+2026-11-01 07:41:02 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 196 OF 227 completed 196
+2026-11-01 07:41:23 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 197 OF 227 completed 197
+2026-11-01 07:41:41 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 200 OF 227 completed 198
+2026-11-01 07:41:42 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 198 OF 227 completed 199
+2026-11-01 07:41:48 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 199 OF 227 completed 200
+2026-11-01 07:41:54 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 204 OF 227 completed 201
+2026-11-01 07:42:26 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 201 OF 227 completed 202
+2026-11-01 07:42:26 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 202 OF 227 completed 203
+2026-11-01 07:42:26 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 203 OF 227 completed 204
+2026-11-01 07:42:48 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 206 OF 227 completed 205
+2026-11-01 07:43:04 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 205 OF 227 completed 206
+2026-11-01 07:43:04 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 207 OF 227 completed 207
+2026-11-01 07:43:04 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 208 OF 227 completed 208
+2026-11-01 07:43:21 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 209 OF 227 completed 209
+2026-11-01 07:43:38 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 210 OF 227 completed 210
+2026-11-01 07:43:43 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 211 OF 227 completed 211
+2026-11-01 07:43:43 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 212 OF 227 completed 212
+2026-11-01 07:43:46 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 216 OF 227 completed 213
+2026-11-01 07:44:19 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 213 OF 227 completed 214
+2026-11-01 07:44:19 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 214 OF 227 completed 215
+2026-11-01 07:44:19 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 215 OF 227 completed 216
+2026-11-01 07:44:57 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 217 OF 227 completed 217
+2026-11-01 07:44:57 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 218 OF 227 completed 218
+2026-11-01 07:44:57 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 219 OF 227 completed 219
+2026-11-01 07:44:57 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 220 OF 227 completed 220
+2026-11-01 07:45:31 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 222 OF 227 completed 221
+2026-11-01 07:45:35 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 221 OF 227 completed 222
+2026-11-01 07:45:35 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 223 OF 227 completed 223
+2026-11-01 07:45:35 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 224 OF 227 completed 224
+2026-11-01 07:46:13 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 225 OF 227 completed 225
+2026-11-01 07:46:13 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 226 OF 227 completed 226
+2026-11-01 07:46:13 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+CHECKPOINT 227 OF 227 completed 227
+2026-11-01 07:46:13 - DynamicMemory - INFO - Graph build mode: force=True, add=False
+2026-11-01 07:46:13 - DynamicMemory - INFO - 🏗️ Build from scratch mode: force rebuild
+2026-11-01 07:46:13 - DynamicMemory - INFO - Starting to build graph from 227 chunks
+2026-11-01 07:46:13 - DynamicMemory - INFO - 🏗️ Starting total graph building process
+2026-11-01 07:46:13 - DynamicMemory - INFO - Clearing existing graph and chunk storage...
+2026-11-01 07:46:13 - DynamicMemory - INFO - ✅ Cleared existing graph and chunk storage
+2026-11-01 07:46:13 - DynamicMemory - INFO - Storing original chunk data...
+2026-11-01 07:46:13 - DynamicMemory - INFO - Stored 227 chunks in chunk_storage
+2026-11-01 07:46:13 - DynamicMemory - INFO - Extracting entities and relationships using dialogue mode...
+Stage 2: Dialogue Entity & Relationship Extraction:   0%|          | 0/227 [00:00<?, ?calls/s]2026-11-01 07:46:13 - DynamicMemory - INFO - Stage 2: Processing 227 chunks for entity and relationship extraction
+Stage 2: Dialogue Entity & Relationship Extraction: 100%|██████████| 227/227 [00:00<00:00, 4892.06calls/s]
+2026-11-01 07:46:13 - DynamicMemory - INFO - Entity extraction completed in 0.05s
+2026-11-01 07:46:13 - DynamicMemory - INFO - 🔗 Relationship Extraction Cost - Prompt: 0, Completion: 0
+2026-11-01 07:46:27 - DynamicMemory - INFO - Dialogue mode - After deduplication: 3596 entities, 3725 relationships
+2026-11-01 07:46:27 - DynamicMemory - INFO - Graph construction completed in 0.14s
+2026-11-01 07:46:46 - DynamicMemory - INFO - Embedding precomputation completed in 18.66s
+2026-11-01 07:46:46 - DynamicMemory - INFO - 🏗️ Total graph building completed in 32.95s
+2026-11-01 07:46:46 - DynamicMemory - INFO - ================================================================================
+2026-11-01 07:46:46 - DynamicMemory - INFO - 📊 GRAPH BUILDING SUMMARY
+2026-11-01 07:46:46 - DynamicMemory - INFO - ================================================================================
+2026-11-01 07:46:46 - DynamicMemory - INFO - ⏱️  TIME STATISTICS:
+2026-11-01 07:46:46 - DynamicMemory - INFO -    📄 Chunking Time: 0s
+2026-11-01 07:46:46 - DynamicMemory - INFO -    🏷️  Entity and Relation Extraction Time: 0.05s
+2026-11-01 07:46:46 - DynamicMemory - INFO -    🕸️  Graph Construction Time: 0.14s
+2026-11-01 07:46:46 - DynamicMemory - INFO -    📝 Summary Generation Time: 0s
+2026-11-01 07:46:46 - DynamicMemory - INFO -    📊 Total Graph Building Time: 32.95s
+2026-11-01 07:46:46 - DynamicMemory - INFO - 💰 COST STATISTICS:
+2026-11-01 07:46:46 - DynamicMemory - INFO -    🏷️  Entity and Relation Extraction Tokens: 0
+2026-11-01 07:46:46 - DynamicMemory - INFO -    📝 Summary Generation Tokens: 0
+2026-11-01 07:46:46 - DynamicMemory - INFO -    📊 Total Graph Building Tokens: 0
+2026-11-01 07:46:46 - DynamicMemory - INFO -    💵 Total Cost: $0
+2026-11-01 07:46:46 - DynamicMemory - INFO - ================================================================================
+2026-11-01 07:46:46 - DynamicMemory - INFO - Graph built successfully
+2026-11-01 07:46:46 - DynamicMemory - INFO - Graph and chunk storage saved to /home/cwf/Code/LiCoMemory-main/experiments/evidence_memory_pilot/server_longmem_a2f3aa27_resume_20261101/longmem_graph.pkl
+2026-11-01 07:46:46 - DynamicMemory - INFO - Processing query: How many followers do I have on Instagram now?
+2026-11-01 07:46:47 - DynamicMemory - INFO - LLM Manager initialized with model: qwen3-8b, concurrent: False, max_concurrent: 1
+2026-11-01 07:46:47 - DynamicMemory - INFO - Summary Retriever initialized
+2026-11-01 07:46:47 - DynamicMemory - INFO - Summary reranking enabled with weights: similarity=0.80, summary=0.20
+2026-11-01 07:46:47 - DynamicMemory - INFO - Triple Reranker initialized with strategy: SimpleRank (weighted)
+2026-11-01 07:46:47 - DynamicMemory - INFO -   SimpleRank weights: {'similarity': 0.8, 'summary': 0.2}
+2026-11-01 07:46:47 - DynamicMemory - INFO - 🔍 Processing query: How many followers do I have on Instagram now?
+2026-11-01 07:46:47 - DynamicMemory - INFO - Sending professional entity extraction prompt to LLM (model: qwen3-8b, session_time: 2023/06/15 (Thu) 23:26)
+2026-11-01 07:46:49 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+2026-11-01 07:46:49 - DynamicMemory - INFO - Successfully extracted 3 entities using professional prompt
+2026-11-01 07:46:49 - DynamicMemory - INFO - Entity extraction completed in 1.35s
+2026-11-01 07:46:49 - DynamicMemory - INFO - similarity shape: torch.Size([4, 2482])
+2026-11-01 07:46:49 - DynamicMemory - INFO - Similar entity search completed in 0.76s
+2026-11-01 07:46:49 - DynamicMemory - INFO - Found 2019 candidate triples
+2026-11-01 07:46:49 - DynamicMemory - INFO - Time taken to get question embedding: 0.02777385711669922s
+2026-11-01 07:46:50 - DynamicMemory - INFO - similarity shape: torch.Size([1, 2019])
+2026-11-01 07:46:50 - DynamicMemory - INFO - Selected top 40 triples for reranking (target: 20 final triples):
+2026-11-01 07:46:50 - DynamicMemory - INFO -   1. User has 1250 followers (score: 0.846)
+2026-11-01 07:46:50 - DynamicMemory - INFO -   2. User checked Follower Count (score: 0.829)
+2026-11-01 07:46:50 - DynamicMemory - INFO -   3. User needs help changing username on Instagram (score: 0.803)
+2026-11-01 07:46:50 - DynamicMemory - INFO -   4. User using Instagram Insights (score: 0.798)
+2026-11-01 07:46:50 - DynamicMemory - INFO -   5. User interested in Instagram Live (score: 0.795)
+2026-11-01 07:46:50 - DynamicMemory - INFO - Triple retrieval completed in 0.36s
+2026-11-01 07:46:50 - DynamicMemory - INFO - Loaded 44 session summaries
+2026-11-01 07:46:50 - DynamicMemory - INFO - Building embeddings for 44 session summaries
+2026-11-01 07:46:50 - DynamicMemory - INFO - ✅ Using precomputed embeddings for all 44 summaries
+2026-11-01 07:46:50 - DynamicMemory - INFO - Built embeddings for 44 summaries
+2026-11-01 07:46:50 - DynamicMemory - INFO - Successfully initialized summary data: 44 summaries
+2026-11-01 07:46:50 - DynamicMemory - INFO - 🚀 Batch calculating embeddings for 187 unique texts
+2026-11-01 07:46:50 - DynamicMemory - INFO - ✅ Selected top 1 summaries from 44 total
+2026-11-01 07:46:50 - DynamicMemory - INFO - 📊 All summary rankings: {'answer_5126c02d_1': 0.8104554017384847, 'answer_5126c02d_2': 0.8062790433565775, 'sharegpt_oTNStu2_43': 0.7196325461069742, 'ultrachat_475462': 0.7160159548123678, '57bf4122_1': 0.6769425670305887}
+2026-11-01 07:46:50 - DynamicMemory - INFO - Summary retrieval completed in 0.65s
+2026-11-01 07:46:50 - DynamicMemory - INFO - Reranking 40 triples using SimpleRank
+2026-11-01 07:46:50 - DynamicMemory - INFO - 📊 Available summary rankings for 44 sessions:
+2026-11-01 07:46:50 - DynamicMemory - INFO -    Session answer_5126c02d_1: 0.810
+2026-11-01 07:46:50 - DynamicMemory - INFO -    Session answer_5126c02d_2: 0.806
+2026-11-01 07:46:50 - DynamicMemory - INFO -    Session sharegpt_oTNStu2_43: 0.720
+2026-11-01 07:46:50 - DynamicMemory - INFO -    Session ultrachat_475462: 0.716
+2026-11-01 07:46:50 - DynamicMemory - INFO -    Session 57bf4122_1: 0.677
+2026-11-01 07:46:50 - DynamicMemory - INFO - 🔍 Found 3 unique session_ids in triples: ['b65f51fb_5', 'answer_5126c02d_2', 'answer_5126c02d_1']
+2026-11-01 07:46:50 - DynamicMemory - INFO - Top reranked triples (SimpleRank):
+2026-11-01 07:46:50 - DynamicMemory - INFO -   1. User has 1250 followers (similarity: 0.646, summary: 0.810, reranked: 0.679)
+2026-11-01 07:46:50 - DynamicMemory - INFO -   2. User checked Follower Count (similarity: 0.629, summary: 0.806, reranked: 0.664)
+2026-11-01 07:46:50 - DynamicMemory - INFO -   3. User using Instagram Insights (similarity: 0.598, summary: 0.810, reranked: 0.640)
+2026-11-01 07:46:50 - DynamicMemory - INFO -   4. User interested in Instagram Live (similarity: 0.595, summary: 0.810, reranked: 0.638)
+2026-11-01 07:46:50 - DynamicMemory - INFO -   5. User using Instagram feed (similarity: 0.593, summary: 0.810, reranked: 0.636)
+2026-11-01 07:46:50 - DynamicMemory - INFO - Triple reranking completed in 0.00s
+2026-11-01 07:46:50 - DynamicMemory - INFO - Chunk retrieval completed in 0.00s
+2026-11-01 07:46:50 - DynamicMemory - INFO - 🔍 Retrieval Cost - Prompt: 0, Completion: 0
+2026-11-01 07:46:50 - DynamicMemory - INFO - 🔍 Retrieval completed in 3.12s
+2026-11-01 07:46:53 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+2026-11-01 07:46:53 - DynamicMemory - INFO - 🤖 LLM Answer generated
+2026-11-01 07:46:53 - DynamicMemory - WARNING - Model qwen3-8b not found in TOKEN_COSTS. Skipping cost calculation.
+2026-11-01 07:46:53 - DynamicMemory - INFO - 💬 Answer Generation Cost - Prompt: 7766, Completion: 5
+2026-11-01 07:46:53 - DynamicMemory - INFO - 💬 Answer generation completed in 2.07s
+2026-11-01 07:46:53 - DynamicMemory - INFO - ✅ Unified query processing completed for: How many followers do I have on Instagram now?...
+2026-11-01 07:46:53 - DynamicMemory - INFO - Query processed successfully
+Traceback (most recent call last):
+  File "/home/cwf/Code/LiCoMemory-main/experiments/evidence_memory_pilot/server_longmem_a2f3aa27_resume_20261101/run_resume.py", line 80, in <module>
+    asyncio.run(main())
+  File "/home/cwf/miniconda3/envs/licomemory/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/home/cwf/miniconda3/envs/licomemory/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cwf/miniconda3/envs/licomemory/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/cwf/Code/LiCoMemory-main/experiments/evidence_memory_pilot/server_longmem_a2f3aa27_resume_20261101/run_resume.py", line 77, in main
+    status['elapsed_seconds']=round(time.monotonic()-started,2);write_status(status)
+                                                                ^^^^^^^^^^^^^^^^^^^^
+  File "/home/cwf/Code/LiCoMemory-main/experiments/evidence_memory_pilot/server_longmem_a2f3aa27_resume_20261101/run_resume.py", line 19, in write_status
+    def write_status(s):atomic_json(OUT/'status.json',s)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cwf/Code/LiCoMemory-main/experiments/evidence_memory_pilot/server_longmem_a2f3aa27_resume_20261101/checkpoint.py", line 7, in atomic_json
+    tmp=f.name;json.dump(data,f,ensure_ascii=False);f.flush();os.fsync(f.fileno())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cwf/miniconda3/envs/licomemory/lib/python3.11/json/__init__.py", line 179, in dump
+    for chunk in iterable:
+  File "/home/cwf/miniconda3/envs/licomemory/lib/python3.11/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/home/cwf/miniconda3/envs/licomemory/lib/python3.11/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/home/cwf/miniconda3/envs/licomemory/lib/python3.11/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/home/cwf/miniconda3/envs/licomemory/lib/python3.11/json/encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "/home/cwf/miniconda3/envs/licomemory/lib/python3.11/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/home/cwf/miniconda3/envs/licomemory/lib/python3.11/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/home/cwf/miniconda3/envs/licomemory/lib/python3.11/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Tensor is not JSON serializable

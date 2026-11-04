@@ -1,0 +1,9 @@
+{
+ "control_current":{"subject_support":"supported","temporal_modality":"current","semantic_support":"supported"},
+ "control_plan":{"subject_support":"supported","temporal_modality":"plan","semantic_support":"contradicted"},
+ "control_other":{"subject_support":"other_person","temporal_modality":"current","semantic_support":"contradicted"},
+ "control_negation":{"subject_support":"supported","temporal_modality":"current","semantic_support":"contradicted"},
+ "control_past":{"subject_support":"supported","temporal_modality":"past","semantic_support":"supported"},
+ "control_quantity":{"subject_support":"supported","temporal_modality":"current","semantic_support":"contradicted"},
+ "control_uncertain":{"subject_support":"supported","temporal_modality":"uncertain","semantic_support":"contradicted"}
+}

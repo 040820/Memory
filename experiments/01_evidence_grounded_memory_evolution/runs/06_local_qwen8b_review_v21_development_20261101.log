@@ -1,0 +1,11 @@
+[1/10] hard route=TECHNICAL_ERROR reasons=['REQUEST_ERROR'] tokens=not_returned elapsed=0.0s
+[2/10] at_most route=TECHNICAL_ERROR reasons=['REQUEST_ERROR'] tokens=not_returned elapsed=0.0s
+[3/10] plan route=TECHNICAL_ERROR reasons=['REQUEST_ERROR'] tokens=not_returned elapsed=0.0s
+[4/10] not_moved route=TECHNICAL_ERROR reasons=['REQUEST_ERROR'] tokens=not_returned elapsed=0.0s
+[5/10] other route=TECHNICAL_ERROR reasons=['REQUEST_ERROR'] tokens=not_returned elapsed=0.0s
+[6/10] current route=TECHNICAL_ERROR reasons=['REQUEST_ERROR'] tokens=not_returned elapsed=0.0s
+[7/10] past route=TECHNICAL_ERROR reasons=['REQUEST_ERROR'] tokens=not_returned elapsed=0.0s
+[8/10] approx route=TECHNICAL_ERROR reasons=['REQUEST_ERROR'] tokens=not_returned elapsed=0.0s
+[9/10] negation route=TECHNICAL_ERROR reasons=['REQUEST_ERROR'] tokens=not_returned elapsed=0.0s
+[10/10] possibility route=TECHNICAL_ERROR reasons=['REQUEST_ERROR'] tokens=not_returned elapsed=0.0s
+COMPLETED: advisory review saved; no memory updates applied

@@ -1,0 +1,495 @@
+[
+  {
+    "id": "ev_0e8409d2cf3b39eb18dc01f556e89340188af4ac0ee738a3eb7b1778af71740e_0",
+    "evidence_id": "ev_0e8409d2cf3b39eb18dc01f556e89340188af4ac0ee738a3eb7b1778af71740e",
+    "source": {
+      "conversation_id": "a2f3aa27",
+      "dataset_id": "longmemeval_s_cleaned",
+      "known_at": "2023-05-03T14:25",
+      "known_at_basis": "session_time",
+      "raw_session_time": "2023/05/03 (Wed) 14:25",
+      "session_id": "1d015773_1",
+      "speaker": "user",
+      "text": "I'm thinking of planning a special birthday celebration for my niece at the Disneyland Resort. Do you have any recommendations for kid-friendly restaurants or character dining experiences that she might enjoy?",
+      "time_precision": "minute",
+      "timezone": "unknown",
+      "turn_id": "8",
+      "evidence_id": "ev_0e8409d2cf3b39eb18dc01f556e89340188af4ac0ee738a3eb7b1778af71740e"
+    },
+    "candidate": {
+      "subject": "user",
+      "predicate": "has a niece",
+      "value": "niece",
+      "quote": "my niece",
+      "time_reference": "PRESENT",
+      "modality": "ASSERTED",
+      "polarity": "POSITIVE",
+      "precision": "NOT_APPLICABLE",
+      "scope": "UNKNOWN"
+    }
+  },
+  {
+    "id": "ev_0e8409d2cf3b39eb18dc01f556e89340188af4ac0ee738a3eb7b1778af71740e_1",
+    "evidence_id": "ev_0e8409d2cf3b39eb18dc01f556e89340188af4ac0ee738a3eb7b1778af71740e",
+    "source": {
+      "conversation_id": "a2f3aa27",
+      "dataset_id": "longmemeval_s_cleaned",
+      "known_at": "2023-05-03T14:25",
+      "known_at_basis": "session_time",
+      "raw_session_time": "2023/05/03 (Wed) 14:25",
+      "session_id": "1d015773_1",
+      "speaker": "user",
+      "text": "I'm thinking of planning a special birthday celebration for my niece at the Disneyland Resort. Do you have any recommendations for kid-friendly restaurants or character dining experiences that she might enjoy?",
+      "time_precision": "minute",
+      "timezone": "unknown",
+      "turn_id": "8",
+      "evidence_id": "ev_0e8409d2cf3b39eb18dc01f556e89340188af4ac0ee738a3eb7b1778af71740e"
+    },
+    "candidate": {
+      "subject": "user",
+      "predicate": "is thinking of planning",
+      "value": "a special birthday celebration for my niece at the Disneyland Resort",
+      "quote": "I'm thinking of planning a special birthday celebration for my niece at the Disneyland Resort.",
+      "time_reference": "FUTURE",
+      "modality": "PLAN",
+      "polarity": "POSITIVE",
+      "precision": "NOT_APPLICABLE",
+      "scope": "special birthday celebration for my niece at the Disneyland Resort"
+    }
+  },
+  {
+    "id": "ev_22e85284136da944fd8e4d2326b2e7710f83a7244fa37944e578553bea19fe27_0",
+    "evidence_id": "ev_22e85284136da944fd8e4d2326b2e7710f83a7244fa37944e578553bea19fe27",
+    "source": {
+      "conversation_id": "a2f3aa27",
+      "dataset_id": "longmemeval_s_cleaned",
+      "known_at": "2023-05-03T14:25",
+      "known_at_basis": "session_time",
+      "raw_session_time": "2023/05/03 (Wed) 14:25",
+      "session_id": "1d015773_1",
+      "speaker": "user",
+      "text": "I'm planning a trip to Disneyland Resort soon and I was wondering if you could recommend some good places to eat. I'm particularly interested in trying some fried chicken, and I heard the Paradise Garden Grill has a great fried chicken sandwich. By the way, I just ran the Disney Princess Half Marathon there a few weeks ago, it was an amazing experience!",
+      "time_precision": "minute",
+      "timezone": "unknown",
+      "turn_id": "0",
+      "evidence_id": "ev_22e85284136da944fd8e4d2326b2e7710f83a7244fa37944e578553bea19fe27"
+    },
+    "candidate": {
+      "subject": "user",
+      "predicate": "planning trip to",
+      "value": "Disneyland Resort soon",
+      "quote": "I'm planning a trip to Disneyland Resort soon",
+      "time_reference": "FUTURE",
+      "modality": "PLAN",
+      "polarity": "POSITIVE",
+      "precision": "NOT_APPLICABLE",
+      "scope": "UNKNOWN"
+    }
+  },
+  {
+    "id": "ev_22e85284136da944fd8e4d2326b2e7710f83a7244fa37944e578553bea19fe27_1",
+    "evidence_id": "ev_22e85284136da944fd8e4d2326b2e7710f83a7244fa37944e578553bea19fe27",
+    "source": {
+      "conversation_id": "a2f3aa27",
+      "dataset_id": "longmemeval_s_cleaned",
+      "known_at": "2023-05-03T14:25",
+      "known_at_basis": "session_time",
+      "raw_session_time": "2023/05/03 (Wed) 14:25",
+      "session_id": "1d015773_1",
+      "speaker": "user",
+      "text": "I'm planning a trip to Disneyland Resort soon and I was wondering if you could recommend some good places to eat. I'm particularly interested in trying some fried chicken, and I heard the Paradise Garden Grill has a great fried chicken sandwich. By the way, I just ran the Disney Princess Half Marathon there a few weeks ago, it was an amazing experience!",
+      "time_precision": "minute",
+      "timezone": "unknown",
+      "turn_id": "0",
+      "evidence_id": "ev_22e85284136da944fd8e4d2326b2e7710f83a7244fa37944e578553bea19fe27"
+    },
+    "candidate": {
+      "subject": "user",
+      "predicate": "interested in trying",
+      "value": "fried chicken",
+      "quote": "I'm particularly interested in trying some fried chicken",
+      "time_reference": "PRESENT",
+      "modality": "ASSERTED",
+      "polarity": "POSITIVE",
+      "precision": "NOT_APPLICABLE",
+      "scope": "UNKNOWN"
+    }
+  },
+  {
+    "id": "ev_22e85284136da944fd8e4d2326b2e7710f83a7244fa37944e578553bea19fe27_2",
+    "evidence_id": "ev_22e85284136da944fd8e4d2326b2e7710f83a7244fa37944e578553bea19fe27",
+    "source": {
+      "conversation_id": "a2f3aa27",
+      "dataset_id": "longmemeval_s_cleaned",
+      "known_at": "2023-05-03T14:25",
+      "known_at_basis": "session_time",
+      "raw_session_time": "2023/05/03 (Wed) 14:25",
+      "session_id": "1d015773_1",
+      "speaker": "user",
+      "text": "I'm planning a trip to Disneyland Resort soon and I was wondering if you could recommend some good places to eat. I'm particularly interested in trying some fried chicken, and I heard the Paradise Garden Grill has a great fried chicken sandwich. By the way, I just ran the Disney Princess Half Marathon there a few weeks ago, it was an amazing experience!",
+      "time_precision": "minute",
+      "timezone": "unknown",
+      "turn_id": "0",
+      "evidence_id": "ev_22e85284136da944fd8e4d2326b2e7710f83a7244fa37944e578553bea19fe27"
+    },
+    "candidate": {
+      "subject": "user",
+      "predicate": "ran",
+      "value": "Disney Princess Half Marathon there a few weeks ago",
+      "quote": "I just ran the Disney Princess Half Marathon there a few weeks ago",
+      "time_reference": "PAST",
+      "modality": "ASSERTED",
+      "polarity": "POSITIVE",
+      "precision": "APPROXIMATE",
+      "scope": "UNKNOWN"
+    }
+  },
+  {
+    "id": "ev_6c76111b6f02901a34800fa353288646437508255a0cad9eb59661f5f7d16de0_0",
+    "evidence_id": "ev_6c76111b6f02901a34800fa353288646437508255a0cad9eb59661f5f7d16de0",
+    "source": {
+      "conversation_id": "a2f3aa27",
+      "dataset_id": "longmemeval_s_cleaned",
+      "known_at": "2023-05-03T14:25",
+      "known_at_basis": "session_time",
+      "raw_session_time": "2023/05/03 (Wed) 14:25",
+      "session_id": "1d015773_1",
+      "speaker": "user",
+      "text": "I'm thinking of booking a character dining experience for my niece's birthday celebration. Do you think it would be better to book Goofy's Kitchen or Mickey's Tales of Adventure Breakfast Buffet? Both seem like fun options, but I want to make sure my niece will enjoy it.",
+      "time_precision": "minute",
+      "timezone": "unknown",
+      "turn_id": "10",
+      "evidence_id": "ev_6c76111b6f02901a34800fa353288646437508255a0cad9eb59661f5f7d16de0"
+    },
+    "candidate": {
+      "subject": "user",
+      "predicate": "has",
+      "value": "niece",
+      "quote": "my niece's birthday celebration",
+      "time_reference": "PRESENT",
+      "modality": "ASSERTED",
+      "polarity": "POSITIVE",
+      "precision": "NOT_APPLICABLE",
+      "scope": "UNKNOWN"
+    }
+  },
+  {
+    "id": "ev_6c76111b6f02901a34800fa353288646437508255a0cad9eb59661f5f7d16de0_1",
+    "evidence_id": "ev_6c76111b6f02901a34800fa353288646437508255a0cad9eb59661f5f7d16de0",
+    "source": {
+      "conversation_id": "a2f3aa27",
+      "dataset_id": "longmemeval_s_cleaned",
+      "known_at": "2023-05-03T14:25",
+      "known_at_basis": "session_time",
+      "raw_session_time": "2023/05/03 (Wed) 14:25",
+      "session_id": "1d015773_1",
+      "speaker": "user",
+      "text": "I'm thinking of booking a character dining experience for my niece's birthday celebration. Do you think it would be better to book Goofy's Kitchen or Mickey's Tales of Adventure Breakfast Buffet? Both seem like fun options, but I want to make sure my niece will enjoy it.",
+      "time_precision": "minute",
+      "timezone": "unknown",
+      "turn_id": "10",
+      "evidence_id": "ev_6c76111b6f02901a34800fa353288646437508255a0cad9eb59661f5f7d16de0"
+    },
+    "candidate": {
+      "subject": "user",
+      "predicate": "is thinking of booking",
+      "value": "character dining experience for niece's birthday celebration",
+      "quote": "I'm thinking of booking a character dining experience for my niece's birthday celebration",
+      "time_reference": "FUTURE",
+      "modality": "PLAN",
+      "polarity": "POSITIVE",
+      "precision": "NOT_APPLICABLE",
+      "scope": "UNKNOWN"
+    }
+  },
+  {
+    "id": "ev_846b269f5d1db15e7a3649a603de492ef75c2a96e0e810427863ef0f2cbe9e9a_0",
+    "evidence_id": "ev_846b269f5d1db15e7a3649a603de492ef75c2a96e0e810427863ef0f2cbe9e9a",
+    "source": {
+      "conversation_id": "a2f3aa27",
+      "dataset_id": "longmemeval_s_cleaned",
+      "known_at": "2023-05-01T22:56",
+      "known_at_basis": "session_time",
+      "raw_session_time": "2023/05/01 (Mon) 22:56",
+      "session_id": "48cb1be9",
+      "speaker": "user",
+      "text": "I'm thinking of getting a new mattress, and I've been considering a few options. Can you show me some popular mattress brands and their features?",
+      "time_precision": "minute",
+      "timezone": "unknown",
+      "turn_id": "10",
+      "evidence_id": "ev_846b269f5d1db15e7a3649a603de492ef75c2a96e0e810427863ef0f2cbe9e9a"
+    },
+    "candidate": {
+      "subject": "user",
+      "predicate": "thinking of getting",
+      "value": "a new mattress",
+      "quote": "I'm thinking of getting a new mattress",
+      "time_reference": "PRESENT",
+      "modality": "PLAN",
+      "polarity": "POSITIVE",
+      "precision": "NOT_APPLICABLE",
+      "scope": "UNKNOWN"
+    }
+  },
+  {
+    "id": "ev_846b269f5d1db15e7a3649a603de492ef75c2a96e0e810427863ef0f2cbe9e9a_1",
+    "evidence_id": "ev_846b269f5d1db15e7a3649a603de492ef75c2a96e0e810427863ef0f2cbe9e9a",
+    "source": {
+      "conversation_id": "a2f3aa27",
+      "dataset_id": "longmemeval_s_cleaned",
+      "known_at": "2023-05-01T22:56",
+      "known_at_basis": "session_time",
+      "raw_session_time": "2023/05/01 (Mon) 22:56",
+      "session_id": "48cb1be9",
+      "speaker": "user",
+      "text": "I'm thinking of getting a new mattress, and I've been considering a few options. Can you show me some popular mattress brands and their features?",
+      "time_precision": "minute",
+      "timezone": "unknown",
+      "turn_id": "10",
+      "evidence_id": "ev_846b269f5d1db15e7a3649a603de492ef75c2a96e0e810427863ef0f2cbe9e9a"
+    },
+    "candidate": {
+      "subject": "user",
+      "predicate": "considering",
+      "value": "a few options",
+      "quote": "I've been considering a few options",
+      "time_reference": "PAST",
+      "modality": "ASSERTED",
+      "polarity": "POSITIVE",
+      "precision": "APPROXIMATE",
+      "scope": "mattress options"
+    }
+  },
+  {
+    "id": "ev_8578e2c2faccf950f1acccdcaecf13e97d9c16327d43f7a342b51a99c700aa4a_0",
+    "evidence_id": "ev_8578e2c2faccf950f1acccdcaecf13e97d9c16327d43f7a342b51a99c700aa4a",
+    "source": {
+      "conversation_id": "a2f3aa27",
+      "dataset_id": "longmemeval_s_cleaned",
+      "known_at": "2023-05-03T14:25",
+      "known_at_basis": "session_time",
+      "raw_session_time": "2023/05/03 (Wed) 14:25",
+      "session_id": "1d015773_1",
+      "speaker": "user",
+      "text": "I'm also thinking of checking out the new Star Wars ride while I'm there. Do you know how long the wait times have been lately? I was surprised when I visited with my family a couple of weeks ago, it was a Saturday and the wait was pretty short.",
+      "time_precision": "minute",
+      "timezone": "unknown",
+      "turn_id": "2",
+      "evidence_id": "ev_8578e2c2faccf950f1acccdcaecf13e97d9c16327d43f7a342b51a99c700aa4a"
+    },
+    "candidate": {
+      "subject": "user",
+      "predicate": "planning to check out",
+      "value": "new Star Wars ride while there",
+      "quote": "I'm also thinking of checking out the new Star Wars ride while I'm there.",
+      "time_reference": "FUTURE",
+      "modality": "PLAN",
+      "polarity": "POSITIVE",
+      "precision": "NOT_APPLICABLE",
+      "scope": "while I'm there"
+    }
+  },
+  {
+    "id": "ev_8578e2c2faccf950f1acccdcaecf13e97d9c16327d43f7a342b51a99c700aa4a_1",
+    "evidence_id": "ev_8578e2c2faccf950f1acccdcaecf13e97d9c16327d43f7a342b51a99c700aa4a",
+    "source": {
+      "conversation_id": "a2f3aa27",
+      "dataset_id": "longmemeval_s_cleaned",
+      "known_at": "2023-05-03T14:25",
+      "known_at_basis": "session_time",
+      "raw_session_time": "2023/05/03 (Wed) 14:25",
+      "session_id": "1d015773_1",
+      "speaker": "user",
+      "text": "I'm also thinking of checking out the new Star Wars ride while I'm there. Do you know how long the wait times have been lately? I was surprised when I visited with my family a couple of weeks ago, it was a Saturday and the wait was pretty short.",
+      "time_precision": "minute",
+      "timezone": "unknown",
+      "turn_id": "2",
+      "evidence_id": "ev_8578e2c2faccf950f1acccdcaecf13e97d9c16327d43f7a342b51a99c700aa4a"
+    },
+    "candidate": {
+      "subject": "user",
+      "predicate": "visited with",
+      "value": "family a couple of weeks ago",
+      "quote": "I was surprised when I visited with my family a couple of weeks ago",
+      "time_reference": "PAST",
+      "modality": "ASSERTED",
+      "polarity": "POSITIVE",
+      "precision": "APPROXIMATE",
+      "scope": "a couple of weeks ago"
+    }
+  },
+  {
+    "id": "ev_8578e2c2faccf950f1acccdcaecf13e97d9c16327d43f7a342b51a99c700aa4a_2",
+    "evidence_id": "ev_8578e2c2faccf950f1acccdcaecf13e97d9c16327d43f7a342b51a99c700aa4a",
+    "source": {
+      "conversation_id": "a2f3aa27",
+      "dataset_id": "longmemeval_s_cleaned",
+      "known_at": "2023-05-03T14:25",
+      "known_at_basis": "session_time",
+      "raw_session_time": "2023/05/03 (Wed) 14:25",
+      "session_id": "1d015773_1",
+      "speaker": "user",
+      "text": "I'm also thinking of checking out the new Star Wars ride while I'm there. Do you know how long the wait times have been lately? I was surprised when I visited with my family a couple of weeks ago, it was a Saturday and the wait was pretty short.",
+      "time_precision": "minute",
+      "timezone": "unknown",
+      "turn_id": "2",
+      "evidence_id": "ev_8578e2c2faccf950f1acccdcaecf13e97d9c16327d43f7a342b51a99c700aa4a"
+    },
+    "candidate": {
+      "subject": "user",
+      "predicate": "experienced wait time on",
+      "value": "Saturday pretty short",
+      "quote": "it was a Saturday and the wait was pretty short.",
+      "time_reference": "PAST",
+      "modality": "ASSERTED",
+      "polarity": "POSITIVE",
+      "precision": "NOT_APPLICABLE",
+      "scope": "on a Saturday visit"
+    }
+  },
+  {
+    "id": "ev_aa075f591a451286c24aed83ff75ab7bd36e171f776e1b10a72502fd455aecd7_0",
+    "evidence_id": "ev_aa075f591a451286c24aed83ff75ab7bd36e171f776e1b10a72502fd455aecd7",
+    "source": {
+      "conversation_id": "a2f3aa27",
+      "dataset_id": "longmemeval_s_cleaned",
+      "known_at": "2023-05-01T22:56",
+      "known_at_basis": "session_time",
+      "raw_session_time": "2023/05/01 (Mon) 22:56",
+      "session_id": "48cb1be9",
+      "speaker": "user",
+      "text": "I'm still deciding between a rectangular and an oval table. Can you show me some examples of oval tables that can seat 6-8 people?",
+      "time_precision": "minute",
+      "timezone": "unknown",
+      "turn_id": "8",
+      "evidence_id": "ev_aa075f591a451286c24aed83ff75ab7bd36e171f776e1b10a72502fd455aecd7"
+    },
+    "candidate": {
+      "subject": "user",
+      "predicate": "deciding between table shapes",
+      "value": "still deciding between a rectangular and an oval table",
+      "quote": "I'm still deciding between a rectangular and an oval table.",
+      "time_reference": "PRESENT",
+      "modality": "ASSERTED",
+      "polarity": "POSITIVE",
+      "precision": "NOT_APPLICABLE",
+      "scope": "UNKNOWN"
+    }
+  },
+  {
+    "id": "ev_de837cf1a067afefe285d1a47ce20432f8b590c272570b4e44a5f2c106cc5e69_0",
+    "evidence_id": "ev_de837cf1a067afefe285d1a47ce20432f8b590c272570b4e44a5f2c106cc5e69",
+    "source": {
+      "conversation_id": "a2f3aa27",
+      "dataset_id": "longmemeval_s_cleaned",
+      "known_at": "2023-05-03T14:25",
+      "known_at_basis": "session_time",
+      "raw_session_time": "2023/05/03 (Wed) 14:25",
+      "session_id": "1d015773_1",
+      "speaker": "user",
+      "text": "I'm also thinking of visiting the Disneyland Resort again soon, and I was wondering if you could recommend some character meet-and-greets that my niece would enjoy. She loved meeting Elsa from Frozen when we visited last time.",
+      "time_precision": "minute",
+      "timezone": "unknown",
+      "turn_id": "6",
+      "evidence_id": "ev_de837cf1a067afefe285d1a47ce20432f8b590c272570b4e44a5f2c106cc5e69"
+    },
+    "candidate": {
+      "subject": "user",
+      "predicate": "has a niece",
+      "value": "niece",
+      "quote": "my niece would enjoy",
+      "time_reference": "PRESENT",
+      "modality": "ASSERTED",
+      "polarity": "POSITIVE",
+      "precision": "NOT_APPLICABLE",
+      "scope": "UNKNOWN"
+    }
+  },
+  {
+    "id": "ev_de837cf1a067afefe285d1a47ce20432f8b590c272570b4e44a5f2c106cc5e69_1",
+    "evidence_id": "ev_de837cf1a067afefe285d1a47ce20432f8b590c272570b4e44a5f2c106cc5e69",
+    "source": {
+      "conversation_id": "a2f3aa27",
+      "dataset_id": "longmemeval_s_cleaned",
+      "known_at": "2023-05-03T14:25",
+      "known_at_basis": "session_time",
+      "raw_session_time": "2023/05/03 (Wed) 14:25",
+      "session_id": "1d015773_1",
+      "speaker": "user",
+      "text": "I'm also thinking of visiting the Disneyland Resort again soon, and I was wondering if you could recommend some character meet-and-greets that my niece would enjoy. She loved meeting Elsa from Frozen when we visited last time.",
+      "time_precision": "minute",
+      "timezone": "unknown",
+      "turn_id": "6",
+      "evidence_id": "ev_de837cf1a067afefe285d1a47ce20432f8b590c272570b4e44a5f2c106cc5e69"
+    },
+    "candidate": {
+      "subject": "user",
+      "predicate": "visited Disneyland Resort",
+      "value": "Disneyland Resort",
+      "quote": "when we visited last time",
+      "time_reference": "PAST",
+      "modality": "ASSERTED",
+      "polarity": "POSITIVE",
+      "precision": "NOT_APPLICABLE",
+      "scope": "last time"
+    }
+  },
+  {
+    "id": "ev_f1325003211a3a316269a6fc0257a2b0371852e91e9e4f6e2a605450d8d9f614_0",
+    "evidence_id": "ev_f1325003211a3a316269a6fc0257a2b0371852e91e9e4f6e2a605450d8d9f614",
+    "source": {
+      "conversation_id": "a2f3aa27",
+      "dataset_id": "longmemeval_s_cleaned",
+      "known_at": "2023-05-01T22:56",
+      "known_at_basis": "session_time",
+      "raw_session_time": "2023/05/01 (Mon) 22:56",
+      "session_id": "48cb1be9",
+      "speaker": "user",
+      "text": "I'm thinking of getting a new dining table, the one we have now is really small and it's hard to fit more than 4 people around it. Can you show me some modern dining table styles that would fit 6-8 people?",
+      "time_precision": "minute",
+      "timezone": "unknown",
+      "turn_id": "4",
+      "evidence_id": "ev_f1325003211a3a316269a6fc0257a2b0371852e91e9e4f6e2a605450d8d9f614"
+    },
+    "candidate": {
+      "subject": "user",
+      "predicate": "has dining table size",
+      "value": "really small",
+      "quote": "the one we have now is really small",
+      "time_reference": "PRESENT",
+      "modality": "ASSERTED",
+      "polarity": "POSITIVE",
+      "precision": "UNKNOWN",
+      "scope": "current dining table"
+    }
+  },
+  {
+    "id": "ev_f1325003211a3a316269a6fc0257a2b0371852e91e9e4f6e2a605450d8d9f614_1",
+    "evidence_id": "ev_f1325003211a3a316269a6fc0257a2b0371852e91e9e4f6e2a605450d8d9f614",
+    "source": {
+      "conversation_id": "a2f3aa27",
+      "dataset_id": "longmemeval_s_cleaned",
+      "known_at": "2023-05-01T22:56",
+      "known_at_basis": "session_time",
+      "raw_session_time": "2023/05/01 (Mon) 22:56",
+      "session_id": "48cb1be9",
+      "speaker": "user",
+      "text": "I'm thinking of getting a new dining table, the one we have now is really small and it's hard to fit more than 4 people around it. Can you show me some modern dining table styles that would fit 6-8 people?",
+      "time_precision": "minute",
+      "timezone": "unknown",
+      "turn_id": "4",
+      "evidence_id": "ev_f1325003211a3a316269a6fc0257a2b0371852e91e9e4f6e2a605450d8d9f614"
+    },
+    "candidate": {
+      "subject": "user",
+      "predicate": "dining table capacity difficulty",
+      "value": "hard to fit more than 4 people around it",
+      "quote": "it's hard to fit more than 4 people around it",
+      "time_reference": "PRESENT",
+      "modality": "ASSERTED",
+      "polarity": "NEGATIVE",
+      "precision": "EXACT",
+      "scope": "current dining table"
+    }
+  }
+]

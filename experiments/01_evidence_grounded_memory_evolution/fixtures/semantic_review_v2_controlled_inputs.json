@@ -1,0 +1,128 @@
+[
+  {
+    "id": "control_current",
+    "source": {
+      "speaker": "user",
+      "text": "I live in Beijing."
+    },
+    "candidate": {
+      "subject": "user",
+      "predicate": "residence",
+      "value": "Beijing",
+      "quote": "I live in Beijing.",
+      "time_reference": "PRESENT",
+      "modality": "ASSERTED",
+      "polarity": "POSITIVE",
+      "precision": "NOT_APPLICABLE",
+      "scope": "residence"
+    }
+  },
+  {
+    "id": "control_plan",
+    "source": {
+      "speaker": "user",
+      "text": "I plan to move to Shanghai next year."
+    },
+    "candidate": {
+      "subject": "user",
+      "predicate": "current residence",
+      "value": "Shanghai",
+      "quote": "plan to move to Shanghai next year",
+      "time_reference": "PRESENT",
+      "modality": "ASSERTED",
+      "polarity": "POSITIVE",
+      "precision": "NOT_APPLICABLE",
+      "scope": "current residence"
+    }
+  },
+  {
+    "id": "control_other",
+    "source": {
+      "speaker": "user",
+      "text": "My sister works as a teacher."
+    },
+    "candidate": {
+      "subject": "user",
+      "predicate": "occupation",
+      "value": "teacher",
+      "quote": "My sister works as a teacher",
+      "time_reference": "PRESENT",
+      "modality": "ASSERTED",
+      "polarity": "POSITIVE",
+      "precision": "NOT_APPLICABLE",
+      "scope": "occupation"
+    }
+  },
+  {
+    "id": "control_negation",
+    "source": {
+      "speaker": "user",
+      "text": "I do not live in Beijing anymore."
+    },
+    "candidate": {
+      "subject": "user",
+      "predicate": "current residence",
+      "value": "Beijing",
+      "quote": "do not live in Beijing anymore",
+      "time_reference": "PRESENT",
+      "modality": "ASSERTED",
+      "polarity": "POSITIVE",
+      "precision": "NOT_APPLICABLE",
+      "scope": "current residence"
+    }
+  },
+  {
+    "id": "control_past",
+    "source": {
+      "speaker": "user",
+      "text": "I lived in Beijing in 2020."
+    },
+    "candidate": {
+      "subject": "user",
+      "predicate": "past residence",
+      "value": "Beijing in 2020",
+      "quote": "I lived in Beijing in 2020",
+      "time_reference": "PAST",
+      "modality": "ASSERTED",
+      "polarity": "POSITIVE",
+      "precision": "NOT_APPLICABLE",
+      "scope": "past residence"
+    }
+  },
+  {
+    "id": "control_quantity",
+    "source": {
+      "speaker": "user",
+      "text": "It is hard to fit more than four people at my table."
+    },
+    "candidate": {
+      "subject": "user",
+      "predicate": "table capacity",
+      "value": "more than four people",
+      "quote": "hard to fit more than four people",
+      "time_reference": "PRESENT",
+      "modality": "ASSERTED",
+      "polarity": "POSITIVE",
+      "precision": "EXACT",
+      "scope": "table capacity"
+    }
+  },
+  {
+    "id": "control_uncertain",
+    "source": {
+      "speaker": "user",
+      "text": "I might move to Shanghai someday."
+    },
+    "candidate": {
+      "subject": "user",
+      "predicate": "current residence",
+      "value": "Shanghai",
+      "quote": "might move to Shanghai someday",
+      "time_reference": "PRESENT",
+      "modality": "ASSERTED",
+      "polarity": "POSITIVE",
+      "precision": "NOT_APPLICABLE",
+      "scope": "current residence"
+    }
+  }
+]

@@ -1,0 +1,163 @@
+[
+  {
+    "id": "ev_0e8409d2cf3b39eb18dc01f556e89340188af4ac0ee738a3eb7b1778af71740e_0",
+    "evidence_id": "ev_0e8409d2cf3b39eb18dc01f556e89340188af4ac0ee738a3eb7b1778af71740e",
+    "source": {
+      "conversation_id": "a2f3aa27",
+      "dataset_id": "longmemeval_s_cleaned",
+      "known_at": "2023-05-03T14:25",
+      "known_at_basis": "session_time",
+      "raw_session_time": "2023/05/03 (Wed) 14:25",
+      "session_id": "1d015773_1",
+      "speaker": "user",
+      "text": "I'm thinking of planning a special birthday celebration for my niece at the Disneyland Resort. Do you have any recommendations for kid-friendly restaurants or character dining experiences that she might enjoy?",
+      "time_precision": "minute",
+      "timezone": "unknown",
+      "turn_id": "8"
+    },
+    "candidate": {
+      "subject": "user",
+      "predicate": "planning",
+      "value": "a special birthday celebration for my niece at the Disneyland Resort",
+      "quote": "I'm thinking of planning a special birthday celebration for my niece at the Disneyland Resort"
+    }
+  },
+  {
+    "id": "ev_22e85284136da944fd8e4d2326b2e7710f83a7244fa37944e578553bea19fe27_0",
+    "evidence_id": "ev_22e85284136da944fd8e4d2326b2e7710f83a7244fa37944e578553bea19fe27",
+    "source": {
+      "conversation_id": "a2f3aa27",
+      "dataset_id": "longmemeval_s_cleaned",
+      "known_at": "2023-05-03T14:25",
+      "known_at_basis": "session_time",
+      "raw_session_time": "2023/05/03 (Wed) 14:25",
+      "session_id": "1d015773_1",
+      "speaker": "user",
+      "text": "I'm planning a trip to Disneyland Resort soon and I was wondering if you could recommend some good places to eat. I'm particularly interested in trying some fried chicken, and I heard the Paradise Garden Grill has a great fried chicken sandwich. By the way, I just ran the Disney Princess Half Marathon there a few weeks ago, it was an amazing experience!",
+      "time_precision": "minute",
+      "timezone": "unknown",
+      "turn_id": "0"
+    },
+    "candidate": {
+      "subject": "user",
+      "predicate": "recent activity",
+      "value": "ran the Disney Princess Half Marathon",
+      "quote": "I just ran the Disney Princess Half Marathon there a few weeks ago"
+    }
+  },
+  {
+    "id": "ev_8578e2c2faccf950f1acccdcaecf13e97d9c16327d43f7a342b51a99c700aa4a_0",
+    "evidence_id": "ev_8578e2c2faccf950f1acccdcaecf13e97d9c16327d43f7a342b51a99c700aa4a",
+    "source": {
+      "conversation_id": "a2f3aa27",
+      "dataset_id": "longmemeval_s_cleaned",
+      "known_at": "2023-05-03T14:25",
+      "known_at_basis": "session_time",
+      "raw_session_time": "2023/05/03 (Wed) 14:25",
+      "session_id": "1d015773_1",
+      "speaker": "user",
+      "text": "I'm also thinking of checking out the new Star Wars ride while I'm there. Do you know how long the wait times have been lately? I was surprised when I visited with my family a couple of weeks ago, it was a Saturday and the wait was pretty short.",
+      "time_precision": "minute",
+      "timezone": "unknown",
+      "turn_id": "2"
+    },
+    "candidate": {
+      "subject": "user",
+      "predicate": "family",
+      "value": "my family",
+      "quote": "I was surprised when I visited with my family a couple of weeks ago"
+    }
+  },
+  {
+    "id": "ev_de837cf1a067afefe285d1a47ce20432f8b590c272570b4e44a5f2c106cc5e69_0",
+    "evidence_id": "ev_de837cf1a067afefe285d1a47ce20432f8b590c272570b4e44a5f2c106cc5e69",
+    "source": {
+      "conversation_id": "a2f3aa27",
+      "dataset_id": "longmemeval_s_cleaned",
+      "known_at": "2023-05-03T14:25",
+      "known_at_basis": "session_time",
+      "raw_session_time": "2023/05/03 (Wed) 14:25",
+      "session_id": "1d015773_1",
+      "speaker": "user",
+      "text": "I'm also thinking of visiting the Disneyland Resort again soon, and I was wondering if you could recommend some character meet-and-greets that my niece would enjoy. She loved meeting Elsa from Frozen when we visited last time.",
+      "time_precision": "minute",
+      "timezone": "unknown",
+      "turn_id": "6"
+    },
+    "candidate": {
+      "subject": "user",
+      "predicate": "niece",
+      "value": "loved meeting Elsa from Frozen",
+      "quote": "She loved meeting Elsa from Frozen when we visited last time."
+    }
+  },
+  {
+    "id": "ev_f1325003211a3a316269a6fc0257a2b0371852e91e9e4f6e2a605450d8d9f614_0",
+    "evidence_id": "ev_f1325003211a3a316269a6fc0257a2b0371852e91e9e4f6e2a605450d8d9f614",
+    "source": {
+      "conversation_id": "a2f3aa27",
+      "dataset_id": "longmemeval_s_cleaned",
+      "known_at": "2023-05-01T22:56",
+      "known_at_basis": "session_time",
+      "raw_session_time": "2023/05/01 (Mon) 22:56",
+      "session_id": "48cb1be9",
+      "speaker": "user",
+      "text": "I'm thinking of getting a new dining table, the one we have now is really small and it's hard to fit more than 4 people around it. Can you show me some modern dining table styles that would fit 6-8 people?",
+      "time_precision": "minute",
+      "timezone": "unknown",
+      "turn_id": "4"
+    },
+    "candidate": {
+      "subject": "user",
+      "predicate": "current dining table size",
+      "value": "small",
+      "quote": "the one we have now is really small"
+    }
+  },
+  {
+    "id": "ev_f1325003211a3a316269a6fc0257a2b0371852e91e9e4f6e2a605450d8d9f614_1",
+    "evidence_id": "ev_f1325003211a3a316269a6fc0257a2b0371852e91e9e4f6e2a605450d8d9f614",
+    "source": {
+      "conversation_id": "a2f3aa27",
+      "dataset_id": "longmemeval_s_cleaned",
+      "known_at": "2023-05-01T22:56",
+      "known_at_basis": "session_time",
+      "raw_session_time": "2023/05/01 (Mon) 22:56",
+      "session_id": "48cb1be9",
+      "speaker": "user",
+      "text": "I'm thinking of getting a new dining table, the one we have now is really small and it's hard to fit more than 4 people around it. Can you show me some modern dining table styles that would fit 6-8 people?",
+      "time_precision": "minute",
+      "timezone": "unknown",
+      "turn_id": "4"
+    },
+    "candidate": {
+      "subject": "user",
+      "predicate": "current dining table capacity",
+      "value": "more than 4 people",
+      "quote": "it's hard to fit more than 4 people around it"
+    }
+  },
+  {
+    "id": "ev_f1325003211a3a316269a6fc0257a2b0371852e91e9e4f6e2a605450d8d9f614_2",
+    "evidence_id": "ev_f1325003211a3a316269a6fc0257a2b0371852e91e9e4f6e2a605450d8d9f614",
+    "source": {
+      "conversation_id": "a2f3aa27",
+      "dataset_id": "longmemeval_s_cleaned",
+      "known_at": "2023-05-01T22:56",
+      "known_at_basis": "session_time",
+      "raw_session_time": "2023/05/01 (Mon) 22:56",
+      "session_id": "48cb1be9",
+      "speaker": "user",
+      "text": "I'm thinking of getting a new dining table, the one we have now is really small and it's hard to fit more than 4 people around it. Can you show me some modern dining table styles that would fit 6-8 people?",
+      "time_precision": "minute",
+      "timezone": "unknown",
+      "turn_id": "4"
+    },
+    "candidate": {
+      "subject": "user",
+      "predicate": "desired dining table capacity",
+      "value": "6-8 people",
+      "quote": "that would fit 6-8 people"
+    }
+  }
+]

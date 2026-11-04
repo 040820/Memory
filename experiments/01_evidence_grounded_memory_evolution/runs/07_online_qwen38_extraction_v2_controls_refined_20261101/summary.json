@@ -1,0 +1,20 @@
+{
+  "turns": 9,
+  "statuses": {
+    "parsed": 9
+  },
+  "candidates": 6,
+  "skipped": 1,
+  "skip_reasons": {
+    "non_user_subject": 1
+  },
+  "scope_unknown": 5,
+  "precision_counts": {
+    "NOT_APPLICABLE": 5,
+    "APPROXIMATE": 1
+  },
+  "token_total": 4382,
+  "all_unverified": true,
+  "applied_updates": 0,
+  "evaluation": "descriptive counts only, no gold"
+}

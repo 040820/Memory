@@ -1,0 +1,9 @@
+{
+  "status": "started",
+  "question_id": "a2f3aa27",
+  "gold_loaded_into_system": false,
+  "input_protocol": "complete original-order haystack; no timestamp filtering",
+  "started_utc": "2026-11-01T06:09:47.863455+00:00",
+  "session_count": 44,
+  "message_count": 448
+}

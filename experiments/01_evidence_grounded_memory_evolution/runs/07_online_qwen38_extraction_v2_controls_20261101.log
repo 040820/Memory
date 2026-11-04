@@ -1,0 +1,10 @@
+[1/9] ev_1e0fd2e9f0e0f26de6cace1b3806a6b981d071d1d1023723373ef32786278f17 status=parsed candidates=0 skipped=1 tokens=441 elapsed=1.69s
+[2/9] ev_4559ce37792e2f07fbca263c96ded64050b6b4cb1364ccdb4b4592976aa75efb status=parsed candidates=1 skipped=0 tokens=441 elapsed=1.92s
+[3/9] ev_55af6f680765712d46d79d66613497cb1a2eabaa5e1b03b39ce47669de5ddc0d status=parsed candidates=0 skipped=0 tokens=341 elapsed=0.56s
+[4/9] ev_8be515b126529a0c16fe6992a9f10de6dd77fefad2ed01233c5e92538612a620 status=parsed candidates=1 skipped=0 tokens=462 elapsed=1.75s
+[5/9] ev_97e99a145765ce7957f14a6b514fd9dc20d5dfa242ab88a404ab66aecbed7199 status=parsed candidates=1 skipped=0 tokens=447 elapsed=1.64s
+[6/9] ev_bb7e8430bbea4fc74f8caf5a59884dbb188990719e61cbd198f8d6cccff8bcbc status=parsed candidates=1 skipped=0 tokens=440 elapsed=1.63s
+[7/9] ev_bf04aec8d1deaafebe3464eedeae87c8710c554358a3f76304f703e5c27352af status=parsed candidates=1 skipped=0 tokens=436 elapsed=1.5s
+[8/9] ev_c24280173072152e37f662770e90dfbb8531c554ef3a89a8a88471ce67d65e38 status=parsed candidates=0 skipped=0 tokens=345 elapsed=0.55s
+[9/9] ev_c8f23e77a9e8042808780285d4c87e70bc99a8993c1fc01e2bb199527059e863 status=parsed candidates=1 skipped=0 tokens=451 elapsed=1.79s
+COMPLETED: per-turn records saved; no memory updates applied
