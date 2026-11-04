@@ -11,5 +11,6 @@
 | `05_local_fact_chain_prototype` | 本地独立事实与变化记录原型 | 本地完成，4 项测试通过 |
 | `06_evidence_fact_memory` | 证据事实存储接入（capture/persist/候选召回） | 本地完成，7 项测试通过 |
 | `07_evidence_organization_offline` | 记忆组织结构改造与离线验证 | 本地完成（2026-11-03，含 Codex 两轮审查 4 项修复），27 项测试通过 |
+| `08_evidence_line_integration` | 判断链（01–04）与组织链（05–07）三桥连接 | 本地完成（2026-11-04），离线测试 38 项通过（含 07 回归），真模型 shadow 待凭据 |
 | `evidence_memory_pilot` | 证据驱动记忆基线与受控案例（无编号，早期） | 冻结样本与 10 受控样例已生成，模型服务待确认 |
 | `研究交接_Claude_Code.md` | 研究与工程交接说明 | 2026-11-03 |

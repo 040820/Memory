@@ -137,6 +137,43 @@ class EvidenceMemory:
         return [copy.deepcopy(self.changes[x]) for x in
                 sorted(self._links.get(fact_id, ()), key=lambda x: self.changes[x]['seq'])]
 
+    def record_review(self, fact_id, route, reasons, review_id=None):
+        """Attach one advisory single-fact review outcome (never a state change).
+
+        Unlike add_change there are no two endpoints: a semantic review judges
+        ONE candidate against its source. The fact identity never changes;
+        only support_status and an append-only review history are updated.
+        ``review_id`` is the retry idempotency key: repeating the same id with
+        the same outcome returns the existing record, while reusing it with a
+        different route/reasons is rejected. TECHNICAL_ERROR leaves
+        support_status untouched (a crash is not a review outcome).
+        """
+        if fact_id not in self.facts:
+            raise ValueError('unknown fact')
+        route = str(route or '').strip()
+        if route not in ('DEFER', 'REVIEW_NEXT', 'TECHNICAL_ERROR'):
+            raise ValueError('unsupported review route')
+        if not isinstance(reasons, (list, tuple)) or not reasons or \
+                any(not isinstance(r, str) or not r.strip() for r in reasons):
+            raise ValueError('nonempty string reasons required')
+        reasons = list(dict.fromkeys(reasons))
+        reviews = self.facts[fact_id].setdefault('reviews', [])
+        if review_id is not None:
+            review_id = str(review_id)
+            prior = next((r for r in reviews if r.get('review_id') == review_id), None)
+            if prior is not None:
+                if prior.get('route') != route or prior.get('reasons') != reasons:
+                    raise ValueError('review_id reused with a different outcome')
+                return prior
+        record = {'route': route, 'reasons': reasons,
+                  'review_id': review_id, 'seq': len(reviews)}
+        reviews.append(record)
+        if route == 'DEFER':
+            self.facts[fact_id]['support_status'] = 'review_defer'
+        elif route == 'REVIEW_NEXT':
+            self.facts[fact_id]['support_status'] = 'review_next'
+        return copy.deepcopy(record)
+
     def evidence_bundle(self, fact_id):
         """Trace both endpoints and source chunks; links remain unverified candidates."""
         if fact_id not in self.facts:
@@ -153,21 +190,34 @@ class EvidenceMemory:
                 'chunks': {cid: copy.deepcopy(self.chunks[cid]) for cid in sorted(source_ids)}}
 
     def to_dict(self):
-        # version 3: change records are review events (change_key/revision/seq/review_id);
-        # version 2 ids included the decision, version 1 excluded it. Older versions
-        # are validated with their original formula and re-keyed as events on load.
-        return copy.deepcopy({'version':3,'chunks':self.chunks,'facts':self.facts,
+        # version 4: facts may carry advisory review history (support_status/reviews
+        # restored on load; identity unchanged). version 3: change records are review
+        # events (change_key/revision/seq/review_id); version 2 ids included the
+        # decision, version 1 excluded it. Older versions are validated with their
+        # original formula and re-keyed as events on load.
+        return copy.deepcopy({'version':4,'chunks':self.chunks,'facts':self.facts,
                               'changes':self.changes,'complete':self.complete})
 
     @classmethod
     def from_dict(cls, data):
         version = data.get('version')
-        if version not in (1, 2, 3): raise ValueError('unsupported evidence memory version')
+        if version not in (1, 2, 3, 4): raise ValueError('unsupported evidence memory version')
         s=cls(); s.complete = data.get('complete',False)
         for cid, chunk in data['chunks'].items():
             if s.add_chunk(chunk) != cid: raise ValueError('invalid chunk identity')
         for fid, fact in data['facts'].items():
             if s.add_fact(fact['raw'],fact['evidence_id']) != fid: raise ValueError('invalid fact identity')
+            # advisory review metadata is not part of fact identity; restore it
+            record=s.facts[fid]
+            record['support_status']=fact.get('support_status','unverified')
+            reviews=fact.get('reviews',[])
+            if not isinstance(reviews,list) or any(not isinstance(r,dict) or
+                    not isinstance(r.get('route'),str) or not isinstance(r.get('reasons'),list)
+                    for r in reviews):
+                raise ValueError('invalid review history')
+            if [r.get('seq') for r in reviews]!=list(range(len(reviews))):
+                raise ValueError('invalid review order metadata')
+            if reviews: record['reviews']=copy.deepcopy(reviews)
         for cid, change in data['changes'].items():
             decision = str(change.get('decision') or '').strip() or 'pending'
             core = [change['old_fact_id'],change['new_fact_id'],change['relation'],
